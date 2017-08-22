@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SNA (test)
-subtitle: Subtitulos
+subtitle: Subtitulos - el testing Uno Dos Tres.
 output: 
     html_document:
         code_folding: hide
