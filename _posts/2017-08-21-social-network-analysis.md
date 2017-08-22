@@ -2,6 +2,9 @@
 layout: post
 title: SNA (test)
 subtitle: Subtitulos
+output: 
+    html_document:
+        code_folding: hide
 ---
 
 
