@@ -1,6 +1,8 @@
-# SNA
-RN7  
-March 19, 2017  
+---
+layout: post
+title: SNA (test)
+subtitle: Subtitulos
+---
 
 
 
