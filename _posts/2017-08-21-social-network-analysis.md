@@ -2,9 +2,6 @@
 layout: post
 title: SNA (test)
 subtitle: Subtitulos - el testing Uno Dos Tres.
-output: 
-    html_document:
-        code_folding: hide
 ---
 
 
@@ -27,11 +24,15 @@ plot(g_full)
 Ring graph: Graph is circular, where neighboring nodes are connected to each other to form a ring. 
 
 ```{r echo = FALSE}
+
 g_ring <- make_ring(12, directed = FALSE, mutual = FALSE, circular = TRUE)
+
 plot(g_ring)
 ```
 
-asdlfjalsdfjlasdjf
+
+** asdlfjalsdfjlasdjf
+
 
 Star graph: A single central vertex is connected by a singular edge from other vertices.
 
@@ -39,7 +40,8 @@ Star graph: A single central vertex is connected by a singular edge from other v
 g_star <- make_star(10, center = 1)
 plot(g_star)
 ```
-asdf34957834697359gjlgjl
+
+*** asdf34957834697359gjlgjl
 
 
 Without actual data, we can use `sample_gnp` or `sample_gnm` to create network graphs with randomized data.
