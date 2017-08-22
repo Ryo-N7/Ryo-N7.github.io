@@ -6,7 +6,7 @@ subtitle: Subtitulos - el testing Uno Dos Tres.
 
 
 
-## Social Network Analysis (test)
+## Social Network Analysis (test22)
 
 Testing social network analysis with the "sna" and "igraph" packages for R using the Erdos-Renyi model for constructing the graphs. But first, some simple graphs:
 
@@ -19,7 +19,7 @@ g_full <- make_full_graph(8, directed = FALSE)
 plot(g_full)
 ```
 
-![](img/ISD-1.jpg)<!-- -->
+![](img/ISD-1.jpg)
 
 Ring graph: Graph is circular, where neighboring nodes are connected to each other to form a ring. 
 
@@ -60,7 +60,7 @@ g1 <- sample_gnp(30, 0.08, directed = FALSE, loops = FALSE)
 plot(g1)
 ```
 
-![](SNA_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](SNA_files/figure-html/unnamed-chunk-4-1.png)
 
 Next we can use the function `igraph()` to customize even more attributes of the SNA graph, be careful as things might get ugly! 
 
@@ -72,7 +72,7 @@ plot.igraph(g1, vertex.label = V(g1)$name, vertex.size = 40,
             vertex.frame.color = "green")
 ```
 
-![](SNA_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](SNA_files/figure-html/unnamed-chunk-5-1.png)
 
 or you can use the `%>%` pipes with the `set_vertex_attr()` or `set_edge_attr()` etc. functions to achieve similar results: 
 
