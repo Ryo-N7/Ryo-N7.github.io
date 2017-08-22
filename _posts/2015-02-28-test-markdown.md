@@ -22,7 +22,7 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![ConsumerPsych](http://http://entrepreneur-ship.org/wp-content/uploads/2015/12/Business-Psychology-How-to-Best-Understand-Consumer-Behavior.jpg)
+![ConsumerPsych](http://entrepreneur-ship.org/wp-content/uploads/2015/12/Business-Psychology-How-to-Best-Understand-Consumer-Behavior.jpg)
 
 Here's a code chunk:
 
