@@ -26,21 +26,20 @@ plot(g_full)
 
 Ring graph: Graph is circular, where neighboring nodes are connected to each other to form a ring. 
 
-```r
+```{r echo = FALSE}
 g_ring <- make_ring(12, directed = FALSE, mutual = FALSE, circular = TRUE)
 plot(g_ring)
 ```
 
-![](SNA_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+asdlfjalsdfjlasdjf
 
 Star graph: A single central vertex is connected by a singular edge from other vertices.
 
-```r
+```{r eval = FALSE}
 g_star <- make_star(10, center = 1)
 plot(g_star)
 ```
-
-![](SNA_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+asdf34957834697359gjlgjl
 
 
 Without actual data, we can use `sample_gnp` or `sample_gnm` to create network graphs with randomized data.
