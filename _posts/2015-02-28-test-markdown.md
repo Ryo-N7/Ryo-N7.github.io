@@ -22,6 +22,8 @@ Here's a useless table:
 
 How about a yummy crepe?
 
+ISD pic: ![ISD-1](img/ISD-1.jpg)
+
 Inline-style: 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
