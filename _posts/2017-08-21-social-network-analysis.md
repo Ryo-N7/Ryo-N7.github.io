@@ -62,7 +62,7 @@ g1 <- sample_gnp(30, 0.08, directed = FALSE, loops = FALSE)
 plot(g1)
 ```
 
-![workworkwork](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-4-1.png "ellariasand")
+![workworkwork](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-4-1.png "ellariasand")  
 Next we can use the function `igraph()` to customize even more attributes of the SNA graph, be careful as things might get ugly! 
 
 
