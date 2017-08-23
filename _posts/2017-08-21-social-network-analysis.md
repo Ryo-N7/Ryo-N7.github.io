@@ -5,7 +5,7 @@ title: Social Network Analysis
 
 ## A small introduction with the _sna_ and the _igraph_ packages.!
 
-Testing social network analysis with the "sna" and "igraph" packages for R using the Erdos-Renyi model for constructing the graphs. But first, some simple graphs:
+Testing social network analysis with the _sna_ and the _igraph_ packages for R using the Erdos-Renyi model for constructing the graphs. But first, some simple graphs:
 
 Full graph: Every node/vertex has every possible connection.
 
