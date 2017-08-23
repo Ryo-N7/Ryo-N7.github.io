@@ -19,13 +19,7 @@ g_full <- make_full_graph(8, directed = FALSE)
 plot(g_full)
 ```
 
-![][workpls]
-
-[workpls]: https://github.com/Ryo-N7/Ryo-N7.github.io/blob/master/img/ISD-1.jpg
-
-Ring graph: Graph is circular, where neighboring nodes are connected to each other to form a ring. 
-
-<img src = "https://assets-cdn.github.com/images/modules/open_graph/github-logo.png" >
+Ring graph: Graph is circular, where neighboring nodes are connected to each other to form a ring.  
 
 ![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-1.png "blah")
 
@@ -73,7 +67,7 @@ plot.igraph(g1, vertex.label = V(g1)$name, vertex.size = 40,
             vertex.frame.color = "green")
 ```
 
-![](SNA_files/figure-html/unnamed-chunk-5-1.png)
+![](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-5-1.png "ellariananasand")
 
 or you can use the `%>%` pipes with the `set_vertex_attr()` or `set_edge_attr()` etc. functions to achieve similar results: 
 
@@ -86,7 +80,7 @@ g2 <- sample_gnp(30, 0.4, directed = FALSE, loops = FALSE) %>%
 plot(g2)
 ```
 
-![](SNA_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-6-1.png "ellasand")<!-- -->
 
 With actual data such as in `undirected.txt`, just load it in using `read.table()`:
 
@@ -99,7 +93,7 @@ graph1 <- graph_from_data_frame(indirectdata, directed = FALSE, vertices = NULL)
 plot(graph1)
 ```
 
-![](SNA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-7-1.png "ellaand")<!-- -->
 
 How about directed graphs? Simply set `directed =` to `TRUE`: 
 
@@ -111,5 +105,17 @@ graph2 <- graph_from_data_frame(indirectdata, directed = TRUE, vertices = NULL)
 
 plot(graph2)
 ```
+![](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-8-1.png "ellandria")<!-- -->  
 
-![](SNA_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+blabhlasdfjl
+![][workpls]  
+asdlfjasldfjl 
+_ablja_ **asdlfj** hoppity hop biddle widdle 
+
+
+## whoah
+<img src = "https://assets-cdn.github.com/images/modules/open_graph/github-logo.png" >
+
+![][workpls]
+
+[workpls]: https://github.com/Ryo-N7/Ryo-N7.github.io/blob/master/img/ISD-1.jpg
