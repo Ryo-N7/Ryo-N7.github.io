@@ -29,7 +29,7 @@ g_ring <- make_ring(12, directed = FALSE, mutual = FALSE, circular = TRUE)
 plot(g_ring)
 ```
 
-![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-2.png "bl")  
+![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-2-1.png "bl")  
 
 Star graph: A single central vertex is connected by a singular edge from other vertices.
 
@@ -40,7 +40,7 @@ g_star <- make_star(10, center = 1)
 plot(g_star)
 ```
 
-![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-3.png "ah")  
+![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-3-1.png "ah")  
 ### asdf34957834697359gjlgjl
 
 
