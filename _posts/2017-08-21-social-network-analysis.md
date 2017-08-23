@@ -6,7 +6,7 @@ subtitle: Subtitulos - el testing Uno Dos Tres.
 
 
 
-## Social Network Analysis (test22)
+## Social Network Analysis (test40385769745 uuuu)
 
 Testing social network analysis with the "sna" and "igraph" packages for R using the Erdos-Renyi model for constructing the graphs. But first, some simple graphs:
 
@@ -19,24 +19,27 @@ g_full <- make_full_graph(8, directed = FALSE)
 plot(g_full)
 ```
 
-![](img/ISD-1.jpg)
+![][workpls]
+
+[workpls]: https://github.com/Ryo-N7/Ryo-N7.github.io/blob/master/img/ISD-1.jpg
 
 Ring graph: Graph is circular, where neighboring nodes are connected to each other to form a ring. 
 
-```{r echo = FALSE}
+![][stupidmarkdown]
+[stupidmarkdown]: https://assets-cdn.github.com/images/modules/open_graph/github-logo.png
+
+![image](https://github.com/Ryo-N7/Ryo-N7.github.io/blob/master/assets/-2017-08-21-social-network-analysis_files/unnamed-chunk-1-1.png "blah")
+
+```{r}
 
 g_ring <- make_ring(12, directed = FALSE, mutual = FALSE, circular = TRUE)
 
 plot(g_ring)
 ```
 
-
-## asdlfjalsdfjlasdjf
-
-
 Star graph: A single central vertex is connected by a singular edge from other vertices.
 
-```{r eval = FALSE}
+```{r}
 
 g_star <- make_star(10, center = 1)
 
