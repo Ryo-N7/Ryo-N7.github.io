@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Social Network Analysis
-subtitle: A small introduction with the **sna** and the _igraph_ packages.!
 ---
 
-
-
-## Social Network Analysis
+## A small introduction with the _sna_ and the _igraph_ packages.!
 
 Testing social network analysis with the "sna" and "igraph" packages for R using the Erdos-Renyi model for constructing the graphs. But first, some simple graphs:
 
@@ -41,7 +38,6 @@ plot(g_star)
 ```
 
 ![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-3-1.png "ah")  
-### asdf34957834697359gjlgjl
 
 
 Without actual data, we can use `sample_gnp` or `sample_gnm` to create network graphs with randomized data.
