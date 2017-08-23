@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Network Analysis
-subtitle: A small introduction with the _sna_ and the _igraph_ packages.!
+subtitle: A small introduction with the **sna** and the _igraph_ packages.!
 ---
 
 
