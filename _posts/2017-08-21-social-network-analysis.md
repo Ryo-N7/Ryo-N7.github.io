@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SNA (test)
+title: SNA (testerinho)
 subtitle: Subtitulos - el testing Uno Dos Tres.
 ---
 
@@ -27,7 +27,7 @@ Ring graph: Graph is circular, where neighboring nodes are connected to each oth
 
 <img src = "https://assets-cdn.github.com/images/modules/open_graph/github-logo.png" >
 
-![image](https://github.com/Ryo-N7/Ryo-N7.github.io/blob/master/assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-1.png "blah")
+![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-1.png "blah")
 
 ```{r}
 
@@ -62,8 +62,7 @@ g1 <- sample_gnp(30, 0.08, directed = FALSE, loops = FALSE)
 plot(g1)
 ```
 
-![](SNA_files/figure-html/unnamed-chunk-4-1.png)
-
+![workworkwork](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-4-1.png "ellariasand")
 Next we can use the function `igraph()` to customize even more attributes of the SNA graph, be careful as things might get ugly! 
 
 
