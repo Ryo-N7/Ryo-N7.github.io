@@ -18,10 +18,9 @@ library(igraph)
 g_full <- make_full_graph(8, directed = FALSE)
 plot(g_full)
 ```
+![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-1.png "blah")
 
 Ring graph: Graph is circular, where neighboring nodes are connected to each other to form a ring.  
-
-![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-1.png "blah")
 
 ```{r}
 
@@ -29,6 +28,8 @@ g_ring <- make_ring(12, directed = FALSE, mutual = FALSE, circular = TRUE)
 
 plot(g_ring)
 ```
+
+![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-2.png "blah")
 
 Star graph: A single central vertex is connected by a singular edge from other vertices.
 
@@ -39,6 +40,7 @@ g_star <- make_star(10, center = 1)
 plot(g_star)
 ```
 
+![image](../assets/2017-08-21-social-network-analysis_files/unnamed-chunk-1-3.png "blah")
 ### asdf34957834697359gjlgjl
 
 
