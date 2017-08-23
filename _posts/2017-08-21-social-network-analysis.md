@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SNA (testerinho)
-subtitle: Subtitulos - el testing Uno Dos Tres.
+title: Social Network Analysis
+subtitle: A small introduction with the _sna_ and the _igraph_ packages.!
 ---
 
 
 
-## Social Network Analysis (test40385769745 uuuu with html instead)
+## Social Network Analysis
 
 Testing social network analysis with the "sna" and "igraph" packages for R using the Erdos-Renyi model for constructing the graphs. But first, some simple graphs:
 
