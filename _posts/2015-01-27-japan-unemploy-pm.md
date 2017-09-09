@@ -40,6 +40,7 @@ ggplot(economics) +
   geom_line(aes(date, unemploy)) +
   scale_fill_manual(values = c("blue", "red"))
 ```
+![image](../assets/2015-01-27-japan-unemploy-pm_files/hadleys plot-1.png)
 
 Which shows the unemployment data for the USA from 1967 to 2015 along with the Presidents in power during those periods (and their respective political parties). A very simple but poignant graph that (with added historical narrative) can tell us a lot about different stories about the US economy and the politics driving them! Motivated by this I set out to make a similar graph but with data from my birth country, Japan.
 
