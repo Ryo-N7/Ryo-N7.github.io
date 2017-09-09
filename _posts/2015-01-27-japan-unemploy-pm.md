@@ -125,14 +125,6 @@ prime_ministers <- prime_ministers %>% mutate(pm_term = (end - start))
 ```
 Now let's try plotting again:
 ```{r plot again}
-# vertical line for each decade interval as scale_x_date() was being uncooperative...
-grid_year <- as.Date(c("1960-01-01",
-                       "1970-01-01", 
-                       "1980-01-01", 
-                       "1990-01-01", 
-                       "2000-01-01", 
-                       "2010-01-01"))
-
 # second try!
 
 japan_unemploy %>% 
