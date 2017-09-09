@@ -2,9 +2,6 @@
 title: "Visualizing Japan's Prime Ministers and unemployment data."
 author: "RN7"
 date: "September 8, 2017"
-output: 
-  html_document: 
-    keep_md: yes
 ---
 
 ```{r setup, include = FALSE}
