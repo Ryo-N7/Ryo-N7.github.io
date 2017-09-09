@@ -12,31 +12,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this:
 
-```{r hadleys plot, include = FALSE}
-library(dplyr)
-library(ggplot2)
-
-presidential <- presidential %>% filter(start > economics$date[1])
-
-ggplot(economics) +
-  geom_rect(
-    aes(xmin = start, xmax = end, fill = party), 
-    ymin = -Inf, ymax = Inf, alpha = 0.2,
-    data = presidential
-  ) +
-  geom_vline(
-    aes(xintercept = as.numeric(start)), 
-    data = presidential,
-    color = "grey50", alpha = 0.5
-  ) +
-  geom_text(
-    aes(x = start, y = 2500, label = name), 
-    data = presidential, 
-    size = 3, nudge_x = 50
-  ) +
-  geom_line(aes(date, unemploy)) +
-  scale_fill_manual(values = c("blue", "red"))
-```
 ![image](../assets/2015-01-27-japan-unemploy-pm_files/hadleys-plot-1.png)
 
 Which shows the unemployment data for the USA from 1967 to 2015 along with the Presidents in power during those periods (and their respective political parties). A very simple but poignant graph that (with added historical narrative) can tell us a lot about different stories about the US economy and the politics driving them! Motivated by this I set out to make a similar graph but with data from my birth country, Japan.
@@ -88,6 +63,7 @@ glimpse(japan_unemploy)   # glimpse() is similar to using str() but tidier
 
 ```{r set date format, warning=FALSE}
 library(stringr)
+library(dplyr)
 
 japan_unemploy$DATE <- as.Date(japan_unemploy$DATE, format = "%Y-%m-%d")
 
@@ -115,6 +91,7 @@ Let's start plotting!
   Here we use **ggrepel** package to prevent the labels from overlapping. `geom_vline()` and `geom_hline()` are used to create custom vertical and horizontal lines on the starting and ending dates of each Prime Minister's term and for the mean unemployment rate respectively.
 
 ```{r first plot, warning=FALSE}
+library(ggplot2)  # for plotting
 library(ggrepel)  # to help with overlapping labels
 library(scales)   # to help format scales and labels
 
