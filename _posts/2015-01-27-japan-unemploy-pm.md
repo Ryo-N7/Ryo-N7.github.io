@@ -132,7 +132,7 @@ japan_unemploy %>%
 (prime_ministers$end - prime_ministers$start) %>% head(8)   # only show results from first 8 rows
 ```
 
-  By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is <a href = "https://en.wikipedia.org/wiki/Tanzan_Ishibashi">Tanzan Ishibashi</a>, who unfortunately was incapacitated by stroke. Others such as <a href = "https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno">Sosuke Uno</a> (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
+  By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is <a href = "https://en.wikipedia.org/wiki/Tanzan_Ishibashi">Tanzan Ishibashi</a>, who unfortunately was incapacitated by stroke. Others such as <a href = "https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno">S&#333;suke Uno</a> (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
 
 Now we just have to use mutate() to add this data into a new column:
 ```{r PM_term add}
@@ -182,4 +182,6 @@ japan_unemploy %>%
 ```
 ![image](../assets/2015-01-27-japan-unemploy-pm_files/plot-again-1.png)
 
-Much better! I wanted to fill in the spaces of the terms with the political parties, however, most of the Prime Ministers came from the Liberal Democratic Party or LDP (Jiminto in Japanese) which dominated Japanese politics from 1955 to 1993! Also with so many segments of PMs it wouldn't look as pretty as Hadley's graph.
+Much better! I wanted to fill in the spaces of the terms with the political parties, however, most of the Prime Ministers came from the Liberal Democratic Party or LDP (Jimint&#333; in Japanese) which dominated Japanese politics from 1955 to all the way to 1993! Also with so many segments of PMs it wouldn't look as pretty as Hadley's graph.
+
+Anyways, what I thought would be a quick practice turned out to take a lot longer as I had to fiddle with the aesthetics quite a bit to get everything juuust right. To finish off, I'll leave you with this article, <a href = https://www.japantimes.co.jp/news/2017/03/31/business/economy-business/joblessness-falls-22-year-low-2-8-february/> Japan's unemployment rate falls to 22-year low of 2.8% in Feb. 2017</a>.
