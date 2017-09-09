@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this:
 
-```{r hadleys plot, echo = FALSE, warning = FALSE, message = FALSE}
+```{r hadleys plot, include = FALSE}
 library(dplyr)
 library(ggplot2)
 
@@ -37,7 +37,7 @@ ggplot(economics) +
   geom_line(aes(date, unemploy)) +
   scale_fill_manual(values = c("blue", "red"))
 ```
-![image](../assets/2015-01-27-japan-unemploy-pm_files/hadleys plot-1.png)
+![image](../assets/2015-01-27-japan-unemploy-pm_files/hadleys-plot-1.png)
 
 Which shows the unemployment data for the USA from 1967 to 2015 along with the Presidents in power during those periods (and their respective political parties). A very simple but poignant graph that (with added historical narrative) can tell us a lot about different stories about the US economy and the politics driving them! Motivated by this I set out to make a similar graph but with data from my birth country, Japan.
 
@@ -144,7 +144,8 @@ japan_unemploy %>%
   theme_bw()
 
 ```
-
+ ![image](../assets/2015-01-27-japan-unemploy-pm_files/first-plot-1.png)
+ 
   Looking at this graph, even with using `geom_text_repel()` there are too many Prime Ministers for it to look nice. This speaks for the highly turbulent "revolving door" of politics in Japan, especially in times of economic downturns such as in the 1990s and early 2000s (although many were caught in unrelated scandals or other kerfluffles too...). 
 
   To unclutter our graph, let's only show Prime Ministers whose term exceeded 2 years (730 days to be exact). 
@@ -198,5 +199,6 @@ japan_unemploy %>%
   theme_bw()
 
 ```
+![image](../assets/2015-01-27-japan-unemploy-pm_files/plot-again-1.png)
 
 Much better!
