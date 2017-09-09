@@ -2,6 +2,9 @@
 title: "Visualizing Japan's Prime Ministers and unemployment data."
 author: "RN7"
 date: "September 8, 2017"
+output:
+    md_document:
+      variant: markdown_github
 ---
 
 ## Simple graphing with ggplot2. 
