@@ -160,11 +160,14 @@ japan_unemploy %>%
     data = prime_ministers, 
     aes(xintercept = as.numeric(start)),
     color = "blue", alpha = 0.5) +
-  geom_vline(
-    xintercept = as.numeric(grid_year), color = "#636363") +
+  scale_x_date(
+    limits = as.Date(c("1960-01-01", "2020-01-01")),
+    date_labels = "%Y"
+  ) +
   geom_text_repel(
     data = prime_ministers %>% filter(start > japan_unemploy$date[1], pm_term > 730),
-    aes(x = start, y = 0.06, label = name), nudge_x = 10
+    aes(x = start, y = 0.06, label = name), 
+    force = 15, arrow = arrow(length = unit(0.01, 'npc'))
   ) +
   scale_y_continuous(
     labels = percent_format(), 
@@ -179,4 +182,4 @@ japan_unemploy %>%
 ```
 ![image](../assets/2015-01-27-japan-unemploy-pm_files/plot-again-1.png)
 
-Much better!
+Much better! I wanted to fill in the spaces of the terms with the political parties, however, most of the Prime Ministers came from the Liberal Democratic Party or LDP (Jiminto in Japanese) which dominated Japanese politics from 1955 to 1993! Also with so many segments of PMs it wouldn't look as pretty as Hadley's graph.
