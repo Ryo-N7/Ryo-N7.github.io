@@ -12,10 +12,9 @@ I was flipping through Hadley Wickham's *ggplot2* book the other day when I came
 
 Which shows the unemployment data for the USA from 1967 to 2015 along with the Presidents in power during those periods (and their respective political parties). A very simple but poignant graph that (with added historical narrative) can tell us a lot about different stories about the US economy and the politics driving them! Motivated by this I set out to make a similar graph but with data from my birth country, Japan.
 
-   For the unemployment data, I was able to download a dataset from the <a href = "https://fred.stlouisfed.org/series/LRHUTTTTJPM156S">Federal Reserve Bank of St. Louis</a> website. It's a really fantastic source with loads of raw data from around the world that you can download (in Excel, .csv, .png, PowerPoint, and .pdf formats), I will definitely be coming back here for other articles! This dataset comprises of the harmonized monthly unemployment rate for ALL person for Japan. There was another dataset for Aged 15-64 however that one only went back to January of 1970. I wanted to go back to 1960 (or better 1945) for a better look at Japan's post-war economic history and recovery so I went with this one instead. For a more in-depth analysis I would hunt down some Japanese sources but for today we are just focusing on the simple **ggplot2** graph.
+For the unemployment data, I was able to download a dataset from the <a href = "https://fred.stlouisfed.org/series/LRHUTTTTJPM156S">Federal Reserve Bank of St. Louis</a> website. It's a really fantastic source with loads of raw data from around the world that you can download (in Excel, .csv, .png, PowerPoint, and .pdf formats), I will definitely be coming back here for other articles! This dataset comprises of the harmonized monthly unemployment rate for ALL person for Japan. There was another dataset for Aged 15-64 however that one only went back to January of 1970. I wanted to go back to 1960 (or better 1945) for a better look at Japan's post-war economic history and recovery so I went with this one instead. For a more in-depth analysis I would hunt down some Japanese sources but for today we are just focusing on the simple **ggplot2** graph.
 
-   For the dataset about the Prime Ministers of Japan I went to Wikipedia, pretty reliable and easy to use. Normally, I would web-scrape the information using **rvest** however, I did not know how to scrap multiple tables at once (as the Prime Ministers were divided into individual tables according to the reigning Emperor) so I created it manually. Thankfully this didn't take too long!
-
+For the dataset about the Prime Ministers of Japan I went to Wikipedia, pretty reliable and easy to use. Normally, I would web-scrape the information using **rvest** however, I did not know how to scrap multiple tables at once (as the Prime Ministers were divided into individual tables according to the reigning Emperor) so I created it manually. Thankfully this didn't take too long!
 ```{r create prime ministers data set}
 prime_ministers <- data.frame(
   name = c("Tetsu Katayama", "Hitoshi Ashida", "Shigeru Yoshida", "Ichiro Hatoyama", "Tanzan Ishibashi",
@@ -44,7 +43,6 @@ prime_ministers <- data.frame(
   stringsAsFactors = FALSE
 )
 ```
-
 With that out of the way we can load the unemployment data set and set about tidying out the raw data.
 
 ```{r load data, warning=FALSE}
@@ -54,9 +52,7 @@ japan_unemploy <- read.csv("~/R materials/Misc.ProjectsTutorials/japan_pm/LRUNTT
 library(tibble)
 glimpse(japan_unemploy)   # glimpse() is similar to using str() but tidier
 ```
-
   We can see here that the dates are in character format and that the column names are in all caps. We can convert the dates using the `as.Date()` function included in base R and change the column names to lower case using the `str_lower()` function from the **stringr** package:
-
 ```{r set date format, warning=FALSE}
 library(stringr)
 library(dplyr)
@@ -69,9 +65,7 @@ colnames(japan_unemploy) <- japan_unemploy %>%
 
 glimpse(japan_unemploy)
 ```
-
 Now, we need to change the column name for the unemployment data to something more reasonable:
-
 ```{r rename column, warning=FALSE}
 japan_unemploy <- japan_unemploy %>% rename(unemployed = lrunttttjpm156s)
 
@@ -79,13 +73,11 @@ glimpse(japan_unemploy)
 
 glimpse(prime_ministers)
 ```
-
 Fantastic! Now we have two tidied data sets that we can use for our graph.
 
 Let's start plotting!
 
-  Here we use **ggrepel** package to prevent the labels from overlapping. `geom_vline()` and `geom_hline()` are used to create custom vertical and horizontal lines on the starting and ending dates of each Prime Minister's term and for the mean unemployment rate respectively.
-
+Here we use **ggrepel** package to prevent the labels from overlapping. `geom_vline()` and `geom_hline()` are used to create custom vertical and horizontal lines on the starting and ending dates of each Prime Minister's term and for the mean unemployment rate respectively.
 ```{r first plot, warning=FALSE}
 library(ggplot2)  # for plotting
 library(ggrepel)  # to help with overlapping labels
@@ -119,23 +111,19 @@ japan_unemploy %>%
 ```
  ![image](../assets/2015-01-27-japan-unemploy-pm_files/first-plot-1.png)
  
-  Looking at this graph, even with using `geom_text_repel()` there are too many Prime Ministers for it to look nice. This speaks for the highly turbulent "revolving door" of politics in Japan, especially in times of economic downturns such as in the 1990s and early 2000s (although many were caught in unrelated scandals or other kerfluffles too...). 
+Looking at this graph, even with using `geom_text_repel()` there are too many Prime Ministers for it to look nice. This speaks for the highly turbulent "revolving door" of politics in Japan, especially in times of economic downturns such as in the 1990s and early 2000s (although many were caught in unrelated scandals or other kerfluffles too...). 
 
-  To unclutter our graph, let's only show Prime Ministers whose term exceeded 2 years (730 days to be exact). 
-
+To unclutter our graph, let's only show Prime Ministers whose term exceeded 2 years (730 days to be exact). 
 ```{r PM_term calculate}
 (prime_ministers$end - prime_ministers$start) %>% head(8)   # only show results from first 8 rows
 ```
-
-  By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is <a href = "https://en.wikipedia.org/wiki/Tanzan_Ishibashi">Tanzan Ishibashi</a>, who unfortunately was incapacitated by stroke. Others such as <a href = "https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno">S&#333;suke Uno</a> (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
+By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is <a href = "https://en.wikipedia.org/wiki/Tanzan_Ishibashi">Tanzan Ishibashi</a>, who unfortunately was incapacitated by stroke. Others such as <a href = "https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno">S&#333;suke Uno</a> (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
 
 Now we just have to use mutate() to add this data into a new column:
 ```{r PM_term add}
 prime_ministers <- prime_ministers %>% mutate(pm_term = (end - start))
 ```
-
 Now let's try plotting again:
-
 ```{r plot again}
 # vertical line for each decade interval as scale_x_date() was being uncooperative...
 grid_year <- as.Date(c("1960-01-01",
