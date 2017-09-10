@@ -10,8 +10,11 @@ Recently finished a MSc. in Industrial-Organizational and Business Psychology at
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 **Contact**: ryonakagawara[at]gmail[dot]com
+
 Connect with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
+
 [PDF version](ryo-n7.github.io/RyoNakagawara_cv.pdf)
+
 **Current Location**: London, UK
 
 ## Education
