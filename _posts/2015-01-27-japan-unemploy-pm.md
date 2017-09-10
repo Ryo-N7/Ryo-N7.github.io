@@ -6,6 +6,8 @@ date: "September 8, 2017"
 output:
     md_document:
       variant: markdown_github
+      preserve_yaml: true
+always_allow_html: yes
 ---
 
 ## Simple graphing with ggplot2. 
