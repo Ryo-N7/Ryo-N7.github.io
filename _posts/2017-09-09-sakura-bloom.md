@@ -231,7 +231,7 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 ## `geom_smooth()` using method = 'loess'
 ```
 
-<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-2.png" width="672" />
+<img src="../assets/2017-09-09-sakura-bloom_files/unnamed-chunk-1-2.png" width="672" />
 
 ```r
 # Could we make it more... sakura-y?
@@ -247,7 +247,7 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 ## `geom_smooth()` using method = 'loess'
 ```
 
-<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-3.png" width="672" />
+<img src="../assets/2017-09-09-sakura-bloom_files/unnamed-chunk-1-3.png" width="672" />
 
 ```r
 # Better! but does not look good on a drab grey background...
@@ -316,5 +316,5 @@ sakura_r()
 ## `geom_smooth()` using method = 'loess'
 ```
 
-<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-4.png" width="672" />
+<img src="../assets/2017-09-09-sakura-bloom_files/unnamed-chunk-1-4.png" width="672" />
 
