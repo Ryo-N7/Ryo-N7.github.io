@@ -1,16 +1,52 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me/CV
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Born in Japan, grew up in America and Israel, and have also Germany and now the United Kingdom, I'm quite proud to say that I am a citizen of the world!
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Recently finished a MSc. in Industrial-Organizational and Business Psychology at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, influencing/motivating behavioral change for the public good.
 
-What else do you need?
+Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
-### my history
+**Contact**: ryonakagawara[at]gmail[dot]com
+Connect with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
+[PDF version](ryo-n7.github.io/RyoNakagawara_cv.pdf)
+**Current Location**: London, UK
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+## Education
+
+**MSc** Industrial-Organizational and Business Psychology: University College London, UK
+    Dissertation title: ""
+    Supervisor: Dr. Dimitrios Tsivrikos
+    
+**BA** Economics: Chapman University, USA
+
+**BA** Psychology: Chapman University, USA
+
+## Skills
+### Technical skills
+* R:
+
+* Graphical visualization:
+
+* Inquisit Lab 5:
+
+* SPSS:
+
+* Nvivo 10:
+
+
+### Communication and teamwork skills
+* Bilingual: Japanese and English
+* Work experience in variety of cultures: Ghana, India, Germany, USA, Ireland, and Japan
+* Research Associate in [National Science Foundation project]() while at Chapman University
+  + Web Content Developer for communication of progress and findings 
+* Marketing and Business Development Intern at RedNight Consulting
+* Youth football (soccer) coach in Ghana, India, and Japan: Ages 9-14
+* Teacher in India: Reading comprehension, spelling, grammar, physical education
+* [Blogging about data analysis using R]()
+
+
+
+![](../img/about-me.JPG)
