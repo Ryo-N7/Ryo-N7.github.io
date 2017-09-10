@@ -212,7 +212,7 @@ ggplot(sakura, aes(x = as.numeric(Year), y = Day_Of_Year)) +
   scale_y_continuous(labels = function(x) format(as.Date(as.character(x), "%j"), "%d-%b"))
 ```
 
-<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+<img src="2017-09-09-sakura_bloom_files/figure-html/unnamed-chunk-1-1.png" width="672" />
 
 ```r
 # does not look very clear...
