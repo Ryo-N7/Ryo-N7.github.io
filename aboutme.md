@@ -3,7 +3,7 @@ layout: page
 title: About Me/CV
 ---
 
-Born in Japan, grew up in America and Israel, and have also Germany and now the United Kingdom, I'm quite proud to say that I am a citizen of the world!
+Born in Japan, grew up in America and Israel, having also lived Germany, and currently residing in the United Kingdom, I'm quite proud to say that I am a citizen of the world!
 
 Recently finished a MSc. in Industrial-Organizational and Business Psychology at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, influencing/motivating behavioral change for the public good.
 
@@ -11,7 +11,7 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
+**Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
 
 [PDF version](ryo-n7.github.io/RyoNakagawara_cv.pdf)
 
