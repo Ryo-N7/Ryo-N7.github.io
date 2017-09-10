@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Visualizing Japan's Prime Ministers and unemployment data."
 author: "RN7"
 date: "September 8, 2017"
