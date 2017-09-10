@@ -1,194 +1,318 @@
-Simple graphing with ggplot2.
------------------------------
 
-I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this:
 
-![](japan_pm_files/figure-markdown_github/hadleys-plot-1.png)
-
-Which shows the unemployment data for the USA from 1967 to 2015 along with the Presidents in power during those periods (and their respective political parties). A very simple but poignant graph that (with added historical narrative) can tell us a lot about different stories about the US economy and the politics driving them! Motivated by this I set out to make a similar graph but with data from my birth country, Japan.
-
-For the unemployment data, I was able to download a dataset from the [Federal Reserve Bank of St. Louis](https://fred.stlouisfed.org/series/LRHUTTTTJPM156S) website. It's a really fantastic source with loads of raw data from around the world that you can download (in Excel, .csv, .png, PowerPoint, and .pdf formats), I will definitely be coming back here for other articles! This dataset comprises of the harmonized monthly unemployment rate for ALL person for Japan. There was another dataset for Aged 15-64 however that one only went back to January of 1970. I wanted to go back to 1960 (or better 1945) for a better look at Japan's post-war economic history and recovery so I went with this one instead. For a more in-depth analysis I would hunt down some Japanese sources but for today we are just focusing on the simple **ggplot2** graph.
-
-For the dataset about the Prime Ministers of Japan I went to Wikipedia, a source that's pretty reliable and easy to use. Normally, I would web-scrape the information using **rvest** however, I did not know how to scrap multiple tables at once (as the Prime Ministers were divided into individual tables according to the reigning Emperor) so I created it manually. Thankfully this didn't take too long!
-
-``` r
-prime_ministers <- data.frame(
-  name = c("Tetsu Katayama", "Hitoshi Ashida", "Shigeru Yoshida", "Ichiro Hatoyama", "Tanzan Ishibashi",
-           "Nobusuke Kishi", "Hayato Ikeda", "Eisaku Sato", "Kakuei Tanaka", "Takeo Miki",
-           "Takeo Fukuda", "Masayoshi Ohira", "Zenko Suzuki", "Yasuhiro Nakasone", "Noboru Takeshita",
-           "Sosuke Uno", "Toshiki Kaifu", "Kiichi Miyazawa", "Morihiro Hosokawa", "Tsutomu Hata",
-           "Tomiichi Murayama", "Ryutaro Hashimoto", "Keizo Obuchi", "Yoshiro Mori", "Junichiro Koizumi",
-           "Shinzo Abe (1)", "Yasuo Fukuda", "Taro Aso", "Yukio Hatoyama", "Naoto Kan",
-           "Yoshihiko Noda", "Shinzo Abe (2)"),
-  
-  start = as.Date(c("1947-05-24", "1948-03-10", "1948-10-15", "1954-12-10", "1956-12-23",
-                    "1957-02-25", "1960-07-19", "1964-11-09", "1972-07-07", "1974-12-09",
-                    "1976-12-24", "1978-12-07", "1980-07-17", "1982-11-27", "1987-11-06",
-                    "1989-06-03", "1989-08-10", "1991-11-05", "1993-08-09", "1994-04-28",
-                    "1994-06-30", "1996-01-11", "1998-06-30", "2000-04-05", "2001-04-26",
-                    "2006-09-26", "2007-09-26", "2008-09-24", "2009-09-16", "2010-06-08",
-                    "2011-09-02", "2012-12-26")),
-  
-  end = as.Date(c("1948-03-10", "1948-10-15", "1954-12-10", "1956-12-23", "1957-02-25",
-                  "1960-07-19", "1964-11-09", "1972-07-07", "1974-12-09", "1976-12-24",
-                  "1978-12-07", "1980-07-17", "1982-11-27", "1987-11-06", "1989-06-03",
-                  "1989-08-10", "1991-11-05", "1993-08-09", "1994-04-28", "1994-06-30",
-                  "1996-01-11", "1998-06-30", "2000-04-05", "2001-04-26", "2006-09-26",
-                  "2007-09-26", "2008-09-24", "2009-09-16", "2010-06-08", "2011-09-02",
-                  "2012-12-26", "2017-01-01")),
-  stringsAsFactors = FALSE
-)
+```r
+# Sakura data
+library(tidyverse)
 ```
 
-With that out of the way we can load the unemployment data set and set about tidying out the raw data.
-
-``` r
-# load data ---------------------------------------------------------------
-japan_unemploy <- read.csv("~/R_materials/Misc.ProjectsTutorials/japan_pm/LRUNTTTTJPM156S.csv", 
-                           header = TRUE, stringsAsFactors = FALSE)
-library(tibble)
-glimpse(japan_unemploy)   # glimpse() is similar to using str() but tidier
+```
+## Warning: package 'tidyverse' was built under R version 3.4.1
 ```
 
-    ## Observations: 689
-    ## Variables: 2
-    ## $ DATE            <chr> "1960-01-01", "1960-02-01", "1960-03-01", "196...
-    ## $ LRUNTTTTJPM156S <dbl> 1.9, 1.7, 1.7, 1.7, 1.7, 1.6, 1.5, 1.6, 1.6, 1...
+```
+## Loading tidyverse: ggplot2
+## Loading tidyverse: tibble
+## Loading tidyverse: tidyr
+## Loading tidyverse: readr
+## Loading tidyverse: purrr
+## Loading tidyverse: dplyr
+```
 
-We can see here that the dates are in character format and that the column names are in all caps. We can convert the dates using the `as.Date()` function included in base R and change the column names to lower case using the `str_lower()` function from the **stringr** package:
+```
+## Warning: package 'ggplot2' was built under R version 3.4.1
+```
 
-``` r
+```
+## Warning: package 'tibble' was built under R version 3.4.1
+```
+
+```
+## Warning: package 'tidyr' was built under R version 3.4.1
+```
+
+```
+## Warning: package 'purrr' was built under R version 3.4.1
+```
+
+```
+## Warning: package 'dplyr' was built under R version 3.4.1
+```
+
+```
+## Conflicts with tidy packages ----------------------------------------------
+```
+
+```
+## filter(): dplyr, stats
+## lag():    dplyr, stats
+```
+
+```r
 library(stringr)
+library(scales)
+```
 
-japan_unemploy$DATE <- as.Date(japan_unemploy$DATE, format = "%Y-%m-%d")
+```
+## Warning: package 'scales' was built under R version 3.4.1
+```
 
-colnames(japan_unemploy) <- japan_unemploy %>% 
+```
+## 
+## Attaching package: 'scales'
+```
+
+```
+## The following object is masked from 'package:purrr':
+## 
+##     discard
+```
+
+```
+## The following object is masked from 'package:readr':
+## 
+##     col_factor
+```
+
+```r
+# Load data ---------------------------------------------------------------
+
+sakura <- read.csv("~/R_materials/Kyoto_Flowers.csv")
+View(sakura)
+
+# Tidy and Clean ----------------------------------------------------------
+
+# First data point doesn't show until 812 AD... just skip ahead to that.
+sakura <- sakura %>% filter(AD %in% 812:2015)
+```
+
+```
+## Warning: package 'bindrcpp' was built under R version 3.4.1
+```
+
+```r
+# look at column names
+colnames(sakura)
+```
+
+```
+## [1] "AD"                        "Full.flowering.date..DOY."
+## [3] "Full.flowering.date"       "Source.code"              
+## [5] "Data.type.code"            "Reference.Name"           
+## [7] "X"
+```
+
+```r
+# colnames don't look very neat and tidy...
+colnames(sakura) <- sakura %>% 
   colnames() %>% 
-  str_to_lower()
+  str_to_lower() %>%                  # to lower case letters
+  str_replace_all("\\.", "_")         # replace . with _
 
-glimpse(japan_unemploy)
+colnames(sakura)
 ```
 
-    ## Observations: 689
-    ## Variables: 2
-    ## $ date            <date> 1960-01-01, 1960-02-01, 1960-03-01, 1960-04-0...
-    ## $ lrunttttjpm156s <dbl> 1.9, 1.7, 1.7, 1.7, 1.7, 1.6, 1.5, 1.6, 1.6, 1...
-
-Now, we need to change the column name for the unemployment data to something more reasonable:
-
-``` r
-japan_unemploy <- japan_unemploy %>% rename(unemployed = lrunttttjpm156s)
-
-glimpse(japan_unemploy)
+```
+## [1] "ad"                        "full_flowering_date__doy_"
+## [3] "full_flowering_date"       "source_code"              
+## [5] "data_type_code"            "reference_name"           
+## [7] "x"
 ```
 
-    ## Observations: 689
-    ## Variables: 2
-    ## $ date       <date> 1960-01-01, 1960-02-01, 1960-03-01, 1960-04-01, 19...
-    ## $ unemployed <dbl> 1.9, 1.7, 1.7, 1.7, 1.7, 1.6, 1.5, 1.6, 1.6, 1.4, 1...
+```r
+# manually rename two of the columns...
+colnames(sakura)[1] <- "year"
+colnames(sakura)[2] <- "full_flowering_day_of_year"
 
-``` r
-glimpse(prime_ministers)
+# remove rows without flowering date
+sakura <- sakura %>% filter(!is.na(full_flowering_date))
+
+# turn three digit number into month and day values.
+date_sep <- as.character(sakura$full_flowering_date) %>% 
+  str_replace_all("(.{1})(.*)", "\\1.\\2") %>%            # split into two backreferences on the first digit, then place a .
+  as.data.frame()
+
+colnames(date_sep)[1] <- "date_fl"                        # properly name column
+colnames(date_sep)
 ```
 
-    ## Observations: 32
-    ## Variables: 3
-    ## $ name  <chr> "Tetsu Katayama", "Hitoshi Ashida", "Shigeru Yoshida", "...
-    ## $ start <date> 1947-05-24, 1948-03-10, 1948-10-15, 1954-12-10, 1956-12...
-    ## $ end   <date> 1948-03-10, 1948-10-15, 1954-12-10, 1956-12-23, 1957-02...
-
-Fantastic! Now we have two tidied data sets that we can use for our graph.
-
-Let's start plotting!
-
-Here we use **ggrepel** package to prevent the labels from overlapping. `geom_vline()` and `geom_hline()` are used to create custom vertical and horizontal lines on the starting and ending dates of each Prime Minister's term and for the mean unemployment rate respectively.
-
-``` r
-library(ggrepel)  # to help with overlapping labels
-library(scales)   # to help format scales and labels
-
-japan_unemploy %>% 
-  ggplot() +
-  geom_line(
-    aes(date, unemployed/100)
-    ) +
-  geom_vline(
-    data = prime_ministers, 
-    aes(xintercept = as.numeric(start)),
-    color = "blue", alpha = 0.5
-    ) +
-  geom_text_repel(
-    data = prime_ministers %>% filter(start > japan_unemploy$date[1]),
-    aes(x = start, y = 0.015, label = name)
-    ) +
-  scale_y_continuous(
-    labels = percent_format()
-    ) +
-  geom_hline(
-    yintercept = mean(japan_unemploy$unemployed/100), color = "red", alpha = 0.5
-    ) +
-  labs(
-    x = "Year", y = "Unemployment Rate (%)"
-    ) +
-  theme_bw()
+```
+## [1] "date_fl"
 ```
 
-![](japan_pm_files/figure-markdown_github/first-plot-1.png)
+```r
+date_sep <- date_sep %>% separate(date_fl, c("month", "day"), "\\.")    # separate into 'month' and 'day' columns on .
 
-Looking at this graph, even with using `geom_text_repel()` there are too many Prime Ministers for it to look nice. This speaks for the highly turbulent "revolving door" of politics in Japan, especially in times of economic downturns such as in the 1990s and early 2000s (although many were caught in unrelated scandals or other kerfluffles too...).
+sakura <- bind_cols(date_sep, sakura)   # combine date_sep into sakura
+sakura <- sakura %>% select(-full_flowering_date, -full_flowering_day_of_year, -x, -data_type_code, -reference_name, -source_code)  # remove extraneous columns
 
-To unclutter our graph, let's only show Prime Ministers whose term exceeded 2 years (730 days to be exact).
-
-``` r
-(prime_ministers$end - prime_ministers$start) %>% head(8)   # only show results from first 8 rows
+library(lubridate)
 ```
 
-    ## Time differences in days
-    ## [1]  291  219 2247  744   64 1240 1574 2797
-
-By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is [Tanzan Ishibashi](https://en.wikipedia.org/wiki/Tanzan_Ishibashi), who unfortunately was incapacitated by stroke. Others such as [S&\#333suke Uno](https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno) (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
-
-Now we just have to use mutate() to add this data into a new column:
-
-``` r
-prime_ministers <- prime_ministers %>% mutate(pm_term = (end - start))
+```
+## 
+## Attaching package: 'lubridate'
 ```
 
-Now let's try plotting again:
-
-``` r
-# second try!
-
-japan_unemploy %>% 
-  ggplot() +
-  geom_line(
-    aes(date, unemployed/100)) +
-  geom_vline(
-    data = prime_ministers, 
-    aes(xintercept = as.numeric(start)),
-    color = "blue", alpha = 0.5) +
-  scale_x_date(
-    limits = as.Date(c("1960-01-01", "2020-01-01")),
-    date_labels = "%Y"
-  ) +
-  geom_text_repel(
-    data = prime_ministers %>% filter(start > japan_unemploy$date[1], pm_term > 730),
-    aes(x = start, y = 0.06, label = name), 
-    force = 15, arrow = arrow(length = unit(0.01, 'npc'))
-  ) +
-  scale_y_continuous(
-    labels = percent_format(), 
-    limits = c(0.0, 0.07),
-    expand = c(0, 0)) +
-  geom_hline(
-    yintercept = median(japan_unemploy$unemployed/100), color = "red") +
-  labs(
-    x = "Year", y = "Unemployment Rate (%)") +
-  theme_bw()
+```
+## The following object is masked from 'package:base':
+## 
+##     date
 ```
 
-![](japan_pm_files/figure-markdown_github/plot-again-1.png)
+```r
+# ?make_date()
+# ?format()
+# use make_date function to create separate variable in full date format
+sakura <- sakura %>% 
+  mutate(bloom = make_date(year, month, day))
 
-Much better! I wanted to fill in the spaces of the terms with the political parties, however, most of the Prime Ministers came from the Liberal Democratic Party or LDP (Jimintō in Japanese) which dominated Japanese politics from 1955 to all the way to 1993! Also with so many segments of PMs it wouldn't look as pretty as Hadley's graph.
+# Reformat date variables into specific date formats:
+sakura$Day_Of_Year <- as.numeric(format(sakura$bloom, "%j"))   #  %j: decimal day of the year
+sakura$Year <- format(sakura$bloom, "%Y")                      #  %Y: 4 digit year
+sakura$Month <- format(sakura$bloom, "%b")                     #  %b: abbreviated month
+sakura$Day <- format(sakura$bloom, "%d")                       #  %d: decimal date
 
-Anyways, what I thought would be a quick practice turned out to take a lot longer as I had to fiddle with the aesthetics quite a bit to get everything juuust right. To finish off, I'll leave you with this article, [Japan's unemployment rate falls to 22-year low of 2.8% in Feb. 2017](https://www.japantimes.co.jp/news/2017/03/31/business/economy-business/joblessness-falls-22-year-low-2-8-february/). Under Shinzō Abe, unemployment has decreased significantly, but has it had positive impacts on the Japanese economy in other areas? That's a long debate for another article...!
+glimpse(sakura)
+```
+
+```
+## Observations: 827
+## Variables: 8
+## $ month       <chr> "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", ...
+## $ day         <chr> "01", "15", "06", "18", "14", "09", "16", "05", "1...
+## $ year        <int> 812, 815, 831, 851, 853, 864, 866, 869, 889, 891, ...
+## $ bloom       <date> 0812-04-01, 0815-04-15, 0831-04-06, 0851-04-18, 0...
+## $ Day_Of_Year <dbl> 92, 105, 96, 108, 104, 100, 106, 95, 104, 109, 108...
+## $ Year        <chr> "0812", "0815", "0831", "0851", "0853", "0864", "0...
+## $ Month       <chr> "Apr", "Apr", "Apr", "Apr", "Apr", "Apr", "Apr", "...
+## $ Day         <chr> "01", "15", "06", "18", "14", "09", "16", "05", "1...
+```
+
+```r
+# date format are all in <chr>
+# for plotting need to convert with as.numeric() for axes!
+sakura$Year %>% as.numeric() %>% glimpse()
+```
+
+```
+##  num [1:827] 812 815 831 851 853 864 866 869 889 891 ...
+```
+
+```r
+# Plotting ----------------------------------------------------------------
+
+ggplot(sakura, aes(x = as.numeric(Year), y = Day_Of_Year)) +
+  geom_point() +
+  geom_line() +
+  scale_y_continuous(labels = function(x) format(as.Date(as.character(x), "%j"), "%d-%b"))
+```
+
+<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+
+```r
+# does not look very clear...
+
+ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' variable...
+  geom_point() +
+  geom_smooth(span = 0.2, size = 3) +
+  scale_y_continuous(labels = function(x) format(as.Date(as.character(x), "%j"), "%b-%d"),
+                     limits = c(84, 125))
+```
+
+```
+## `geom_smooth()` using method = 'loess'
+```
+
+<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-2.png" width="672" />
+
+```r
+# Could we make it more... sakura-y?
+
+ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' variable...
+  geom_point(shape = 8, size = 5, color = "pink") +
+  geom_smooth(span = 0.2, color = "#dd1c77", fill = "red", size = 3) +
+  scale_y_continuous(labels = function(x) format(as.Date(as.character(x), "%j"), "%b-%d"),
+                     limits = c(84, 125))
+```
+
+```
+## `geom_smooth()` using method = 'loess'
+```
+
+<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-3.png" width="672" />
+
+```r
+# Better! but does not look good on a drab grey background...
+
+#### With background image!
+library(jpeg)
+library(grid)
+library(gridExtra)
+```
+
+```
+## 
+## Attaching package: 'gridExtra'
+```
+
+```
+## The following object is masked from 'package:dplyr':
+## 
+##     combine
+```
+
+```r
+library(cowplot)
+```
+
+```
+## Warning: package 'cowplot' was built under R version 3.4.1
+```
+
+```
+## 
+## Attaching package: 'cowplot'
+```
+
+```
+## The following object is masked from 'package:ggplot2':
+## 
+##     ggsave
+```
+
+```r
+sakura_r <- function(df = sakura, xvar = 'as.numeric(Year)', yvar = 'Day_Of_Year') {
+  img_url <- 'https://i.imgur.com/CgwU1zb.jpg'
+  tmp_file <- tempfile()
+  download.file(img_url, tmp_file, mode = "wb")
+  img <- readJPEG(tmp_file)
+  file.remove(tmp_file)
+  
+  rstr <- rasterGrob(img, width = unit(1,"npc"), height = unit(1,"npc"), interpolate = FALSE)
+  
+  g <- ggplot(data = df)  + annotation_custom(rstr, -Inf, Inf, -Inf, Inf)
+  g <- g + geom_point(aes_string(x = xvar, y = yvar), alpha = 0.8, color = "pink", shape = 8)
+  g <- g + geom_smooth(aes_string(x = xvar, y = yvar), color = "#dd1c77", span = 0.2, size = 2.5, fill = "#f768a1", alpha = 0.7)
+  g <- g + scale_y_continuous(labels = function(x) format(as.Date(as.character(x), "%j"), "%d-%b"))
+  g <- g + scale_x_continuous(limits = c(800, 2020), breaks = seq(800, 2000, 200))
+  g <- g + labs(x = "Year", y = "Date of peak sakura bloom")
+  g <- g + ggtitle("Sakura blooming", subtitle = "Date of sakura blossoming in Kyoto (800-2015 CE)")
+  g <- g + theme(legend.position = "top", legend.background = element_rect(color = "black"),
+                 axis.text.x = element_text(angle = 45, hjust = 1))
+  return (g)
+}
+sakura_r()
+```
+
+```
+## `geom_smooth()` using method = 'loess'
+```
+
+<img src="sakura_bloom_files/figure-html/unnamed-chunk-1-4.png" width="672" />
+
+
+---
+title: "sakura_bloom.r"
+author: "Ryo Nakagawara"
+date: "Sun Sep 10 15:13:11 2017"
+---

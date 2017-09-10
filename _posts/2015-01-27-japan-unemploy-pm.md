@@ -1,4 +1,9 @@
-Simple graphing with ggplot2.
+---
+layout: post
+title: Japanese Prime Ministers and Unemployment Rate.
+---
+
+Simple visualization with ggplot2.
 -----------------------------
 
 I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this:
@@ -7,7 +12,7 @@ I was flipping through Hadley Wickham's *ggplot2* book the other day when I came
 
 Which shows the unemployment data for the USA from 1967 to 2015 along with the Presidents in power during those periods (and their respective political parties). A very simple but poignant graph that (with added historical narrative) can tell us a lot about different stories about the US economy and the politics driving them! Motivated by this I set out to make a similar graph but with data from my birth country, Japan.
 
-For the unemployment data, I was able to download a dataset from the [Federal Reserve Bank of St. Louis](https://fred.stlouisfed.org/series/LRHUTTTTJPM156S) website. It's a really fantastic source with loads of raw data from around the world that you can download (in Excel, .csv, .png, PowerPoint, and .pdf formats), I will definitely be coming back here for other articles! This dataset comprises of the harmonized monthly unemployment rate for ALL person for Japan. There was another dataset for Aged 15-64 however that one only went back to January of 1970. I wanted to go back to 1960 (or better 1945) for a better look at Japan's post-war economic history and recovery so I went with this one instead. For a more in-depth analysis I would hunt down some Japanese sources but for today we are just focusing on the simple **ggplot2** graph.
+For the unemployment data, I was able to download a dataset from the [Federal Reserve Bank of St. Louis](https://fred.stlouisfed.org/series/LRHUTTTTJPM156S) website. It's a really fantastic source with loads of raw data from around the world that you can download (in Excel, .csv, .png, PowerPoint, and .pdf formats), I will definitely be coming back here for other articles! This dataset comprises of the harmonized monthly unemployment rate for all Japanese people. There was another dataset for Aged 15-64 however that one only went back to January of 1970. I wanted to go back to 1960 (or better 1945) for a better look at Japan's post-war economic history and recovery so I went with this one instead. For a more in-depth analysis I would hunt down some Japanese sources but for today we are just focusing on making a simple visualization with **ggplot2**.
 
 For the dataset about the Prime Ministers of Japan I went to Wikipedia, a source that's pretty reliable and easy to use. Normally, I would web-scrape the information using **rvest** however, I did not know how to scrap multiple tables at once (as the Prime Ministers were divided into individual tables according to the reigning Emperor) so I created it manually. Thankfully this didn't take too long!
 
@@ -146,7 +151,7 @@ To unclutter our graph, let's only show Prime Ministers whose term exceeded 2 ye
     ## Time differences in days
     ## [1]  291  219 2247  744   64 1240 1574 2797
 
-By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is [Tanzan Ishibashi](https://en.wikipedia.org/wiki/Tanzan_Ishibashi), who unfortunately was incapacitated by stroke. Others such as [S&\#333suke Uno](https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno) (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
+By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is [Tanzan Ishibashi](https://en.wikipedia.org/wiki/Tanzan_Ishibashi), who unfortunately was incapacitated by stroke. Others such as [Sosuke Uno](https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno) (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
 
 Now we just have to use mutate() to add this data into a new column:
 
