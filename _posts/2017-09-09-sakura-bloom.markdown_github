@@ -1,87 +1,51 @@
----
-layout: post
-title: "sakura_bloom.r"
-author: "Ryo Nakagawara"
-date: "Sun Sep 10 15:13:11 2017"
-output: 
-  md_document:
-    variant: markdown_github
----
-
-```r
+``` r
 # Sakura data
 library(tidyverse)
 ```
 
-```
-## Warning: package 'tidyverse' was built under R version 3.4.1
-```
+    ## Warning: package 'tidyverse' was built under R version 3.4.1
 
-```
-## Loading tidyverse: ggplot2
-## Loading tidyverse: tibble
-## Loading tidyverse: tidyr
-## Loading tidyverse: readr
-## Loading tidyverse: purrr
-## Loading tidyverse: dplyr
-```
+    ## Loading tidyverse: ggplot2
+    ## Loading tidyverse: tibble
+    ## Loading tidyverse: tidyr
+    ## Loading tidyverse: readr
+    ## Loading tidyverse: purrr
+    ## Loading tidyverse: dplyr
 
-```
-## Warning: package 'ggplot2' was built under R version 3.4.1
-```
+    ## Warning: package 'ggplot2' was built under R version 3.4.1
 
-```
-## Warning: package 'tibble' was built under R version 3.4.1
-```
+    ## Warning: package 'tibble' was built under R version 3.4.1
 
-```
-## Warning: package 'tidyr' was built under R version 3.4.1
-```
+    ## Warning: package 'tidyr' was built under R version 3.4.1
 
-```
-## Warning: package 'purrr' was built under R version 3.4.1
-```
+    ## Warning: package 'purrr' was built under R version 3.4.1
 
-```
-## Warning: package 'dplyr' was built under R version 3.4.1
-```
+    ## Warning: package 'dplyr' was built under R version 3.4.1
 
-```
-## Conflicts with tidy packages ----------------------------------------------
-```
+    ## Conflicts with tidy packages ----------------------------------------------
 
-```
-## filter(): dplyr, stats
-## lag():    dplyr, stats
-```
+    ## filter(): dplyr, stats
+    ## lag():    dplyr, stats
 
-```r
+``` r
 library(stringr)
 library(scales)
 ```
 
-```
-## Warning: package 'scales' was built under R version 3.4.1
-```
+    ## Warning: package 'scales' was built under R version 3.4.1
 
-```
-## 
-## Attaching package: 'scales'
-```
+    ## 
+    ## Attaching package: 'scales'
 
-```
-## The following object is masked from 'package:purrr':
-## 
-##     discard
-```
+    ## The following object is masked from 'package:purrr':
+    ## 
+    ##     discard
 
-```
-## The following object is masked from 'package:readr':
-## 
-##     col_factor
-```
+    ## The following object is masked from 'package:readr':
+    ## 
+    ##     col_factor
 
-```r
+``` r
 # Load data ---------------------------------------------------------------
 
 sakura <- read.csv("~/R_materials/Kyoto_Flowers.csv")
@@ -93,23 +57,19 @@ View(sakura)
 sakura <- sakura %>% filter(AD %in% 812:2015)
 ```
 
-```
-## Warning: package 'bindrcpp' was built under R version 3.4.1
-```
+    ## Warning: package 'bindrcpp' was built under R version 3.4.1
 
-```r
+``` r
 # look at column names
 colnames(sakura)
 ```
 
-```
-## [1] "AD"                        "Full.flowering.date..DOY."
-## [3] "Full.flowering.date"       "Source.code"              
-## [5] "Data.type.code"            "Reference.Name"           
-## [7] "X"
-```
+    ## [1] "AD"                        "Full.flowering.date..DOY."
+    ## [3] "Full.flowering.date"       "Source.code"              
+    ## [5] "Data.type.code"            "Reference.Name"           
+    ## [7] "X"
 
-```r
+``` r
 # colnames don't look very neat and tidy...
 colnames(sakura) <- sakura %>% 
   colnames() %>% 
@@ -119,14 +79,12 @@ colnames(sakura) <- sakura %>%
 colnames(sakura)
 ```
 
-```
-## [1] "ad"                        "full_flowering_date__doy_"
-## [3] "full_flowering_date"       "source_code"              
-## [5] "data_type_code"            "reference_name"           
-## [7] "x"
-```
+    ## [1] "ad"                        "full_flowering_date__doy_"
+    ## [3] "full_flowering_date"       "source_code"              
+    ## [5] "data_type_code"            "reference_name"           
+    ## [7] "x"
 
-```r
+``` r
 # manually rename two of the columns...
 colnames(sakura)[1] <- "year"
 colnames(sakura)[2] <- "full_flowering_day_of_year"
@@ -143,11 +101,9 @@ colnames(date_sep)[1] <- "date_fl"                        # properly name column
 colnames(date_sep)
 ```
 
-```
-## [1] "date_fl"
-```
+    ## [1] "date_fl"
 
-```r
+``` r
 date_sep <- date_sep %>% separate(date_fl, c("month", "day"), "\\.")    # separate into 'month' and 'day' columns on .
 
 sakura <- bind_cols(date_sep, sakura)   # combine date_sep into sakura
@@ -156,18 +112,14 @@ sakura <- sakura %>% select(-full_flowering_date, -full_flowering_day_of_year, -
 library(lubridate)
 ```
 
-```
-## 
-## Attaching package: 'lubridate'
-```
+    ## 
+    ## Attaching package: 'lubridate'
 
-```
-## The following object is masked from 'package:base':
-## 
-##     date
-```
+    ## The following object is masked from 'package:base':
+    ## 
+    ##     date
 
-```r
+``` r
 # ?make_date()
 # ?format()
 # use make_date function to create separate variable in full date format
@@ -183,30 +135,26 @@ sakura$Day <- format(sakura$bloom, "%d")                       #  %d: decimal da
 glimpse(sakura)
 ```
 
-```
-## Observations: 827
-## Variables: 8
-## $ month       <chr> "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", ...
-## $ day         <chr> "01", "15", "06", "18", "14", "09", "16", "05", "1...
-## $ year        <int> 812, 815, 831, 851, 853, 864, 866, 869, 889, 891, ...
-## $ bloom       <date> 0812-04-01, 0815-04-15, 0831-04-06, 0851-04-18, 0...
-## $ Day_Of_Year <dbl> 92, 105, 96, 108, 104, 100, 106, 95, 104, 109, 108...
-## $ Year        <chr> "0812", "0815", "0831", "0851", "0853", "0864", "0...
-## $ Month       <chr> "Apr", "Apr", "Apr", "Apr", "Apr", "Apr", "Apr", "...
-## $ Day         <chr> "01", "15", "06", "18", "14", "09", "16", "05", "1...
-```
+    ## Observations: 827
+    ## Variables: 8
+    ## $ month       <chr> "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", ...
+    ## $ day         <chr> "01", "15", "06", "18", "14", "09", "16", "05", "1...
+    ## $ year        <int> 812, 815, 831, 851, 853, 864, 866, 869, 889, 891, ...
+    ## $ bloom       <date> 0812-04-01, 0815-04-15, 0831-04-06, 0851-04-18, 0...
+    ## $ Day_Of_Year <dbl> 92, 105, 96, 108, 104, 100, 106, 95, 104, 109, 108...
+    ## $ Year        <chr> "0812", "0815", "0831", "0851", "0853", "0864", "0...
+    ## $ Month       <chr> "Apr", "Apr", "Apr", "Apr", "Apr", "Apr", "Apr", "...
+    ## $ Day         <chr> "01", "15", "06", "18", "14", "09", "16", "05", "1...
 
-```r
+``` r
 # date format are all in <chr>
 # for plotting need to convert with as.numeric() for axes!
 sakura$Year %>% as.numeric() %>% glimpse()
 ```
 
-```
-##  num [1:827] 812 815 831 851 853 864 866 869 889 891 ...
-```
+    ##  num [1:827] 812 815 831 851 853 864 866 869 889 891 ...
 
-```r
+``` r
 # Plotting ----------------------------------------------------------------
 
 ggplot(sakura, aes(x = as.numeric(Year), y = Day_Of_Year)) +
@@ -217,7 +165,7 @@ ggplot(sakura, aes(x = as.numeric(Year), y = Day_Of_Year)) +
 
 <img src="../assets/2017-09-09-sakura-bloom_files/unnamed-chunk-1-1.png" width="672" />
 
-```r
+``` r
 # does not look very clear...
 
 ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' variable...
@@ -227,13 +175,11 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
                      limits = c(84, 125))
 ```
 
-```
-## `geom_smooth()` using method = 'loess'
-```
+    ## `geom_smooth()` using method = 'loess'
 
 <img src="sakura_bloom_files/figure-html/unnamed-chunk-1-2.png" width="672" />
 
-```r
+``` r
 # Could we make it more... sakura-y?
 
 ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' variable...
@@ -243,13 +189,11 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
                      limits = c(84, 125))
 ```
 
-```
-## `geom_smooth()` using method = 'loess'
-```
+    ## `geom_smooth()` using method = 'loess'
 
 <img src="sakura_bloom_files/figure-html/unnamed-chunk-1-3.png" width="672" />
 
-```r
+``` r
 # Better! but does not look good on a drab grey background...
 
 #### With background image!
@@ -258,37 +202,27 @@ library(grid)
 library(gridExtra)
 ```
 
-```
-## 
-## Attaching package: 'gridExtra'
-```
+    ## 
+    ## Attaching package: 'gridExtra'
 
-```
-## The following object is masked from 'package:dplyr':
-## 
-##     combine
-```
+    ## The following object is masked from 'package:dplyr':
+    ## 
+    ##     combine
 
-```r
+``` r
 library(cowplot)
 ```
 
-```
-## Warning: package 'cowplot' was built under R version 3.4.1
-```
+    ## Warning: package 'cowplot' was built under R version 3.4.1
 
-```
-## 
-## Attaching package: 'cowplot'
-```
+    ## 
+    ## Attaching package: 'cowplot'
 
-```
-## The following object is masked from 'package:ggplot2':
-## 
-##     ggsave
-```
+    ## The following object is masked from 'package:ggplot2':
+    ## 
+    ##     ggsave
 
-```r
+``` r
 sakura_r <- function(df = sakura, xvar = 'as.numeric(Year)', yvar = 'Day_Of_Year') {
   img_url <- 'https://i.imgur.com/CgwU1zb.jpg'
   tmp_file <- tempfile()
@@ -312,9 +246,6 @@ sakura_r <- function(df = sakura, xvar = 'as.numeric(Year)', yvar = 'Day_Of_Year
 sakura_r()
 ```
 
-```
-## `geom_smooth()` using method = 'loess'
-```
+    ## `geom_smooth()` using method = 'loess'
 
 <img src="sakura_bloom_files/figure-html/unnamed-chunk-1-4.png" width="672" />
-
