@@ -3,6 +3,9 @@ layout: post
 title: "sakura_bloom.r"
 author: "Ryo Nakagawara"
 date: "Sun Sep 10 15:13:11 2017"
+output: 
+  md_document:
+    variant: markdown_github
 ---
 
 ```r
