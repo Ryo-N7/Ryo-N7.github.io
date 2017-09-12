@@ -160,7 +160,7 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 
 ![](../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-9-1.png)
 
-Slightly better, but could we make it more... sakura-y?
+Better! Now we can clearly see the trend by adding in the `geom_smooth()` function, but could we make it more... sakura-y?
 
 ``` r
 ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' variable...
@@ -172,7 +172,8 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 
 ![](../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-10-1.png)
 
-Better! but does not look good on a drab grey background...
+The colors are more pink and sakura-like but does not look good on a drab grey background...
+The mix of colors look a bit garish but I chose them because they would stand out against a sakura tree background image that I want to place...
 So let's add a background image!
 
 ``` r
