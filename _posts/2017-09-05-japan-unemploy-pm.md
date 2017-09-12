@@ -8,7 +8,7 @@ Simple visualization with ggplot2.
 
 I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this:
 
-![](../assets/2015-01-27-japan-unemploy-pm_files/hadleys-plot-1.png)
+![](../assets/2017-09-05-japan-unemploy-pm_files/hadleys-plot-1.png)
 
 Which shows the unemployment data for the USA from 1967 to 2015 along with the Presidents in power during those periods (and their respective political parties). A very simple but poignant graph that (with added historical narrative) can tell us a lot about different stories about the US economy and the politics driving them! Motivated by this I set out to make a similar graph but with data from my birth country, Japan.
 
@@ -138,7 +138,7 @@ japan_unemploy %>%
   theme_bw()
 ```
 
-![](../assets/2015-01-27-japan-unemploy-pm_files/first-plot-1.png)
+![](../assets/2017-09-05-japan-unemploy-pm_files/first-plot-1.png)
 
 Looking at this graph, even with using `geom_text_repel()` there are too many Prime Ministers for it to look nice. This speaks for the highly turbulent "revolving door" of politics in Japan, especially in times of economic downturns such as in the 1990s and early 2000s (although many were caught in unrelated scandals or other kerfluffles too...).
 
@@ -192,7 +192,7 @@ japan_unemploy %>%
   theme_bw()
 ```
 
-![](../assets/2015-01-27-japan-unemploy-pm_files/plot-again-1.png)
+![](../assets/2017-09-05-japan-unemploy-pm_files/plot-again-1.png)
 
 Much better! I wanted to fill in the spaces of the terms with the political parties, however, most of the Prime Ministers came from the Liberal Democratic Party or LDP (Jimintō in Japanese) which dominated Japanese politics from 1955 to all the way to 1993! Also with so many segments of PMs it wouldn't look as pretty as Hadley's graph.
 
