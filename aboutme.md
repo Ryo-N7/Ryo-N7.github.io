@@ -5,7 +5,9 @@ title: About Me/CV
 
 Born in Japan, grew up in America and Israel, having also lived Germany, and currently residing in the United Kingdom, I'm quite proud to say that I am a citizen of the world!
 
-Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, influencing/motivating behavioral change for the public good.
+Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
+
+My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software to facilitate increased **transparency** between researchers and the general public.
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
@@ -19,13 +21,13 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 ## Education
 
-**MSc** Industrial-Organizational and Business Psychology: University College London, UK  
-Dissertation title: "Emoji and the Implicit Association Test for Uncovering Implicit Attitudes Toward Brands and Different Race Advertisement SpokesEmoji"    
-Supervisor: Dr. Dimitrios Tsivrikos
+* **MSc** Industrial-Organizational and Business Psychology: University College London, UK  
+    + Dissertation title: "Emoji and the Implicit Association Test for Uncovering Implicit Attitudes Toward Brands and Different Race Advertisement SpokesEmoji"    
+    + Supervisor: Dr. Dimitrios Tsivrikos
     
-**BA** Economics: Chapman University, USA
+* **BA** Economics: Chapman University, USA
 
-**BA** Psychology: Chapman University, USA
+* **BA** Psychology: Chapman University, USA
 
 ## Skills
 ### Technical skills
@@ -46,12 +48,12 @@ Supervisor: Dr. Dimitrios Tsivrikos
 
 ### Communication and teamwork skills
 * Bilingual: Japanese and English
-* Work experience in variety of cultures: Ghana, India, Germany, USA, Ireland, and Japan
+* Work experience in a variety of cultures: Ghana, India, Germany, USA, Ireland, and Japan
 * Research Analyst in a [National Science Foundation project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1322305&HistoricalAwards=false) while at Chapman University
   + Web Content Developer for communication of project progress and findings [(OCT Group)](http://octgroup.org/)
 * Marketing and Business Development Intern at [RedNight Consulting](https://www.rednightconsulting.com/) 
 * Youth football (soccer) coach in Ghana, India, and Japan: Under-9s to Under-14s
-* Teacher in India: Reading comprehension, spelling, grammar, physical education
+* Volunteer Teacher in India: Reading comprehension, spelling, grammar, physical education
 * [Blogging about data analysis using R](https://ryo-n7.github.io/2017-09-05-japan-unemploy-pm/)
 
 
