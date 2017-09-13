@@ -7,7 +7,7 @@ Born in Japan, grew up in America and Israel, having also lived Germany, and cur
 
 Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
-My interest in R comes from my belief in the need for more reproducibility and accountability in psychological and consumer research that can be attained by using R, GitHub, and other open-source software to facilitate increased transparency between researchers and the general public.
+My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software to facilitate increased **transparency** between researchers and the general public.
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
