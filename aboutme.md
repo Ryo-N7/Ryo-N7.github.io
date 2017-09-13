@@ -32,6 +32,7 @@ Supervisor: Dr. Dimitrios Tsivrikos
 * R:
   + Data wrangling (dplyr, plyr)
   + Sentiment analysis (tidytext, stringr)
+  + Web scraping (rvest)
 
 * Graphical visualization:
   + ggplot2
@@ -40,6 +41,8 @@ Supervisor: Dr. Dimitrios Tsivrikos
   * Coding Implicit Association Test experiments for consumer psychology research
   
 * SPSS
+
+* html (basic)
 
 ### Communication and teamwork skills
 * Bilingual: Japanese and English
