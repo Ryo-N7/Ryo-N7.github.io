@@ -2,7 +2,7 @@ April in Japan is a time of new beginnings. Unlike most countries, the school ye
 
 ![Imgur](https://i.imgur.com/1lGPG0Y.png)
 
-For this article I will try to recreate this graphic but with my own twist. Thankfully the raw data is made available by the original author of the research paper documenting this phenomenon, Dr. Yasuyuki Aono from Osaka Prefecture University. The dataset can be downloaded from [here](http://atmenv.envi.osakafu-u.ac.jp/aono/kyophenotemp4/).
+For this article I will try to recreate this graphic but with my own twist(s). Thankfully the raw data is made available by the original author of the research paper documenting this phenomenon, Dr. Yasuyuki Aono from Osaka Prefecture University. The dataset can be downloaded from [here](http://atmenv.envi.osakafu-u.ac.jp/aono/kyophenotemp4/).
 
 Let's get started by loading up our trusty packages and data:
 
@@ -148,7 +148,7 @@ ggplot(sakura, aes(x = Year, y = Day_Of_Year)) +
 
 ![](../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-8-1.png)
 
-Does not look very clear...
+This looks very messy and we can't really discern any patterns/trends from this plot... So let's try adding in a smoother into our plot!
 
 ``` r
 ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' variable...
@@ -172,9 +172,9 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 
 ![](../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-10-1.png)
 
-The colors are more pink and sakura-like but does not look good on a drab grey background...
+The colors are more pink and changing the points to an 8-sided shape makes it a bit more sakura-like but the plot looks out of place on a drab grey background...
 The mix of colors look a bit garish but I chose them because they would stand out against a sakura tree background image that I want to place...
-So let's add a background image!
+So let's add a background image! (Generally not recommended but let's try it out!)
 
 ``` r
 #### With background image!
@@ -208,7 +208,9 @@ sakura_r()
 
 ![](../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-11-1.png)
 
-Most of the time you would never add in a background image to a plot as it would obscure the individual data points and other details. However, for this graph the main point of interest is the trend line going across and decreasing from the 20th century, pointing out how sakura have been steadily blossoming earlier and earlier in the year which can be clearly seen despite the background image. I mainly wanted to show off a cool new trick I learned and to also do something *slightly* different from what The Economist did. Some other cool adaptations of Dr. Aono's sakura dataset include [this](http://opiateforthemass.es/articles/sakura/) visualization done by Christoph Safferling from *Opiate for the masses* where they incorporated sakura emoji as the data point shapes; definitely much better than the ersatz geom\_point shape I used as "sakura"for my own plot!
+Most of the time you would never add in a background image to a plot as it would obscure the individual data points and other details. However, for this graph the main point of interest is the trend line going across and decreasing from the 20th century, pointing out how sakura have been steadily blossoming earlier and earlier in the year.This can still be seen quite clearly despite the background image. I mainly wanted to show off a cool new trick I learned and to also do something *slightly* different from what The Economist did. 
+
+Some other cool adaptations of Dr. Aono's sakura dataset include [this](http://opiateforthemass.es/articles/sakura/) visualization done by Christoph Safferling from *Opiate for the masses* where they incorporated sakura emoji as the data point shapes; definitely much better than the ersatz geom\_point shape I used as "sakura"for my own plot!
 
 To cap off, I'll leave you with some photos I took of sakura in Tokyo when I went back home for Spring Break back in April! Can't wait for the blossomings next year!
 
