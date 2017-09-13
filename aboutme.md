@@ -19,11 +19,9 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 ## Education
 
-**MSc** Industrial-Organizational and Business Psychology: University College London, UK
-    
-    Dissertation title: "Emoji and the Implicit Association Test for Uncovering Implicit Attitudes Toward Brands and Different Race Advertisement SpokesEmoji"
-    
-    Supervisor: Dr. Dimitrios Tsivrikos
+**MSc** Industrial-Organizational and Business Psychology: University College London, UK  
+Dissertation title: "Emoji and the Implicit Association Test for Uncovering Implicit Attitudes Toward Brands and Different Race Advertisement SpokesEmoji"    
+Supervisor: Dr. Dimitrios Tsivrikos
     
 **BA** Economics: Chapman University, USA
 
