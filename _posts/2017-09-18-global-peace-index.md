@@ -436,4 +436,7 @@ GPI_rank %>% filter(country == "Taiwan", year %in% c(2008, 2017))
     ## 1  Taiwan 2008   41 East Asia
     ## 2  Taiwan 2017   40 East Asia
 
+Well, OK. Remember though, that we manually changed Taiwan's ranking in 2008 as it was tied 40th with South Korea!
+
 Hopefully with initiatives like the GPI and the works of other peace-oriented think tanks, the public can identify different sources of problems that hinder peaceful co-existence both within-countries and between-countries and assist policy-makers in finding viable solutions!
+
