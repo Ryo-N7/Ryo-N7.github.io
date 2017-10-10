@@ -32,7 +32,7 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 ## Skills
 ### Technical skills
 * R:
-  + Data wrangling (dplyr, plyr)
+  + Data wrangling (dplyr, plyr, tidyr)
   + Sentiment analysis (tidytext, stringr)
   + Web scraping (rvest)
 
