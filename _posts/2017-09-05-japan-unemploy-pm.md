@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Japanese Prime Ministers and Unemployment Rate: A Timeline.
+title: "Japanese Prime Ministers and Unemployment Rate: A Timeline."
 ---
 
 Simple visualizations with ggplot2.

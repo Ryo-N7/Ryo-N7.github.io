@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thrice Part 2: Lyrics Analysis By Breaking Down The Lyrics Word-by-Word!
+title: "Thrice Part 2: Lyrics Analysis By Breaking Down The Lyrics Word-by-Word!"
 ---
 
 In Part 2 we will look at the lyrical content of the band, Thrice. By dividing the lyrics of each song into a single word per row, we can take a much closer look at the components of the lyrical content at various levels!
