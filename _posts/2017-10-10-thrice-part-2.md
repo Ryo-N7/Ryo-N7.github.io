@@ -1,3 +1,8 @@
+---
+layout: post
+title: Thrice Part 2: Lyrics Analysis By Breaking Down The Lyrics Word-by-Word!
+---
+
 In Part 2 we will look at the lyrical content of the band, Thrice. By dividing the lyrics of each song into a single word per row, we can take a much closer look at the components of the lyrical content at various levels!
 
 Let's get started!
@@ -657,7 +662,6 @@ By using the `map2()` function from purrr package, this time we apply the functi
 
 ``` r
 map2(paste0(word_count_nested$album, ".pdf"), word_count_nested$plot, ggsave)
-
 ```
 
 We can check that the code ran properly (without having to manually look into your working directory) with the `file.exists()` function.

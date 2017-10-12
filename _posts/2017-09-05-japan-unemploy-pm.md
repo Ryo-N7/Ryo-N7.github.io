@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Japanese Prime Ministers and Unemployment Rate.
+title: Japanese Prime Ministers and Unemployment Rate: A Timeline.
 ---
 
-Simple visualization with ggplot2.
+Simple visualizations with ggplot2.
 -----------------------------
 
 I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this:
