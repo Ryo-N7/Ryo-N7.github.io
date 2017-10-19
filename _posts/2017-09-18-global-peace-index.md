@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Global Peace Index: Web scraping and bump charts!"
+---
+
 The Global Peace Index (GPI) was created by the Institute for Economics and Peace (IEP), a think tank with a dedication to measuring positive human well-being and progress, and one attempt to quantitatively measure the relative position of a nations' and regions' peacefulness. The official 2017 report visualizes the most recent data as a map below: ![GPI map](https://upload.wikimedia.org/wikipedia/commons/e/e8/GPI_2017.jpg)
 
 Today I will web scrape the GPI data from 2008 to 2017 from Wikipedia using the `rvest` package and use a variety of data tidying packages such as `dplyr`, `tidyr`, and `stringr` to create a bump chart to visualize the GPI index data in another way!
