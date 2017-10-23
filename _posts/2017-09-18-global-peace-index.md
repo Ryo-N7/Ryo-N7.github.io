@@ -3,9 +3,9 @@ layout: post
 title: "Global Peace Index: Web scraping and bump charts!"
 ---
 
-The Global Peace Index (GPI) was created by the Institute for Economics and Peace (IEP), a think tank with a dedication to measuring positive human well-being and progress, and one attempt to quantitatively measure the relative position of a nations' and regions' peacefulness. The official 2017 report visualizes the most recent data as a map below: ![GPI map](https://upload.wikimedia.org/wikipedia/commons/e/e8/GPI_2017.jpg)
+The Global Peace Index (GPI) was created by the Institute for Economics and Peace (IEP), a think tank with a dedication to measuring positive human well-being and progress, and is one attempt to quantitatively measure the relative position of a nations' and regions' peacefulness. The official 2017 report visualizes the most recent data as a map below: ![GPI map](https://upload.wikimedia.org/wikipedia/commons/e/e8/GPI_2017.jpg)
 
-Today I will web scrape the GPI data from 2008 to 2017 from Wikipedia using the `rvest` package and use a variety of data tidying packages such as `dplyr`, `tidyr`, and `stringr` to create a bump chart to visualize the GPI index data in another way!
+Today I will web scrape the GPI data from **2008** to **2017** from Wikipedia using the `rvest` package and use a variety of data tidying packages such as `dplyr`, `tidyr`, and `stringr` to create a **bump chart** to visualize the GPI index data in another way!
 
 ``` r
 # Global Peace Index
@@ -29,11 +29,11 @@ GPI <- url %>%
 
 Here we use the `read_html()` function to read the url of the web page, then we find the **CSS selector** of the table we want to use from the web page. I will go through what I did above step-by-step (Using the Mozilla Firefox browser):
 
-1.  Press **F12** on the page you want to extract data from
+1.  Press **F12** or **Ctrl + Shift + C** to open up the *Inspector Tool* on the page you want to extract data from
 2.  Click on the left-most button the pop-up bar
 3.  Hover your mouse over the element of the page you want to extract. The console will scroll to the exact html code that you are point at
 4.  Right-click on the highlighted html code, click on 'Copy' in the menu, then click on 'CSS Selector'
-5.  Then Paste into R and place it inside the `html_nodes()` function as above within single brackets.
+5.  Then Paste into R and place it inside the `html_nodes()` function as above within brackets.
 6.  Select only the element with the table information (in this case there is only one element anyways), `[[1]]`.
 7.  Finally we specifically extract the table using `html_table()`. You can use the `fill =` option to autofill any poorly formatted tables.
 
@@ -69,7 +69,7 @@ glimpse(GPI)
     ## $ `2008 rank`          <int> 1, 2, 14, 10, 5, 18, 13, 6, 4, 11, 3, 16,...
     ## $ `2008 score`         <dbl> 1.107, 1.190, 1.385, 1.291, 1.238, 1.435,...
 
-For my purposes I only need the data from the `rank` variables so I create a new dataframe excluding the `score` columns:
+For my purposes I only need the data from the `rank` variables so I create a new dataframe excluding the `score` columns. A neat trick here is to use the `ends_with()` function inside `select()` to select all the variables that end in **"rank"**, much easier than manually inputting every single **"rank"** column!
 
 ``` r
 # Tidy dataset ------------------------------------------------------------
@@ -95,9 +95,9 @@ glimpse(GPI_rank)
     ## $ `2009 rank` <int> 1, 2, 15, 3, 6, 16, 10, 9, 11, 14, 4, 19, 43, 8, 2...
     ## $ `2008 rank` <int> 1, 2, 14, 10, 5, 18, 13, 6, 4, 11, 3, 16, 19, 9, 2...
 
-In data analysis, one of the most important part of the process is the data cleanining or tidying process that we have began doing here. One of the main tenets of the cleaning process is to have a *tidy* dataset where we arrange data so that each variable is a column and each observation is a row.
+In data analysis, one of the most important part of the process is the data cleaning (also called data tidying or data munging) process that we have been doing here. One of the main tenets of the cleaning process is to have a *tidy* dataset where we arrange data so that each *variable* is a **column** and each *observation* is a **row**.
 
-We see that the data is organized in an *"untidy"* or *"wide"* format. To make our analysis workflow smoother we need to convert this data frame into the *tidy* or *"long"* format. We do this by using the `gather()` function in the `tidyr` package. For more details on the concept of "**tidy data**" Hadley Wickham's seminal paper on this subject can be found [here](https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf).
+We see that the data we have is organized in an *"untidy"* or *"wide"* format. To make our analysis workflow smoother we need to convert this data frame into the *tidy* or *"long"* format. We do this by using the `gather()` function in the `tidyr` package. For more details on the concept of "**tidy data**" Hadley Wickham's seminal paper on this subject can be found [here](https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf).
 
 ``` r
 GPI_rank <- GPI_rank %>% gather(`2017 rank`:`2008 rank`, key = "year", value = "rank")
@@ -111,7 +111,7 @@ glimpse(GPI_rank)
     ## $ year    <chr> "2017 rank", "2017 rank", "2017 rank", "2017 rank", "2...
     ## $ rank    <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10=", "1...
 
-Next, in the `year` column let's take out the "rank" part of each "20xx rank" value (from '2017 rank' to '2017'). We can do this by using the `str_replace_all()` function from the `stringr` package to specifically take out "rank", and then clean up the remaining white space with `trimws()`.
+Next, in the `year` column let's take out the "rank" part of each "20xx rank" value (basically changing the values from '2017 rank' to '2017'). We can do this by using the `str_replace_all()` function from the `stringr` package to specifically take out "rank", and then clean up the remaining white space with `trimws()`.
 
 ``` r
 GPI_rank$year <- GPI_rank$year %>% str_replace_all("rank", "") %>% trimws()
@@ -125,7 +125,7 @@ glimpse(GPI_rank)
     ## $ year    <chr> "2017", "2017", "2017", "2017", "2017", "2017", "2017"...
     ## $ rank    <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10=", "1...
 
-Now we can turn the `year` column into a factor variable:
+Now we can turn the `year` column into a **factor** variable:
 
 ``` r
 GPI_rank <- GPI_rank %>% mutate(year = as.factor(year))
@@ -157,13 +157,13 @@ GPI_rank %>% head(15)
     ## 14         Norway 2017   14
     ## 15        Hungary 2017   15
 
-We can see here that there are countries with a tied ranking due to similar GPI scores (shown in original GPI table), first let's get rid of the `=` symbol and then replace
+We can see here that there are countries with a tied ranking due to similar GPI scores (shown in original GPI table), first let's get rid of the `=` symbol:
 
 ``` r
 GPI_rank <- GPI_rank %>% mutate(rank = str_replace(rank, "\\=", ""))   #   take out '=' in rank values
 ```
 
-Now let's change the `rank` variable into a numeric format and finally reorder the dataframe so that the rows are arranged in a way where ranks are in ascending order for each year (2008: Rank \#1 - \#163, 2009: Rank \#1 - \#163, etc.).
+Now let's change the `rank` variable into a **numeric** format and finally reorder the dataframe so that the rows are arranged in a way where ranks are in ascending order for each year (2008: Rank \#1 - \#163, 2009: Rank \#1 - \#163, etc.).
 
 ``` r
 GPI_rank$rank <- as.numeric(GPI_rank$rank)
@@ -179,7 +179,7 @@ glimpse(GPI_rank)
     ## $ year    <fctr> 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2008,...
     ## $ rank    <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 13, 14, 15, 16,...
 
-In regards to actually detecting and replacing duplicate values in a single automated function I wasn't very successful. However to detect duplicates for each year, I can do this:
+In regards to actually detecting and replacing duplicate values in a single automated function I wasn't very successful. However, to detect duplicates for each year, I can do this:
 
 ``` r
 GPI_rank %>% 
@@ -200,7 +200,7 @@ GPI_rank %>%
     ## 6     147 TRUE
     ## 7     156 TRUE
 
-Due to the fact that we can filter by year, the row name in the filtered data set (which is the duplicated rank value) should match up to the duplicated rank value in the whole dataset, allowing us to easily identify the specific rows that need fixing.
+Due to the fact that we can filter by year, the row name in the filtered data set (which is the duplicated rank value) should match up to the row for the duplicated rank value in the original dataset, allowing us to easily identify the specific rows that need fixing.
 
 In 2017 there were 4 rows with duplicate values, let's manually replace them:
 
@@ -228,7 +228,7 @@ I'm not going to bother manually changing all of them especially since there are
 
 I'm sure there's a way to automate this using the function I used to detect duplicates with `lapply()`/`map()` to combine the duplicates in each year all in one dataframe, I'll edit this section when I find out how to do it.
 
-Now let's create a custom theme we can add on to our plot and call it... `theme_peace`!
+Now let's create a **custom ggplot theme** that we can add on to our plot and call it... `theme_peace`!
 
 ``` r
 # Create custom theme -----------------------------------------------------
@@ -246,7 +246,7 @@ theme_peace <-
   theme(legend.position = "none")
 ```
 
-The type of plot we are going to create is called a bump chart which are used to visualize changes in rank over periods of time, perfect for our needs! Here let's specifically highlight the ranking over time for Japan by coloring its line to red and making the other countries more transparent by creating an `if/else` statement that evaluates whether the country being plotted is Japan or not. Also by using `geom_text` we can manually add labels on next to both the `2008` and `2017` variables:
+The type of plot we are going to create is called a **bump chart** which are used to visualize changes in rank over periods of time, which is perfect for our current analysis! Here let's specifically highlight the ranking over time for Japan by coloring its line to red and making the other countries more transparent by creating an `if/else` statement that evaluates whether the country being plotted is Japan or not. Also by using `geom_text` we can manually add labels next to both the `2008` and `2017` variables:
 
 ``` r
 # Plotting ----------------------------------------------------------------
@@ -269,9 +269,9 @@ GPI_rank %>%
   theme_peace
 ```
 
-![](../assets/2017-09-18-global-peace-index_files/unnamed-chunk-13-1.png)
+<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
 
-We can clearly see that Japan's ranking has fallen from 2008 and even dropping out of the Top 10 altogether in 2017 (NOTE: technically Ireland and Japan were tied for 10th in 2017)! Could this be a result of the rising tensions in the past 10 years with its neighbors on a number of issues, such as the [East China Sea disputes](https://www.japantimes.co.jp/opinion/2017/08/29/commentary/japan-commentary/japans-maritime-diplomacy-mission-s-e-asia/), the more recent protests regarding the [comfort women issue](https://www.nytimes.com/2017/04/03/world/asia/japan-ambassador-south-korea-comfort-woman.html), and of course North Korea's recent [missile tests](http://www.bbc.co.uk/news/world-asia-41281050) among others? Let's see if there is a general downward trend in the East Asia region between 2008 and 2017! Neither `Macau` or `Hong Kong` are not in the data as they are counted as dependent territories and from what we know of recent conflicts in the *marginal seas* of the Pacific we include ASEAN contries such as Vietnam and the Philippines.
+We can clearly see that Japan's ranking has fallen from 2008 and even dropping out of the Top 10 altogether in 2017 (*Note*: technically Ireland and Japan were tied for 10th in 2017)! Could this be a result of the rising tensions in the past 10 years with its neighbors on a number of issues, such as the [East China Sea disputes](https://www.japantimes.co.jp/opinion/2017/08/29/commentary/japan-commentary/japans-maritime-diplomacy-mission-s-e-asia/), the more recent protests regarding the [comfort women issue](https://www.nytimes.com/2017/04/03/world/asia/japan-ambassador-south-korea-comfort-woman.html), and of course North Korea's recent [missile tests](http://www.bbc.co.uk/news/world-asia-41281050) among others? Let's see if there is a general downward trend in the East Asia region between 2008 and 2017! Neither `Macau` or `Hong Kong` are in the data as they are counted as dependent territories and from what we know of recent conflicts in the *"marginal seas"* of the Pacific we include ASEAN contries such as Vietnam and the Philippines.
 
 ``` r
 # Subset custom "East Asia" region -----------------------------------------------
@@ -313,9 +313,9 @@ GPI_Asia %>%
   theme_peace
 ```
 
-![](../assets/2017-09-18-global-peace-index_files/unnamed-chunk-15-1.png)
+<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
 
-There could still be some improvements made to this plot, specifically, the country labels on either side of the x-axis limits. We can fix this by Using the `gg_repel` package that will spread out them ot with a small line from the label box pointing to the corresponding line or point. We can also, manually set colors to each of our custom "East Asia" region countries to further differntiate each line and make it more easy to read:
+There could still be some improvements made to this plot, specifically, the country labels on either side of the x-axis limits. We can fix this by Using the `gg_repel` package that will spread them out and create a small line/arrow from the label box pointing to the corresponding line or point. We can also manually set colors to each of our custom "East Asia" region countries to further differntiate each line and make it more easy to read:
 
 ``` r
 # plot with filter()  East Asia
@@ -331,7 +331,7 @@ colors = c(
 )
 ```
 
-Change the variable type of `country` into a factor and then rename *Korea Republic* to *S.Korea* and *DPR Korea* to *N.Korea* to fit graph labels better:
+Change the variable type of `country` into a **factor** and then rename *Korea Republic* to *S.Korea* and *DPR Korea* to *N.Korea* to fit graph labels better:
 
 ``` r
 # rename Korea Republic to S.Korea to fit graph label better...
@@ -374,11 +374,10 @@ GPI_Asia %>%
   scale_color_manual(values = colors)
 ```
 
-![](../assets/2017-09-18-global-peace-index_files/unnamed-chunk-17-1.png)
+<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-17-1.png" style="display: block; margin: auto;" />
 
 Of course, the changes in rankings aren't ***all*** due to inter-country conflicts as it is only 1 of the 23 indicators used to calculate the GPI score. Both external peace indicators (*military expenditure as a percentage of GDP*, *nuclear and heavey weapons capabilities*, and *relations with neighboring countries*) **and** internal peace indicators (*level of violent crime*, *political instability*, *impact of terrorism*) are used in calculating the GPI. The full run-down on the various indicators can be found in Appendix B of the most recent GPI Report [here](http://visionofhumanity.org/app/uploads/2017/06/GPI17-Report.pdf).
-
-There is another way to do the above but first I'll clean up the data further by changing the names of the Koreas in the main dataset like we did in `GPI_Asia` then fix one of the values:
+There is another way to do the above but first I'll clean up the data further by changing the names of the Koreas in the main dataset like we did in `GPI_Asia` then fix one of the `rank` values:
 
 ``` r
 GPI_rank <- GPI_rank %>% 
@@ -394,13 +393,10 @@ Instead of creating new subset of our data, we can reduce clutter in our R envir
 To do the same thing without creating a separate dataset (like `GPI_Asia`) is to simply create a new variable called `region` inside our existing `GPI_rank` data frame and then use the `filter()` function right before we pipe it through our `ggplot` code:
 
 ``` r
-knitr::opts_chunk$set(warning = FALSE, message = FALSE, dev = "cairo_pdf")
 # Piping before plotting East Asia ----------------------------------------
 
 GPI_rank <- GPI_rank %>% 
-      mutate(region = if_else(
-      country %in% c("Japan", "China", "S.Korea", "N.Korea", "Philippines", "Taiwan", "Vietnam"), 
-                          "East Asia", "Other")) 
+      mutate(region = if_else(country %in% c("Japan", "China", "S.Korea", "N.Korea", "Philippines", "Taiwan", "Vietnam"), "East Asia", "Other")) 
 
 # Final plot: East Asia ---------------------------------------------------
 
@@ -429,7 +425,7 @@ GPI_rank %>%
   scale_color_manual(values = colors)
 ```
 
-![](../assets/2017-09-18-global-peace-index_files/unnamed-chunk-19-1.png)
+<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
 
 With the colored lines and the labels we can clearly see the downward trend of GPI rankings for all countries in the East Asia region except for Taiwan which temporarily moved up until it reverted back to its 40th place in the rankings.
 
@@ -441,7 +437,4 @@ GPI_rank %>% filter(country == "Taiwan", year %in% c(2008, 2017))
     ## 1  Taiwan 2008   41 East Asia
     ## 2  Taiwan 2017   40 East Asia
 
-Well, OK. Remember though, that we manually changed Taiwan's ranking in 2008 as it was tied 40th with South Korea!
-
 Hopefully with initiatives like the GPI and the works of other peace-oriented think tanks, the public can identify different sources of problems that hinder peaceful co-existence both within-countries and between-countries and assist policy-makers in finding viable solutions!
-
