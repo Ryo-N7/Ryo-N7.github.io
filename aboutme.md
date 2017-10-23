@@ -15,7 +15,7 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
 
-[PDF version](ryo-n7.github.io/RyoNakagawara_cv.pdf)
+[PDF version](http://ryo-n7.github.io/RyoNakagawara_cv.pdf)
 
 **Current Location**: London, UK
 
