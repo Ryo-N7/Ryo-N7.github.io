@@ -84,9 +84,9 @@
   {% endif %}
 
   {% if page.share-img %}
-  <meta property="og:image" content="https://imgur.com/BKwRIek" />
+  <meta property="og:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}""https://imgur.com/BKwRIek" />
+  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
   
 
