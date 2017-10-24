@@ -3,9 +3,9 @@ layout: post
 title: "Thrice Part 3: Sentiment Analysis: Emotions in Lyrics!"
 ---
 
-In Part 3 we get into the core element of our analysis, investigating the various sentiments behind Thrice's lyrics!
+In Part 3 we get into the core element of our analysis, investigating the various sentiments and emotions expressed in Thrice's lyrics!
 
-Using the three lexicons included with the `tidytext` package, **NRC**, **Bing**, and **AFINN** we can categorize our tokenized lyrics dataset and then perform a variety of transformations and manipulations to create some visualizations and tables!
+Using the three sentiment lexicons included with the `tidytext` package, **NRC**, **Bing**, and **AFINN** we can categorize our **tokenized** lyrics data set and then perform a variety of transformations and manipulations to create some visualizations!
 
 ``` r
 library(tidyverse)   # tidyr, dplyr, ggplot2
@@ -19,10 +19,10 @@ library(wordcloud)
 library(reshape2)
 ```
 
-Let's get started! Using the `wordToken2` dataset that we created in **Part 2** we will filter out any numbers in our data set and then use a `left_join()` function to:
+Let's get started! Using the `wordToken2` data set that we created in **Part 2** we will filter out any numbers in our data set and then use a `left_join()` function to:
 
 -   grab a specific sentiment lexicon with the `get_sentiments()` function
--   "join" the sentiment lexicon to the **tokenized** dataset, specify `by = "word"`
+-   "join" the sentiment lexicon to the **tokenized** data set, specify `by = "word"`
 
 ``` r
 tidy_lyrics <- wordToken2 %>% 
@@ -85,7 +85,7 @@ ggplot(top_sentiments_bing, aes(reorder(word, num), num, fill = sentiment)) +
 
 <img src="../assets/2017-10-22-thrice-part-3_files/Most common positive and negative words-1.png" style="display: block; margin: auto;" />
 
-Reminiscent of the most common words plot (without "stop words") from **Part 2** except this time we've differentiated between words with positive sentiment and negative sentiment! Another way to visualize this is using a wordcloud!
+Reminiscent of the most common words plot (without "stop words") from **Part 2** except this time we've differentiated between words with positive sentiment and negative sentiment! Another way to visualize this is using a word cloud!
 
 Word Cloud: Most Common Positive and Negative Words in Thrice Lyrics
 ====================================================================
@@ -106,9 +106,9 @@ emotions_lyrics_bing %>%
 Proportions of Positive and Negative Words
 ==========================================
 
-OK, now that we've looked at the most common words for either *positive* or *negative* sentiment, what proportion of these sentiments are present in within the entire lyrical dataset? For this we can create
+OK, now that we've looked at the most common words for either *positive* or *negative* sentiment, what proportion of these sentiments are present in within the entire lyrical data set? For this we can create
 
-After filtering out the words categorized as neutral, we calculate the frequency by first grouping them along `sentiment` (the column specifying all the different emotion terms) and then counting the rows for each of these groups. Finally, we can calculate the percentage by dividing by the sum of all the rows in the dataset.
+After filtering out the words categorized as neutral, we calculate the frequency by first grouping them along `sentiment` (the column specifying all the different emotion terms) and then counting the rows for each of these groups. Finally, we can calculate the percentage by dividing by the sum of all the rows in the data set.
 
 ``` r
 pos_neg_bing <- tidy_lyrics %>% 
@@ -147,7 +147,7 @@ The NRC lexicon not only categorizes words into *positive* and *negative* catego
 
 After filtering out the words categorized as positive/negative as we are only comparing between the emotion terms here, and do the same calculations as we did for the previous plot.
 
-Let's use the colors from Set1 in the RColorBrewer palettes to differntiate our emotion terms in the plot. We'll use these assigned colors for some line charts later on too!
+Let's use the colors from Set1 in the RColorBrewer palettes to differentiate our emotion terms in the plot. We'll use these assigned colors for some line charts later on too!
 
 ``` r
 cols <- colorRampPalette(brewer.pal(n = 8, name = "Set1"))(8)
@@ -192,7 +192,7 @@ emotions_lyrics_nrc %>%
 
 <img src="../assets/2017-10-22-thrice-part-3_files/assign colors, emotions_lyrics_NRC-1.png" style="display: block; margin: auto;" />
 
-we can clearly see the box-plot distributions of the different emotion categories! As in any boxplot, the black bar inside the box signifies the median, the hinges represent the 25th and 75th percentiles, while the whiskers extend to the value of 1.5 \* IQR of their respective hinges, and the black dots are the outliers. But suppose we want to see how the lyrics change sentiment over time? We can create a bump chart that plots the different sentiment groups for each album in order of release-date!
+we can clearly see the box-plot distributions of the different emotion categories! As in any box plot, the black bar inside the box signifies the median, the hinges represent the 25th and 75th percentiles, while the whiskers extend to the value of 1.5 \* IQR of their respective hinges, and the black dots are the outliers. But suppose we want to see how the lyrics change sentiment over time? We can create a bump chart that plots the different sentiment groups for each album in order of release-date!
 
 ``` r
 emotions_lyrics_nrc %>% 
@@ -261,9 +261,9 @@ emotions_lyrics_nrc %>%
 
 <img src="../assets/2017-10-22-thrice-part-3_files/plot negative emotions-1.png" style="display: block; margin: auto;" />
 
-We can see that both `Fear` and `Sadness` have sudden spikes in **AI:Fire** and **AI:Earth**, which shows that there is a clear shift in emotional tone. Again, a caveat for this analysis is that the **AI** albums are only six songs each while the others average around 11 songs each so the changes betwee **AI** albums and the other need to be taken with a grain of salt.
+We can see that both `Fear` and `Sadness` have sudden spikes in **AI:Fire** and **AI:Earth**, which shows that there is a clear shift in emotional tone. Again, a caveat for this analysis is that the **AI** albums are only six songs each while the others average around 11 songs each so the changes between **AI** albums and the other need to be taken with a grain of salt.
 
-**AI: Earth** seems bereft in sentiments in general... besides joy and sadness while **AI: Fire** seems to have untrendly amount of `Fear`: let's take a closer look!
+**AI: Earth** seems bereft in sentiments in general... besides joy and sadness while **AI: Fire** seems to have unusual amount of `Fear` (relative to its two neighboring albums): let's take a closer look!
 
 ``` r
 nrc_fear <- get_sentiments("nrc") %>% 
@@ -285,7 +285,7 @@ tidy_lyrics %>%
     ## 4     die     2
     ## 5 gallows     2
 
-In **AI: Fire**, the word "fire" being tagged as Fear is what is mainly pushing the proportion of `Fear` up so high. The other words categorized, such as "fear", "buried", "die", and "gallows", definitely belong in this category as well.
+In **AI: Fire**, the word "fire" being tagged as `Fear` is what is mainly pushing the proportion of `Fear` up so high. The other words categorized, such as "fear", "buried", "die", and "gallows", definitely belong in this category as well.
 
 ``` r
 nrc_anger <- get_sentiments("nrc") %>% 
@@ -351,7 +351,7 @@ emotions_lyrics_bing %>%
 
 We can fill out any NAs in the sentiment columns into zeros by either using the `replace_na()` from the `tidyr` package OR in `spread()` use the argument `fill = 0`!
 
-Now let's create a new dataset that takes these sentiment ratios, group them by album, and then take the average for each album.
+Now let's create a new data set that takes these sentiment ratios, group them by album, and then take the average for each album.
 
 ``` r
 emotions_lyrics_bing_avg <- emotions_lyrics_bing %>% 
@@ -512,7 +512,7 @@ emotions_lyrics_afinn %>%
     ## 2  negative   696
     ## 3  positive   514
 
-5220 of 6430 words in our lyrics dataset dont have **AFINN** score... With so many words in Thrice's lyrics not categorized by any of these lexicons our results won't be the most comprehensive, but these will have to do for now!
+5220 of 6430 words in our lyrics data set don't have **AFINN** score... With so many words in Thrice's lyrics not categorized by any of these lexicons our results won't be the most comprehensive, but these will have to do for now!
 
 In line with the other lexicons, the majority of the words were categorized into NA (*neutral*)... then words were categorized as *negative* at a higher frequency compared to *positive*.
 
@@ -565,7 +565,7 @@ As we go through the songs from the first track on **Identity Crisis**, the epon
 
 The **AFINN** lexicon has the largest absolute magnitudes, however, remember that only 1210 out of 6430 total words in the lyrics were given a **AFINN** score. This means that the few words that do have scores exaggerate the magnitude of the sentiment scores relative to the other lexicons.
 
-Keep in mind that the lexicons in the `tidytext` package are not the be all and end all for text/sentiment analysis. One can even create their own lexicons through crowd-sourcing (such as Amazon MechanicalTurk, which is how some of the lexicons shown here were created), from utilizing word lists accrued by your own company throughout the years dealing with customer/employee feedback, etc. The sources are limitless!
+Keep in mind that the lexicons in the `tidytext` package are not the be all and end all for text/sentiment analysis. One can even create their own lexicons through crowd-sourcing (such as Amazon Mechanical-Turk, which is how some of the lexicons shown here were created), from utilizing word lists accrued by your own company throughout the years dealing with customer/employee feedback, etc. The sources are limitless!
 
 In the next article we'll look at separating our lyrics into **bi-grams** (two words-per-row; which can then be split up into `word1` and `word2`) and examining how the presence of *negation* words ("not", "never", "can't", "won't", etc.) is causing the lexicons to misclassify sentiments of the lyrics!
 
