@@ -1,5 +1,7 @@
-Simple graphing with ggplot2.
------------------------------
+---
+layout: post
+title: "Unemployment and Japanese Prime Ministers: Simple visualizations with ggplot2"
+---
 
 I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this (I added axis labels and title for clarity):
 

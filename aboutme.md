@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me/CV
+title: About Me
 ---
 
 Born in Japan, grew up in America and Israel, having also lived Germany, and currently residing in the United Kingdom, I'm quite proud to say that I am a citizen of the world!
@@ -15,7 +15,7 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
 
-[PDF version](http://ryo-n7.github.io/RyoNakagawara_cv.pdf)
+[CV (PDF version)](http://ryo-n7.github.io/RyoNakagawara_cv.pdf)
 
 **Current Location**: London, UK
 
@@ -32,12 +32,12 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 ## Skills
 ### Technical skills
 * R:
-  + Data wrangling (dplyr, plyr, tidyr)
-  + Sentiment analysis (tidytext, stringr)
-  + Web scraping (rvest)
+  + Data wrangling (dplyr, plyr, tidyr, purrr): Example [1](https://ryo-n7.github.io/2017-09-10-sakura-bloom/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
+  + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
+  + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
 
 * Graphical visualization:
-  + ggplot2
+  + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/) [4](https://ryo-n7.github.io/2017-09-10-sakura-bloom/)
 
 * Inquisit Lab 5:
   * Coding Implicit Association Test experiments for consumer psychology research
@@ -54,7 +54,7 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 * Marketing and Business Development Intern at [RedNight Consulting](https://www.rednightconsulting.com/) 
 * Youth football (soccer) coach in Ghana, India, and Japan: Under-9s to Under-14s
 * Volunteer Teacher in India: Reading comprehension, spelling, grammar, physical education
-* [Blogging about data analysis using R](https://ryo-n7.github.io/2017-09-05-japan-unemploy-pm/)
+* [Blogging about data analysis using R](https://ryo-n7.github.io/index)
 
 
 
