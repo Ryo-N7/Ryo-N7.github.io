@@ -85,7 +85,7 @@ ggplot(top_sentiments_bing, aes(reorder(word, num), num, fill = sentiment)) +
 
 <img src="../assets/2017-10-22-thrice-part-3_files/Most common positive and negative words-1.png" style="display: block; margin: auto;" />
 
-Reminiscent of the most common words plot (without "stop words") from **Part 2** except this time we've differentiated between words with positive sentiment and negative sentiment! Another way to visualize this is using a word cloud!
+Reminiscent of the most common words plot (without "stop words") from **Part 2** except this time we've differentiated between words with *positive* sentiment and *negative* sentiment! Another way to visualize this is using a word cloud!
 
 Word Cloud: Most Common Positive and Negative Words in Thrice Lyrics
 ====================================================================
@@ -147,7 +147,7 @@ The NRC lexicon not only categorizes words into *positive* and *negative* catego
 
 After filtering out the words categorized as positive/negative as we are only comparing between the emotion terms here, and do the same calculations as we did for the previous plot.
 
-Let's use the colors from Set1 in the RColorBrewer palettes to differentiate our emotion terms in the plot. We'll use these assigned colors for some line charts later on too!
+Let's use the colors from **"Set1"** in the `RColorBrewer` palettes to differentiate our emotion terms in the plot. We'll use these assigned colors for some line charts later on too!
 
 ``` r
 cols <- colorRampPalette(brewer.pal(n = 8, name = "Set1"))(8)
@@ -216,7 +216,6 @@ With EIGHT different emotions (`Anger`, `Anticipation`, `Disgust`, `Fear`, `Joy`
 To solve our current problem, let's split the emotions into groups to be able to see changes better! These emotion terms won't perfectly group up but let's divide them into:
 
 -   `Anger`, `Disgust`, `Fear`, and `Sadness`
-    and
 -   `Surprise`, `Anticipation`, `Joy`, and `Trust`
 
 ``` r
@@ -263,7 +262,7 @@ emotions_lyrics_nrc %>%
 
 We can see that both `Fear` and `Sadness` have sudden spikes in **AI:Fire** and **AI:Earth**, which shows that there is a clear shift in emotional tone. Again, a caveat for this analysis is that the **AI** albums are only six songs each while the others average around 11 songs each so the changes between **AI** albums and the other need to be taken with a grain of salt.
 
-**AI: Earth** seems bereft in sentiments in general... besides joy and sadness while **AI: Fire** seems to have unusual amount of `Fear` (relative to its two neighboring albums): let's take a closer look!
+**AI: Earth** seems to have fewer sentiments expressed in general (besides joy and sadness) while **AI: Fire** seems to have unusual amount of `Fear` (relative to its two neighboring albums). Let's take a closer look!
 
 ``` r
 nrc_fear <- get_sentiments("nrc") %>% 
@@ -285,7 +284,9 @@ tidy_lyrics %>%
     ## 4     die     2
     ## 5 gallows     2
 
-In **AI: Fire**, the word "fire" being tagged as `Fear` is what is mainly pushing the proportion of `Fear` up so high. The other words categorized, such as "fear", "buried", "die", and "gallows", definitely belong in this category as well.
+In **AI: Fire**, the word "fire" being tagged as `Fear` is what is mainly pushing the proportion of `Fear` up so high. The other words categorized, such as "fear", "buried", "die", and "gallows", definitely belong in this category as well. 
+
+How about words tagged as `Anger`?
 
 ``` r
 nrc_anger <- get_sentiments("nrc") %>% 
@@ -322,7 +323,7 @@ tidy_lyrics %>%
     ## 3   The Alchemy Index Air    10
     ## 4 The Alchemy Index Earth     4
 
-Words categorized as Anger only appear four times! In the other AI albums `Anger` words appear much more frequently (and the proportions would also drastically change as well)! A separate article looking at only the AI albums may be interesting.
+Words categorized as `Anger` only appear four times! In the other AI albums `Anger` words appear much more frequently (and the proportions would also drastically change as well)! A separate article looking at only the **AI** albums may be interesting.
 
 Net sentiment ratio for each song
 =================================
@@ -388,7 +389,7 @@ Sentiment ratio graph
 
 ``` r
 emotions_lyrics_bing_avg %>% 
-  ggplot(aes(album, mean_album_ratio)) +      # reorder(album, sentiment_ratio), sentiment_ratio
+  ggplot(aes(album, mean_album_ratio)) +     
   geom_col(fill = "darkgreen", alpha = 0.7) +  
   scale_fill_manual(guide = FALSE, values = c('#565b63', '#c40909')) +
   scale_y_percent(limits = c(-0.15, 0.10), breaks = pretty_breaks(7)) +    # from hrbrthemes
@@ -402,7 +403,7 @@ emotions_lyrics_bing_avg %>%
 
 <img src="../assets/2017-10-22-thrice-part-3_files/visualize net sentiment ratio mean_album-1.png" style="display: block; margin: auto;" />
 
-We've seen in previous plots that the sentiment of albums were more *negative* than *positive* and this plot confirms this as well. Why are Thrice's lyrics categorized as negative as they are? From my experience a lot of Thrice's songs are about acknowledging struggles/sins/negatives and overcoming them. Let's look at how negative is defined by the three different lexicons.
+We've seen in previous plots that the sentiment of albums were more *negative* than *positive* and this plot confirms this as well. Why are Thrice's lyrics categorized as *negative* as they are? From my experience a lot of Thrice's songs are about acknowledging our struggles/sins/negatives and overcoming them, a more uplifting kind of vibe. Let's look at how *negative* is defined by the three different lexicons.
 
 Let's compare the lexicons themselves on how many *positive* and *negative* words they each categorize.
 
@@ -481,7 +482,7 @@ tidy_lyrics %>%
 -   In the lyrics (**Bing**): there are 912 *negative* words along with 423 *positive* words.
 -   In the lyrics (**NRC**): there are 917 *negative* words along with 846 *positive* words.
 
-Both the **NRC** and **Bing** lexicons didn't have a category for most of the words in Thrice lyrics (*neutral* or *NA*) and there were more negative words than positive.
+In summary, both the **NRC** and **Bing** lexicons didn't have a category for most of the words in Thrice lyrics (*neutral* or *NA*) and there were more negative words than positive.
 
 Let's see if this holds true with the **AFINN** lexicon, the only lexicon we haven't touched yet in the `tidytext` package! The AFINN lexicon gives a score from -5 (for *negative* sentiment) to +5 (*positive* sentiment).
 
@@ -565,7 +566,7 @@ As we go through the songs from the first track on **Identity Crisis**, the epon
 
 The **AFINN** lexicon has the largest absolute magnitudes, however, remember that only 1210 out of 6430 total words in the lyrics were given a **AFINN** score. This means that the few words that do have scores exaggerate the magnitude of the sentiment scores relative to the other lexicons.
 
-Keep in mind that the lexicons in the `tidytext` package are not the be all and end all for text/sentiment analysis. One can even create their own lexicons through crowd-sourcing (such as Amazon Mechanical-Turk, which is how some of the lexicons shown here were created), from utilizing word lists accrued by your own company throughout the years dealing with customer/employee feedback, etc. The sources are limitless!
+Keep in mind that the lexicons in the `tidytext` package are not the be all and end all for text/sentiment analysis. One can even create their own lexicons through crowd-sourcing (such as *Amazon Mechanical-Turk*, which is how some of the lexicons shown here were created), from utilizing word lists accrued by your own company throughout the years dealing with customer/employee feedback, etc. The sources are limitless!
 
 In the next article we'll look at separating our lyrics into **bi-grams** (two words-per-row; which can then be split up into `word1` and `word2`) and examining how the presence of *negation* words ("not", "never", "can't", "won't", etc.) is causing the lexicons to misclassify sentiments of the lyrics!
 
