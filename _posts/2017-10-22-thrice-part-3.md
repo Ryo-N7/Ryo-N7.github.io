@@ -3,7 +3,7 @@ layout: post
 title: "Thrice Part 3: Sentiment Analysis: Emotions in Lyrics!"
 ---
 
-In Part 3 we get into the core element of our analysis, investigating the various sentiments and emotions expressed in Thrice's lyrics!
+In **Part 3** we get into the core element of our analysis, investigating the various sentiments and emotions expressed in Thrice's lyrics!
 
 Using the three sentiment lexicons included with the `tidytext` package, **NRC**, **Bing**, and **AFINN** we can categorize our **tokenized** lyrics data set and then perform a variety of transformations and manipulations to create some visualizations!
 
