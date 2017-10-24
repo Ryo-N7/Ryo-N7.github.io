@@ -3,7 +3,7 @@ layout: post
 title: "Thrice Part 1: Initial Data Exploration and Song Length Distributions with Joy Plots!"
 ---
 
-Hello, for those who know me well you would know that my favorite band is [Thrice](https://en.wikipedia.org/wiki/Thrice)! For those that aren't familiar with them they are a post-hardcore rock band from California, specifically the area around where I went to college (OC/Irvine area). This article will be **Part 1** of a series that will cover data analysis of Thrice's lyrics. Part 1, however, we will just be looking at doing some exploratory analysis with all of the non-lyrics data so we can all get a understanding of the context of what we are dealing with before we deep-dive into the lyrics!
+Hello, for those who know me well you would know that my favorite band is [Thrice](https://en.wikipedia.org/wiki/Thrice)! For those that aren't familiar with them, they are a post-hardcore rock band from California, specifically the area around where I went to college (OC/Irvine area). This article will be **Part 1** of a series that will cover data analysis of Thrice's lyrics. Part 1, however, we will just be looking at doing some exploratory analysis with all of the non-lyrics data so we can all get a understanding of the context of what we are dealing with before we deep-dive into the lyrics!
 
 ``` r
 # Packages:
@@ -15,7 +15,7 @@ library(gridExtra)     # arranging multiple plots in a single output
 
 # Load and tidy  ----------------------------------------------------------
 
-df <- read.csv('thrice.df.csv', header = TRUE, stringsAsFactors = FALSE)
+df <- read.csv('~/thrice.df.csv', header = TRUE, stringsAsFactors = FALSE)
 str(df, list.len = 3)
 ```
 
@@ -25,10 +25,10 @@ str(df, list.len = 3)
     ##  $ year    : int  2000 2000 2000 2000 2000 2000 2000 2000 2000 2000 ...
     ##   [list output truncated]
 
-One of the important things to note about reading in files into the R environment is that if you already have headers in the dataset you are importing, you need to set `header = TRUE` or else your column/variable names will appear on their own as the first row of each column, as shown below:
+One of the important things to note about reading in files into the R environment is that if you already have headers in the data set you are importing, you need to set `header = TRUE` or else your column/variable names will appear on their own as the first row of each column, as shown below:
 
 ``` r
-df2 <- read.csv('thrice.df.csv', header = FALSE, stringsAsFactors = FALSE)
+df2 <- read.csv('~/R_materials/ThriceLyrics/thrice.df.csv', header = FALSE, stringsAsFactors = FALSE)
 
 str(df2, list.len = 3)
 ```
@@ -95,9 +95,9 @@ length(unique(df$album))
 
     ## [1] 11
 
-11 albums so far! Do note that in reality, *The Alchemy Index* albums (divided into the four elements of *Fire*, *Water*, *Air*, and *Earth*) were organized into two albums of two elements each (released in 2007 and 2008 respectively). I divided each element album individually because they're each stylistically very different and for the purposes of the lyrics analysis, I thought it would be better to categorize them into distinct albums.
+11 albums so far! Do note that in reality, **The Alchemy Index** albums (divided into the four elements of **Fire**, **Water**, **Air**, and **Earth**) were organized into two albums of two elements each (released in 2007 and 2008 respectively). I divided each element album individually because they're stylistically very different from one another and for the purposes of the lyrics analysis later on, I thought it would be better to categorize them into distinct albums.
 
-Another way to do the above and in much readable code is to use the `n_distinct()` function from the `dply` package while also taking advantage of the `magrittr` pipes:
+Another way to do the above and in more readable code is to use the `n_distinct()` function from the `dply` package while also taking advantage of the `magrittr` pipes:
 
 ``` r
 df %>% select(album) %>% n_distinct()  
@@ -159,7 +159,7 @@ df %>%
     ## 11            The Alchemy Index Earth   2008         6
     ## # ... with 1 more variables: duration <S4: Duration>
 
-*Major/Minor* and *Vheissu* are the longest albums, both totalling up to a bit over 49 mins!
+**Major/Minor** and **Vheissu** are the longest albums, both totaling up to a bit over 49 mins!
 
 How about the length of each song?
 
@@ -185,7 +185,7 @@ df %>%
     ## 10         Kings Upon The Main 296s (~4.93 minutes)
     ## # ... with 93 more rows
 
-Besides grouping with `group_by()` and summarizing with `summarize()`, there are other ways to filter our data. For example, let's say we want to see the total duration of *The Alchemy Index* (*Fire*, *Water*, *Earth*, and *Air*) then we could use the `grepl()` function to search for all albums with the term "Index" in it:
+Besides grouping with `group_by()` and summarizing with `summarize()`, there are other ways to filter our data. For example, let's say we want to see the total duration of **The Alchemy Index** (**Fire**, **Water**, **Earth**, and **Air**) then we could use the `grepl()` function to search for all albums with the term "Index" in it:
 
 ``` r
 df %>% 
@@ -295,7 +295,7 @@ df %>% ggplot(aes(x = as.numeric(lengthS))) +
 
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-15-1.png)
 
-Let's try plotting in minutes as well by dividing the lenghtS (in seconds) by 60, it won't be a perfect conversion as it's not sexagesimal (base-60) but it's good enough for our purposes. Also, the `period` variable type that we created doesn't seem to work with ggplot as far as I know, which is why you have to convert it to `numeric` in `ggplot()`.
+Let's try plotting in minutes as well by dividing the `lenghtS` (length in seconds) by 60, it won't be a perfect conversion as it's not sexagesimal (base-60) but it's good enough for our purposes. Also, the `period` variable type that we created doesn't seem to work with ggplot as far as I know, which is why you have to convert it to `numeric` in `ggplot()`.
 
 ``` r
 df %>% ggplot(aes(x = as.numeric(lengthS)/60)) + 
@@ -315,7 +315,7 @@ df %>% ggplot(aes(x = as.numeric(lengthS)/60)) +
 
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-16-1.png)
 
-Change to plot by length in minutes (not perfect as it won't be in base 60)
+Change to plot by length in minutes (not perfect as it won't be in base 60):
 
 ``` r
 histogram <- df %>% 
@@ -333,7 +333,7 @@ histogram <- df %>%
         axis.title = element_text(size = 8)) 
 ```
 
-How can we see differences between albums? We can use subset our data to create mini-plots for each individual level of our variable (`album` in our case) using facets. First let's try the `facet_wrap()` function which
+How can we see differences between albums? We can use subset our data to create mini-plots for each individual level of our variable (`album` in our case) using facets. First let's try the `facet_wrap()` function:
 
 ``` r
 histogram + facet_wrap(~album)
@@ -352,7 +352,7 @@ histogram + facet_grid(album ~.) +
 
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-19-1.png)
 
-That looks **really bad**. On one hand, we can compare the histograms against eachother easily, but the bars are all squished and that makes it hard to discern any differences. There are just way too many albums and not enough screen space to take advantage of facetting like this.
+That looks **really bad**. On one hand, we can compare the histograms against each other easily, but the bars are all squished and that makes it hard to discern any differences. There are just way too many albums and not enough screen space to take advantage of facetting like this.
 
 If there weren't so many albums it'll look better but even then, the trend lines aren't very smooth in the first place.
 What we can do is try out a different plotting method altogether, so now let's introduce...
@@ -360,7 +360,7 @@ What we can do is try out a different plotting method altogether, so now let's i
 Joy plots!
 ----------
 
-Joy plots engulfed the data science/visualization community during the past summer. First popularized in a post by Henrik Lindberg on ["peak times for sports and leisure"](https://www.reddit.com/r/dataisbeautiful/comments/6m0wo7/peak_time_for_sports_and_leisure_oc/), joyplots are useful for visualizing changes in distribution over time or space and was made to be an alternative to heatmaps. Amidst much debate on the various advantages and disadvantages of this visualization method all across social media, Claus Wilke released the [ggjoy](https://cran.r-project.org/web/packages/ggjoy/vignettes/introduction.html) package that allows you to easily make joy plots on top of the existing `ggplot2` package.
+**Joy plots** engulfed the data science/visualization community during the past summer. First popularized in a post by Henrik Lindberg on ["peak times for sports and leisure"](https://www.reddit.com/r/dataisbeautiful/comments/6m0wo7/peak_time_for_sports_and_leisure_oc/), joy plots are useful for visualizing changes in distribution over time or space and was made to be an alternative to heat maps. Amidst much debate on the various advantages and disadvantages of this visualization method all across social media, Claus Wilke released the [ggjoy](https://cran.r-project.org/web/packages/ggjoy/vignettes/introduction.html) package that allows you to easily make joy plots on top of the existing `ggplot2` package.
 
 I finally have a chance to put this to practice with my own data so let's try it out here!
 
@@ -377,7 +377,7 @@ df %>%
 
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-20-1.png)
 
-You can see that the the ridgelines are drawn from the densities of the data along time on the x-axis. The more numerous the amount of songs of any particular duration of time, the higher the ridges appear, with the overall effect being that of a mountain range tha can be compared across different groups, in this case Thrice's albums.
+You can see that the the **ridge lines** are drawn from the **densities** of the data along time (x-axis). The more numerous the amount of songs of any particular duration of time, the higher the ridges appear, with the overall effect being that of a mountain range that can be compared across different groups, in this case Thrice's albums.
 
 Now let's add some color (dark green = `#006400`, dark grey = `#404040`) and tinker with the scales a bit...
 
@@ -398,9 +398,9 @@ joyplot
 
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-21-1.png)
 
-From the joyplot you can clearly see the density of songs shift from around 3 minutes in "The Illusion of Saftey" to around 4 minutes or more in the bottom few albums. The only thing really setting apart the longer albums are the amount of songs that are 6 minutes or longer, otherwise most of the songs in an album are around the 4-5 minute mark. A note about *The Alchemy Index: Water* is the fourth track, ["Night Diving"](https://www.youtube.com/watch?v=p3jDFVfys_Q) a 6+ minute long instrumental which, although really nice to listen to on long drives or on a plane, inflates the album's position in the joyplot! In contrast, both *To Be Everywhere And To Be Nowhere* and *Identity Crisis* also have instrumentals but with a length of around a minute each!
+From the joy plot you can clearly see the density of songs shift from around 3 minutes in *The Illusion of Safety* to around 4 minutes or more in the bottom few albums. The only thing really setting apart the longer albums are the amount of songs that are 6 minutes or longer, otherwise most of the songs in an album are around the 4-5 minute mark. A note about **The Alchemy Index: Water** is the fourth track, [*Night Diving*](https://www.youtube.com/watch?v=p3jDFVfys_Q) a 6+ minute long instrumental which, although really nice to listen to on long drives or on a plane, inflates the album's position in the joy plot! In contrast, both **To Be Everywhere And To Be Nowhere** and **Identity Crisis** also have instrumentals but with a length of around a minute each!
 
-Finally, let's compare our histogram with the joyplot!
+Finally, let's compare our histogram with the joy plot!
 
 We can use the `grid` package to customize layouts:
 
@@ -425,6 +425,6 @@ grid.arrange(joyplot2, hist, nrow = 1)
 
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-25-1.png)
 
-We can see that the joyplots make the data a lot more understandable (for the final comparison I took out the y-axis labels so we can see the joyplot better).
+We can see that the **joy plots** make the data a lot more understandable (for the final comparison I took out the y-axis labels so we can see the joy plot better).
 
 And that concludes **Part 1**! Next we will be getting into the real meat of sentiment analysis using the `tidytext` package!
