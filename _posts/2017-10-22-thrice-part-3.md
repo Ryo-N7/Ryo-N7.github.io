@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thrice Part 3: Sentiment Analysis: Emotions in Lyrics!"
+title: "Thrice: Sentiment Analysis - Emotions in Lyrics!"
 ---
 
 In **Part 3** we get into the core element of our analysis, investigating the various sentiments and emotions expressed in Thrice's lyrics!

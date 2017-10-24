@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thrice Part 1: Initial Data Exploration and Song Length Distributions with Joy Plots!"
+title: "Thrice: Initial Data Exploration and Song Length Distributions with Joy Plots!"
 ---
 
 Hello, for those who know me well you would know that my favorite band is [Thrice](https://en.wikipedia.org/wiki/Thrice)! For those that aren't familiar with them, they are a post-hardcore rock band from California, specifically the area around where I went to college (OC/Irvine area). This article will be **Part 1** of a series that will cover data analysis of Thrice's lyrics. Part 1, however, we will just be looking at doing some exploratory analysis with all of the non-lyrics data so we can all get a understanding of the context of what we are dealing with before we deep-dive into the lyrics!

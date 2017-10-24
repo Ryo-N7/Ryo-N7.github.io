@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thrice Part 2: Lyrics Analysis By Breaking Down The Lyrics Word-by-Word!"
+title: "Thrice: Breaking Down The Lyrics Word-by-Word!"
 ---
 
 In **Part 2** we will look at the lyrical content of the band, Thrice. By dividing the lyrics of each song into a single word per row, we can take a much closer look at the the lyrical content at various levels!
@@ -702,7 +702,7 @@ We can check that the code ran properly (without having to manually look into yo
 file.exists(paste0(word_count_nested$album, ".pdf"))
 ```
 
-    ##  [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+    ##  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
 
 With all those plots properly saved into separate files we can now share and send them to other people!
 
