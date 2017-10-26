@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Graphics for Social Network Analysis
-img: "/assets/2017-04-03-social-network-analysis_files/unnamed-chunk-1-1.png"
+share-img: "/assets/2017-04-03-social-network-analysis_files/unnamed-chunk-1-1.png"
 ---
 
 ## A small introduction with the _sna_ and the _igraph_ packages.!
