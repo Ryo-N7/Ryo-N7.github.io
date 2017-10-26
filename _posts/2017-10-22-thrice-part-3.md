@@ -83,7 +83,7 @@ ggplot(top_sentiments_bing, aes(reorder(word, num), num, fill = sentiment)) +
         panel.grid.major.y = element_line(size = 1.1))
 ```
 
-<img src="../assets/2017-10-22-thrice-part-3_files/Most common positive and negative words-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2017-10-22-thrice-part-3_files/Most-common-positive-and-negative-words-1.png" style="display: block; margin: auto;" />
 
 Reminiscent of the most common words plot (without "stop words") from **Part 2** except this time we've differentiated between words with *positive* sentiment and *negative* sentiment! Another way to visualize this is using a word cloud!
 
