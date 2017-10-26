@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sakura Bloom: Data Munging & Alternate Visualizations!"
+fb-img: https://ryo-n7.github.io/assets/2017-09-10-sakura-bloom_files/unnamed-chunk-11-1.png
 ---
 
 April in Japan is a time of new beginnings. Unlike most countries, the school year starts in April and is also the beginning of the fiscal year for the government and most corporations. This past April, *The Economist* presented an interesting article with a beautiful ggplot2 graphic depicting the steadily early blossoming of sakura trees in Kyoto:

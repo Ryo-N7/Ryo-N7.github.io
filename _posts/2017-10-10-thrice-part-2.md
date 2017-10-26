@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Thrice: Breaking Down The Lyrics Word-by-Word!"
+fb-img: https://ryo-n7.github.io/assets/2017-10-10-thrice-part-2_files/cowplot-for-arrange-multiple-plots-1.png
 ---
 
 In **Part 2** we will look at the lyrical content of the band, Thrice. By dividing the lyrics of each song into a single word per row, we can take a much closer look at the the lyrical content at various levels!
@@ -686,7 +687,7 @@ library(cowplot)
 plot_grid(plotlist = nested_plots, ncol = 2)
 ```
 
-<img src="../assets/2017-10-10-thrice-part-2_files/cowplot for arrange multiple plots-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2017-10-10-thrice-part-2_files/cowplot-for-arrange-multiple-plots-1.png" style="display: block; margin: auto;" />
 
 We can now view all the plots (or a subset of them) on a single page!
 

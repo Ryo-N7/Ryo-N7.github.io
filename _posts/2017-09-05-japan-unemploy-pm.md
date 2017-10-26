@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Unemployment and Japanese Prime Ministers: Simple visualizations with ggplot2"
+fb-img: https://ryo-n7.github.io/assets/2017-09-05-japan-unemploy-pm_files/plot-again-1.png
 ---
 
 I was flipping through Hadley Wickham's *ggplot2* book the other day when I came across this (I added axis labels and title for clarity):
