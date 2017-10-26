@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Graphics for Social Network Analysis
-share-img: https://github.com/Ryo-N7/Ryo-N7.github.io/blob/master/assets/2017-04-03-social-network-analysis_files/unnamed-chunk-1-1.png
+share-img: https://ryo-n7.github.io/assets/2017-04-03-social-network-analysis_files/unnamed-chunk-1-1.png
 ---
 
 ## A small introduction with the _sna_ and the _igraph_ packages.!
