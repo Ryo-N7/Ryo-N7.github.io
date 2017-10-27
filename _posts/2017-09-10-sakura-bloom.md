@@ -177,7 +177,6 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 Better! but does not look good on a drab grey background... So let's add a background image! We can do this by utilizing a variety of packages to download an image from the internet and place a ggplot on top of it. All of this can be done inside a custom function ([original source](http://nandeshwar.info/quotes/little-silly-fun-r/).
 
 In this custom function we will: 
-
 1. Download an image and store it in a temporary file 
 2. Save that image with the `readJPEG()` function 
 3. Use `rasterGrob()` to render a raster object with the downloaded image 
