@@ -51,7 +51,7 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 * Work experience in a variety of cultures: **Ghana**, **India**, **Germany**, **USA**, **Ireland**, and **Japan**
 * **Research Analyst** in a [National Science Foundation project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1322305&HistoricalAwards=false) while at Chapman University
   + **Web Content Developer** for communicating project progress and findings [(OCT Group)](http://octgroup.org/)
-* Marketing and Business Development Intern at [RedNight Consulting](https://www.rednightconsulting.com/) 
+* **Marketing** and **Business Development** Intern at [RedNight Consulting](https://www.rednightconsulting.com/) 
 * Youth Football (Soccer) **Coach** in Ghana, India, and Japan: Under-9s to Under-14s
 * Volunteer **Teacher** in India: Reading comprehension, spelling, grammar, physical education
 * [Blogging about data analysis using R](https://ryo-n7.github.io/index)
