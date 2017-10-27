@@ -2,6 +2,7 @@
 layout: post
 title: "Thrice: Sentiment Analysis - Emotions in Lyrics!"
 fb-img: https://ryo-n7.github.io/assets/2017-10-22-thrice-part-3_files/Most-common-positive-and-negative-words-1.png
+tags: [thrice, music, lyrics, tidytext, sentiment-analysis, emotions]
 ---
 
 In **Part 3** we get into the core element of our analysis, investigating the various sentiments and emotions expressed in Thrice's lyrics!

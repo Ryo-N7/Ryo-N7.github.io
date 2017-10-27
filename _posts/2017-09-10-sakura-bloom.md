@@ -2,6 +2,7 @@
 layout: post
 title: "Sakura Bloom: Data Munging & Alternate Visualizations!"
 fb-img: https://ryo-n7.github.io/assets/2017-09-10-sakura-bloom_files/unnamed-chunk-11-1.png
+tags: [data-munging, data-viz, ggplot2]
 ---
 
 April in Japan is a time of new beginnings. Unlike most countries, the school year starts in April and is also the beginning of the fiscal year for the government and most corporations. This past April, *The Economist* presented an interesting article with a beautiful ggplot2 graphic depicting the steadily early blossoming of sakura trees in Kyoto:
@@ -173,9 +174,14 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 
 <img src="../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
 
-Better! but does not look good on a drab grey background... So let's add a background image! We can do this by utilizing a variety of packages to download an image from the internet and place on ggplot on top of it. All of this can be done inside a custom function.
+Better! but does not look good on a drab grey background... So let's add a background image! We can do this by utilizing a variety of packages to download an image from the internet and place a ggplot on top of it. All of this can be done inside a custom function (original source: http://nandeshwar.info/quotes/little-silly-fun-r/).
 
-In this custom function we will: 1. Download an image and store it in a temporary file 2. Save that image with the `readJPEG()` function 3. Use `rasterGrob()` to render a raster object with the downloaded image 4. Slowly build up our ggplot visualization step-by-step
+In this custom function we will: 
+
+1. Download an image and store it in a temporary file 
+2. Save that image with the `readJPEG()` function 
+3. Use `rasterGrob()` to render a raster object with the downloaded image 
+4. Slowly build up our ggplot visualization step-by-step
 
 ``` r
 #### With background image!
@@ -210,7 +216,9 @@ sakura_r()
 
 <img src="../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
 
-Normally, you would **never** add in a background image to a plot as it would obscure the individual data points and other details. However, for this graph the main point of interest is the trend line going across and decreasing from the 20th century, pointing out how sakura have been steadily blossoming earlier and earlier in the year which can be clearly seen despite the background image. I mainly wanted to show a cool new trick I learned and to also do something *slightly* different from what *The Economist* did. Some other cool uses of Dr. Aono's sakura data set include [this](http://opiateforthemass.es/articles/sakura/) visualization done by Christoph Safferling from *Opiate for the masses* where they incorporated sakura emoji as the data point shapes; definitely much better than the ersatz `geom_point` shape I used as "sakura" for my own plot!
+Normally, you would **never** add in a background image to a plot as it would obscure the individual data points and other details. However, for this graph the main point of interest is the trend line going across and decreasing from the 20th century, pointing out how sakura have been steadily blossoming earlier and earlier in the year which can be clearly seen despite the background image. I mainly wanted to show a cool new trick I learned and to also do something *slightly* different from what *The Economist* did. 
+
+Some other cool uses of Dr. Aono's sakura data set include [this](http://opiateforthemass.es/articles/sakura/) visualization done by Christoph Safferling from *Opiate for the masses* where they incorporated sakura emoji as the data point shapes; definitely much better than the ersatz `geom_point` shape I used as "sakura" for my own plot!
 
 To cap off, I'll leave you with some photos I took of sakura in Tokyo when I went back home for Spring Break back in April! Can't wait for the blossoming next year!
 
