@@ -42,22 +42,22 @@ avatar: "/img/profile_big.jpg"
 author:
   name: Ryo Nakagawara
   email: "ryonakagawara@gmail.com"
-  facebook: yourname  # eg. daattali
-  github: Ryo-N7    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: RyoNakagawara  # eg. daattali
-  xing: yourname      # eg. daattali
+  facebook: yourname  
+  github: Ryo-N7    
+  twitter: yourname   
+  reddit: yourname    
+  google-plus: +yourname   
+  linkedin: RyoNakagawara  
+  xing: yourname      
   stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
-  steam: yourname     # eg. daattali
-  twitch: yourname    # eg. daattali
-  yelp: yourname      # eg. daattali
+  snapchat: yourname  
+  instagram: yourname 
+  youtube: yourlink  
+  spotify: yourname   
+  telephone: yourphone   
+  steam: yourname     
+  twitch: yourname    
+  yelp: yourname      
 
 # Select which links to show in the footer
 footer-links-active:
@@ -115,7 +115,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/London"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -209,6 +209,3 @@ prose:
 
 gems:
   - jekyll-paginate
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189

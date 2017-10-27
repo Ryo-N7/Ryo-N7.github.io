@@ -2,6 +2,7 @@
 layout: post
 title: "Global Peace Index: Web scraping and bump charts!"
 fb-img: https://ryo-n7.github.io/assets/2017-09-18-global-peace-index_files/unnamed-chunk-19-1.png
+share-img: https://ryo-n7.github.io/assets/2017-09-18-global-peace-index_files/unnamed-chunk-19-1.png
 tags: [web-scraping, data-munging, data-viz, ggplot2]
 ---
 
