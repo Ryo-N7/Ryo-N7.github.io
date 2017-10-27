@@ -174,7 +174,7 @@ ggplot(sakura, aes(x = year, y = Day_Of_Year)) +  # or just use original 'year' 
 
 <img src="../assets/2017-09-10-sakura-bloom_files/unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
 
-Better! but does not look good on a drab grey background... So let's add a background image! We can do this by utilizing a variety of packages to download an image from the internet and place a ggplot on top of it. All of this can be done inside a custom function (original source: http://nandeshwar.info/quotes/little-silly-fun-r/).
+Better! but does not look good on a drab grey background... So let's add a background image! We can do this by utilizing a variety of packages to download an image from the internet and place a ggplot on top of it. All of this can be done inside a custom function ([original source](http://nandeshwar.info/quotes/little-silly-fun-r/).
 
 In this custom function we will: 
 
