@@ -2,6 +2,7 @@
 layout: post
 title: "Thrice: Breaking Down The Lyrics Word-by-Word!"
 fb-img: https://ryo-n7.github.io/assets/2017-10-10-thrice-part-2_files/cowplot-for-arrange-multiple-plots-1.png
+share-img: https://ryo-n7.github.io/assets/2017-10-10-thrice-part-2_files/cowplot-for-arrange-multiple-plots-1.png
 tags: [thrice, music, lyrics, text-analysis, tidytext, purrr, dplyr]
 ---
 
