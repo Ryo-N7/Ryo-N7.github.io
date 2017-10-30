@@ -5,7 +5,7 @@ fb-img: https://ryo-n7.github.io/assets/2017-10-10-thrice-part-2_files/cowplot-f
 tags: [thrice, music, lyrics, text-analysis, tidytext, purrr, dplyr]
 ---
 
-In **Part 2** we will look at the lyrical content of the band, Thrice. By dividing the lyrics of each song into a single word per row, we can take a much closer look at the the lyrical content at various levels!
+In **Part 2** we will look at the lyrical content of the band, Thrice. By dividing the lyrics of each song into a single-word-per-row format, we can take a much closer look at the the lyrical content at various levels!
 
 Let's get started!
 
@@ -529,9 +529,9 @@ Now let's try to create plots for the most frequent words for each album. To do 
 word_count_nested <- wordToken2 %>% 
   group_by(album, word) %>% 
   summarize(count = n(), sort = TRUE) %>% 
-  top_n(5) %>% 
+  top_n(5, wt = count) %>% 
   arrange(album, desc(count)) %>% 
-  nest() 
+  nest()  
 ```
 
 Let's take a look at the individual elements of our new "data" column!
@@ -540,43 +540,32 @@ Let's take a look at the individual elements of our new "data" column!
 word_count_nested$data[[1]]
 ```
 
-    ## # A tibble: 392 x 3
-    ##     word count  sort
-    ##    <chr> <int> <lgl>
-    ##  1 heart    12  TRUE
-    ##  2  eyes     8  TRUE
-    ##  3  life     6  TRUE
-    ##  4 light     6  TRUE
-    ##  5   cry     5  TRUE
-    ##  6 faith     5  TRUE
-    ##  7  soul     5  TRUE
-    ##  8  true     5  TRUE
-    ##  9   day     4  TRUE
-    ## 10  deep     4  TRUE
-    ## # ... with 382 more rows
+    ## # A tibble: 8 x 3
+    ##    word count  sort
+    ##   <chr> <int> <lgl>
+    ## 1 heart    12  TRUE
+    ## 2  eyes     8  TRUE
+    ## 3  life     6  TRUE
+    ## 4 light     6  TRUE
+    ## 5   cry     5  TRUE
+    ## 6 faith     5  TRUE
+    ## 7  soul     5  TRUE
+    ## 8  true     5  TRUE
 
 ``` r
 word_count_nested$data[[5]]
 ```
 
-    ## # A tibble: 178 x 3
-    ##       word count  sort
-    ##      <chr> <int> <lgl>
-    ##  1    free    15  TRUE
-    ##  2    burn    13  TRUE
-    ##  3    send    11  TRUE
-    ##  4    fire    10  TRUE
-    ##  5   flame     9  TRUE
-    ##  6    city     7  TRUE
-    ##  7    eyes     7  TRUE
-    ##  8 breathe     5  TRUE
-    ##  9    door     5  TRUE
-    ## 10   leave     5  TRUE
-    ## # ... with 168 more rows
+    ## # A tibble: 5 x 3
+    ##    word count  sort
+    ##   <chr> <int> <lgl>
+    ## 1  free    15  TRUE
+    ## 2  burn    13  TRUE
+    ## 3  send    11  TRUE
+    ## 4  fire    10  TRUE
+    ## 5 flame     9  TRUE
 
-The most common word data for the first list (Album = **Identity Crisis**) and the fifth list (Album = **AI: Fire**)
-
-The only problem with the `top_n()` function is that if there are ties than the total number will be bigger than `n`.
+The most common word for the first list (Album = **Identity Crisis**) is "heart" and the fifth list (Album = **AI: Fire**) is "free". The only problem with the `top_n()` function is that if there are ties than the total number will be bigger than the specified `n` such as in **Identity Crisis** above.
 
 Now we use the data to create a plot for each album using the `map2()` function which allows us to iteratively create a plot from each specific `data` column from each `album` row and stores the plot information in its own column `plot`, just like we did in `data`.
 
@@ -602,9 +591,9 @@ str(word_count_nested, list.len = 3, max.level = 2)
     ## Classes 'tbl_df', 'tbl' and 'data.frame':    11 obs. of  3 variables:
     ##  $ album: Factor w/ 11 levels "Identity Crisis",..: 1 2 3 4 5 6 7 8 9 10 ...
     ##  $ data :List of 11
-    ##   ..$ :Classes 'tbl_df', 'tbl' and 'data.frame': 392 obs. of  3 variables:
-    ##   ..$ :Classes 'tbl_df', 'tbl' and 'data.frame': 415 obs. of  3 variables:
-    ##   ..$ :Classes 'tbl_df', 'tbl' and 'data.frame': 422 obs. of  3 variables:
+    ##   ..$ :Classes 'tbl_df', 'tbl' and 'data.frame': 8 obs. of  3 variables:
+    ##   ..$ :Classes 'tbl_df', 'tbl' and 'data.frame': 7 obs. of  3 variables:
+    ##   ..$ :Classes 'tbl_df', 'tbl' and 'data.frame': 6 obs. of  3 variables:
     ##   .. [list output truncated]
     ##  $ plot :List of 11
     ##   ..$ :List of 9
@@ -647,7 +636,7 @@ word_count_nested %>%
 
 <img src="../assets/2017-10-10-thrice-part-2_files/facetting attempt-1.png" style="display: block; margin: auto;" />
 
-Regardless of the fact that there isn't much space, the data isn't clearly presented in this way. One way to solve our problem is to code in a way that each plot for each album is printed out individually and then to arrange all those individual plots onto one page. This way the group of plots won't be forcibly squished together into one gigantic plot.
+Regardless of the fact that we don't have enough screen space, facetting is clearly not the way to do this. One way to solve our problem is to code in a way that each plot for each album is printed out individually and then to arrange all those individual plots onto one page. This way the group of plots won't be forcibly squished together into one gigantic plot.
 
 One way is to use a **base R** method with the `do.call()` function. This will iterate the `grid.arrange()` function for the ggplot data stored in `plot` in every row/album.
 
@@ -669,18 +658,18 @@ str(nested_plots, list.len = 2, max.level = 2)
 
     ## List of 4
     ##  $ :List of 9
-    ##   ..$ data       :Classes 'tbl_df', 'tbl' and 'data.frame':  392 obs. of  3 variables:
+    ##   ..$ data       :Classes 'tbl_df', 'tbl' and 'data.frame':  8 obs. of  3 variables:
     ##   ..$ layers     :List of 1
     ##   .. [list output truncated]
     ##   ..- attr(*, "class")= chr [1:2] "gg" "ggplot"
     ##  $ :List of 9
-    ##   ..$ data       :Classes 'tbl_df', 'tbl' and 'data.frame':  415 obs. of  3 variables:
+    ##   ..$ data       :Classes 'tbl_df', 'tbl' and 'data.frame':  7 obs. of  3 variables:
     ##   ..$ layers     :List of 1
     ##   .. [list output truncated]
     ##   ..- attr(*, "class")= chr [1:2] "gg" "ggplot"
     ##   [list output truncated]
 
-From inspecting the list with `str()`, we can see that this is a list with a length four, one list for each of the four albums that we subsetted. Within each album's list we have another set of lists for the respective `data` and `plot` elements! Using this list of lists we can pass it through the `plot_grid()` function from the `cowplot` package to arrange multiple plots on a single page. In this function we basically call our list of plots with the `plotlist =` argument and then we can also specify the number of columns, rows, label size, etc.
+From inspecting the list with `str()`, we can see that this is a list with a length of four, basically one list for each of the four albums that we subsetted. Within each album's list we have another set of lists for the respective `data` and `plot` elements! Using this list of lists we can pass it through the `plot_grid()` function from the `cowplot` package to arrange multiple plots on a single page. In this function we basically call our list of plots with the `plotlist =` argument and then we can also specify the number of columns, rows, label size, etc.
 
 ``` r
 library(cowplot)
@@ -692,10 +681,10 @@ plot_grid(plotlist = nested_plots, ncol = 2)
 
 We can now view all the plots (or a subset of them) on a single page!
 
-By using the `map2()` function from purrr package, this time we apply the function `ggsave()` so that it iteratively saves the plot for each album!
+By using the `map2()` function from `purrr` package, this time we apply the function `ggsave()` so that it iteratively saves the plot for each album!
 
 ``` r
-# map2(paste0(word_count_nested$album, ".pdf"), word_count_nested$plot, ggsave)
+map2(paste0(word_count_nested$album, ".pdf"), word_count_nested$plot, ggsave)
 ```
 
 We can check that the code ran properly (without having to manually look into your working directory) with the `file.exists()` function.
@@ -709,3 +698,7 @@ file.exists(paste0(word_count_nested$album, ".pdf"))
 With all those plots properly saved into separate files we can now share and send them to other people!
 
 Today we did divided up the lyrics into singular words and analyzed it at various levels and through various filters. In **Part 3** we will look more closely at the different sentiments/emotions that are expressed in Thrice's lyrics!
+
+
+
+(10/30/2017 EDIT: forgot the `wt =` argument in `top_n()` when nesting the dataframe, each nested `data` column should have the proper number of rows now!)
