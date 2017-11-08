@@ -11,6 +11,8 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
+** Currently looking for full-time opportunities! **
+
 **Contact**: ryonakagawara[at]gmail[dot]com
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
@@ -39,10 +41,14 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 * Graphical visualization:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/) [4](https://ryo-n7.github.io/2017-09-10-sakura-bloom/)
 
+* SPSS
+
+* Amazon Mechanical Turk:
+  + Build and manage different types of surveys and Human Intelligence Tasks (HITs)
+  + Integrate with Inquisit Web Application for IAT tasks
+
 * Inquisit Lab 5:
   * Coding Implicit Association Test experiments for consumer psychology research
-  
-* SPSS
 
 * html (basic)
 
