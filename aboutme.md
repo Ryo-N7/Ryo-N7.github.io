@@ -11,7 +11,7 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
-** Currently looking for full-time opportunities! **
+**Currently looking for full-time opportunities!**
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
