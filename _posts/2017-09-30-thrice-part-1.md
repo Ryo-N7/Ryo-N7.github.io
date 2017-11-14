@@ -2,6 +2,7 @@
 layout: post
 title: "Thrice: Initial Data Exploration and Song Length Distributions with Joy Plots!"
 fb-img: https://ryo-n7.github.io/assets/2017-09-30-thrice-part-1_files/unnamed-chunk-21-1.png
+share-img: https://ryo-n7.github.io/assets/2017-09-30-thrice-part-1_files/unnamed-chunk-21-1.png
 tags: [thrice, music, lyrics, joy-plot, data-munging]
 ---
 
@@ -429,4 +430,4 @@ grid.arrange(joyplot2, hist, nrow = 1)
 
 We can see that the **joy plots** make the data a lot more understandable (for the final comparison I took out the y-axis labels so we can see the joy plot better).
 
-And that concludes **Part 1**! Next we will be getting into the real meat of sentiment analysis using the `tidytext` package!
+And that concludes **Part 1**! Next we will be getting into the real meat of sentiment analysis using the `tidytext` package! (Link: [Part 2](https://ryo-n7.github.io/2017-10-10-thrice-part-2/))
