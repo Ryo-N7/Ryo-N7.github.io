@@ -230,7 +230,7 @@ GPI_rank[1478, 3] <- 11
 
 I'm not going to bother manually changing all of them especially since there are a lot of NAs in the earlier years where many countries that show up in the later editions of the GPI had not been included yet. The most important thing is to make sure there aren't any tied rankings in the Top 10 for `2008` and `2017` as that's where our labels are going to be.
 
-I'm sure there's a way to automate this using the function I used to detect duplicates with `lapply()`/`map()` to combine the duplicates in each year all in one dataframe, I'll edit this section when I find out how to do it.
+I'm sure there's a way to automate this using the function I used to detect duplicates with `lapply()`/`map()` to combine the duplicates in each year all in one dataframe, if you've got any suggestions, let me know in the comments section below!
 
 Now let's create a **custom ggplot theme** that we can add on to our plot and call it... `theme_peace`!
 
