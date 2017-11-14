@@ -13,7 +13,28 @@ Which shows the unemployment data for the USA from 1967 to 2015 along with the P
 
 For the unemployment data, I was able to download a dataset from the [Federal Reserve Bank of St. Louis](https://fred.stlouisfed.org/series/LRHUTTTTJPM156S) website. It's a really fantastic source with loads of raw data from around the world that you can download (in Excel, .csv, .png, PowerPoint, and .pdf formats), I will definitely be coming back here for other articles! This dataset comprises of the harmonized monthly unemployment rate for ALL persons in Japan. There was another dataset for Aged 15-64 however that one only went back to January of 1970. I wanted to go back to 1960 (or better 1945) for a better look at Japan's post-war history and economic recovery so I went with this one instead. For a more in-depth analysis I would hunt down some Japanese sources but for today we are just focusing on the simple **ggplot2** graph.
 
-For the dataset about the Prime Ministers of Japan I went to Wikipedia, a source that's pretty reliable and easy to use. Normally, I would web-scrape the information using the **rvest** package however, I did not know how to scrap multiple tables at once (as the Prime Ministers were divided into individual tables according to the reigning Emperor) so I created it manually. Thankfully this didn't take too long!
+For the dataset about the Prime Ministers of Japan I went to Wikipedia, a source that's pretty reliable and easy to use. Normally, I would web-scrape the information using the **rvest** package however, wrangling it to a regular table was very difficult as the Prime Ministers were divided into individual tables according to the reigning Emperor, many headers were spread across multiple columns, among other headaches. 
+
+``` r
+library(rvest)
+library(stringr)
+library(dplyr)
+
+url <- "https://en.wikipedia.org/wiki/List_of_Prime_Ministers_of_Japan"
+
+PMs <- url %>% 
+  read_html() %>% 
+  html_table(fill = TRUE)
+
+showa_era <- PMs %>% .[[4]]    # table for Prime Ministers in Showa Era
+heisei_era <- PMs %>% .[[5]]   # table for Prime Ministers in Heisei Era
+```
+
+Here is a picture of the raw scraped table:
+
+![](../assets/2017-09-05-japan-unemploy-pm_files/PM_webscrape_ugh.JPG)
+
+It was going to take too much time to clean for an article of this size so I created the data set manually. Thankfully this didn't take too long!
 
 ``` r
 prime_ministers <- data.frame(
@@ -150,7 +171,7 @@ To unclutter our graph, let's only show Prime Ministers whose term exceeded 2 ye
     ## Time differences in days
     ## [1]  291  219 2247  744   64 1240 1574 2797
 
-By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is [Tanzan Ishibashi](https://en.wikipedia.org/wiki/Tanzan_Ishibashi), who unfortunately was incapacitated by stroke. Others such as [S&\#333suke Uno](https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno) (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
+By subtracting the starting dates from end dates we can calculate the length of each Prime Minister's term in days. The PM that lasted **64** days as shown is [Tanzan Ishibashi](https://en.wikipedia.org/wiki/Tanzan_Ishibashi), who unfortunately was incapacitated by stroke. Others such as [Sosuke Uno](https://en.wikipedia.org/wiki/S%C5%8Dsuke_Uno) (**68** days) resigned in more acrimonious terms (allegations of an extramarital affair with a **geisha** leading to a terrible performance in the subsequent election! Details can be read in *Secrets, Sex, and Spectacle: The Rules of Scandal in Japan and the United States* by Mark West if you're **really** curious).
 
 Now we just have to use mutate() to add this data into a new column:
 
@@ -193,6 +214,10 @@ japan_unemploy %>%
 
 <img src="../assets/2017-09-05-japan-unemploy-pm_files/plot-again-1.png" style="display: block; margin: auto;" />
 
-Much better! I wanted to fill in the spaces of the terms with the political parties, however, most of the Prime Ministers came from the Liberal Democratic Party or LDP (Jimintō in Japanese) which dominated Japanese politics from 1955 to all the way to 1993! Also with so many segments of PMs it wouldn't look as pretty as Hadley's graph.
+Much better! However, the arrows pointing to the start dates aren't ideal... Maybe I could try filling each subsetted Prime Minister's tenure with a different color instead?
+
+I also wanted to fill in the spaces of the terms with the political parties, however, most of the Prime Ministers came from the Liberal Democratic Party or LDP (Jimintō in Japanese) which dominated Japanese politics from 1955 to all the way to 1993! Also with so many segments of PMs it wouldn't look as pretty as Hadley's graph.
 
 Anyways, what I thought would be a quick practice turned out to take a lot longer as I had to fiddle with the aesthetics quite a bit to get everything juuust right. To finish off, I'll leave you with this article, [Japan's unemployment rate falls to 22-year low of 2.8% in Feb. 2017](https://www.japantimes.co.jp/news/2017/03/31/business/economy-business/joblessness-falls-22-year-low-2-8-february/). Under Shinzō Abe, unemployment has decreased significantly, but has it had positive impacts on the Japanese economy in other areas? That's a long debate for another article...!
+
+Any comments or suggestions on how to make this graphic better? Please comment below!
