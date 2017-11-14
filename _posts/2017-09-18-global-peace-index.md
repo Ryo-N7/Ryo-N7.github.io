@@ -36,10 +36,11 @@ Here we use the `read_html()` function to read the url of the web page, then we 
 2.  Click on the left-most button the pop-up bar
 3.  Hover your mouse over the element of the page you want to extract. The console will scroll to the exact html code that you are point at
 4.  Right-click on the highlighted html code, click on 'Copy' in the menu, then click on 'CSS Selector'
-5.  Then Paste into R and place it inside the `html_nodes()` function as above within brackets.
+5.  Then paste into R, place it inside the `html_nodes()` function as above within the brackets.
 6.  Select only the element with the table information (in this case there is only one element anyways), `[[1]]`.
 7.  Finally we specifically extract the table using `html_table()`. You can use the `fill =` option to autofill any poorly formatted tables.
 
+There are other ways to do this such as using the *Selector Gadget* ([Tutorial](https://stat4701.github.io/edav/2015/04/02/rvest_tutorial/)).
 Now with our data gathered, let's take a closer inspection at what we have:
 
 ``` r
@@ -431,13 +432,5 @@ GPI_rank %>%
 <img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
 
 With the colored lines and the labels we can clearly see the downward trend of GPI rankings for all countries in the East Asia region except for Taiwan which temporarily moved up until it reverted back to its 40th place in the rankings.
-
-``` r
-GPI_rank %>% filter(country == "Taiwan", year %in% c(2008, 2017))
-```
-
-    ##   country year rank    region
-    ## 1  Taiwan 2008   41 East Asia
-    ## 2  Taiwan 2017   40 East Asia
 
 Hopefully with initiatives like the GPI and the works of other peace-oriented think tanks, the public can identify different sources of problems that hinder peaceful co-existence both within-countries and between-countries and assist policy-makers in finding viable solutions!

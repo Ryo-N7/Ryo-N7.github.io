@@ -3,15 +3,15 @@ layout: page
 title: About Me
 ---
 
-Born in Japan, grew up in America and Israel, having also lived Germany, and currently residing in the United Kingdom, I'm quite proud to say that I am a citizen of the world!
+Born in Japan, grew up in America and Israel, having also lived Germany, and currently residing in London (UK), I'm quite proud to say that I am a citizen of the world!
 
 Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
-My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software to facilitate increased **transparency** between researchers and the general public.
+My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public.
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
-**Currently looking for full-time opportunities!**
+_**Currently looking for full-time opportunities!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
@@ -33,24 +33,25 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 ## Skills
 ### Technical skills
-* R:
+* **R**:
   + Data wrangling (dplyr, plyr, tidyr, purrr): Example [1](https://ryo-n7.github.io/2017-09-10-sakura-bloom/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
+  + PCA and Cluster analysis
 
-* Graphical visualization:
+* **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/) [4](https://ryo-n7.github.io/2017-09-10-sakura-bloom/)
 
-* SPSS
+* **SPSS**
 
-* Amazon Mechanical Turk:
+* **Amazon Mechanical Turk**:
   + Build and manage different types of surveys and Human Intelligence Tasks (HITs)
   + Integrate with Inquisit Web Application for IAT tasks
 
-* Inquisit Lab 5:
+* **Inquisit Lab 5**:
   * Coding Implicit Association Test experiments for consumer psychology research
 
-* html (basic)
+* **html** (basic)
 
 ### Communication and teamwork skills
 * Bilingual: **Japanese** and **English**
