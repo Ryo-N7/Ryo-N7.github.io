@@ -700,6 +700,6 @@ With all those plots properly saved into separate files we can now share and sen
 
 Today we did divided up the lyrics into singular words and analyzed it at various levels and through various filters. In **Part 3** we will look more closely at the different sentiments/emotions that are expressed in Thrice's lyrics!
 
-
+(Link: [Part 3](https://ryo-n7.github.io/2017-10-22-thrice-part-3/))
 
 (10/30/2017 EDIT: forgot the `wt =` argument in `top_n()` when nesting the dataframe, each nested `data` column should have the proper number of rows now!)
