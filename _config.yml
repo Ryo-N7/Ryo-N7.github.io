@@ -44,7 +44,7 @@ author:
   email: "ryonakagawara@gmail.com"
   facebook: yourname  
   github: Ryo-N7    
-  twitter: yourname   
+  twitter: @R_by_Ryo 
   reddit: yourname    
   google-plus: +yourname   
   linkedin: RyoNakagawara  
@@ -64,7 +64,7 @@ footer-links-active:
   rss: true
   facebook: false
   email: true
-  twitter: false
+  twitter: true
   google-plus: false
   github: true
   reddit: false
