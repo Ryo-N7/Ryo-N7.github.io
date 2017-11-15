@@ -356,7 +356,6 @@ GPI_Asia <- GPI_Asia %>%
                                  "S.Korea" = "Korea Republic",
                                  "N.Korea" = "DPR Korea"))
 
-# use geom_text_repel() instead of regular geom_text() as doesnt have font-face for some stupid reason -_-"
 
 GPI_Asia %>%
   ggplot(aes(year, as.numeric(rank), group = country)) +
