@@ -5,6 +5,9 @@ fb-img: https://ryo-n7.github.io/assets/2017-10-22-thrice-part-3_files/Most-comm
 tags: [thrice, music, lyrics, tidytext, sentiment-analysis, emotions]
 ---
 
+* Part 1: [Song length distributions with joy plots!](https://ryo-n7.github.io/2017-09-30-thrice-part-1/)
+* Part 2: [Breaking down the lyrics, word-by-word with tidytext](https://ryo-n7.github.io/2017-10-10-thrice-part-2/)
+
 In **Part 3** we get into the core element of our analysis, investigating the various sentiments and emotions expressed in Thrice's lyrics!
 
 Using the three sentiment lexicons included with the `tidytext` package, **NRC**, **Bing**, and **AFINN** we can categorize our **tokenized** lyrics data set and then perform a variety of transformations and manipulations to create some visualizations!
