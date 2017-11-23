@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Where to live in Japan: XKCD climate index!"
-fb-img: https://ryo-n7.github.io/assets/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png
-share-img: https://ryo-n7.github.io/assets/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png 
+fb-img: https://ryo-n7.github.io/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png
+share-img: https://ryo-n7.github.io/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png 
 tags: [xkcd, riem, weather, climate, maps, japan, ggplot2]
 ---
 
