@@ -6,7 +6,7 @@ share-img: https://ryo-n7.github.io/assets/2017-11-22-japan-xkcd-weather-index_f
 tags: [xkcd, riem, weather, climate, maps, japan, ggplot2]
 ---
 
-In the past week or so, XKCD graphs of "The most comfortable place to live in ___" have been popping up on the \#rstats community on Twitter. Jumping onto this trend (though slightly late), I will do one for Japan, the country where I was born! Some great examples that I've seen so far include [Mäelle Salmon's](http://www.masalmon.eu/2017/11/16/wheretoliveus/) blog post for cities in the USA (which started this trend), as well as ones for [Spain](https://twitter.com/claudiaguirao/status/931615734521909248), [Germany](https://franziloew.github.io/xkcd_weather_cities_de/weatherdata.html), [Netherlands](http://rmhogervorst.nl/cleancode/blog/2017/11/20/xkcd-the-netherlands-weather.html), and even for all of [Europe](https://twitter.com/matamix/status/932192147062784000)! The original XKCD comic can be seen [here](https://xkcd.com/1916/).
+In the past week or so, XKCD graphs of "The most comfortable place to live in ___" have been popping up on the \#rstats community on Twitter. Jumping onto this trend (though slightly late), I will do one for Japan, the country where I was born! Some great examples that I've seen so far include [Ma&euml;lle Salmon's](http://www.masalmon.eu/2017/11/16/wheretoliveus/) blog post for cities in the USA (which started this trend), as well as ones for [Spain](https://twitter.com/claudiaguirao/status/931615734521909248), [Germany](https://franziloew.github.io/xkcd_weather_cities_de/weatherdata.html), [Netherlands](http://rmhogervorst.nl/cleancode/blog/2017/11/20/xkcd-the-netherlands-weather.html), and even for all of [Europe](https://twitter.com/matamix/status/932192147062784000)! The original XKCD comic can be seen [here](https://xkcd.com/1916/).
 
 Let's get started!
 
@@ -31,9 +31,9 @@ riem_stations(network = "JP__ASOS")
     ## 10  RJAO CHICHIJIMA ISLAN 142.1900 27.09167
     ## # ... with 126 more rows
 
-Using Mäelle Salmon's `riem` package we can look up weather data from all over the world collected at airport weather stations. We can see that there are 136 different stations (and airports) in Japan's network! From the `ID` we can also see that the airports are coded in the **ICAO** standard rather than the **IATA** standard, this will come into play later!
+Using Ma&euml;lle Salmon's `riem` package we can look up weather data from all over the world collected at airport weather stations. We can see that there are 136 different stations (and airports) in Japan's network! From the `ID` we can also see that the airports are coded in the **ICAO** standard rather than the **IATA** standard, this will come into play later!
 
-For which exact cities to choose, I took a note from Mäelle's article where she searched for the cities with the busiest airports. This makes sense as the weather data we will gather and the airport data will then have a similar column (the ICAO code) on which we can join on!
+For which exact cities to choose, I took a note from Ma&euml;lle's article where she searched for the cities with the busiest airports. This makes sense as the weather data we will gather and the airport data will then have a similar column (the ICAO code) on which we can join on!
 
 My source was from the **Ministry of Land, Infrastructure, Transport and Tourism (MLIT)** statistics on Japan's busiest airports (in terms of total passenger traffic), which has been copied onto everybody's favorite "knowledge bank", Wikipedia ([link](https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan))! The most recent list is from 2015 and although I could look up more recent figures I don't think two years would make such a big difference (... and I'm lazy).
 
@@ -114,7 +114,7 @@ For the weather data I considered quite a few sources before just settling with 
 
 Just putting this out there for anybody who wants to look at Japan's meteorological data in the future!
 
-Now to grab the weather data from the weather stations using the `riem` package, we use code from Mäelle Salmon's original post where we use `map_df()` to basically to apply `riem_measures()` on each airport code (as a vector input) with the output being a nice data frame! I've been slowly trying to incorporate more purrr into my data analysis tool set, so it's great that I get another chance to see it in action here!
+Now to grab the weather data from the weather stations using the `riem` package, we use code from Ma&euml;lle Salmon's original post where we use `map_df()` to basically to apply `riem_measures()` on each airport code (as a vector input) with the output being a nice data frame! I've been slowly trying to incorporate more purrr into my data analysis tool set, so it's great that I get another chance to see it in action here!
 
 ``` r
 library(purrr)
