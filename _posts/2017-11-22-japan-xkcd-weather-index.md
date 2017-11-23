@@ -66,11 +66,7 @@ glimpse(japan_airports)
     ## $ Aircraft       <chr> "438,542", "233,500", "163,506", "172,964", "14...
     ## $ Cargo          <chr> "1,173,752", "2,122,318", "745,606", "262,481",...
 
-In the table, the airport codes in both IATA and ICAO format are in a single column separated by a slash.
-
-We can use the `separate()` function from the `tidyr` package to separate the airport code column into the respective IATA and ICAO codes.
-
-The regex for a literal slash is `"\\/"`, remember that you need to escape twice!
+In the table, the airport codes in both IATA and ICAO format are in a single column separated by a slash. We can use the `separate()` function from the `tidyr` package to separate the airport code column into the respective IATA and ICAO codes. The regex for a literal slash is `"\\/"`, remember that you need to escape twice!
 
 Let's also rename `City\nserved` into a simpler `City`.
 
@@ -88,7 +84,7 @@ japan_airports <- japan_airports %>% rename(City = `City\nserved`)
 write.csv(japan_airports, "~/R_materials/japan_weather_xkcd/japan_airports.csv")
 ```
 
-And when we want to start off where we left off we can use `read.csv()` to load our data set without have to go through the web scraping code!
+So, if we start a new session we can use `read.csv()` to load our data set without have to go through the web scraping code!
 
 ``` r
 japan_airports <- read.csv("~/R_materials/japan_weather_xkcd/japan_airports.csv", 
@@ -251,8 +247,6 @@ Plotting!
 ---------
 
 Well, before actually plotting, we have to install the **xkcd** font and package. You can read about how to install it [here](https://cran.r-project.org/web/packages/xkcd/xkcd.pdf).
-
-Now we are ready!
 
 ``` r
 library(ggplot2)
