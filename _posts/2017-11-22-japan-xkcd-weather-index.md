@@ -3,10 +3,10 @@ layout: post
 title: "Where to live in Japan: XKCD climate index!"
 fb-img: https://ryo-n7.github.io/assets/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png
 share-img: https://ryo-n7.github.io/assets/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png 
-tags: [xkcd, riem, weather, climate, maps, japan]
+tags: [xkcd, riem, weather, climate, maps, japan, ggplot2]
 ---
 
-In the past week or so, XKCD graphs of "The most comfortable place to live in **"X"**" have been popping up on the \#rstats community on Twitter. Jumping onto this trend (though slightly late), I will do one for Japan, the country where I was born! Some great examples that I've seen so far include [Mäelle Salmon's](http://www.masalmon.eu/2017/11/16/wheretoliveus/) blog post for cities in the USA (which started this trend), as well as ones for [Spain](https://twitter.com/claudiaguirao/status/931615734521909248), [Germany](https://franziloew.github.io/xkcd_weather_cities_de/weatherdata.html), [Netherlands](http://rmhogervorst.nl/cleancode/blog/2017/11/20/xkcd-the-netherlands-weather.html), and even for all of [Europe](https://twitter.com/matamix/status/932192147062784000)! The original XKCD comic can be seen [here](https://xkcd.com/1916/).
+In the past week or so, XKCD graphs of "The most comfortable place to live in ___" have been popping up on the \#rstats community on Twitter. Jumping onto this trend (though slightly late), I will do one for Japan, the country where I was born! Some great examples that I've seen so far include [Mäelle Salmon's](http://www.masalmon.eu/2017/11/16/wheretoliveus/) blog post for cities in the USA (which started this trend), as well as ones for [Spain](https://twitter.com/claudiaguirao/status/931615734521909248), [Germany](https://franziloew.github.io/xkcd_weather_cities_de/weatherdata.html), [Netherlands](http://rmhogervorst.nl/cleancode/blog/2017/11/20/xkcd-the-netherlands-weather.html), and even for all of [Europe](https://twitter.com/matamix/status/932192147062784000)! The original XKCD comic can be seen [here](https://xkcd.com/1916/).
 
 Let's get started!
 
@@ -109,15 +109,12 @@ glimpse(jp_airport_codes)
 Weather data
 ------------
 
-Here I considered quite a few sources before just settling with the `riem` package for convenience.
+For the weather data I considered quite a few sources before just settling with the `riem` package for convenience.
 
-The first place I looked was the Japan Meteorological Agency's website in both English and Japanese. If you go [here](http://www.data.jma.go.jp/obd/stats/koku/kikohyo/kikohyomain_e.html) you can find the the climatological tables for all Japanese airports in English. You can download the entire data set as a .zip file (click on "File" on the top header) or you can click on each airport (with its corresponding ICAO location indicator) to grab its report.
-
-You can also find in English, [here](http://www.data.jma.go.jp/obd/stats/data/en/smp/index.html), the tables of monthly climate statistics with drop-down menus for each station and for different variables such as "monthly mean air temperature", "monthly vapor pressure", etc.
-
-Probably the most useful tables for a quick glance is [here](http://www.data.jma.go.jp/obd/stats/data/en/normal/normal.html), which shows tables for monthly and annual climate normals for the major observatories in Japan from 1981-2010.
-
-For Japanese people there is a built-in API on the website ([here!](http://www.data.jma.go.jp/gmd/risk/obsdl/index.php)) that lets you choose from a multitude of different options and download your own customized dataset as a CSV file.
+* The first place I looked was the Japan Meteorological Agency's website in both English and Japanese. If you go [here](http://www.data.jma.go.jp/obd/stats/koku/kikohyo/kikohyomain_e.html) you can find the the climatological tables for all Japanese airports in English. You can download the entire data set as a .zip file (click on "File" on the top header) or you can click on each airport (with its corresponding ICAO location indicator) to grab its report.
+* You can also find in English, [here](http://www.data.jma.go.jp/obd/stats/data/en/smp/index.html), the tables of monthly climate statistics with drop-down menus for each station and for different variables such as "monthly mean air temperature", "monthly vapor pressure", etc.
+* Probably the most useful tables for a quick glance is [here](http://www.data.jma.go.jp/obd/stats/data/en/normal/normal.html), which shows tables for monthly and annual climate normals for the major observatories in Japan from 1981-2010.
+* For Japanese people there is a built-in API on the website ([here!](http://www.data.jma.go.jp/gmd/risk/obsdl/index.php)) that lets you choose from a multitude of different options and download your own customized dataset as a CSV file.
 
 ![API](https://i.imgur.com/RejyMzD.jpg)
 
