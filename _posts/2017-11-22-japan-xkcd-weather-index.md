@@ -126,17 +126,17 @@ Now to grab the weather data from the weather stations using the `riem` package,
 library(purrr)
 library(riem)
 
-#summer_weather <- map_df(jp_airport_codes$ICAO, riem_measures,
-#                                date_start = "2017-06-01",
-#                                date_end = "2017-08-31")
+summer_weather <- map_df(jp_airport_codes$ICAO, riem_measures,
+                                date_start = "2017-06-01",
+                                date_end = "2017-08-31")
 
-#winter_weather <- map_df(jp_airport_codes$ICAO, riem_measures,
-#                                date_start = "2016-12-01",
-#                                date_end = "2017-02-28")
+winter_weather <- map_df(jp_airport_codes$ICAO, riem_measures,
+                                date_start = "2016-12-01",
+                                date_end = "2017-02-28")
 
 # As before we save these as .csv files:
-#write.csv(summer_weather, "~/R_materials/japan_weather_xkcd/summer_weather.csv")
-#write.csv(winter_weather, "~/R_materials/japan_weather_xkcd/winter_weather.csv")
+write.csv(summer_weather, "~/R_materials/japan_weather_xkcd/summer_weather.csv")
+write.csv(winter_weather, "~/R_materials/japan_weather_xkcd/winter_weather.csv")
 
 # Load them back in after opening a new session instead of waiting to download from RIEM package again:
 summer_weather <- read.csv("summer_weather.csv", stringsAsFactors = FALSE)
