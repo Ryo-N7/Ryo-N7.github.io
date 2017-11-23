@@ -116,8 +116,6 @@ For the weather data I considered quite a few sources before just settling with 
 * Probably the most useful tables for a quick glance is [here](http://www.data.jma.go.jp/obd/stats/data/en/normal/normal.html), which shows tables for monthly and annual climate normals for the major observatories in Japan from 1981-2010.
 * For Japanese people there is a built-in API on the website ([here!](http://www.data.jma.go.jp/gmd/risk/obsdl/index.php)) that lets you choose from a multitude of different options and download your own customized dataset as a CSV file.
 
-![API](https://i.imgur.com/RejyMzD.jpg)
-
 Just putting this out there for anybody who wants to look at Japan's meteorological data in the future!
 
 Now to grab the weather data from the weather stations using the `riem` package, we use code from Mäelle Salmon's original post where we use `map_df()` to basically to apply `riem_measures()` on each airport code (as a vector input) with the output being a nice data frame! I've been slowly trying to incorporate more purrr into my data analysis tool set, so it's great that I get another chance to see it in action here!
