@@ -144,6 +144,8 @@ Further data munging
 
 Recalculate the temperatures into **Celcius** using the `convert_temperature()` function in the `weathermetrics` package!
 
+A quick reminder that the formula is: $$\large\frac{(Fahrenheit - 32)\cdot5}{9} = Celsius$$
+
 ``` r
 library(weathermetrics)
 
@@ -162,6 +164,8 @@ winter_weather <- winter_weather %>%
 ```
 
 We can then calculate the **Humidex** with the `calcHumx()` function from the `comf` package!
+
+For those curious the formula is: $$\large Temperature (Celsius) + 0.5555\left(6.11e^{5417.753(\frac{1}{273.16}-\frac{1}{273.15+Dew Point})} - 10\right) $$
 
 The interpretation of the humidex is as follows:
 

@@ -104,6 +104,16 @@ emotions_lyrics_bing %>%
   count(word, sentiment, sort = T) %>% 
   acast(word ~ sentiment, value.var = "n", fill = 0) %>% 
   comparison.cloud(colors = c("black", "darkgreen"), title.size = 1.5)
+  
+# EDIT: with tidyverse, spread() instead of acast()
+emotions_lyrics_bing %>% 
+  filter(sentiment != "neutral") %>% 
+  count(word, sentiment, sort = TRUE) %>% 
+  spread(sentiment, n, fill = 0L) %>% 
+  as.data.frame() %>% 
+  remove_rownames() %>% 
+  column_to_rownames("word") %>% 
+  comparison.cloud(colors = c("black", "darkgreen"), title.size = 1.5)
 ```
 
 <img src="../assets/2017-10-22-thrice-part-3_files/wordcloud most common pos-neg-1.png" style="display: block; margin: auto;" /> With the size of the word dictated by the size and central position in the cloud, this is another cool way to visualize the most common words. As seen before for positive words, **Love** appears the most whereas for negative, **Fall** appears most frequently.
