@@ -23,7 +23,7 @@ library(forcats)            # change factor levels manually
 
 url <- "https://en.wikipedia.org/wiki/Global_Peace_Index"
 
-# 12/1/17: update css selector to table.wikitable:nth-child(77)
+# 12/1/17: updated css selector to table.wikitable:nth-child(77)
 
 GPI <- url %>% 
   read_html() %>% 
@@ -165,7 +165,7 @@ GPI_rank %>% head(15)
 We can see here that there are countries with a tied ranking due to similar GPI scores (shown in original GPI table), first let's get rid of the `=` symbol:
 
 ``` r
-GPI_rank <- GPI_rank %>% mutate(rank = str_replace(rank, "\\=", ""))   #   take out '=' in rank values
+GPI_rank <- GPI_rank %>% mutate(rank = str_replace(rank, "\\=", ""))   
 ```
 
 Now let's change the `rank` variable into a **numeric** format and finally reorder the dataframe so that the rows are arranged in a way where ranks are in ascending order for each year (2008: Rank \#1 - \#163, 2009: Rank \#1 - \#163, etc.).
@@ -192,7 +192,6 @@ BIG EDIT: Months later, I realized that I can just use the `ties.method =` argum
 (I deleted most of this section where I manually replaced some of the tied values but kept the detecing duplicates bit - the first part of the code below - as that can still be of some use!)
 
 ``` r
-###################################################################################################
 
 GPI_rank %>% 
   filter(year == 2017) %>%       # replace 2017 with each specific year...
@@ -213,9 +212,9 @@ GPI_rank %>%
     ## 7     156 TRUE
 
 ``` r
-###################################################################################################
 
-GPI_rank[1551:1552, 1:3]   # Bangladesh and Bosnia & Herzegovina are tied 84th in 2017!
+GPI_rank[1551:1552, 1:3]   
+# Bangladesh and Bosnia & Herzegovina are tied 84th in 2017!
 ```
 
     ##                     country year rank
@@ -227,7 +226,7 @@ GPI_rank %>%
   group_by(year) %>% 
   mutate(rank = rank(rank, ties.method = "first")) %>% 
   filter(year == 2017) %>% 
-  slice(84:85)             # Bangladesh is 84th and Bosnia & Herzegovina is now 85th! Success!
+  slice(84:85)             
 ```
 
     ## # A tibble: 2 x 3
@@ -238,6 +237,8 @@ GPI_rank %>%
     ## 2 Bosnia and Herzegovina   2017    85
 
 ``` r
+# Bangladesh is 84th and Bosnia & Herzegovina is now 85th! Success!
+
 GPI_rank <- GPI_rank %>% 
   group_by(year) %>% 
   mutate(rank = rank(rank, ties.method = "first"))
@@ -296,7 +297,8 @@ We can clearly see that Japan's ranking has fallen from 2008 and even dropping o
 ``` r
 # Subset custom "East Asia" region -----------------------------------------------
 
-GPI_Asia <- GPI_rank %>% filter(country %in% c("Japan", "China", "Korea Republic", "DPR Korea", 
+GPI_Asia <- GPI_rank %>% 
+  filter(country %in% c("Japan", "China", "Korea Republic", "DPR Korea", 
                                                "Philippines", "Taiwan", "Vietnam")) %>% 
   mutate(region = "East Asia")
 
@@ -409,7 +411,10 @@ To do the same thing without creating a separate dataset (like `GPI_Asia`) is to
 # Piping before plotting East Asia ----------------------------------------
 
 GPI_rank <- GPI_rank %>% 
-      mutate(region = if_else(country %in% c("Japan", "China", "S.Korea", "N.Korea", "Philippines", "Taiwan", "Vietnam"), "East Asia", "Other")) 
+      mutate(region = if_else(country %in% c("Japan", "China", "S.Korea", 
+                                             "N.Korea", "Philippines", 
+                                             "Taiwan", "Vietnam"), 
+                              "East Asia", "Other")) 
 
 # Final plot: East Asia ---------------------------------------------------
 
