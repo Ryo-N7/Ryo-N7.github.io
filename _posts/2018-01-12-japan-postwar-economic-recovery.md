@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Exploring Japan's Postwar Economic Miracle with gganimate, tweenr, & highcharter!"
-fb-img: https://ryo-n7.github.io/assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Animate.gif
-share-img: https://ryo-n7.github.io/assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Animate.gif 
+fb-img: https://ryo-n7.github.io/assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Plot.png
+share-img: https://ryo-n7.github.io/assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Plot.png
 tags: [japan, ggplot2, gganimate, tweenr, highcharter, economics]
 ---
 
