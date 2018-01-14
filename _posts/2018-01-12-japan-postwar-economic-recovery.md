@@ -6,9 +6,9 @@ share-img: https://ryo-n7.github.io/assets/2018-01-12-japan-postwar-economic-rec
 tags: [japan, ggplot2, gganimate, tweenr, highcharter, economics]
 ---
 
-In this blog post I weave in `gganimate`, `tweenr`, and `highcharter` plots while exploring the American policies that aided Japan's postwar economic miracle! Back in college, I wrote a paper on this subject for my United States Economic History class. We were supposed to include a few tables and graphs in our paper and, as this was a year before I learned about R (in my Econometrics class), everything was stored and created in Excel. More than a year ago, I went back and recreated the graphs using ggplot2 for some easy practice and now I'm going another level higher by implementing `gganimate`, `tweenr`, and `highcharter` into my plots!
+In this blog post I weave in `gganimate`, `tweenr`, and `highcharter` plots while exploring the American policies that aided Japan's postwar economic miracle! Back in college, I wrote a paper on this subject for my United States Economic History class. We were supposed to include a few tables and graphs in our paper and, as this was a year before I learned about `R`, everything was done in `Excel`. More than a year ago, I went back and recreated the graphs using `ggplot2` for some easy practice and now I'm going another level higher by implementing `gganimate`, `tweenr`, and `highcharter` into my plots!
 
-There won't be a lot of code as other posts as I didn't have to do much data munging for this mini-project. I tried to summarize/shorten the gist of my paper but even then, if you don't like history and just want to see how to do the animations, go ahead but you'll be missing a lot of the context! I've included references and also a "Further Reading" section at the end as my original (undergraduate) paper is by no means a comprehensive survey of the economic and political events in the postwar period (especially as my focus was on the American policies).
+There won't be a lot of code as other posts as I didn't have to do much data munging for this mini-project. I tried to summarize/shorten the gist of my paper but even then, if you don't like history and just want to see how to do animated/interactive graphs, go ahead but you'll be missing a lot of the context! I've included references and also a `Further Reading` section at the end as my original (**undergraduate**) paper is by no means a comprehensive survey of the economic and political events in the postwar period (especially as my focus was on the American policies).
 
 Postwar Japan and the Korean War
 --------------------------------
@@ -284,12 +284,14 @@ saveWidget(textiles_chart, "textiles_chart.html", selfcontained = TRUE, backgrou
 
 <iframe src="../assets/2018-01-12-japan-postwar-economic-recovery_files/textiles_chart.html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 
+(Source: Sugihara, K. (1999). International circumstances surrrounding the postwar Japanese cotton textile industry, pp. 15-16.)
+
 Conclusion
 ----------
 
 Despite the devastation of the Allied bombing campaigns and the initial SCAP policies, the growing tensions of the Cold War and the postwar needs of America became the catalyst for a dramatic heel-turn in economic policy that laid the foundations for a miraculous Japanese recovery. By studying the causes and impacts of external/internal events and policies we can gain clues to tackle the future challenges in rebuilding economies in other war-devastated areas of the world.
 
-To finish off this blog post, just a few thoughts... Doing this mini-project, it was quite nice to go back through some old research and look for more/better data sources as the volume of data available is **always** growing, with older research being digitized daily. Back when I was first doing this research paper, even with PDF versions available, I would usually grab a few actual copies of The Statistical Abstract of the United States from the shelves and flip through them... they really gave me a sense of wonder and I kind of felt the "weight" of history through those hefty volumes which is something that can't really be "felt" from digital sources. Finally, when I started writing this post, I didn't think it would get as long as it ended up, but with it came a better understanding of plotting in R which I hope can be of help to anybody else looking for real-world examples!
+To finish off this blog post, just a few thoughts... Doing this mini-project, it was quite nice to go back through some old research and look for more/better data sources as the volume of data available is **always** growing, with older research being digitized daily. Back when I was first doing this research paper, even with PDF versions available, I would usually grab a few actual copies of The Statistical Abstract of the United States from the shelves and flip through them... they really gave me a sense of wonder and I kind of felt the "weight" of history through those hefty volumes which is something that can't really be "felt" from digital sources. Finally, when I started writing this post, I didn't think it would get as long as it ended up, but with it came a better understanding of plotting in R which I hope can be of help to anybody else looking for visuaz real-world examples!
 
 References:
 -----------
