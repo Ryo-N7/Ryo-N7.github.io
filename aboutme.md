@@ -11,6 +11,8 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
+Recently started to volunteer as a data intern with ACDI/VOCA, an international development NGO!
+
 _**Currently looking for full-time opportunities!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
