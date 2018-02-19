@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 
-Born in Japan, grew up in America and Israel, having also lived Germany, and currently residing in London (UK), I'm quite proud to say that I am a citizen of the world!
+Born in Japan, grew up in America and Israel, having also lived Germany, just returned from London and currently residing in Tokyo. I'm quite proud to say that I am a citizen of the world!
 
 Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
@@ -13,7 +13,7 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 Recently became a **Data analytics and Viz intern** with **ACDI/VOCA**, an international development NGO!
 
-_**Currently looking for full-time opportunities!**_
+_**Currently looking for full-time opportunities in Tokyo or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
