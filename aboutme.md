@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 
-Born in Japan, grew up in America and Israel, having also lived Germany, just returned from London and currently residing in Tokyo. I'm quite proud to say that I am a citizen of the world!
+Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
 
 Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). My main interests is research in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
@@ -19,7 +19,7 @@ _**Currently looking for full-time opportunities in Tokyo or remote work!**_
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
 
-[CV (PDF version)](http://ryo-n7.github.io/RyoNakagawara_cv.pdf)
+[Resume (PDF version)](http://ryo-n7.github.io/RyoNakagawara_cv.pdf)
 
 **Current Location**: London, UK
 
@@ -45,6 +45,7 @@ _**Currently looking for full-time opportunities in Tokyo or remote work!**_
 * **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/) [4](https://ryo-n7.github.io/2017-09-10-sakura-bloom/)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
+  + Shiny
 
 * **SPSS**
 
@@ -55,7 +56,10 @@ _**Currently looking for full-time opportunities in Tokyo or remote work!**_
 * **Inquisit Lab 5**:
   * Coding Implicit Association Test experiments for consumer psychology research
 
+* **SQL** (basic)
+
 * **html** (basic)
+
 
 ### Communication and teamwork skills
 * Bilingual: **Japanese** and **English**
