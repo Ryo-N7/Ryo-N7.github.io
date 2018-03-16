@@ -13,6 +13,8 @@ Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
 Recently became a **Data analytics and Viz intern** with **ACDI/VOCA**, an international development NGO!
 
+Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
+
 _**Currently looking for full-time opportunities in Tokyo or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
@@ -41,6 +43,7 @@ _**Currently looking for full-time opportunities in Tokyo or remote work!**_
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
   + PCA and Cluster analysis
+  + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr)
 
 * **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/) [4](https://ryo-n7.github.io/2017-09-10-sakura-bloom/)
