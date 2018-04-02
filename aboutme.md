@@ -39,14 +39,14 @@ _**Currently looking for full-time opportunities in Tokyo or remote work!**_
 ## Skills
 ### Technical skills
 * **R**:
-  + Data wrangling (dplyr, plyr, tidyr, purrr): Example [1](https://ryo-n7.github.io/2017-09-10-sakura-bloom/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/)
+  + Data wrangling (dplyr, plyr, tidyr, purrr): Example [1](https://ryo-n7.github.io/2018-04-02-sakura-surprise/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/)
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
   + PCA and Cluster analysis
   + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr)
 
 * **Graphical visualization**:
-  + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/) [4](https://ryo-n7.github.io/2017-09-10-sakura-bloom/)
+  + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny
 
