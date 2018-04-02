@@ -211,16 +211,17 @@ The date of peak blooming is different depending on the region, usually the nort
 
 To cap off, I'll leave you with some photos I took of sakura in Tokyo when I went back home for Spring Break back in April (2017)!
 
-![img1](https://i.imgur.com/mGb9bms.jpg){:height="600px" width="500px"}
+![img](https://i.imgur.com/mGb9bms.jpg){:height="600px" width="500px"}
 
-![img1](https://i.imgur.com/i2z7d4y.jpg){:height="300px" width="200px"}
+![img](https://i.imgur.com/i2z7d4yl.jpg)
 
-![img1](https://i.imgur.com/fXEmtzx.jpg){:height="900px" width="800px"}
+![img](https://i.imgur.com/fXEmtzxl.jpg)
 
 **A few more from this year, 2018!**
 
-![img1](https://i.imgur.com/eN3vc9g.jpg){:height="640px" width="640px"}
+![img](https://i.imgur.com/eN3vc9gl.jpg)
 
-<img src = "https://i.imgur.com/f4JM9Da.jpg" style = "width: 600 px; height: 500px;") />
+![img](https://i.imgur.com/f4JM9Dal.jpg)
 
-<img src = "https://i.imgur.com/XzHoIuL.jpg" style = "width: 600 px; height: 500px;") />
+![img](https://i.imgur.com/XzHoIuLl.jpg)
+
