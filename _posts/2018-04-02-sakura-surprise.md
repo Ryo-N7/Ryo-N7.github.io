@@ -215,9 +215,9 @@ To cap off, I'll leave you with some photos I took of sakura in Tokyo when I wen
 
 <img src = "https://i.imgur.com/mGb9bms.jpg" style = "width: 600 px; height: 500px;") >
 
-<img src="https://i.imgur.com/i2z7d4y.jpg" width="600" height="500") />
+<img src="https://i.imgur.com/i2z7d4y.jpg" width="600px" height="500px") />
 
-<img src="https://i.imgur.com/fXEmtzx.jpg" width="600" height="500") >
+<img src="https://i.imgur.com/fXEmtzx.jpg" width="600px" height="500px") >
 
 **A few more from this year, 2018!**
 
