@@ -211,7 +211,7 @@ The date of peak blooming is different depending on the region, usually the nort
 
 To cap off, I'll leave you with some photos I took of sakura in Tokyo when I went back home for Spring Break back in April (2017)!
 
-<img src = "https://i.imgur.com/mGb9bms.jpg" style = "width: 600 px; height: 500px;") />
+<img src = "https://i.imgur.com/mGb9bms.jpg" style = "width: 600 px; height: 500px;") >
 
 <img src = "https://i.imgur.com/i2z7d4y.jpg" style = "width: 600 px; height: 500px;") />
 
