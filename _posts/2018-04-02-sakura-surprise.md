@@ -2,6 +2,7 @@
 layout: post
 title: "Sakura Surprise: Cherry blossoms in Kyoto blooming earlier in the past ~100 years!"
 fb-img: https://ryo-n7.github.io/assets/2018-04-02-sakura-surprise_files/background-image-1.png
+share-img: https://ryo-n7.github.io/assets/2018-04-02-sakura-surprise_files/background-image-1.png
 tags: [data-munging, data-viz, ggplot2]
 ---
 
