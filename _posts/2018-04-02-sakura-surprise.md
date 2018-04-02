@@ -219,7 +219,7 @@ To cap off, I'll leave you with some photos I took of sakura in Tokyo when I wen
 
 **A few more from this year, 2018!**
 
-<img src = "https://i.imgur.com/eN3vc9g.jpg" style = "width: 600 px; height: 500px;") />
+![img1](https://i.imgur.com/eN3vc9g.jpg){:height="640px" width="640px"}
 
 <img src = "https://i.imgur.com/f4JM9Da.jpg" style = "width: 600 px; height: 500px;") />
 
