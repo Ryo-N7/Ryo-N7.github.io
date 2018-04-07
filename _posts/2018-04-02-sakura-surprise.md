@@ -168,7 +168,7 @@ We can add in a background iamge by utilizing a variety of packages such as `jpe
 3.  Use `rasterGrob()` to render a raster object with the downloaded image
 4.  Build up our ggplot visualization step-by-step
 
-When I originally created this viz last year, I just used an image taken from Google, but this year I went to the [Imperial Palace East Gardens](https://www.japan-guide.com/e/e3018.html) and took a few pics of the beautiful cherry blossoms there to use for this plot!
+When I originally created this viz last year, I just used an image taken from Google, but this year I went to the [Imperial Palace East Gardens](https://www.japan-guide.com/e/e3018.html) and took a few pics of the beautiful cherry blossoms there to use for this plot! You can use the code to try it out with other pictures as well.
 
 ``` r
 library(jpeg)
@@ -204,7 +204,7 @@ ggplot(data = sakura) +
 
 <img src="../assets/2018-04-02-sakura-surprise_files/background-image-1.png" style="display: block; margin: auto;" />
 
-We can see that the full or "peak" blossoming date for sakura has come earlier and earlier in the year since the 20th century! You can use the code above to try it out with other pictures as well.
+We can see that the full or "peak" blossoming date for sakura has come earlier and earlier in the year since the 20th century! In their article, Dr. Aono and Dr. Kazui used the historical records of Kyoto's blossoming date to predict temperatures in March to within 0.1 degrees Celsius. As cherry blossoms decide when to bloom based on the temperatures in February and March, it is quite telling that in recent decades the blossoming date has come earlier in the year!
 
 Some other cool uses of Dr. Aono's sakura data set include [this](http://opiateforthemass.es/articles/sakura/) visualization done by Christoph Safferling from *"Opiate for the masses"* where he incorporated sakura emoji as the data point shapes; definitely much better than the ersatz `geom_point` shape I used as "sakura" for my own plot!
 
