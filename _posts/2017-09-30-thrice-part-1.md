@@ -6,6 +6,8 @@ share-img: https://ryo-n7.github.io/assets/2017-09-30-thrice-part-1_files/unname
 tags: [thrice, music, lyrics, joy-plot, data-munging]
 ---
 
+*(April-2018: updated to use `ggridges` package instead of deprecated `ggjoy`)*
+
 Hello, for those who know me well you would know that my favorite band is [Thrice](https://en.wikipedia.org/wiki/Thrice)! For those that aren't familiar with them, they are a post-hardcore rock band from California, specifically the area around where I went to college (OC/Irvine area). This article will be **Part 1** of a series that will cover data analysis of Thrice's lyrics. Part 1, however, we will just be looking at doing some exploratory analysis with all of the non-lyrics data so we can all get a understanding of the context of what we are dealing with before we deep-dive into the lyrics!
 
 ``` r
@@ -18,7 +20,7 @@ library(gridExtra)     # arranging multiple plots in a single output
 
 # Load and tidy  ----------------------------------------------------------
 
-df <- read.csv('~/thrice.df.csv', header = TRUE, stringsAsFactors = FALSE)
+df <- read.csv('~/R_materials/ThriceLyrics/thrice.df.csv', header = TRUE, stringsAsFactors = FALSE)
 str(df, list.len = 3)
 ```
 
@@ -77,8 +79,8 @@ glimpse(df)
     ## Observations: 103
     ## Variables: 9
     ## $ ID       <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16...
-    ## $ album    <fctr> Identity Crisis, Identity Crisis, Identity Crisis, I...
-    ## $ year     <fctr> 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000...
+    ## $ album    <fct> Identity Crisis, Identity Crisis, Identity Crisis, Id...
+    ## $ year     <fct> 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000,...
     ## $ tracknum <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1, 2, 3, 4, 5, 6, ...
     ## $ title    <chr> "Identity Crisis", "Phoenix Ignition", "In Your Hands...
     ## $ writers  <chr> "Dustin Kensrue", "Dustin Kensrue", "Riley Breckenrid...
@@ -147,20 +149,19 @@ df %>%
 
     ## # A tibble: 11 x 4
     ## # Groups:   album [11]
-    ##                                 album   year num_songs
-    ##                                <fctr> <fctr>     <int>
-    ##  1                        Major Minor   2011        11
-    ##  2                            Vheissu   2005        11
-    ##  3                            Beggars   2009        10
-    ##  4 To Be Everywhere And To Be Nowhere   2016        11
-    ##  5        The Artist In The Ambulance   2003        12
-    ##  6             The Illusion Of Safety   2002        13
-    ##  7                    Identity Crisis   2000        11
-    ##  8            The Alchemy Index Water   2007         6
-    ##  9              The Alchemy Index Air   2008         6
-    ## 10             The Alchemy Index Fire   2007         6
-    ## 11            The Alchemy Index Earth   2008         6
-    ## # ... with 1 more variables: duration <S4: Duration>
+    ##    album                            year  num_songs duration              
+    ##    <fct>                            <fct>     <int> <S4: Duration>        
+    ##  1 Major Minor                      2011         11 2962s (~49.37 minutes)
+    ##  2 Vheissu                          2005         11 2960s (~49.33 minutes)
+    ##  3 Beggars                          2009         10 2624s (~43.73 minutes)
+    ##  4 To Be Everywhere And To Be Nowh~ 2016         11 2496s (~41.6 minutes) 
+    ##  5 The Artist In The Ambulance      2003         12 2374s (~39.57 minutes)
+    ##  6 The Illusion Of Safety           2002         13 2307s (~38.45 minutes)
+    ##  7 Identity Crisis                  2000         11 2142s (~35.7 minutes) 
+    ##  8 The Alchemy Index Water          2007          6 1627s (~27.12 minutes)
+    ##  9 The Alchemy Index Air            2008          6 1454s (~24.23 minutes)
+    ## 10 The Alchemy Index Fire           2007          6 1327s (~22.12 minutes)
+    ## 11 The Alchemy Index Earth          2008          6 1256s (~20.93 minutes)
 
 **Major/Minor** and **Vheissu** are the longest albums, both totaling up to a bit over 49 mins!
 
@@ -174,18 +175,18 @@ df %>%
 ```
 
     ## # A tibble: 103 x 2
-    ##                          title             duration
-    ##                          <chr>       <S4: Duration>
-    ##  1          Words In The Water 386s (~6.43 minutes)
-    ##  2             Salt And Shadow 368s (~6.13 minutes)
-    ##  3                Night Diving 362s (~6.03 minutes)
-    ##  4                    Daedalus    360s (~6 minutes)
-    ##  5   Stand And Feel Your Worth 352s (~5.87 minutes)
-    ##  6                     Beggars  324s (~5.4 minutes)
+    ##    title                       duration            
+    ##    <chr>                       <S4: Duration>      
+    ##  1 Words In The Water          386s (~6.43 minutes)
+    ##  2 Salt And Shadow             368s (~6.13 minutes)
+    ##  3 Night Diving                362s (~6.03 minutes)
+    ##  4 Daedalus                    360s (~6 minutes)   
+    ##  5 Stand And Feel Your Worth   352s (~5.87 minutes)
+    ##  6 Beggars                     324s (~5.4 minutes) 
     ##  7 A Song For Milly Michaelson 307s (~5.12 minutes)
-    ##  8                  The Weight    300s (~5 minutes)
-    ##  9     The Earth Isn't Humming 298s (~4.97 minutes)
-    ## 10         Kings Upon The Main 296s (~4.93 minutes)
+    ##  8 The Weight                  300s (~5 minutes)   
+    ##  9 The Earth Isn't Humming     298s (~4.97 minutes)
+    ## 10 Kings Upon The Main         296s (~4.93 minutes)
     ## # ... with 93 more rows
 
 Besides grouping with `group_by()` and summarizing with `summarize()`, there are other ways to filter our data. For example, let's say we want to see the total duration of **The Alchemy Index** (**Fire**, **Water**, **Earth**, and **Air**) then we could use the `grepl()` function to search for all albums with the term "Index" in it:
@@ -235,19 +236,19 @@ df %>%
 ```
 
     ## # A tibble: 11 x 2
-    ##                                 album duration_minutes
-    ##                                <fctr>     <S4: Period>
-    ##  1            The Alchemy Index Earth          35M 56S
-    ##  2                            Beggars              44S
-    ##  3                    Identity Crisis              42S
-    ##  4 To Be Everywhere And To Be Nowhere              36S
-    ##  5        The Artist In The Ambulance              34S
-    ##  6             The Illusion Of Safety              27S
-    ##  7                        Major Minor              22S
-    ##  8                            Vheissu              20S
-    ##  9              The Alchemy Index Air              14S
-    ## 10             The Alchemy Index Fire               7S
-    ## 11            The Alchemy Index Water               7S
+    ##    album                              duration_minutes
+    ##    <fct>                              <S4: Period>    
+    ##  1 The Alchemy Index Earth            35M 56S         
+    ##  2 Beggars                            44S             
+    ##  3 Identity Crisis                    42S             
+    ##  4 To Be Everywhere And To Be Nowhere 36S             
+    ##  5 The Artist In The Ambulance        34S             
+    ##  6 The Illusion Of Safety             27S             
+    ##  7 Major Minor                        22S             
+    ##  8 Vheissu                            20S             
+    ##  9 The Alchemy Index Air              14S             
+    ## 10 The Alchemy Index Fire             7S              
+    ## 11 The Alchemy Index Water            7S
 
 ``` r
 df %>% 
@@ -257,18 +258,18 @@ df %>%
 ```
 
     ## # A tibble: 103 x 2
-    ##                               title duration_song
-    ##                               <chr>  <S4: Period>
-    ##  1             All The World Is Mad        3M 59S
-    ##  2                      Black Honey           59S
-    ##  3      Don't Tell And We Won't Ask           59S
-    ##  4                     Paper Tigers           59S
-    ##  5                  Identity Crisis           58S
-    ##  6          The Earth Isn't Humming           58S
-    ##  7                     Yellow Belly           58S
-    ##  8                     The Next Day           57S
-    ##  9 Between The End And Where We Lie           56S
-    ## 10              Kings Upon The Main           56S
+    ##    title                            duration_song
+    ##    <chr>                            <S4: Period> 
+    ##  1 All The World Is Mad             3M 59S       
+    ##  2 Black Honey                      59S          
+    ##  3 Don't Tell And We Won't Ask      59S          
+    ##  4 Paper Tigers                     59S          
+    ##  5 Identity Crisis                  58S          
+    ##  6 The Earth Isn't Humming          58S          
+    ##  7 Yellow Belly                     58S          
+    ##  8 The Next Day                     57S          
+    ##  9 Between The End And Where We Lie 56S          
+    ## 10 Kings Upon The Main              56S          
     ## # ... with 93 more rows
 
 Unfortunately, the seconds\_to\_period() conversion doesn't seem to work well with `summarize()` across the entire set of the songs or albums. I find it very weird as from previous times we used it, such as when we summarized all the Alchemy Index albums together, it worked perfectly fine. *I'll have to look into this later...*
@@ -281,7 +282,8 @@ Plot song lengths!
 ``` r
 # Plotting! ---------------------------------------------------------------
 
-df %>% ggplot(aes(x = as.numeric(lengthS))) + 
+df %>% 
+  ggplot(aes(x = as.numeric(lengthS))) + 
   geom_histogram(binwidth = 10, 
                  color = 'white',
                  fill = 'darkgreen') +
@@ -298,10 +300,11 @@ df %>% ggplot(aes(x = as.numeric(lengthS))) +
 
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-15-1.png)
 
-Let's try plotting in minutes as well by dividing the `lenghtS` (length in seconds) by 60, it won't be a perfect conversion as it's not sexagesimal (base-60) but it's good enough for our purposes. Also, the `period` variable type that we created doesn't seem to work with ggplot as far as I know, which is why you have to convert it to `numeric` in `ggplot()`.
+Let's try plotting in minutes as well by dividing the `lengthS` (length in seconds) by 60, it won't be a perfect conversion as it's not sexagesimal (base-60) but it's good enough for our purposes. Also, the `period` variable type that we created doesn't seem to work with ggplot as far as I know, which is why you have to convert it to `numeric` in `ggplot()`.
 
 ``` r
-df %>% ggplot(aes(x = as.numeric(lengthS)/60)) + 
+df %>% 
+  ggplot(aes(x = as.numeric(lengthS)/60)) + 
   geom_histogram(binwidth = 0.5, 
                  color = 'white',
                  fill = 'darkgreen') +
@@ -365,15 +368,17 @@ Joy plots!
 
 **Joy plots** engulfed the data science/visualization community during the past summer. First popularized in a post by Henrik Lindberg on ["peak times for sports and leisure"](https://www.reddit.com/r/dataisbeautiful/comments/6m0wo7/peak_time_for_sports_and_leisure_oc/), joy plots are useful for visualizing changes in distribution over time or space and was made to be an alternative to heat maps. Amidst much debate on the various advantages and disadvantages of this visualization method all across social media, Claus Wilke released the [ggjoy](https://cran.r-project.org/web/packages/ggjoy/vignettes/introduction.html) package that allows you to easily make joy plots on top of the existing `ggplot2` package.
 
+**(April-2018: updated to use `ggridges` package)**
+
 I finally have a chance to put this to practice with my own data so let's try it out here!
 
 ``` r
 # Joy Plots ---------------------------------------------------------------
-library(ggjoy)
+library(ggridges)
 
 df %>% 
   ggplot(aes(x = as.numeric(lengthS)/60, y = album)) +
-  geom_joy() +
+  geom_density_ridges() +
   xlab('Minutes') +
   scale_x_continuous(breaks = pretty_breaks(7))
 ```
@@ -388,7 +393,7 @@ Now let's add some color (dark green = `#006400`, dark grey = `#404040`) and tin
 joyplot <- df %>% 
   mutate(group = reorder(album, desc(lengthS))) %>%   # reorder based on lengthS (descending)
   ggplot(aes(x = as.numeric(lengthS)/60, y = group, fill = group)) +   
-  geom_joy(scale = 2) +                       # scale to set amount of overlap between ridges
+  geom_density_ridges(scale = 2) +                       # scale to set amount of overlap between ridges
   xlab('Minutes') +
   scale_x_continuous(breaks = pretty_breaks(10)) +
   scale_y_discrete(expand = c(0, 0)) +
@@ -430,4 +435,4 @@ grid.arrange(joyplot2, hist, nrow = 1)
 
 We can see that the **joy plots** make the data a lot more understandable (for the final comparison I took out the y-axis labels so we can see the joy plot better).
 
-And that concludes **Part 1**! Next we will be getting into the real meat of sentiment analysis using the `tidytext` package! (Link: [Part 2](https://ryo-n7.github.io/2017-10-10-thrice-part-2/))
+And that concludes **Part 1**! Next we will be getting into the real meat of sentiment analysis using the `tidytext` package!
