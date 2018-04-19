@@ -24,6 +24,8 @@ description: Ryo's personal Github user page!
 # List of links in the navigation bar
 navbar-links:
   Home: "index"
+  日本語: "nihongo"
+  Visualization Gallery: "visualizations"
   About Me: "aboutme"
   Projects: "http://github.com/Ryo-N7"
 
