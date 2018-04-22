@@ -11,11 +11,11 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
-Recently became a **Data analytics and Viz intern** with **ACDI/VOCA**, an international development NGO!
+Currently working for **ACDI/VOCA**, an international development NGO, in **Data analytics and Viz**!
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 
-_**Currently looking for full-time opportunities in Tokyo or remote work!**_
+_**Currently looking for full-time opportunities in Japan(Tokyo)/USA(California)/UK(London) or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
@@ -46,7 +46,8 @@ _**Currently looking for full-time opportunities in Tokyo or remote work!**_
   + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr)
 
 * **Graphical visualization**:
-  + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/)
+  + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
+  [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny
 
