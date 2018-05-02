@@ -5,6 +5,8 @@ subtitle: WORK IN PROGRESS :: COME BACK SOON
 css: "/css/materialize.css"
 ---
 
+## WORK IN PROGRESS :: COME BACK SOON
+
 
 <div class="container center filter">
 <div class="row">
@@ -70,12 +72,12 @@ css: "/css/materialize.css"
 			</div>
 		  </div>
 		  <div class="card-content widget-content">
-			<a href="https://github.com/Ryo-N7/tidy_tuesday#april-3"><span class="card-title grey-text text-darken-4">Avgerage College Tuition in the USA (by state)</span></a>
+			<a href="https://github.com/Ryo-N7/tidy_tuesday#april-3"><span class="card-title grey-text text-darken-4">Average College Tuition in the USA (by state)</span></a>
 			<p class="widget-shortdesc">Visualised by a bump chart showing top 10 states.
 		</p>
-			<p class="widget-list-item"><i class="material-icons meta-bullet red-text">stop</i><span class="red-text">type:</span> <span class="widget-author widget-meta">Visualization</span></p>
-			<p class="widget-list-item"><i class="material-icons meta-bullet green-text">stop</i><span class="green-text">tags:</span> <span class="widget-tags widget-meta">bump-chart</span></p>
-			<p class="widget-list-item"><i class="material-icons meta-bullet blue-text">stop</i><span class="blue-text">libraries:</span> <span class="widget-jslibs widget-meta">ggplot2</span>
+			<p class="widget-list-item"><i class="material-icons meta-bullet red-text"></i><span class="red-text">type:</span> <span class="widget-author widget-meta">Visualization</span></p>
+			<p class="widget-list-item"><i class="material-icons meta-bullet green-text"></i><span class="green-text">tags:</span> <span class="widget-tags widget-meta">bump-chart</span></p>
+			<p class="widget-list-item"><i class="material-icons meta-bullet blue-text"></i><span class="blue-text">libraries:</span> <span class="widget-jslibs widget-meta">ggplot2</span>
 			<span class="widget-release-nr">?</span>
 		</p>
 			<!-- <div class="more-icon activator"><i class="material-icons right">more_vert</i></div> -->
@@ -89,31 +91,31 @@ css: "/css/materialize.css"
 		
 		<!-- card: Calendar Heatmap -->
 		
-		<div class="card grid-item" data-author="dominik-koch">
+		<div class="card grid-item" data-author="ryo-nakagawara">
 		  <div class="card-image waves-effect waves-block waves-light">
 			<div style="width:350px; height:300px; padding:3px;" class="valign-wrapper">
-			<a href="https://dominikkoch.github.io/Calendar-Heatmap/">
+			<a href="https://github.com/Ryo-N7/tidy_tuesday#april-16">
 			<img class="valign" src="
 			
-			  /img/calendarHeatmap.png
+			  /img/cause_of_death_east_africa.m4p
 			
 			"></a>
 			</div>
 		  </div>
 		  <div class="card-content widget-content">
-			<a href="https://dominikkoch.github.io/Calendar-Heatmap/"><span class="card-title grey-text text-darken-4">Calendar Heatmap</span></a>
-			<p class="widget-shortdesc">Visualise time series data in calendar style.
+			<a href="https://github.com/Ryo-N7/tidy_tuesday#april-16"><span class="card-title grey-text text-darken-4">East Africa Deaths Boxplot</span></a>
+			<p class="widget-shortdesc">Visualizing the median proportion of deaths in East Africa.
 		</p>
-			<p class="widget-list-item"><i class="material-icons meta-bullet red-text">stop</i><span class="red-text">type:</span> <span class="widget-author widget-meta">Visualisation</span></p>
-			<p class="widget-list-item"><i class="material-icons meta-bullet green-text">stop</i><span class="green-text">tags:</span> <span class="widget-tags widget-meta">time-series</span></p>
-			<p class="widget-list-item"><i class="material-icons meta-bullet blue-text">stop</i><span class="blue-text">libraries:</span> <span class="widget-jslibs widget-meta">ggplot2</span>
+			<p class="widget-list-item"><i class="material-icons meta-bullet red-text"></i><span class="red-text">type:</span> <span class="widget-author widget-meta">Visualisation</span></p>
+			<p class="widget-list-item"><i class="material-icons meta-bullet green-text"></i><span class="green-text">tags:</span> <span class="widget-tags widget-meta">time-series</span></p>
+			<p class="widget-list-item"><i class="material-icons meta-bullet blue-text"></i><span class="blue-text">libraries:</span> <span class="widget-jslibs widget-meta">ggplot2</span>
 			<span class="widget-release-nr">1</span>
 		</p>
 			<!-- <div class="more-icon activator"><i class="material-icons right">more_vert</i></div> -->
 			<div class="hidden widget-cran">true</div>
 		  </div>
 		  <div class="card-reveal" style="display: none; -webkit-transform: translateY(0px);">
-			<span class="card-title grey-text text-darken-4">Calendar Heatmap<i class="material-icons right">close</i></span>
+			<span class="card-title grey-text text-darken-4">East Africa Deaths Boxplot<i class="material-icons right">close</i></span>
 			<p>(full meta data to go here)</p>
 			</div>
 		</div>
