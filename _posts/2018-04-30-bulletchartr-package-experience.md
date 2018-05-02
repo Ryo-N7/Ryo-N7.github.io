@@ -82,7 +82,9 @@ With all this in mind, you now have a nice workflow for building packages:
 2.  Run your functions once to commit it into memory (as in it shows up in your `Global Environment`)
 3.  Highlight the function name and click on the `sinew::createOxygen` addin
 4.  Update documentation
-5.  `roxygen2::roxygenize()` 5a. `Install & Restart`: Build your package! 5b. `devtools::check()` (Optional)
+5.  `roxygen2::roxygenize()` 
+5a. `Install & Restart`: Build your package! 
+5b. `devtools::check()` (Optional)
 6.  git commit & push!
 
 Style your code with `lintr`!
