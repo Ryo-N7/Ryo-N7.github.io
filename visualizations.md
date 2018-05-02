@@ -1,11 +1,11 @@
 ---
 layout: gallery
 title: Visualizations Gallery
-subtitle: WORK IN PROGRESS :: COME BACK SOON
 css: "/css/materialize.css"
 ---
 
-## WORK IN PROGRESS :: COME BACK SOON
+### WORK IN PROGRESS 
+### COME BACK SOON
 
 
 <div class="container center filter">
