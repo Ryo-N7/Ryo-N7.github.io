@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "My first R package building experience: Reflections from creating bulletchartr!"
+fb-img: https://i.imgur.com/8FrfaRW.png
+share-img: https://i.imgur.com/8FrfaRW.png
 tags: [r-packages, data-viz, bulletchartr]
 ---
 
