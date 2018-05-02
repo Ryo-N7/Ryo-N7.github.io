@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My first R package building experience: Reflections from creating `bulletchartr`!"
+title: "My first R package building experience: Reflections from creating bulletchartr!"
 tags: [r-packages, data-viz, bulletchartr]
 ---
 
