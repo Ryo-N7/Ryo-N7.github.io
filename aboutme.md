@@ -21,7 +21,7 @@ _**Currently looking for full-time opportunities in Japan(Tokyo)/USA(California)
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
 
-[Resume (PDF version)](http://ryo-n7.github.io/RyoNakagawara_cv.pdf)
+
 
 **Current Location**: London, UK
 
