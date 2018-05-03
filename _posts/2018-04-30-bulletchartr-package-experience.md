@@ -6,7 +6,7 @@ share-img: https://i.imgur.com/8FrfaRWm.png
 tags: [r-packages, data-viz, bulletchartr]
 ---
 
-I haven't been able to make a blog post in a while (my blog post on cherry blossoms earlier this month was more of a big update)! Since my last [post](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/) I: moved back to Tokyo, went to the RStudio Conference in San Diego , AND started my data analyst/viz internship at ACDI/VOCA! As part of my internship, I was tasked with creating a package for visualizing KPIs with [bullet charts](https://www.perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pIndicatorData). Working with my supervisor, [Amit Kohli](http://amitkohli.com/) we developed `bulletchartr`, based off of the ephemeral `ggplot2`, which allows one to create different versions of bullet charts with either a R data frame or Excel file input! You can read the intro article [here](http://www.acdivoca.org/2018/03/introducing-the-monitoring-and-evaluation-bullet-chart/) and/or check out the Git Hub repo [here](https://github.com/ACDIVOCATech/bulletchartr)! Here's a look at one of the bullet charts that you can make with `bullet_chart()`:
+I haven't been able to make a blog post in a while (my blog post on [cherry blossoms](https://ryo-n7.github.io/2018-04-02-sakura-surprise/) earlier this month was more of a big update)! Since my last [post](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/) I: moved back to Tokyo, went to the [RStudio Conference](https://www.rstudio.com/resources/videos/rstudioconf-2018-talks/) in San Diego, AND started my data analyst/viz internship at ACDI/VOCA! As part of my internship, I was tasked with creating a package for visualizing KPIs with [bullet charts](https://www.perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pIndicatorData). Working with my supervisor, [Amit Kohli](http://amitkohli.com/) we developed `bulletchartr`, based off of the ephemeral `ggplot2`, which allows one to create different versions of bullet charts with either a R data frame or Excel file input! You can read the intro article [here](http://www.acdivoca.org/2018/03/introducing-the-monitoring-and-evaluation-bullet-chart/) and/or check out the Git Hub repo [here](https://github.com/ACDIVOCATech/bulletchartr)! Here's a look at one of the bullet charts that you can make with `bullet_chart()`:
 
 ![](https://i.imgur.com/8FrfaRW.png)
 
@@ -83,9 +83,8 @@ With all this in mind, you now have a nice workflow for building packages:
 3.  Highlight the function name and click on the `sinew::createOxygen` addin
 4.  Update documentation
 5.  `roxygen2::roxygenize()` 
-5a. `Install & Restart`: Build your package! 
-5b. `devtools::check()` (Optional)
-6.  git commit & push!
+6. `Install & Restart`: Build your package! [(Optional): `devtools::check()`]
+7.  git commit & push!
 
 Style your code with `lintr`!
 -----------------------------
