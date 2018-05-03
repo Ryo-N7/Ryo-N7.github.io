@@ -16,15 +16,15 @@ title: Visualizations Gallery
 
 #### [Animated Boxplot] :: Median Proportion of Cause of Death in East Africa region
 
-![](https://i.imgur.com/ThbVuP2.gifv)
+![](https://i.imgur.com/ThbVuP2.gif)
 
 [GitHub link](https://github.com/Ryo-N7/tidy_tuesday#april-1)
 
 #### [Animated Line Graph] :: Post-WWII Japanese Camera Production 
 
-![](https://i.imgur.com/BTiNNtG.gifv)
+![](https://i.imgur.com/BTiNNtG.gif)
+![](assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Animate.gif)
 
-![https://github.com/Ryo-N7/Ryo-N7.github.io/blob/master/assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Animate.gif]
 
 [Blog post link](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
 
