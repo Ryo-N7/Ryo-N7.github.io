@@ -3,6 +3,13 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [Non-contiguous area cartgoram] :: Number of Starbucks per capita (State size by state population)
+[GitHub link](https://github.com/Ryo-N7/tidy_tuesday#may-7)
+
+![](https://i.imgur.com/kRbXSQn.png)
+
+***
+
 #### [Bump Chart] :: Average College Tuition in the USA, by state 
 [GitHub link](https://github.com/Ryo-N7/tidy_tuesday#april-3)
 

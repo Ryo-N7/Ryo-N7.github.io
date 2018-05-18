@@ -9,6 +9,8 @@ title: ブログ（日本語）
 
 Currently working on translating my Global Peace Index analysis blog post. See my progress [here](https://github.com/Ryo-N7/blog_jp).
 
+Aiming to have it done by end of May! Stay tuned.
+
 
 
 ![](http://www.hs.keio.ac.jp/clubs/baseball/UnderConstruction.files/image001.jpg)
