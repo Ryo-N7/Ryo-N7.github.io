@@ -9,7 +9,7 @@ title: ブログ（日本語）
 
 Currently working on translating my Global Peace Index analysis blog post. See my progress [here](https://github.com/Ryo-N7/blog_jp).
 
-Aiming to have it done by end of May! Stay tuned.
+Aiming to have it done for the FIRST WEEK OF JUNE! Stay tuned.
 
 
 
