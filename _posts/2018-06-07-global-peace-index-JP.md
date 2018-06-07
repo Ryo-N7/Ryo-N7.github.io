@@ -6,7 +6,7 @@ share-img: https://ryo-n7.github.io/assets/2018-06-07-global-peace-index-JP_file
 tags: [web-scraping, data-munging, data-viz, ggplot2]
 ---
 
-(My original blog post in English [here](https://ryo-n7.github.io/2017-09-18-global-peace-index/))
+(Check out the English version of this blog post [here](https://ryo-n7.github.io/2017-09-18-global-peace-index/))!
 
 世界平和度指数はInstitute for Economics and Peace (IEP)と呼ばれるシンクタンクが作った指数で、各国と地域の平和度を数値化する試みであります。このデータから何が読み取れるかと思っていれば、2017年度のデータから作成された地図を見てみましょう。 ![GPI map](https://upload.wikimedia.org/wikipedia/commons/e/e8/GPI_2017.jpg)
 
