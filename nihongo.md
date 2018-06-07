@@ -3,15 +3,11 @@ layout: page
 title: ブログ（日本語）
 ---
 
-<p>**Work in progress**</p>
-<p>**Come back soon!**</p>
+COMPLETED:
 
+- June 7th: Webスクレーピングから可視化まで、Tidyverseパッケージで探索データ解析（EDA）!: https://ryo-n7.github.io/2018-06-07-global-peace-index-JP/
 
-Currently working on translating my Global Peace Index analysis blog post. See my progress [here](https://github.com/Ryo-N7/blog_jp).
+Work In Progress:
 
-Aiming to have it done for the FIRST WEEK OF JUNE! Stay tuned.
-
-
-
-![](http://www.hs.keio.ac.jp/clubs/baseball/UnderConstruction.files/image001.jpg)
+Currently working on translating "Thrice Lyrics Analysis Part 1" blog post. See my progress [here](https://github.com/Ryo-N7/blog_jp).
 

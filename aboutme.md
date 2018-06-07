@@ -11,7 +11,7 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests include Soccer/Football, Star Wars, and of course Data Science!
 
-Currently working for **ACDI/VOCA**, an international development NGO, in **Data analytics and Viz**!
+Currently working for **ACDI/VOCA**, an international development NGO, in **Data Analytics and Viz**!
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 
@@ -51,6 +51,10 @@ _**Currently looking for full-time opportunities in Japan(Tokyo)/USA(California)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny
 
+* **SQL**
+
+* **Microsoft Access**
+
 * **SPSS**
 
 * **Amazon Mechanical Turk**:
@@ -60,9 +64,7 @@ _**Currently looking for full-time opportunities in Japan(Tokyo)/USA(California)
 * **Inquisit Lab 5**:
   * Coding Implicit Association Test experiments for consumer psychology research
 
-* **SQL** (basic)
-
-* **html** (basic)
+* **html + CSS** (basic)
 
 
 ### Communication and teamwork skills
