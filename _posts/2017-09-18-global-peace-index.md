@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Global Peace Index: Web scraping and bump charts!"
-fb-img: https://ryo-n7.github.io/assets/2017-09-18-global-peace-index_files/unnamed-chunk-19-1.png
-share-img: https://ryo-n7.github.io/assets/2017-09-18-global-peace-index_files/unnamed-chunk-19-1.png
+fb-img: https://ryo-n7.github.io/assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-11-1.png
+share-img: https://ryo-n7.github.io/assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-11-1.png
 tags: [web-scraping, data-munging, data-viz, ggplot2]
 ---
+
+日本語版は[ここ](https://ryo-n7.github.io/2018-06-07-global-peace-index-JP/)です！
 
 The Global Peace Index (GPI) was created by the Institute for Economics and Peace (IEP), a think tank with a dedication to measuring positive human well-being and progress, and is one attempt to quantitatively measure the relative position of a nations' and regions' peacefulness. The official 2017 report visualizes the most recent data as a map below: ![GPI map](https://upload.wikimedia.org/wikipedia/commons/e/e8/GPI_2017.jpg)
 
@@ -23,11 +25,12 @@ library(forcats)            # change factor levels manually
 
 url <- "https://en.wikipedia.org/wiki/Global_Peace_Index"
 
-# 12/1/17: updated css selector to table.wikitable:nth-child(77)
+# 12/1/17: update css selector to table.wikitable:nth-child(77)  
+# 4/28/18: table.wikitable:nth-child(71)
 
 GPI <- url %>% 
   read_html() %>% 
-  html_nodes('table.wikitable:nth-child(77)') %>%
+  html_nodes('table.wikitable:nth-child(71)') %>%
   .[[1]] %>% 
   html_table(header = TRUE)
 ```
@@ -107,16 +110,13 @@ We see that the data we have is organized in an *"untidy"* or *"wide"* format. T
 ``` r
 GPI_rank <- GPI_rank %>% gather(`2017 rank`:`2008 rank`, key = "year", value = "rank")
 
-glimpse(GPI_rank)
+GPI_rank %>% filter(year == 2008) %>% slice(9:20)
 ```
 
-    ## Observations: 1,630
-    ## Variables: 3
-    ## $ country <chr> "Iceland", "New Zealand", "Portugal", "Austria", "Denm...
-    ## $ year    <chr> "2017 rank", "2017 rank", "2017 rank", "2017 rank", "2...
-    ## $ rank    <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10=", "1...
+    ## # A tibble: 0 x 3
+    ## # ... with 3 variables: country <chr>, year <chr>, rank <chr>
 
-Next, in the `year` column let's take out the "rank" part of each "20xx rank" value (basically changing the values from '2017 rank' to '2017'). We can do this by using the `str_replace_all()` function from the `stringr` package to specifically take out "rank", and then clean up the remaining white space with `trimws()`.
+Next, in the `year` column let's take out the "rank" part of each "20xx rank" value (basically changing the values from '2017 rank' to '2017'). We can do this by using the `str_replace_all()` function from the `stringr` package to specifically take out "rank", and then clean up the remaining white space with `trimws()`. Now we can turn the `year` column into a **factor** variable:
 
 ``` r
 GPI_rank$year <- GPI_rank$year %>% str_replace_all("rank", "") %>% trimws()
@@ -130,18 +130,10 @@ glimpse(GPI_rank)
     ## $ year    <chr> "2017", "2017", "2017", "2017", "2017", "2017", "2017"...
     ## $ rank    <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10=", "1...
 
-Now we can turn the `year` column into a **factor** variable:
-
 ``` r
 GPI_rank <- GPI_rank %>% mutate(year = as.factor(year))
-levels(GPI_rank$year)     # now as factor + no "rank" afterwards.
-```
 
-    ##  [1] "2008" "2009" "2010" "2011" "2012" "2013" "2014" "2015" "2016" "2017"
-
-Let's inspect our work so far!
-
-``` r
+# levels(GPI_rank$year) 
 GPI_rank %>% head(15)
 ```
 
@@ -162,18 +154,13 @@ GPI_rank %>% head(15)
     ## 14         Norway 2017   14
     ## 15        Hungary 2017   15
 
-We can see here that there are countries with a tied ranking due to similar GPI scores (shown in original GPI table), first let's get rid of the `=` symbol:
+We can see that there are countries with a tied ranking due to similar GPI scores (shown in original GPI table), first let's get rid of the `=` symbol, then let's change the `rank` variable into a **numeric** format and finally reorder the dataframe so that the rows are arranged in a way where ranks are in ascending order for each year (2008: Rank \#1 - \#163, 2009: Rank \#1 - \#163, etc.).
 
 ``` r
-GPI_rank <- GPI_rank %>% mutate(rank = str_replace(rank, "\\=", ""))   
-```
-
-Now let's change the `rank` variable into a **numeric** format and finally reorder the dataframe so that the rows are arranged in a way where ranks are in ascending order for each year (2008: Rank \#1 - \#163, 2009: Rank \#1 - \#163, etc.).
-
-``` r
-GPI_rank$rank <- as.numeric(GPI_rank$rank)
-
-GPI_rank <- GPI_rank %>% arrange(year, rank)
+GPI_rank <- GPI_rank %>% 
+  mutate(rank = str_replace(rank, "\\=", ""),
+         rank = as.numeric(rank)) %>% 
+  arrange(year, rank)
 
 glimpse(GPI_rank)
 ```
@@ -181,47 +168,27 @@ glimpse(GPI_rank)
     ## Observations: 1,630
     ## Variables: 3
     ## $ country <chr> "Iceland", "New Zealand", "Japan", "Switzerland", "Den...
-    ## $ year    <fctr> 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2008,...
+    ## $ year    <fct> 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2008, ...
     ## $ rank    <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 13, 14, 15, 16,...
 
-Dealing with tied rank values!
-------------------------------
-
-BIG EDIT: Months later, I realized that I can just use the `ties.method =` argument in the `rank()` function... so simple and so obvious, doh!
-
-(I deleted most of this section where I manually replaced some of the tied values but kept the detecing duplicates bit - the first part of the code below - as that can still be of some use!)
+You can use the `ties.method =` argument in the `rank()` function to order tied values by alphabetical order!
 
 ``` r
-
 GPI_rank %>% 
-  filter(year == 2017) %>%       # replace 2017 with each specific year...
-  select(rank) %>%  
-  duplicated() %>%               # find duplicate values: TRUE/FALSE
-  as.data.frame() %>% 
-  rownames_to_column() %>% 
-  filter(. == TRUE)
+  group_by(year) %>% 
+  filter(year == 2017) %>% 
+  slice(84:85)             
 ```
 
-    ##   rowname    .
-    ## 1      11 TRUE
-    ## 2      20 TRUE
-    ## 3      42 TRUE
-    ## 4      85 TRUE
-    ## 5      98 TRUE
-    ## 6     147 TRUE
-    ## 7     156 TRUE
+    ## # A tibble: 2 x 3
+    ## # Groups:   year [1]
+    ##   country                year   rank
+    ##   <chr>                  <fct> <dbl>
+    ## 1 Bangladesh             2017    84.
+    ## 2 Bosnia and Herzegovina 2017    84.
 
 ``` r
-
-GPI_rank[1551:1552, 1:3]   
 # Bangladesh and Bosnia & Herzegovina are tied 84th in 2017!
-```
-
-    ##                     country year rank
-    ## 1551             Bangladesh 2017   84
-    ## 1552 Bosnia and Herzegovina 2017   84
-
-``` r
 GPI_rank %>% 
   group_by(year) %>% 
   mutate(rank = rank(rank, ties.method = "first")) %>% 
@@ -231,25 +198,23 @@ GPI_rank %>%
 
     ## # A tibble: 2 x 3
     ## # Groups:   year [1]
-    ##                  country   year  rank
-    ##                    <chr> <fctr> <int>
-    ## 1             Bangladesh   2017    84
-    ## 2 Bosnia and Herzegovina   2017    85
+    ##   country                year   rank
+    ##   <chr>                  <fct> <int>
+    ## 1 Bangladesh             2017     84
+    ## 2 Bosnia and Herzegovina 2017     85
 
 ``` r
 # Bangladesh is 84th and Bosnia & Herzegovina is now 85th! Success!
-
 GPI_rank <- GPI_rank %>% 
   group_by(year) %>% 
   mutate(rank = rank(rank, ties.method = "first"))
 ```
 
-Now ALL the tied ranks are fixed with the second tied rank value taking on a `n+1` rank value instead!
+And just like that ALL the tied ranks are fixed with the second tied rank value taking on a `n+1` rank value instead!
 
-Plotting
---------
+Now we are all ready to plot!
 
-Now let's create a **custom ggplot theme** that we can add on to our plot and call it... `theme_peace`!
+But first, let'screate a **custom ggplot theme** that we can add on to our plot and call it... `theme_peace`!
 
 ``` r
 # Create custom theme -----------------------------------------------------
@@ -260,12 +225,21 @@ theme_peace <-
         plot.title = element_text(size = 24, hjust = 0.5),
         plot.subtitle = element_text(size = 12, hjust = 0.5),
         axis.title = element_text(size = 14),
-        axis.title.y = element_text(angle = 0, vjust = 0.5, margin = margin(r = 15)),
+        axis.title.y = element_text(angle = 0, vjust = 0.5, margin = margin(r = 5)),
         axis.text = element_text(size = 12),
-        axis.title.x = element_text(margin = margin(t = 20)),
+        axis.title.x = element_text(margin = margin(t = 10)),
+        panel.grid.minor.y = element_blank(),
         legend.title = element_blank(),
         legend.position = "none")
 ```
+
+Let's go over some of the code in `theme()`!
+
+-   Using the `extrafont` library we can specify various fonts that are installed on your computer (this obviously varies depending on your OS). For how to get this working see the package [README](https://cran.r-project.org/web/packages/extrafont/README.html), it's a really handy package to customize your plots even more!
+
+-   The `margin` argument in `element_text()` allows you to change around the spacing between things, in this case `axis.title.y` and `axis.title.x`.
+
+-   `panel.grid.minor/major` is useful for when you want to emphasize or delete grid lines from your graph. You'll see why I deleted the minor grid lines when we make the plot!
 
 The type of plot we are going to create is called a **bump chart** which are used to visualize changes in rank over periods of time, which is perfect for our current analysis! Here let's specifically highlight the ranking over time for Japan by coloring its line to red and making the other countries more transparent by creating an `if/else` statement that evaluates whether the country being plotted is Japan or not. Also by using `geom_text` we can manually add labels next to both the `2008` and `2017` variables:
 
@@ -273,71 +247,74 @@ The type of plot we are going to create is called a **bump chart** which are use
 # Plotting ----------------------------------------------------------------
 
 GPI_rank %>% 
-  filter(rank <= 10) %>% 
   mutate(jpn = ifelse(country == "Japan", T, F)) %>% 
   ggplot(aes(year, rank, group = country)) +
-  geom_line(aes(color = jpn, alpha = jpn), size = 2) +
+  geom_line(aes(color = jpn, alpha = jpn), size = 2) +  
   geom_point(aes(color = jpn, alpha = jpn), size = 2.3) +
-  geom_text(data = GPI_rank %>% filter(year == "2008", rank <= 10), 
-            aes(label = country, x = "2008"), color = "black", size = 4, nudge_x = -1.5) +
+  geom_text(data = GPI_rank %>% filter(year == "2008", rank <= 10, country != "Japan"), 
+            aes(label = country), color = "black", 
+            family = "Garamond", fontface = "bold",
+            size = 4, nudge_x = -0.65) +
+  geom_text(data = GPI_rank %>% filter(year == "2008", rank <= 10, country == "Japan"), 
+            aes(label = country), color = "red", 
+            family = "Garamond", fontface = "bold",
+            size = 5, nudge_x = -0.65) +
   geom_text(data = GPI_rank %>% filter(year == "2017", rank <= 10), 
-            aes(label = country, x = "2017"), color = "black", size = 4, nudge_x = 1.5) +
+            aes(label = country), color = "black", 
+            family = "Garamond", fontface = "bold",
+            size = 4, nudge_x = 0.65) +
   scale_y_reverse(breaks = pretty_breaks(10)) +
-  scale_x_discrete(expand = c(0.15, 0.1)) +
+  scale_x_discrete(breaks = pretty_breaks(10), expand = c(0.025, 1.5)) +
   scale_color_manual(values = c("#104E8B", "#EE2C2C")) + 
   labs(x = "Year", y = "Rank") +
   ggtitle("Global Peace Index (Top 10)", subtitle = "(2008-2017)") +
-  theme_peace
+  theme_peace +
+  coord_cartesian(ylim = c(1, 10.2))
 ```
 
-<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-12-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
-We can clearly see that Japan's ranking has fallen from 2008 and even dropping out of the Top 10 altogether in 2017 (*Note*: technically Ireland and Japan were tied for 10th in 2017)! Could this be a result of the rising tensions in the past 10 years with its neighbors on a number of issues, such as the [East China Sea disputes](https://www.japantimes.co.jp/opinion/2017/08/29/commentary/japan-commentary/japans-maritime-diplomacy-mission-s-e-asia/), the more recent protests regarding the [comfort women issue](https://www.nytimes.com/2017/04/03/world/asia/japan-ambassador-south-korea-comfort-woman.html), and of course North Korea's recent [missile tests](http://www.bbc.co.uk/news/world-asia-41281050) among others? Let's see if there is a general downward trend in the East Asia region between 2008 and 2017! Neither `Macau` or `Hong Kong` are in the data as they are counted as dependent territories and from what we know of recent conflicts in the *"marginal seas"* of the Pacific, we include some ASEAN contries such as Vietnam and the Philippines.
+Let's go over some of the ggplot code I used above!
+
+-   `geom_text()`: Append country names on to either end of the axes.
+-   `coord_cartesian()`: Focus our coordinate plane so we're only looking at the top 10 countries.
+-   `scale_y_reverse()`: Flip the y-axis so that 1 is on top. Useful for when plotting ranking data.
+-   `theme_peace`: The cool custom theme we just created.
+-   `scale_color_manual()`: Specify the colors you want for the aesthetics.
+-   `scales::pretty_breaks()`: Better control over the number of axis ticks.
+
+We can clearly see that Japan's ranking has fallen from 2008 and even dropping out of the Top 10 altogether in 2017 (*Note*: technically Ireland and Japan were tied for 10th in 2017 but we reordered them in alphabetical order to get rid of tied rank values)! Could this be a result of the rising tensions in the past 10 years with its neighbors on a number of issues, such as the [East China Sea disputes](https://www.japantimes.co.jp/opinion/2017/08/29/commentary/japan-commentary/japans-maritime-diplomacy-mission-s-e-asia/), the more recent protests regarding the [comfort women issue](https://www.nytimes.com/2017/04/03/world/asia/japan-ambassador-south-korea-comfort-woman.html), and of course North Korea's recent [missile tests](http://www.bbc.co.uk/news/world-asia-41281050) among others? Let's see if there is a general downward trend in the East Asia region between 2008 and 2017! Neither `Macau` or `Hong Kong` are in the data as they are counted as dependent territories and from what we know of recent conflicts in the *"marginal seas"* of the Pacific, we include some ASEAN contries such as Vietnam and the Philippines.
 
 ``` r
 # Subset custom "East Asia" region -----------------------------------------------
 
-GPI_Asia <- GPI_rank %>% 
-  filter(country %in% c("Japan", "China", "Korea Republic", "DPR Korea", 
+GPI_Asia <- GPI_rank %>% filter(country %in% c("Japan", "China", "Korea Republic", "DPR Korea", 
                                                "Philippines", "Taiwan", "Vietnam")) %>% 
-  mutate(region = "East Asia")
+  mutate(rank = as.numeric(rank))
 
-glimpse(GPI_Asia)
-```
-
-    ## Observations: 70
-    ## Variables: 4
-    ## $ country <chr> "Japan", "Taiwan", "Korea Republic", "Vietnam", "China...
-    ## $ year    <fctr> 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2009, 2009,...
-    ## $ rank    <int> 3, 37, 38, 41, 81, 116, 127, 4, 33, 42, 48, 83, 118, 1...
-    ## $ region  <chr> "East Asia", "East Asia", "East Asia", "East Asia", "E...
-
-``` r
-GPI_Asia$rank <- as.numeric(GPI_Asia$rank)
-```
-
-Now we are all ready to start plotting!
-
-``` r
 # Plot "East Asia" region -------------------------------------------------
 GPI_Asia %>%
   ggplot(aes(year, as.numeric(rank), group = country)) +
   geom_line() +
   geom_point() +
   geom_text(data = GPI_Asia %>% filter(year == "2008"), 
-                  aes(label = country, x = "2008"), color = "black", size = 4, nudge_x = -1.1) +
+                  aes(label = country, x = "2008"), 
+            color = "black", size = 4, nudge_x = -0.8, 
+            family = "Garamond", fontface = "bold") +
   geom_text(data = GPI_Asia %>% filter(year == "2017"), 
-                  aes(label = country, x = "2017"), color = "black", size = 4, nudge_x = 1.1) +
+                  aes(label = country, x = "2017"), 
+            color = "black", size = 4, nudge_x = 0.8, 
+            family = "Garamond", fontface = "bold") +
   scale_y_reverse(breaks = c(1, 5, seq(10, 160, by = 10))) +
-  scale_x_discrete(expand = c(0.1, 0.05)) +
+  scale_x_discrete(expand = c(0.025, 1.5)) +
   labs(x = "Year", y = "Rank") +
   ggtitle("Global Peace Index (East Asia Region)\n (2008-2017)") +
   theme_peace
 ```
 
-<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
 
-There could still be some improvements made to this plot, specifically, the country labels on either side of the x-axis limits. We can fix this by Using the `gg_repel` package that will spread them out and create a small line/arrow from the label box pointing to the corresponding line or point. We can also manually set colors to each of our custom "East Asia" region countries to further differntiate each line and make it more easy to read:
+There could still be some improvements made to this plot, specifically, the country labels on either side of the x-axis limits. We can fix this by Using the `gg_repel` package that will spread them out and create a small line/arrow from the label box pointing to the corresponding line or point. We can also manually set colors to each of our custom "East Asia" region countries to further differentiate each line and make it more easy to read. Here we use HEX colors to specify our preferred colors, to learn more check out [this](http://colorbrewer2.org) or this [RStudio add-in](https://github.com/daattali/colourpicker)!
 
 ``` r
 colors = c(
@@ -354,33 +331,22 @@ colors = c(
 Change the variable type of `country` into a **factor** and then rename *Korea Republic* to *S.Korea* and *DPR Korea* to *N.Korea* to fit graph labels better:
 
 ``` r
-GPI_Asia$country <- as.factor(GPI_Asia$country)
-GPI_Asia %>% glimpse()
-```
-
-    ## Observations: 70
-    ## Variables: 4
-    ## $ country <fctr> Japan, Taiwan, Korea Republic, Vietnam, China, Philip...
-    ## $ year    <fctr> 2008, 2008, 2008, 2008, 2008, 2008, 2008, 2009, 2009,...
-    ## $ rank    <dbl> 3, 37, 38, 41, 81, 116, 127, 4, 33, 42, 48, 83, 118, 1...
-    ## $ region  <chr> "East Asia", "East Asia", "East Asia", "East Asia", "E...
-
-``` r
 GPI_Asia <- GPI_Asia %>% 
-   mutate(country = fct_recode(country,
+   mutate(country = as.factor(country),
+          country = fct_recode(country,
                                  "S.Korea" = "Korea Republic",
                                  "N.Korea" = "DPR Korea"))
 
 GPI_Asia %>%
   ggplot(aes(year, as.numeric(rank), group = country)) +
-  geom_line(aes(color = country)) +
-  geom_point(aes(color = country)) +
-  geom_label_repel(data = GPI_Asia %>% filter(year == "2008"), 
-                  aes(label = country, x = "2008"), 
+  geom_line(aes(color = country), size = 1.15) +
+  geom_point(aes(color = country), size = 2.5) +
+  geom_text_repel(data = GPI_Asia %>% filter(year == "2008"), 
+                  aes(label = country, x = "2008"), family = "Garamond",
                   color = "black", size = 3.5, nudge_x = -0.9, 
                   fontface = "bold", segment.colour = "red") +
-  geom_label_repel(data = GPI_Asia %>% filter(year == "2017"), 
-                   aes(label = country, x = "2017"), 
+  geom_text_repel(data = GPI_Asia %>% filter(year == "2017"), 
+                   aes(label = country, x = "2017"), family = "Garamond",
                    color = "black", size = 3.5, nudge_x = 1.5,
                    fontface = "bold", segment.colour = "red") +
   scale_y_reverse(breaks = c(1, 5, seq(10, 160, by = 10))) +
@@ -391,50 +357,39 @@ GPI_Asia %>%
   scale_color_manual(values = colors)
 ```
 
-<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-16-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
 
 Of course, the changes in rankings aren't ***all*** due to inter-country conflicts as it is only 1 of the 23 indicators used to calculate the GPI score. Both external peace indicators (*military expenditure as a percentage of GDP*, *nuclear and heavey weapons capabilities*, and *relations with neighboring countries*) **and** internal peace indicators (*level of violent crime*, *political instability*, *impact of terrorism*) are used in calculating the GPI. The full run-down on the various indicators can be found in Appendix B of the most recent GPI Report [here](http://visionofhumanity.org/app/uploads/2017/06/GPI17-Report.pdf).
-There is another way to do the above but first I'll clean up the data further by changing the names of the Koreas in the main dataset like we did in `GPI_Asia`:
+
+Now, instead of creating a new subset of our data, we can reduce clutter in our R environment by using `magrittr` ( %&gt;% ) pipes before plotting!
+
+To do the same thing without creating a separate dataset (like `GPI_Asia`) is to simply create a new variable called `region` inside our existing `GPI_rank` data frame and then use the `filter()` function right before we pipe it through our `ggplot` code. This time let's try using `geom_label_repel()` so the country names "pop" out a bit more!
 
 ``` r
-GPI_rank <- GPI_rank %>% 
-  mutate(country = fct_recode(country,
-                              "S.Korea" = "Korea Republic",
-                              "N.Korea" = "DPR Korea"))
-```
-
-Instead of creating new subset of our data, we can reduce clutter in our R environment by using `magrittr` pipes before plotting!
-
-To do the same thing without creating a separate dataset (like `GPI_Asia`) is to simply create a new variable called `region` inside our existing `GPI_rank` data frame and then use the `filter()` function right before we pipe it through our `ggplot` code:
-
-``` r
-# Piping before plotting East Asia ----------------------------------------
-
-GPI_rank <- GPI_rank %>% 
-      mutate(region = if_else(country %in% c("Japan", "China", "S.Korea", 
-                                             "N.Korea", "Philippines", 
-                                             "Taiwan", "Vietnam"), 
-                              "East Asia", "Other")) 
-
 # Final plot: East Asia ---------------------------------------------------
 
 GPI_rank %>%
+  mutate(country = fct_recode(country,
+                              "S.Korea" = "Korea Republic",
+                              "N.Korea" = "DPR Korea"))　 %>% 
+  mutate(region = if_else(
+    country %in% c("Japan", "China", "S.Korea", "N.Korea", 
+                   "Philippines", "Taiwan", "Vietnam"), 
+    "East Asia", "Other")) %>% 
   filter(region == "East Asia") %>% 
   ggplot(aes(year, rank, group = country)) +
   geom_line(aes(color = country), size = 1.2, alpha = 0.8) +
-  geom_point(aes(color = country), size = 1.1, alpha = 0.5) +
+  geom_point(aes(color = country), size = 2.5) +
   geom_label_repel(
-    data = GPI_rank %>% 
-      filter(year == "2008", region == "East Asia"), 
-      aes(label = country, x = "2008"), 
-      color = "black", family = "Times New Roman", fontface = "bold",
-      size = 4, nudge_x = -0.9) +
+    data = . %>% filter(year == "2008", region == "East Asia"), 
+    aes(label = country), 
+    color = "black", family = "Garamond", fontface = "bold",
+    size = 4, nudge_x = -0.9) +
   geom_label_repel(
-    data = GPI_rank %>% 
-      filter(year == "2017", region == "East Asia"), 
-      aes(label = country, x = "2017"), 
-      color = "black", family = "Century", fontface = "bold",
-      size = 4, nudge_x = 0.9) +
+    data = . %>% filter(year == "2017", region == "East Asia"), 
+    aes(label = country), 
+    color = "black", family = "Garamond", fontface = "bold",
+    size = 4, nudge_x = 0.9) +
   scale_y_reverse(breaks = c(1, seq(10, 160, by = 10))) +
   scale_x_discrete(expand = c(0.2, 0.05)) +
   labs(x = "Year", y = "Rank") +
@@ -443,8 +398,10 @@ GPI_rank %>%
   scale_color_manual(values = colors)
 ```
 
-<img src="../assets/2017-09-18-global-peace-index_files/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
 
 With the colored lines and the labels we can clearly see the downward trend of GPI rankings for all countries in the East Asia region. The exception is Taiwan which although shown as 37th in 2008, it was technically tied with Tunisia and South Korea, and they basically reverted back to their actual 2008 rank (40th) after a brief rise.
 
-Hopefully with initiatives like the GPI and the works of other peace-oriented think tanks, the public can identify different sources of problems that hinder peaceful co-existence both within-countries and between-countries and assist policy-makers in finding viable solutions!
+With initiatives like the GPI and the works of other peace-oriented think tanks, the public can identify different sources of problems that hinder peaceful co-existence both within-countries and between-countries and assist policy-makers in finding viable solutions!
+
+I hope this was a good example for people wanting to learn how to use the Tidy data munging packages and ggplot with real world data. There's plenty of other ways to visualize this data so try it out (maybe try recreating the map at the beginning of the blog post with `ggmap` or something else)!
