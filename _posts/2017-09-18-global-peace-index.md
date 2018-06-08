@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Global Peace Index: Web scraping and bump charts!"
-subtitle: "日本語版は[ここ](https://ryo-n7.github.io/2018-06-07-global-peace-index-JP/)です！"
 fb-img: https://ryo-n7.github.io/assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-11-1.png
 share-img: https://ryo-n7.github.io/assets/2018-06-07-global-peace-index-JP_files/unnamed-chunk-11-1.png
 tags: [web-scraping, data-munging, data-viz, ggplot2]
 ---
+
+日本語版は[ここ](https://ryo-n7.github.io/2018-06-07-global-peace-index-JP/)です！
 
 The Global Peace Index (GPI) was created by the Institute for Economics and Peace (IEP), a think tank with a dedication to measuring positive human well-being and progress, and is one attempt to quantitatively measure the relative position of a nations' and regions' peacefulness. The official 2017 report visualizes the most recent data as a map below: ![GPI map](https://upload.wikimedia.org/wikipedia/commons/e/e8/GPI_2017.jpg)
 
