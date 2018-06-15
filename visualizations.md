@@ -3,6 +3,11 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [ggsoccer chart] :: FIFA World Cup 2018, First Goal!
+[GitHub link]()
+
+![](https://i.imgur.com/5XcPhaw.png)
+
 #### [Non-contiguous area cartgoram] :: Number of Starbucks per capita (State size by state population)
 [GitHub link](https://github.com/Ryo-N7/tidy_tuesday#may-7)
 
