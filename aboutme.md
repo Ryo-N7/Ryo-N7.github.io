@@ -9,13 +9,13 @@ Recently finished a **MSc. in Industrial-Organizational and Business Psychology*
 
 My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public. My main strengths in R are in **data wrangling** and **visualization**, many examples of which you can see throughout my blog posts!
 
-Other interests include Soccer/Football, Star Wars, and of course Data Science!
+Other interests include Soccer/Football, Star Wars, and of course -  Data Science!
 
-Currently working for **ACDI/VOCA**, an international development NGO, in **Data Analytics and Viz**!
+Currently working for **ACDI/VOCA**, an international development NGO, as a **Data Analytics and Visualization Consultant**!
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 
-_**Currently looking for full-time opportunities in Japan(Tokyo)/USA(California)/UK(London) or remote work!**_
+_**Currently looking for full-time opportunities in Japan (Tokyo)/ USA (California)/ UK (London) or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
@@ -48,6 +48,8 @@ _**Currently looking for full-time opportunities in Japan(Tokyo)/USA(California)
 * **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
   [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
+  + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
+  + soccer charts: Example [1]()
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny
 
