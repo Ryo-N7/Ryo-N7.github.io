@@ -373,6 +373,6 @@ Or other mishaps:
 
 ![](https://thumbs.gfycat.com/PitifulSeparateAlpineroadguidetigerbeetle-max-14mb.gif)
 
-...on second thought I would'nt mind if Belgium scores an own goal like this against Japan!
+...on second thought I wouldn't mind if Belgium scores an own goal like this against Japan!
 
 Part 2 will be coming soon!
