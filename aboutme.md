@@ -7,11 +7,11 @@ Born in Japan, grew up in America and Israel, having also lived in Germany, just
 
 Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). During the MSc. my main research interests were in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
-My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public. My main strengths in R are in **data wrangling** and **visualization**, many examples of which you can see throughout my blog posts!
+My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public. My main strengths in R are in **data wrangling** and **visualization**, many examples of which you can see throughout my blog posts and my [viz gallery](https://ryo-n7.github.io/visualizations/)!
 
 Other interests include Soccer/Football, Star Wars, and of course -  Data Science!
 
-Currently working for **ACDI/VOCA**, an international development NGO, as a **Data Analytics and Visualization Consultant**!
+Currently working for **ACDI/VOCA**, an international development NGO, as a **Data Analytics and Visualization Consultant** on a _Fixed-Term Contract_!
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 
@@ -21,7 +21,7 @@ _**Currently looking for full-time opportunities in Japan (Tokyo)/ USA (Californ
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
 
-
+**Follow Me** on [Twitter](https://twitter.com/R_by_Ryo)!
 
 **Current Location**: London, UK
 
@@ -39,7 +39,7 @@ _**Currently looking for full-time opportunities in Japan (Tokyo)/ USA (Californ
 ## Skills
 ### Technical skills
 * **R**:
-  + Data wrangling (dplyr, plyr, tidyr, purrr): Example [1](https://ryo-n7.github.io/2018-04-02-sakura-surprise/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/)
+  + Data wrangling (dplyr, plyr, tidyr, purrr, etc.): Example [1](https://ryo-n7.github.io/2018-04-02-sakura-surprise/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/)
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
   + PCA and Cluster analysis
@@ -49,7 +49,7 @@ _**Currently looking for full-time opportunities in Japan (Tokyo)/ USA (Californ
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
   [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
   + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
-  + soccer charts: Example [1]()
+  + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny
 
