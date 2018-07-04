@@ -371,7 +371,7 @@ And hopefully no own goals:
 
 Or other mishaps:
 
-![](https://thumbs.gfycat.com/PitifulSeparateAlpineroadguidetigerbeetle-max-14mb.gif)
+![](https://media.giphy.com/media/RkLflPk6jcedrB7Ln2/giphy.gif)
 
 ...on second thought I wouldn't mind if Belgium scores an own goal like this against Japan!
 
