@@ -6,7 +6,7 @@ share-img: https://ryo-n7.github.io/assets/2018-07-05-visualize-worldcup-part-2_
 tags: [worldcup, ggplot2, soccer]
 ---
 
-This is **Part 2** of my World Cup Data Viz Series (See Part 1 [here](https://ryo-n7.github.io/2018-06-29-visualize-worldcup/))! I was originally planning for my animated goals to be Part 2 but that will have to wait for now. In this blog post I'll be showing you the visualizations I made for how the group table changed throughout the final matchday that I've been posting on [Twitter](https://twitter.com/R_by_Ryo).
+This is **Part 2** of my World Cup Data Viz Series (See Part 1 [here](https://ryo-n7.github.io/2018-06-29-visualize-worldcup/))! In this blog post I'll be showing you the visualizations I made for how the group table changed throughout the final matchday that I've been posting on [Twitter](https://twitter.com/R_by_Ryo).
 
 I thought I'll go through the entire code to use as a reference and as a sounding board for creating some kind of function/package for these graphs in the future!
 
