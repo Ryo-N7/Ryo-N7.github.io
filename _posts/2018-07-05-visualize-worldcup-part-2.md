@@ -169,13 +169,13 @@ ggplot(group_d, aes(time, position)) +
     aes(x = x, y = y, 
         label = country,
         family = "Dusha V5"),
-    nudge_y = 0.3, size = 6) +
+    nudge_y = 0.3, size = 5.5) +
   geom_text(
     data = score_labs,
     aes(x = x, y = y, 
         label = score,
         family = "Dusha V5"),
-    nudge_y = 0.3, size = 6) +
+    nudge_y = 0.3, size = 5.5) +
   geom_text(
     data = goals_labs,
     aes(x = x, y = y, 
@@ -187,7 +187,7 @@ ggplot(group_d, aes(time, position)) +
     aes(x = x, y = y, 
         label = points,
         family = "Dusha V5"),
-    nudge_x = 1,
+    nudge_x = 0.8,
     size = 5,
     color = "grey30") + # match color with the other axes labels!
   scale_y_reverse(
@@ -200,7 +200,7 @@ ggplot(group_d, aes(time, position)) +
     breaks = 1:7,
     labels = x_labs,
     expand = c(0, 0),
-    limits = c(0.3, 8.3)) +
+    limits = c(0.5, 8.1)) +
   labs(
     title = "Group D Table Throughout The Last Matchday",
     subtitle = "Nigeria vs. Argentina & Iceland vs. Croatia",
