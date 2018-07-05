@@ -9,7 +9,7 @@ title: Visualizations Gallery
 [Group A](https://i.imgur.com/Kt7weKD.png), [Group B](https://i.imgur.com/dPSCFAu.png), [Group C](https://i.imgur.com/c6hw5GD.png), [Group D](https://i.imgur.com/zM2MAlM.png), 
 [Group E](https://i.imgur.com/R9nmvpL.png), [Group F](https://i.imgur.com/Faoljv3.png), [Group G](), [Group H](https://i.imgur.com/h9ZCETT.png)
 
-![](https://i.imgur.com/zM2MAlM.png)
+![](https://i.imgur.com/FlntjgH.png)
 
 
 #### [ggsoccer chart] :: FIFA World Cup 2018, First Goal!
