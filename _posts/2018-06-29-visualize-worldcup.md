@@ -375,4 +375,4 @@ Or other mishaps:
 
 ...on second thought I wouldn't mind if Belgium scores an own goal like this against Japan!
 
-Part 2 will be coming soon!
+Part 2 will be coming soon! (7/5/18: Part 2 [here!](https://ryo-n7.github.io/2018-07-05-visualize-worldcup-part-2/))
