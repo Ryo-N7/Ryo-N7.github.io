@@ -14,13 +14,13 @@ Besides the code I will go through some of the design/ggplot2 choices I made as 
 
 Here's an example using **Group H**:
 
-![](..\assets\2018-07-05-visualize-worldcup-part-2_files\unnamed-chunk-1-1.png)
+![](https://i.imgur.com/agTx6IG.png)
 
 Below you can take a look at the graphics I made for each Group:
 
-| [Group A](https://i.imgur.com/H8WEC9M.png)     | [Group B](https://i.imgur.com/1dLrgcF.png)     | [Group C](https://i.imgur.com/sycH8up.png)     | [Group D](https://i.imgur.com/BYT1E2P.png)     |
+| [Group A](https://i.imgur.com/6yaOA31.png)     | [Group B](https://i.imgur.com/4AEIbgq.png)     | [Group C](https://i.imgur.com/cGs2mf0.png)     | [Group D](https://i.imgur.com/FlntjgH.png)     |
 |------------------------------------------------|------------------------------------------------|------------------------------------------------|------------------------------------------------|
-| [**Group E**](https://i.imgur.com/svW9wEg.png) | [**Group F**](https://i.imgur.com/AQUE8B0.png) | [**Group G**](https://i.imgur.com/ikYlshs.png) | [**Group H**](https://i.imgur.com/HKAsin8.png) |
+| [**Group E**](https://i.imgur.com/1flVYGU.png) | [**Group F**](https://i.imgur.com/ucMH4f4.png) | [**Group G**](https://i.imgur.com/IVcqeUG.png) | [**Group H**](https://i.imgur.com/agTx6IG.png) |
 
 In my opinion, Group D was probably the most exciting so let's work through that one as the example!
 
