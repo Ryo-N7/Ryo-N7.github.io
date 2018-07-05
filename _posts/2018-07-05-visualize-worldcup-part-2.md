@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Visualize the World Cup with R! Part 2: World Cup Drama - Visualizing Changes in the Group Table During the Final Matchday"
-fb-img: https://ryo-n7.github.io/assets/2018-07-05-visualize-worldcup-part-2_files/named-chunk-3-1.png
-share-img: https://ryo-n7.github.io/assets/2018-07-05-visualize-worldcup-part-2_files/named-chunk-3-1.png
+fb-img: https://ryo-n7.github.io/assets/2018-07-05-visualize-worldcup-part-2_files/unnamed-chunk-3-1.png
+share-img: https://ryo-n7.github.io/assets/2018-07-05-visualize-worldcup-part-2_files/unnamed-chunk-3-1.png
 tags: [worldcup, ggplot2, soccer]
 ---
 
