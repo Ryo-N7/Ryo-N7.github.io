@@ -6,8 +6,8 @@ title: Visualizations Gallery
 #### [bump chart] :: FIFA World Cup - Group D Table Throughout The Last Matchday!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
-[Group A](https://i.imgur.com/Kt7weKD.png), [Group B](https://i.imgur.com/dPSCFAu.png), [Group C](https://i.imgur.com/c6hw5GD.png), [Group D](https://i.imgur.com/zM2MAlM.png), 
-[Group E](https://i.imgur.com/R9nmvpL.png), [Group F](https://i.imgur.com/Faoljv3.png), [Group G](), [Group H](https://i.imgur.com/h9ZCETT.png)
+[Group A](https://i.imgur.com/6yaOA31.png), [Group B](https://i.imgur.com/4AEIbgq.png), [Group C](https://i.imgur.com/cGs2mf0.png), [Group D](https://i.imgur.com/FlntjgH.png), 
+[Group E](https://i.imgur.com/1flVYGU.png), [Group F](https://i.imgur.com/ucMH4f4.png), [Group G](https://i.imgur.com/IVcqeUG.png), [Group H](https://i.imgur.com/agTx6IG.png)
 
 ![](https://i.imgur.com/FlntjgH.png)
 
