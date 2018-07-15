@@ -376,3 +376,7 @@ Or other mishaps:
 ...on second thought I wouldn't mind if Belgium scores an own goal like this against Japan!
 
 Part 2 will be coming soon! (7/5/18: Part 2 [here!](https://ryo-n7.github.io/2018-07-05-visualize-worldcup-part-2/))
+
+7/15/18: Made significant improvements to Gazinsky's goal - check it out (this is the static version of the one that I eventually animated).
+
+![](https://i.imgur.com/7tRZnm7.png)
