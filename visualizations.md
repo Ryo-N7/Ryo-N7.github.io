@@ -3,6 +3,16 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [animate uniforms] :: Japan's World Cup history through uniforms!
+[GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
+
+![](https://i.imgur.com/UTirZjG.gif)
+
+#### [animate soccer] :: FIFA World Cup - Japan's Perfect Offside Trap vs. Senegal
+[GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
+
+![](https://i.imgur.com/ceSA3YB.gif)
+
 #### [bump chart] :: FIFA World Cup - Group D Table Throughout The Last Matchday!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
