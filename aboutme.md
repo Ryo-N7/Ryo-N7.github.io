@@ -15,7 +15,9 @@ Currently working for **ACDI/VOCA**, an international development NGO, as a **Da
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 
-_**Currently looking for full-time opportunities in Japan (Tokyo)/ USA (California)/ UK (London) or remote work!**_
+Recently, I gave a presentation at the TokyoR User Group - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
+
+_**Currently looking for full-time opportunities from November 2018 in Japan (Tokyo)/ USA (California)/ UK (London) or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
@@ -50,6 +52,7 @@ _**Currently looking for full-time opportunities in Japan (Tokyo)/ USA (Californ
   [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
   + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
   + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)
+  + gganimate/tweenr: Examples [1](https://github.com/Ryo-N7/soccer_ggplots), [2](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny
 
