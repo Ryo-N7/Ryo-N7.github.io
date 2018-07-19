@@ -46,6 +46,8 @@ The only problem with doing this is manually creating the data points. This is m
 
 Some people have managed to create some nice [heatmaps](https://twitter.com/neilcharles_uk/status/1009181021965778945) by scraping *WhoScored.com* and other sites (that create their viz from purchased data from Opta) with **RSelenium** or some other JS scrapers but that was a bit out of my expertise so I resorted to creating the coordinate positions by hand. Thankfully, due to the plotting system in `ggsoccer` and `ggplot2`, it's very easy to figure out the positions on the soccer field plot and with a little bit of practice it doesn't take too much time.
 
+![](https://i.imgur.com/ejgbOFg.png)
+
 To save space I don't show the data frames with the coordinate points and labelling data for all of the graphics, however you can find all of them [here](https://github.com/Ryo-N7/soccer_ggplots) in the GitHub repo!
 
 ### Gazinsky Scores The First Goal!
