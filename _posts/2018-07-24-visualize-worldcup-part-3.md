@@ -403,7 +403,7 @@ Any help here will be greatly appreciated!
 Osako's goal vs. Colombia
 -------------------------
 
-Japan faced a tough opponent in Colombia, even with the man-advantage early on, in our opening game of the World Cup. Even with our passing tiring out the tenacious Colombians we were finding it hard to find a breakthrough. In came Keisuke Honda, who within minutes of his arrival, delivered a beautiful cross from a free kick for Osako to head home!
+Japan faced a tough opponent in Colombia, even with the man-advantage early on, in our opening game of the World Cup. Even with our passing tiring out the tenacious Colombians we were finding it hard to find a breakthrough. In came Keisuke Honda, who within minutes of his arrival, delivered a beautiful cross from a corner kick for Osako to head home!
 
 This goal was a lot easier to animate and to be honest this was the first one I was able to actually get working a few weeks ago! This was mainly because the ball movement was the only thing I really had to worry about.
 
@@ -660,7 +660,7 @@ ggplot(trap_data) +
 
 <img src="../assets/2018-07-24-visualize-worldcup-part-3_files/tweenr-offside-NEW-1.gif" style="display: block; margin: auto;" />
 
-So against the height advantage and physicality of Senegal, the thinking behind Japan strategy was...
+So against the height advantage and physicality of Senegal, the thinking behind Japan's strategy was...
 
 ``` r
 library(memery)
