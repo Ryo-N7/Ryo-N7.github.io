@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Animating the Goals of the World Cup: Comparing the *old* vs. *new* `gganimate` and `tweenr` API!"
+title: "Animating the Goals of the World Cup: Comparing the old vs. new gganimate and tweenr API!"
 fb-img: https://i.imgur.com/ceSA3YB.gif
 share-img: https://i.imgur.com/ceSA3YB.gif
 tags: [worldcup, gganimate, tweenr, ggplot2, soccer]
 ---
 
-Welcome to **Part 3** of my series on "Visualizing the World Cup with R"! This is the culmination of this mini project that I've been working on throughout the World Cup. In addition, from having listened to **Thomas Pedersen's** excellent keynote at [UseR! 2018](https://user2018.r-project.org/) in Brisbane on the **NEW** gganimate and tweenr API, I am taking advantage of the fortuitous timing to also compare the APIs using the goals as the examples!
+Welcome to **Part 3** of my series on "Visualizing the World Cup with R"! This is the culmination of this mini project that I've been working on throughout the World Cup. In addition, from having listened to **Thomas Pedersen's** excellent [keynote](https://www.youtube.com/watch?v=21ZWDrTukEs) at __UseR! 2018 __ in Brisbane on the **NEW** gganimate and tweenr API, I am taking advantage of the fortuitous timing to also compare the APIs using the goals as the examples!
 
 I've had finished these animations a couple of weeks ago but didn't make them available until I presented at the [TokyoR](https://twitter.com/TokyoRCommunity) MeetUp last week! **Hadley Wickham** and **Joe Rickert** were the special guests and with the amount of speakers and attendees it felt more like a mini-conference than a regular meetup, if you're ever in Tokyo come join us for some R&R...and R! You can check out a recording of my talk on [YouTube](https://www.youtube.com/watch?v=tNncHFd5dVo).
 
@@ -507,8 +507,9 @@ Japan's Offside Trap vs. Senegal!
 For the final animation, I tried to recreate something you don't see everyday - an offside trap!
 
 <center>
-<img src="https://media.giphy.com/media/lk0TFUdop2JTW/giphy.gif" style="width: 400px" />
+<img src="https://i.imgur.com/JLjdqvy.gif" style="width: 400px" />
 </center>
+
 ``` r
 # PLAYERS
 # JAPAN: x, y (blue)     Senegal: x2, y2  (lightgreen)
