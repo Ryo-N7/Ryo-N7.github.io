@@ -11,7 +11,7 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests include Soccer/Football, Star Wars, and of course -  Data Science!
 
-Currently working for **ACDI/VOCA**, an international development NGO, as a **Data Analytics and Visualization Consultant** on a _Fixed-Term Contract_!
+Currently working for [ACDI/VOCA](http://acdivoca.org/), an international development NGO, as a **Data Analytics and Visualization Consultant** on a _Fixed-Term Contract_!
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 

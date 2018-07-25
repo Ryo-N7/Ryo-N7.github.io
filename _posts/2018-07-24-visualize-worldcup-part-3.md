@@ -17,7 +17,7 @@ Coordinate position data
 
 Since this series started, several people have asked me where I got the data. I thought I made it quite clear in [Part 1](https://ryo-n7.github.io/2018-06-29-visualize-worldcup/) but I will reiterate in the next few paragraphs.
 
-I get a lot of my data science/visualization news from Twitter which has made a weird comeback by providing a platform for certain communities like `#rstats` (never thought I'll be creating a Twitter account in 2017!). With that I've been able to come across some wonderful visualizations for the World Cup by **The Financial Times**, **FiveThirtyEight**, and a host of other people. As you can see from a great example of World Cup penalties by the **BBC** below, data is provided by sports analytics companies, primarily **Opta**!
+I get a lot of my data science/visualization news from Twitter which has made a weird comeback by providing a platform for certain communities like `#rstats` (never thought I'll be creating a Twitter account in 2017!). Therefore, I've been able to come across some wonderful visualizations for the World Cup by **The Financial Times**, **FiveThirtyEight**, and a host of other people. As you can see from a great example of World Cup penalties by the **BBC** below, data is provided by sports analytics companies, primarily **Opta**!
 
 <center>
 <img src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/79E6/production/_102260213_1_penalties_scored_640-nc.png" style="height: 300px" />
@@ -50,9 +50,9 @@ ggplot(point_data) +
 <center>
 <img src="https://i.imgur.com/ejgbOFg.png" style="width: 500px" />
 </center>
-There's also a way to make the coordinates be in **120x80** format (which is much more intuitive) and you can do that by adding the `*_scale` arguments inside the `annotate_pitch()` function. However, I only realized this after I've embedded the coordinate positions for the **100x100** plot in my head so that's what I kept going with.
+There's also a way to make the coordinates be in **120x80** format (which is much more intuitive) and you can do that by adding the `*_scale` arguments inside the `annotate_pitch()` function. However, I only realized this after I had embedded the coordinate positions for the **100x100** plot in my head so that's what I kept going with.
 
-There is also the **"Soccer event logger"** [here](https://github.com/Torvaney/elm-soccer-tracker) (incidentally also by [Ben Torvaney](https://twitter.com/Torvaney)) which allows you to mouse-click specific points on the field and then download a `.csv` file of the coordinate positions you clicked. This might be easier but personally, I like to experiment within the R environment and take notes/ideas in RMarkdown as I do so, it definitely is an option for others though.
+There is also the **"Soccer event logger"** [here](https://github.com/Torvaney/elm-soccer-tracker) (incidentally also by [Ben Torvaney](https://twitter.com/Torvaney)) which allows you to mouse-click specific points on the field and then download a `.csv` file of the coordinate positions you clicked. This might be easier but personally I like to experiment within the R environment and take notes/ideas in RMarkdown as I do so, it definitely is an option for others though.
 
 ... and that's how [Part 1](https://ryo-n7.github.io/2018-06-29-visualize-worldcup/) was born! But I wasn't going to stop there, soccer is a moving - flowing game, static images are OK but it just doesn't capture the **FEEL** of the sport. So this is where `gganimate` and `tweenr` came in!
 
@@ -396,7 +396,7 @@ If I had real data and the proper timing values in the "time" column that seamle
 
 A cool new thing that you can play around with in the **new** gganimate are the different enter/exit animations! However, I couldn't really get it to work for Gazinsky's label... In the `mtcars` example on the gganimate GitHub Repo, the boxplots disappeared when there was no data for the specific combination of variables but I can't seem to properly set up the Gazinsky label dataframe correctly to implement it.
 
-Ideally I want Gazinsky's label to only show up from `time = 6` onwards. I tried filling the coordinate positions for `time = 1` to `time = 5` with **NAs** or **0s** but it didn't seem trigger the effect ... when I tried with "x = 0, y = 0" in `time = 5`, the player label zipped in from the bottom of the screen to the penalty box at `time = 6` and it was unintentionally very funny!
+Ideally, I want Gazinsky's label to only show up from `time = 6` onwards. I tried filling the coordinate positions for `time = 1` to `time = 5` with **NAs** or **0s** but it didn't seem trigger the effect ... when I tried with "x = 0, y = 0" in `time = 5`, the player label zipped in from the bottom of the screen to the penalty box at `time = 6` and it was unintentionally very funny!
 
 Any help here will be greatly appreciated!
 
@@ -444,7 +444,7 @@ flag_data <- data.frame(
   select(-team)
 ```
 
-For this animation, I used one of the many easing functions available in `tweenr`, `quadratic-out` to get the speed of the ball from a corner kick just about right. You can refer to [this](https://easings.net/) awesome website to check out most of the different easing functions you can use in `ease_aes()`!
+For this animation, I used one of the many easing functions available in `tweenr`, `quadratic-out`, to get the speed of the ball from a corner kick just about right. You can refer to [this](https://easings.net/) awesome website to check out most of the different easing functions you can use in `ease_aes()`!
 
 ``` r
 ggplot(ball_data) +
@@ -499,7 +499,7 @@ ggplot(ball_data) +
 
 As you can see it's quite easy and fun to make these! I am hoping to make more in the future, especially when the new season begins!
 
-A small note on the flags: I used a bit of a hacky solution to get them into the title but both Ben and Hadley recommended I use the [emo::ji()](https://github.com/hadley/emo) package which allows you to insert emoji into RMarkdown and inline. So that's something I'll be looking into for the next one I create!
+A small note on the flags: I used a bit of a hacky solution to get them into the title but both Ben and Hadley recommended I use the [emo::ji()](https://github.com/hadley/emo) package which allows you to insert emoji into RMarkdown and inline. So that's something I'll be looking into in the near future!
 
 Japan's Offside Trap vs. Senegal!
 ---------------------------------
@@ -692,7 +692,7 @@ Now I'll talk about a few other new things that I didn't have a chance to show t
 
 There are a host of different `enter_*()` and `exit_*()` functions to choose from to show how data appear and disappear throughout the duration of your animation. Some of the built-in effects that are available include, `*_fade()`, `*_grow()`, `*_shrink()` with extra arguments like `early` that change whether the data appears or disappears at the beginning of the transition or at the end.
 
-With the old API since you had to create the frames yourself with `tween_states()` you got an dataframe output with the expanded tween-frames that you can view at your leisure. Now with the tweening done in the `ggplot` code you might think that you can't explicitly access them, but this is where the `frame_vars()` function comes in! Using this function you can access metadata about each of the frames rendered in your latest animation:
+With the old API, since you had to create the frames yourself with `tween_states()`, you got a dataframe output with the expanded tween-frames that you could view at your leisure. Now with the tweening done in the `ggplot` code you might think that you can't explicitly access them, but this is where the `frame_vars()` function comes in! Using this function you can access metadata about each of the frames rendered in your latest animation:
 
 ``` r
 frames_data <- frame_vars(animation = last_animation())
@@ -713,8 +713,8 @@ glimpse(frames_data)
 
 The "frame\_source" column shows you where each individual frame image is saved so you can copy them, re-animate them with `magick` instead, anything you want!
 
-Panning and zooming across different states in the animation is another new concept introduced in the new gganimate with the series of `view_*()` functions like `view_zoom()` and `view_step()`. Within these you can use arguments like `pause_length` to specify the length of the zoomed view and `step_length` to specify the length of the transition between view points. I didn't implement them in these GIFs because I had already used the `coord_*()` functions to focus on certain areas of the pitch and the events I was animating needed a wide perspective of the field. This may come into play in future goal or play-by-play animations where I'm recreating a neat bit of build-up play from a full field view then zoom in on the off-the-ball movement of a certain player, so definitely a set of functions to keep an eye on!
+Panning and zooming across different states in the animation is another new concept introduced in the new `gganimate` with the series of `view_*()` functions like `view_zoom()` and `view_step()`. Within these you can use arguments like `pause_length` to specify the length of the zoomed view and `step_length` to specify the length of the transition between view points. I didn't implement them in these GIFs because I had already used the `coord_*()` functions to focus on certain areas of the pitch and the events I was animating needed a wide perspective of the field. This may come into play in future goal or play-by-play animations where I'm recreating a neat bit of build-up play from a full field view then zoom in on the off-the-ball movement of a certain player, so definitely a set of functions to keep an eye on!
 
 Finally, in previous versions you used the `gganimate()` function to save the animation on your computer but now that is done with `anim_save()`. The README on GitHub has a very clear explanation on this so take a look under the "Where is my animation?" section [here](https://github.com/thomasp85/gganimate#where-is-my-animation).
 
-There's still much to learn from the new API and I'm sure there will still be more changes/fixes to come before the first CRAN release but this was great step in the right direction. I will eagerly await the next release!
+There's still much to learn from the new API and I'm sure there will still be more changes/fixes to come before the first CRAN release but this was a great step in the right direction. I will eagerly await the next release!
