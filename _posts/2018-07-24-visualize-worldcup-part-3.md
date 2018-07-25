@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Animating the Goals of the World Cup: Comparing the old vs. new gganimate and tweenr API!"
-fb-img: https://i.imgur.com/ceSA3YB.gif
-share-img: https://i.imgur.com/ceSA3YB.gif
+fb-img: https://i.imgur.com/GqNHFPl.gif
+share-img: https://i.imgur.com/GqNHFPl.gif
 tags: [worldcup, gganimate, tweenr, ggplot2, soccer]
 ---
 
