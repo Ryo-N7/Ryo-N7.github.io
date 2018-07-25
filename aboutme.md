@@ -25,7 +25,7 @@ _**Currently looking for full-time opportunities from November 2018 in Japan (To
 
 **Follow Me** on [Twitter](https://twitter.com/R_by_Ryo)!
 
-**Current Location**: London, UK
+**Current Location**: Tokyo, Japan
 
 ## Education
 
