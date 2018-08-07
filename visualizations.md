@@ -3,15 +3,26 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [dot plot] :: Age-Utility Matrix for Liverpool FC!
+
+[Gist](https://gist.github.com/Ryo-N7/5309ba2496b4f75a0747166bfbc52270)
+![](https://i.imgur.com/Lk1lpMg.png)
+
+***
+
 #### [animate uniforms] :: Japan's World Cup history through uniforms!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
 ![](https://i.imgur.com/UTirZjG.gif)
 
+***
+
 #### [animate soccer] :: FIFA World Cup - Japan's Perfect Offside Trap vs. Senegal
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
 ![](https://i.imgur.com/ceSA3YB.gif)
+
+***
 
 #### [bump chart] :: FIFA World Cup - Group D Table Throughout The Last Matchday!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
@@ -21,11 +32,14 @@ title: Visualizations Gallery
 
 ![](https://i.imgur.com/FlntjgH.png)
 
+***
 
 #### [ggsoccer chart] :: FIFA World Cup 2018, First Goal!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
 ![](https://i.imgur.com/7tRZnm7.png)
+
+***
 
 #### [Non-contiguous area cartgoram] :: Number of Starbucks per capita (State size by state population)
 [GitHub link](https://github.com/Ryo-N7/tidy_tuesday#may-7)
