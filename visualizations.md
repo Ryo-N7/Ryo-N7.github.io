@@ -3,6 +3,15 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [heat map] :: Summers in Tokyo are Getting Longer and Hotter (1876-2017)
+### Inspired by Toyo Keizai News
+
+[Gist](https://gist.github.com/Ryo-N7/826fc8c755f9a7c1fab236cd17d8a352)
+[Shiny App](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
+![](https://i.imgur.com/WBspwRp.png)
+
+***
+
 #### [dot plot] :: Age-Utility Matrix for Liverpool FC!
 
 [Gist](https://gist.github.com/Ryo-N7/5309ba2496b4f75a0747166bfbc52270)

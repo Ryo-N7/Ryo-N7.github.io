@@ -54,7 +54,7 @@ _**Currently looking for full-time opportunities from January 2019 in Japan (Tok
   + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)
   + gganimate/tweenr: Examples [1](https://github.com/Ryo-N7/soccer_ggplots), [2](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
-  + Shiny
+  + Shiny: Example [1](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
 
 * **SQL**
 
