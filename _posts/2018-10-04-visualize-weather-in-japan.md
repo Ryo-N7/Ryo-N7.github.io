@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Visualizing the Weather in Japan: A Sweltering Summer Story!"
-fb-img: https://i.imgur.com/RyD8rip.gif
-share-img: https://i.imgur.com/RyD8rip.gif
+fb-img: https://i.imgur.com/3nEmchc.png
+share-img: https://i.imgur.com/3nEmchc.png
 tags: [weather, gganimate, japan, ggplot2, riem, maps, r-spatial, climate, JMA]
 ---
 
