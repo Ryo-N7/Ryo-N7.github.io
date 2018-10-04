@@ -8,7 +8,7 @@ tags: [weather, gganimate, japan, ggplot2, riem, maps, r-spatial, climate, JMA]
 
 I've lived in a couple of countries where talking (or more typically whinging) about the weather is a national past time so I took things one step further, by making a blog post about it!
 
-The past few months we've had an absolute hell of a summer here in Tokyo. It wasn't just hot, it was extremely humid too making things doubly worse! As some kinda coping mechanism I've been using R to create cool visualizations throughout the summer. This post will be a place where I can show all of them along with the code. I will also cover methods of getting Japanese weather data using the `JMAStats` (Japan Meteorological Agency) and `RIEM` (ASOS airport weather stations) packages.
+The past few months we've had an absolute hell of a summer here in Tokyo. It wasn't just hot, it was extremely humid too making things doubly worse! As some kinda coping mechanism I've been using R to create cool visualizations throughout the summer. This post will be a place where I can show all of them along with the code. I will also cover methods of getting Japanese weather data using the `JMAStats` (Japan Meteorological Agency) and `riem` (ASOS airport weather stations) packages.
 
 Let's Begin!
 
@@ -217,14 +217,14 @@ tokyo_year_avg_temp %>%
 
 Very minimal yet very effective at showing the shift in temperature over time!
 
-Gathering Japanese Weather Data ft. RIEM & JMAStats
+Gathering Japanese Weather Data ft. riem & JMAStats
 ---------------------------------------------------
 
-The two places I know where to get Japan weather data using **R** is via `RIEM` and `JMAStats`. In this section I'll go through what you need to do to get the data from both of these packages.
+The two places I know where to get Japan weather data using **R** is via `riem` and `JMAStats`. In this section I'll go through what you need to do to get the data from both of these packages.
 
-### RIEM
+### riem
 
-The [RIEM](https://github.com/ropensci/riem) package is a [ROpenSci](https://ropensci.org/) project authored by [Maëlle Salmon](https://masalmon.eu/) that lets you download airport weather data from the [Iowa Environmental Mesonet](https://mesonet.agron.iastate.edu/) website. You can search for airport networks from all over the world and bacause the Japan ASOS weather stations take measurements at 30 minute intervals, you can get A LOT of data!
+The [riem](https://github.com/ropensci/riem) package is a [ROpenSci](https://ropensci.org/) project authored by [Maëlle Salmon](https://masalmon.eu/) that lets you download airport weather data from the [Iowa Environmental Mesonet](https://mesonet.agron.iastate.edu/) website. You can search for airport networks from all over the world and bacause the Japan ASOS weather stations take measurements at 30 minute intervals, you can get A LOT of data!
 
 I found about this package last year through a `#rstats` mini event on Twitter (started off [here](https://masalmon.eu/2017/11/16/wheretoliveus/)) where people started to create [XKCD-themed](https://xkcd.com/1916/) charts showing the most comfortable (weather-wise) place to live. I even made a [blog post](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/) last year showing a version of this chart for Japan!
 
@@ -338,7 +338,7 @@ sum_air %>%
     ## 4 06    01    RJCC    New Chitose Airport    9.76
     ## 5 06    01    RJCH    Hakodate Airport      11.2
 
-I took out a lot of the other weather variables like wind direction, wind speed, visibility, pressure altimeter, etc. that you can get from `RIEM` as I was only interested in the temperature stuff but you can see what each of the variables are from the [documentation](http://ropensci.github.io/riem/reference/riem_measures.html) or you can go directly to the [Iowa Environmental Mesonet](https://mesonet.agron.iastate.edu/ASOS/) website to find more details!
+I took out a lot of the other weather variables like wind direction, wind speed, visibility, pressure altimeter, etc. that you can get from `riem` as I was only interested in the temperature stuff but you can see what each of the variables are from the [documentation](http://ropensci.github.io/riem/reference/riem_measures.html) or you can go directly to the [Iowa Environmental Mesonet](https://mesonet.agron.iastate.edu/ASOS/) website to find more details!
 
 ### JMAStats
 
@@ -522,7 +522,7 @@ The `jma_collect()` function gives us a lot of variables but depending on the st
 
 For the purposes of this blog post I only wanted temperature data, which is something nearly all station types collect, so we are good to go! For those of you seeking other types weather data it is important that you carefully read the documentation provided by the JMA.
 
-To conclude, there's definitely a lot more steps compared to the `RIEM` package but on the other hand we are not limited to taking data only from weather stations at airports!
+To conclude, there's definitely a lot more steps compared to the `riem` package but on the other hand we are not limited to taking data only from weather stations at airports!
 
 Plotting Weather Data
 ---------------------
@@ -747,7 +747,7 @@ With the facet labels clearly showing the prefecture names we can now place both
 Conclusion
 ----------
 
-The beginning of this blog post showcased some of my attempts in R at recreating some cool weather visualizations I saw on the internet. In the following sections I went through two different ways to gather Japanese weather data from the `RIEM` and `JMAStats` packages. In the last section I created some exploratory graphics with the gathered data to raise questions about the data and different ways to present weather data.
+The beginning of this blog post showcased some of my attempts in R at recreating some cool weather visualizations I saw on the internet. In the following sections I went through two different ways to gather Japanese weather data from the `riem` and `JMAStats` packages. In the last section I created some exploratory graphics with the gathered data to raise questions about the data and different ways to present weather data.
 
 With Autumn now settling in and the rainy days to come, I'll end this blog post with a picture of a *teru-teru-bouzu*. These are handmade dolls made of white paper/cloth (usually tissue paper) which are basically talismans to prevent rain and to wish for good weather in Japan.
 
