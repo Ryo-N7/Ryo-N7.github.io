@@ -8,7 +8,7 @@ tags: [weather, gganimate, japan, ggplot2, riem, maps, r-spatial, climate, JMA]
 
 I've lived in a couple of countries where talking (or more typically whinging) about the weather is a national past time so I took things one step further, by making a blog post about it!
 
-The past few months we've had an absolute hell of a summer here in Tokyo. It wasn't just hot, it was extremely humid too making things doubly worse! As some kinda coping mechanism I've been using R to create cool visualizations throughout the summer. This post will be a place where I can show all of them along with the code. I will also cover methods of getting Japanese weather data using the `JMAStats` (Japan Meteorological Agency) and `riem` (ASOS airport weather stations) packages.
+The past few months we've had an absolute hell of a summer here in Tokyo. It wasn't just hot, it was extremely humid too making things doubly worse! As some kinda coping mechanism I've been using R to create cool visualizations throughout the summer. This post will be a place where I can show all of them along with the code. I will also cover methods of getting Japanese weather data using the `jmastats` (Japan Meteorological Agency) and `riem` (ASOS airport weather stations) packages.
 
 Let's Begin!
 
@@ -35,14 +35,14 @@ library(extrafont)
 loadfonts(device = "win")
 ```
 
-Tokyo Average Temperature Heatmap (1876-2016)
+Tokyo Average Temperature Heat map (1876-2016)
 ---------------------------------------------
 
 Back in July, at the height of the summer heatwave, I came across [this](https://toyokeizai.net/sp/visual/tko/temperature/) visualization by Toyo Keizai News on Twitter. Interestingly they provided a `.json` file of the data so I wanted to try recreating this in R!
 
-On one hand, we could just use the `JMAStats` package that I mentioned earlier to grab the data ourselves but since I had never dealt with `.JSON` data before I felt it was as good time as any to finally dive into it. Also, why go through the trouble if you already have the data sitting right there for you?
+On one hand, we could just use the `jmastats` package that I mentioned earlier to grab the data ourselves but since I had never dealt with `.JSON` data before I felt it was as good time as any to finally dive into it. Also, why go through the trouble if you already have the data sitting right there for you?
 
-Let's go through what we have to do. First, use the `read_json()` function from the `jsonlite` package to read in the data. Then, set the names for each vector with the year it corresponds to. Oddly some of the temperature values are factors so we need to change them into numeric. Then using another mapper function, we assign a new `year` variable to each of the "temperature per year" dataframes with their respective years. Basically we're bringing the year label we created for each list into an explicit value in the single (combined) dataframe that we map as the output.
+Let's go through what we have to do. First, use the `read_json()` function from the `jsonlite` package to read in the data. Then, set the names for each vector with the year it corresponds to. Oddly some of the temperature values are factors so we need to change them into numeric. Then using another mapper function, we assign a new `year` variable to each of the "temperature per year" data frames with their respective years. Basically we're bringing the year label we created for each list into an explicit value in the single (combined) data frame that we map as the output.
 
 ``` r
 tokyo_his_temp <- jsonlite::read_json("../data/temperature.json", simplifyVector = TRUE)
@@ -217,14 +217,14 @@ tokyo_year_avg_temp %>%
 
 Very minimal yet very effective at showing the shift in temperature over time!
 
-Gathering Japanese Weather Data ft. riem & JMAStats
+Gathering Japanese Weather Data ft. riem & jmastats
 ---------------------------------------------------
 
-The two places I know where to get Japan weather data using **R** is via `riem` and `JMAStats`. In this section I'll go through what you need to do to get the data from both of these packages.
+The two places I know where to get Japan weather data using **R** is via `riem` and `jmastats`. In this section I'll go through what you need to do to get the data from both of these packages.
 
 ### riem
 
-The [riem](https://github.com/ropensci/riem) package is a [ROpenSci](https://ropensci.org/) project authored by [Maëlle Salmon](https://masalmon.eu/) that lets you download airport weather data from the [Iowa Environmental Mesonet](https://mesonet.agron.iastate.edu/) website. You can search for airport networks from all over the world and bacause the Japan ASOS weather stations take measurements at 30 minute intervals, you can get A LOT of data!
+The [riem](https://github.com/ropensci/riem) package is a [ROpenSci](https://ropensci.org/) project authored by [Maëlle Salmon](https://masalmon.eu/) that lets you download airport weather data from the [Iowa Environmental Mesonet](https://mesonet.agron.iastate.edu/) website. You can search for airport networks from all over the world and because the Japan ASOS weather stations take measurements at 30 minute intervals, you can get A LOT of data!
 
 I found about this package last year through a `#rstats` mini event on Twitter (started off [here](https://masalmon.eu/2017/11/16/wheretoliveus/)) where people started to create [XKCD-themed](https://xkcd.com/1916/) charts showing the most comfortable (weather-wise) place to live. I even made a [blog post](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/) last year showing a version of this chart for Japan!
 
@@ -340,11 +340,11 @@ sum_air %>%
 
 I took out a lot of the other weather variables like wind direction, wind speed, visibility, pressure altimeter, etc. that you can get from `riem` as I was only interested in the temperature stuff but you can see what each of the variables are from the [documentation](http://ropensci.github.io/riem/reference/riem_measures.html) or you can go directly to the [Iowa Environmental Mesonet](https://mesonet.agron.iastate.edu/ASOS/) website to find more details!
 
-### JMAStats
+### jmastats
 
-In the visualizations I made in the first section, I used data from the JMA but it was either indirectly or through web scraping. So now I'll show you a way to get data directly using R with the [JMAStats](https://gitlab.com/uribo/jmastats) package! This useful package is authored by [Shinya Uryu](https://twitter.com/u_ribo) and it is still in the early stages of its development. Through a variety of presentations and gists (Ex. [1](https://gist.github.com/uribo/3df84211cc48b50ec11655e17ea27ee1), [2](https://github.com/uribo/talk_180715-tokyor71)) he has demonstrated some of the cool things you can do with it, even if you can't read Japanese I suggest you check it out for the visualizations!
+In the visualizations I made in the first section, I used data from the JMA but it was either indirectly or through web scraping. So now I'll show you a way to get data directly using R with the [jmastats](https://gitlab.com/uribo/jmastats) package! This useful package is authored by [Shinya Uryu](https://twitter.com/u_ribo) and it is still in the early stages of its development. Through a variety of presentations and gists (Ex. [1](https://gist.github.com/uribo/3df84211cc48b50ec11655e17ea27ee1), [2](https://github.com/uribo/talk_180715-tokyor71)) he has demonstrated some of the cool things you can do with it, even if you can't read Japanese I suggest you check it out for the visualizations!
 
-First, let's create a small map of the JMA weather stations in Tokyo to give us a little context about the Japan Meteorolgical Agency and its weather stations. We can use the weather stations metadata from the `JMAStats` package and filter for stations located in Tokyo Prefecture to create our map.
+First, let's create a small map of the JMA weather stations in Tokyo to give us a little context about the Japan Meteorological Agency and its weather stations. We can use the weather stations metadata from the `jmastats` package and filter for stations located in Tokyo Prefecture to create our map.
 
 The **Automated Meteorological Data Acquisition System** (AMeDAS) is the 1,300 station network spread throughout Japan that uses automatic observation equipment to measure and record data such as the weather, wind direction/speed, precipitation, humidity and more. There are both manned and unmanned stations which send data back to the JMA Headquarters at 10 second or 10 minutes intervals depending on the type of data.
 
@@ -369,7 +369,7 @@ tky_stations <- tky_stations_raw %>%
 
 Using the `jpn_pref()` function from the `jpndistrict` package we specify the spatial polygons data we want to grab. In the `pref_code` argument we pass **13** as that's the [prefectural code](https://en.wikipedia.org/wiki/Prefectures_of_Japan) for the Tokyo Prefecture. Then I try to filter out the Ogasawara Islands as they are way off the coast of Japan. There's still some other islands but since they are part of districts on the mainland you can't just filter them out like we did with the Ogasawara Islands. Therefore I'm going to use the "hacksaw" approach and just cut them out from our view by specifying the x and y limits (the coordinates).
 
-For the plot we'll use `fontawesome` to represent the weather stations with cool icons. There's no "weather station" icon so I just used something that looks like a buiding.
+For the plot we'll use `fontawesome` to represent the weather stations with cool icons. There's no "weather station" icon so I just used something that looks like a building.
 
 ``` r
 library(emojifont)
@@ -432,7 +432,7 @@ j_stat_ref <- japan_stations_coords %>%
   reduce(rbind) 
 ```
 
-Interestingly, the `nearest_stations()` function gives us a new column in our dataframe showing how far away the station is from the coordinates we supplied it with. Let's take a look at the average distance of each station from each prefecture capital!
+Interestingly, the `nearest_stations()` function gives us a new column in our data frame showing how far away the station is from the coordinates we supplied it with. Let's take a look at the average distance of each station from each prefecture capital!
 
 ``` r
 j_stat_ref %>% 
@@ -643,11 +643,11 @@ library(patchwork)
 
 ![](..\assets\2018-10-04-visualize-weather-in-japan_files\region_plot.png)
 
-These prefectures are divided into the official regional divisions of Japan. Although they are not official administritative units in any shape or form, things like weather reports use these regions to report the weather. We can see that with Okinawa being part of the Kyushu region it drastically skews the average while Hokkaido is the only prefecture in its region. For a deeper analysis it might be prudent to divide the prefectures a bit differently!
+These prefectures are divided into the official regional divisions of Japan. Although they are not official administrative units in any shape or form, things like weather reports use these regions to report the weather. We can see that with Okinawa being part of the Kyushu region it drastically skews the average while Hokkaido is the only prefecture in its region. For a deeper analysis it might be prudent to divide the prefectures a bit differently!
 
 We can look at bar graphs and other usual types of visualizations but for those not familiar with Japanese prefectures the results may not be obvious, unique, or wouldn't provide much of a geographical context to the data. In the above plots you had to just trust what I was saying about the prefectures to be true. So let's try plotting the data on top of a map of japan!
 
-I'll use [gganimate](https://github.com/thomasp85/gganimate) to cycle through each of the days in the summer months. The `JMAStats` package also comes with some very nice color/fill palettes for both relative and absolute scales, you can access them by calling `jmastats:::jma_pal()`.
+I'll use [gganimate](https://github.com/thomasp85/gganimate) to cycle through each of the days in the summer months. The `jmastats` package also comes with some very nice color/fill palettes for both relative and absolute scales, you can access them by calling `jmastats:::jma_pal()`.
 
 ``` r
 j_temp_map_stations_df %>% 
@@ -740,14 +740,14 @@ j_temp_colors %>%
 
 ![](..\assets\2018-10-04-visualize-weather-in-japan_files\geofacet_plot_1.png)
 
-As Japan is such a thin and long country you can really see the differences in temperature between the southern and northern prefectures. Using geofacets we can properly see the differences while still maintaing geographic fidelity due to the positioning of the facets. In this format, we can really see that Gifu (in the purple "Chubu" region)is an outlier compared to the other prefectures seen in the "top 5" line chart a few graphs ago (Okinawa, Saga, Kumamoto, and Kagoshima all being part of the red "Kyushu" region)!
+As Japan is such a thin and long country you can really see the differences in temperature between the southern and northern prefectures. Using geofacets we can properly see the differences while still maintain geographic fidelity due to the positioning of the facets. In this format, we can really see that Gifu (in the purple "Chubu" region)is an outlier compared to the other prefectures seen in the "top 5" line chart a few graphs ago (Okinawa, Saga, Kumamoto, and Kagoshima all being part of the red "Kyushu" region)!
 
 With the facet labels clearly showing the prefecture names we can now place both the geography and the name together
 
 Conclusion
 ----------
 
-The beginning of this blog post showcased some of my attempts in R at recreating some cool weather visualizations I saw on the internet. In the following sections I went through two different ways to gather Japanese weather data from the `riem` and `JMAStats` packages. In the last section I created some exploratory graphics with the gathered data to raise questions about the data and different ways to present weather data.
+The beginning of this blog post showcased some of my attempts in R at recreating some cool weather visualizations I saw on the internet. In the following sections I went through two different ways to gather Japanese weather data from the `riem` and `jmastats` packages. In the last section I created some exploratory graphics with the gathered data to raise questions about the data and different ways to present weather data.
 
 With Autumn now settling in and the rainy days to come, I'll end this blog post with a picture of a *teru-teru-bouzu*. These are handmade dolls made of white paper/cloth (usually tissue paper) which are basically talismans to prevent rain and to wish for good weather in Japan.
 
