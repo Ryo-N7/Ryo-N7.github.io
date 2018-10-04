@@ -510,7 +510,7 @@ j_temp_map_stations_df <- j_temp_stations_df %>%
   left_join(sf_ja, by = c("pref_code", "prefecture"))
 ```
 
-The `jma_collect()` function gives us a lot of variables but depending on the station type some of these may not be filled in. I include a table below in English for the types of weather stations and the type of weather variables they record and in the [GitHub repo]() I include a station metadata file from the JMA (in Japanese).
+The `jma_collect()` function gives us a lot of variables but depending on the station type some of these may not be filled in. I include a table below in English for the types of weather stations and the type of weather variables they record and in the [GitHub repo](https://github.com/Ryo-N7/japan_weather_plots/blob/master/ame_master.pdf) I include a station metadata file from the JMA (in Japanese).
 
 | Station Type | Observed Measurements                                                                                                                              |
 |:-------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
