@@ -749,7 +749,7 @@ j_temp_colors %>%
 
 As Japan is such a thin and long country you can really see the differences in temperature between the southern and northern prefectures. Using geofacets we can properly see the differences while still maintain geographic fidelity due to the positioning of the facets. In this format, we can really see that Gifu (in the purple "Chubu" region)is an outlier compared to the other prefectures seen in the "top 5" line chart a few graphs ago (Okinawa, Saga, Kumamoto, and Kagoshima all being part of the red "Kyushu" region)!
 
-With the facet labels clearly showing the prefecture names we can now place both the geography and the name together
+With the facet labels clearly showing the prefecture names we can now place both the geography and the name together.
 
 Conclusion
 ----------
