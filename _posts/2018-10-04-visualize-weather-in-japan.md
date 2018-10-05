@@ -379,11 +379,18 @@ sf_pref13 <- jpn_pref(pref_code = 13) %>%
     st_simplify(dTolerance = 0.001) %>% 
     mutate(city_code = as.numeric(city_code)) %>% 
     filter(city_code != 13421) %>%  # filter out the Ogasawara Islands (waaayy off the coast)
-    st_union() %>% 
-    as.data.frame() %>% 
-    mutate(jis_code = "13", prefecture = "Tokyo") %>% 
-    magrittr::set_names(c("geometry", "jis_code", "prefecture")) %>% 
-    st_as_sf()
+    st_union() 
+
+# fix "holes" from st_union(): https://uribo.hatenablog.com/entry/2018/08/14/000541
+sf_pref13_FIX <- sf_pref13 %>% 
+  st_cast("POLYGON") %>% 
+  map(~ .x[1]) %>% 
+  st_multipolygon() %>% 
+  st_sfc(crs = 4326) %>% 
+  as.data.frame() %>% 
+  mutate(jis_code = "13", prefecture = "Tokyo") %>% 
+  magrittr::set_names(c("geometry", "jis_code", "prefecture")) %>% 
+  st_as_sf()
 
 # Insert fontawesome icon into a 'label' column
 tky_stations <- tky_stations %>% 
@@ -408,7 +415,7 @@ sf_pref13 %>%
         axis.ticks = element_blank())
 ```
 
-![](..\assets\2018-10-04-visualize-weather-in-japan_files\tky_stations.png)
+![](..\assets\2018-10-04-visualize-weather-in-japan_files\tokyo_stations_map_FIXED-1.png)
 
 You can see that the weather stations in Tokyo Prefecture are pretty well spread throughout the area. I'll go over the differences between the station types a bit later.
 
