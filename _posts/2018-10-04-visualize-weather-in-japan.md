@@ -538,7 +538,7 @@ Now that we've got our data, let's make some plots! How about we take a look at 
 
 If we use `geom_line()` to check out how each of the prefectures stack up, it's really hard to interpret as there are so many lines! We could just `filter()` for the top 5 or use `top_n()` but then we lose context as we can't see those lines in relation to all the other prefectures. The solution here is the [gghighlight](https://github.com/yutannihilation/gghighlight) package made by [Hiroaki Yutani](https://twitter.com/yutannihilat_en).
 
-With the `gghighlight()` function we can specify the filtering variable as the **average of the average temperatures** with `mean(temperature_average)`. Then with the `max_highlight` argument we can define the maximum number of the top prefectures we want highlighted, I'll go with the top 5 here.
+With the `gghighlight()` function we can specify the filtering variable as the **average of the average temperatures** with `mean(temperature_average)`. Then with the `max_highlight` argument we can define the maximum number of the top prefectures we want highlighted, I'll go with the top 5 here. (Small reminder that I am using each of the capital city's temperatures to represent each of the prefectures!)
 
 ``` r
 cols <- c("Okinawa" = "#e41a1c", "Saga" = "#377eb8", 
@@ -747,7 +747,7 @@ j_temp_colors %>%
 
 ![](..\assets\2018-10-04-visualize-weather-in-japan_files\geofacet_plot_1.png)
 
-As Japan is such a thin and long country you can really see the differences in temperature between the southern and northern prefectures. Using geofacets we can properly see the differences while still maintain geographic fidelity due to the positioning of the facets. In this format, we can really see that Gifu (in the purple "Chubu" region)is an outlier compared to the other prefectures seen in the "top 5" line chart a few graphs ago (Okinawa, Saga, Kumamoto, and Kagoshima all being part of the red "Kyushu" region)!
+As Japan is such a thin and long country you can really see the differences in temperature between the southern and northern prefectures (Small reminder that I am using the capital city's temperatures to represent each of the prefectures!). Using geofacets we can properly see the differences while still maintain geographic fidelity due to the positioning of the facets. In this format, we can really see that Gifu (in the purple "Chubu" region) is an outlier compared to the other prefectures seen in the "top 5" line chart a few graphs ago (Okinawa, Saga, Kumamoto, and Kagoshima all being part of the red "Kyushu" region)!
 
 With the facet labels clearly showing the prefecture names we can now place both the geography and the name together.
 

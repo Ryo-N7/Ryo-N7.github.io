@@ -6,8 +6,8 @@ title: Visualizations Gallery
 #### [heat map] :: Summers in Tokyo are Getting Longer and Hotter (1876-2017)
 ### Inspired by Toyo Keizai News
 
-[Gist](https://gist.github.com/Ryo-N7/826fc8c755f9a7c1fab236cd17d8a352)
-[Shiny App](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
+- [Gist](https://gist.github.com/Ryo-N7/826fc8c755f9a7c1fab236cd17d8a352)
+- [Shiny App](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
 ![](https://i.imgur.com/WBspwRp.png)
 
 ***
