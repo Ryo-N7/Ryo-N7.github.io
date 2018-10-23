@@ -707,6 +707,8 @@ Let's try it out!
 
 The main function to note here is the `facet_geo()` function which allows you to specify how the facets are laid out geometrically. There are currently 64 grids from all over the world available in the package and you specify them using the `grid` argument. Like before I'll also set up the colors for each region and plot. The `use_direct_label` argument in `gghighlight()` is used to specify whether you want the labels added on the plot (TRUE) or in the legend (FALSE).
 
+(10/23/18 NOTE: I made a PR to fix the positioning of the Tochigi, Gunma, and Ibaraki prefectures in the geofacets grid a few weeks back but I still haven't gotten back a response so I'll just change it by hand below. Thanks to Tom for originally pointing this out on Twitter!)
+
 ``` r
 # Fix issue of grid dataframe not recognizing the facetted variable name:
 pref_names <- j_temp_map_stations_df %>% 
@@ -717,6 +719,16 @@ pref_names <- j_temp_map_stations_df %>%
 
 jp_prefs_grid1 <- jp_prefs_grid1 %>% 
   arrange(code_pref_jis) %>% 
+  # fix Tochigi, Gunma & Ibaraki positioning:
+  mutate(col = as.numeric(case_when( 
+  code == "9" ~ "13",
+  code == "8" ~ "14",
+  code == "10" ~ "12",
+  TRUE ~ as.character(col))),
+  row = as.numeric(case_when( 
+    code == "9" ~ "5",
+    code == "8" ~ "6",
+    TRUE ~ as.character(row)))) %>% 
   mutate(prefecture_en = pref_names)
 
 # colors by region
@@ -745,7 +757,7 @@ j_temp_colors %>%
             grid = "jp_prefs_grid1")
 ```
 
-![](..\assets\2018-10-04-visualize-weather-in-japan_files\geofacet_plot_1.png)
+![](..\assets\2018-10-04-visualize-weather-in-japan_files\geofacet_plot_2.png)
 
 As Japan is such a thin and long country you can really see the differences in temperature between the southern and northern prefectures (Small reminder that I am using the capital city's temperatures to represent each of the prefectures!). Using geofacets we can properly see the differences while still maintain geographic fidelity due to the positioning of the facets. In this format, we can really see that Gifu (in the purple "Chubu" region) is an outlier compared to the other prefectures seen in the "top 5" line chart a few graphs ago (Okinawa, Saga, Kumamoto, and Kagoshima all being part of the red "Kyushu" region)!
 
