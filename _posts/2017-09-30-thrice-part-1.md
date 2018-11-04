@@ -3,7 +3,7 @@ layout: post
 title: "Thrice: Initial Data Exploration and Song Length Distributions with Joy Plots!"
 fb-img: https://ryo-n7.github.io/assets/2017-09-30-thrice-part-1_files/unnamed-chunk-21-1.png
 share-img: https://ryo-n7.github.io/assets/2017-09-30-thrice-part-1_files/unnamed-chunk-21-1.png
-tags: [thrice, music, lyrics, joy-plot, data-munging]
+tags: [thrice, music, lyrics, joy-plot, data-munging, r-bloggers]
 ---
 
 *(April-2018: updated to use `ggridges` package instead of deprecated `ggjoy`)*

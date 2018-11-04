@@ -3,7 +3,7 @@ layout: post
 title: "Visualize the World Cup with R! Part 1: Recreating Goals with ggsoccer and ggplot2"
 fb-img: https://i.imgur.com/REKFYPR.png
 share-img: https://i.imgur.com/REKFYPR.png
-tags: [worldcup, ggplot2, gganimate, tweenr, ggsoccer, soccer]
+tags: [worldcup, ggplot2, gganimate, tweenr, ggsoccer, soccer, r-bloggers]
 ---
 
 After posting a couple of my World Cup viz on [Twitter](https://twitter.com/R_by_Ryo), I thought I'll collate some of them into a blog post. This will be **Part 1** of a series as the World Cup goes on and I keep improving my viz skills throughout the tournament. I will also explain how I made improvements in each new plot, practice makes perfect!

@@ -3,7 +3,7 @@ layout: post
 title: "Animating the Goals of the World Cup: Comparing the old vs. new gganimate and tweenr API!"
 fb-img: https://i.imgur.com/GqNHFPl.gif
 share-img: https://i.imgur.com/GqNHFPl.gif
-tags: [worldcup, gganimate, tweenr, ggplot2, soccer]
+tags: [worldcup, gganimate, tweenr, ggplot2, soccer, r-bloggers]
 ---
 
 Welcome to **Part 3** of my series on "Visualizing the World Cup with R"! This is the culmination of this mini project that I've been working on throughout the World Cup. In addition, from having listened to **Thomas Pedersen's** excellent [keynote](https://www.youtube.com/watch?v=21ZWDrTukEs) at __UseR! 2018__ in Brisbane on the **NEW** gganimate and tweenr API, I am taking advantage of the fortuitous timing to also compare the APIs using the goals as the examples!

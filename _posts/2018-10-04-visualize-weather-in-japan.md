@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing the Weather in Japan: A Sweltering Summer Story!"
 fb-img: https://i.imgur.com/3nEmchc.png
 share-img: https://i.imgur.com/3nEmchc.png
-tags: [weather, gganimate, japan, ggplot2, riem, maps, r-spatial, climate, JMA]
+tags: [weather, gganimate, japan, ggplot2, riem, maps, r-spatial, climate, JMA, r-bloggers]
 ---
 
 I've lived in a couple of countries where talking (or more typically whinging) about the weather is a national past time so I took things one step further, by making a blog post about it!

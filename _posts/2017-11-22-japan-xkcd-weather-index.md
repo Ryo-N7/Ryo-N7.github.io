@@ -3,7 +3,7 @@ layout: post
 title: "Where to live in Japan: XKCD-themed climate plots and maps!"
 fb-img: https://ryo-n7.github.io/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png
 share-img: https://ryo-n7.github.io/assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png 
-tags: [xkcd, riem, weather, climate, maps, japan, ggplot2]
+tags: [xkcd, riem, weather, climate, maps, japan, ggplot2, r-bloggers]
 ---
 
 In the past week or so, XKCD graphs of "The most comfortable place to live in ___" have been popping up on the \#rstats community on Twitter. Jumping onto this trend (though slightly late), I will do one for Japan, the country where I was born! Some great examples that I've seen so far include [Ma&euml;lle Salmon's](http://www.masalmon.eu/2017/11/16/wheretoliveus/) blog post for cities in the USA (which started this trend), as well as ones for [Spain](https://twitter.com/claudiaguirao/status/931615734521909248), [Germany](https://franziloew.github.io/xkcd_weather_cities_de/weatherdata.html), [Netherlands](http://rmhogervorst.nl/cleancode/blog/2017/11/20/xkcd-the-netherlands-weather.html), and even for all of [Europe](https://twitter.com/matamix/status/932192147062784000)! The original XKCD comic can be seen [here](https://xkcd.com/1916/).

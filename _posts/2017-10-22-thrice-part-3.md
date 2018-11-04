@@ -2,7 +2,7 @@
 layout: post
 title: "Thrice: Sentiment Analysis - Emotions in Lyrics!"
 fb-img: https://ryo-n7.github.io/assets/2017-10-22-thrice-part-3_files/Most-common-positive-and-negative-words-1.png
-tags: [thrice, music, lyrics, tidytext, sentiment-analysis, emotion]
+tags: [thrice, music, lyrics, tidytext, sentiment-analysis, r-bloggers]
 ---
 
 * Part 1: [Song length distributions with joy plots!](https://ryo-n7.github.io/2017-09-30-thrice-part-1/)

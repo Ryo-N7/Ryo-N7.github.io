@@ -3,7 +3,7 @@ layout: post
 title: "Exploring Japan's Postwar Economic Miracle with gganimate, tweenr, & highcharter!"
 fb-img: https://ryo-n7.github.io/assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Plot.png
 share-img: https://ryo-n7.github.io/assets/2018-01-12-japan-postwar-economic-recovery_files/Camera_Plot.png
-tags: [japan, ggplot2, gganimate, tweenr, highcharter, economics]
+tags: [japan, ggplot2, gganimate, tweenr, highcharter, economics, r-bloggers]
 ---
 
 In this blog post I weave in `gganimate`, `tweenr`, and `highcharter` plots while exploring the American policies that aided Japan's postwar economic miracle! Back in college, I wrote a paper on this subject for my United States Economic History class. We were supposed to include a few tables and graphs in our paper and, as this was a year before I learned about `R`, everything was done in `Excel`. More than a year ago, I went back and recreated the graphs using `ggplot2` for some easy practice and now I'm going another level higher by implementing `gganimate`, `tweenr`, and `highcharter` into my plots!
