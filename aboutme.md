@@ -49,6 +49,7 @@ _**Currently looking for full-time opportunities from January 2019 in Japan (Tok
 
 * **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
+  [5](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/),
   [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
   + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
   + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)

@@ -3,8 +3,15 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [geofacet map] :: Average Daily Temperature in Japan (Summer 2018)
+
+- [Blog Post](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/)
+- NOTE: Temperatures are from the weather stations closest to each prefecture's capital city, see blog post for details.
+![](https://i.imgur.com/v4DTyOw.png)
+
+
 #### [heat map] :: Summers in Tokyo are Getting Longer and Hotter (1876-2017)
-### Inspired by Toyo Keizai News
+#### Inspired by Toyo Keizai News
 
 - [Gist](https://gist.github.com/Ryo-N7/826fc8c755f9a7c1fab236cd17d8a352)
 - [Shiny App](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
