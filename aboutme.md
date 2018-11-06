@@ -45,7 +45,7 @@ _**Currently looking for full-time opportunities from January 2019 in Japan (Tok
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
   + PCA and Cluster analysis
-  + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr)
+  + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr), co-author of various [ACDI/VOCA](http://www.acdivoca.org/) internal packages
 
 * **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
@@ -55,6 +55,7 @@ _**Currently looking for full-time opportunities from January 2019 in Japan (Tok
   + gganimate/tweenr: Examples [1](https://github.com/Ryo-N7/soccer_ggplots), [2](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny: Example [1](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
+  + Leaflet
 
 * **SQL**
 
