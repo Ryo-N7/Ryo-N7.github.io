@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The JapanR Conference 2018 Round-Up!"
+title: "JapanR Conference 2018 Round-Up!"
 fb-img: https://i.imgur.com/YZXPElx.png
 share-img: https://i.imgur.com/YZXPElx.png
 tags: [japan, japanr, community, tokyor]
@@ -143,6 +143,47 @@ I recommend watching the
 of the presentation as `@Med_KU` goes through a lot of different
 examples\!
 
+### DID Analysis with R\! - [Yuki Yagi](https://twitter.com/Yagi__Bei)
+
+University student **Yuki Yagi** presented on DID
+(Difference-in-differences) analysis and how he utilized it in one of
+his research papers. For those unfamiliar, DID is a statistical
+technique that observes that differential effect of a treatment
+(training program, medication intake, etc.) on a treatment group vs. a
+control group. A quick overview of DID can be found
+[here](https://www.mailman.columbia.edu/research/population-health-methods/difference-difference-estimation).
+
+The main question that Yagi-san investigated in his research paper was:
+“What would be the impact on the number of patents produced when
+research subsidies were given to companies that were already highly
+skilled and had a track record of producing many
+patents.”
+
+<center>
+
+<img src = "https://i.imgur.com/13MQoUu.jpg" width = "650" height = "600"  />
+
+<center/>
+
+DID is really easy to understand given the above diagram. On the left
+hand side is the measurement of the outcome variable, in this case the
+number of patents before the treatment while on the right is the
+measurement of the number of patents after the treatment (research
+subsidies) were given to the treatment group (blue dot is the control
+and red dot is the treatment
+group).
+
+<center>
+
+<img src = "https://i.imgur.com/555oM5Z.jpg" width = "650" height = "600"  />
+
+<center/>
+
+Above is how the model looked like for the research question with the
+use of dummy variables for B (subsidy), C (post-treatment), and D
+(subsidy +
+post-treatment).
+
 ### Rugby Analytics with R\! - [Koichi Kinoshita](https://twitter.com/K_Shoppi)
 
 **Koichi Kinoshita**, a rugby performance analyst for the
@@ -215,12 +256,12 @@ below:
 
 <center/>
 
-<p> After looking at the diagnostic plots for the model she took out a few
+After looking at the diagnostic plots for the model she took out a few
 outliers that she confirmed was mainly due to incorrect data on the
-housing website and was able to cut her list down to around 70 houses!
+housing website and was able to cut her list down to around 70 houses\!
 Then using leaflet Sawamura-san mapped out all the potential houses that
 fit her criteria and labelled them with details about the
-house/apartment.</p>
+house/apartment.
 
 After doing the analysis, she showed it to her co-worker and got him to
 take a look around. Unfortunately, the information provided by the
@@ -228,9 +269,9 @@ website didn’t account for things such as construction work, cleanliness
 and safety of the neighborhood, along with the added bonus of having to
 live with the landlord. So this case study was also a great reminder
 about the necessity of doing some field work in addition to
-analytics!
+analytics\!
 
-<h3 id="using-external-c-libraries-with-R">Using external C/C++ libraries with R\! - <a href="https://twitter.com/heavywatal">Wataru Iwasaki</a></h3>
+### Using external C/C++ libraries with R\! - [Wataru Iwasaki](https://twitter.com/heavywatal)
 
   - [Slides (in
     English\!)](https://heavywatal.github.io/slides/japanr2018/)
