@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 
-Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
+Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London, and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
 
 Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). During the MSc. my main research interests were in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
@@ -17,7 +17,7 @@ Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bul
 
 Recently, I gave a presentation at the TokyoR User Group - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
 
-_**Currently looking for full-time opportunities from January 2019 in Japan (Tokyo)/ USA (California)/ UK (London) or remote work!**_
+_**Currently looking for full-time opportunities from January 2019 in Japan (Tokyo)/ USA (California)/ UK (London)/ etc. or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
@@ -41,9 +41,11 @@ _**Currently looking for full-time opportunities from January 2019 in Japan (Tok
 ## Skills
 ### Technical skills
 * **R**:
-  + Data wrangling (dplyr, plyr, tidyr, purrr, etc.): Example [1](https://ryo-n7.github.io/2018-04-02-sakura-surprise/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/)
+  + Data wrangling (dplyr, plyr, tidyr, purrr, etc.): Example [1](https://ryo-n7.github.io/2018-04-02-sakura-surprise/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-11-22-japan-xkcd-weather-index/),
+  [4](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/)
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
+  + Linear regression
   + PCA and Cluster analysis
   + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr), co-author of various [ACDI/VOCA](http://www.acdivoca.org/) internal packages
 
@@ -51,12 +53,12 @@ _**Currently looking for full-time opportunities from January 2019 in Japan (Tok
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
   [5](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/),
   [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
-  + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
-  + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)
-  + gganimate/tweenr: Examples [1](https://github.com/Ryo-N7/soccer_ggplots), [2](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
-  + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Shiny: Example [1](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
   + Leaflet
+  + gganimate/tweenr: Examples [1](https://github.com/Ryo-N7/soccer_ggplots), [2](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
+  + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
+  + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)
+  + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
 
 * **SQL**
 
