@@ -3,7 +3,7 @@ layout: post
 title: "The JapanR Conference 2018 Round-Up!"
 fb-img: https://i.imgur.com/YZXPElx.png
 share-img: https://i.imgur.com/YZXPElx.png
-tags: [japan, japanr, community, tokyor]
+tags: [japan, japanr, community, tokyor, r-bloggers]
 ---
 
 This past weekend was the **9th JapanR Conference** hosted at [LINE
