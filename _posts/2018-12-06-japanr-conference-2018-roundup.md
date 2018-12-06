@@ -143,11 +143,10 @@ University student **Yuki Yagi** presented on DID
 (Difference-in-differences) analysis and how he utilized it in one of
 his research papers. For those unfamiliar, DID is a statistical
 technique that observes that differential effect of a treatment
-(training program, medication intake, etc.) on a treatment group vs. a
+(training program, medication intake, etc.) on a treatment group vs. a
 control group. A quick overview of DID can be found
 [here](https://www.mailman.columbia.edu/research/population-health-methods/difference-difference-estimation).
 
-<!-- Yagi-san explained the process with an example of a special math training program given to two groups of kids, those who already have good grades and those that have bad grades. He explained the conundrum of finding the actual effect of the training program when there will still obviously be a gap between the smart group compared to the not-as-smart group. This is where DID comes in. DID estimates the difference in the outcome variable between the control and treatment group that would have existed if neither group had experienced the special math program treatment. Then you calculate the actual treatment effect of the training program as the difference between the observed outcome and the estimated outcome for the kids in the treatment group. -->
 The main question that Yagi-san investigated in his research paper was:
 “What would be the impact on the number of patents produced when
 research subsidies were given to companies that were already highly
@@ -156,6 +155,7 @@ skilled and had a track record of producing many patents.”
 <center>
 <img src = "https://i.imgur.com/13MQoUu.jpg" width = "650" height = "600"  />
 <center/>
+
 DID is really easy to understand given the above diagram. On the left
 hand side is the measurement of the outcome variable, in this case the
 number of patents before the treatment while on the right is the
@@ -166,6 +166,7 @@ and red dot is the treatment group).
 <center>
 <img src = "https://i.imgur.com/555oM5Z.jpg" width = "650" height = "600"  />
 <center/>
+
 Above is how the model looked like for the research question with the
 use of dummy variables for B (subsidy), C (post-treatment), and D
 (subsidy + post-treatment).
@@ -181,7 +182,6 @@ to improve his data analytics skills in R, he showed us a number of
 plots from data he gathered from the Japanese national rugby league
 website.
 
-<!-- ![]() -->
 Throughout the presentation Kinoshita-san tried to answer several
 questions such as “*Is tackling percentage related to lost tries?*”,
 “*Do a higher number of tackles help stop line-breaks?*”, “*Can you stop
@@ -245,7 +245,6 @@ Then using leaflet Sawamura-san mapped out all the potential houses that
 fit her criteria and labelled them with details about the
 house/apartment.
 
-<!-- ![]() -->
 After doing the analysis, she showed it to her co-worker and got him to
 take a look around. Unfortunately, the information provided by the
 website didn’t account for things such as construction work, cleanliness
