@@ -159,11 +159,7 @@ research subsidies were given to companies that were already highly
 skilled and had a track record of producing many
 patents.”
 
-<center>
-
-<img src ="https://i.imgur.com/13MQoUu.jpg" width="650" height="600"  />
-
-<center/>
+<center> <img src ="https://i.imgur.com/13MQoUu.jpg" width="650" height="600"  /> <center/>
 
 DID is really easy to understand given the above diagram. On the left
 hand side is the measurement of the outcome variable, in this case the
@@ -173,11 +169,7 @@ subsidies) were given to the treatment group (blue dot is the control
 and red dot is the treatment
 group).
 
-<center>
-
-<img src ="https://i.imgur.com/555oM5Z.jpg" width="650" height="600"/>
-
-<center/>
+<center> <img src ="https://i.imgur.com/555oM5Z.jpg" width="650" height="600"/> <center/>
 
 Above is how the model looked like for the research question with the
 use of dummy variables for B (subsidy), C (post-treatment), and D
@@ -197,8 +189,8 @@ website.
 
 Throughout the presentation Kinoshita-san tried to answer several
 questions such as “*Is tackling percentage related to lost tries?*”,
-“*Do a higher number of tackles help stop line-breaks?*”, "Can you
-stop line-breaks if you have a higher tackle success percentage?" among
+“*Do a higher number of tackles help stop line-breaks?*”, 
+**Can you stop line-breaks if you have a higher tackle success percentage?** among
 others as he explained his results in thorough detail using plots as a
 visual aid. Ultimately, his data showed that those Japanese rugby teams
 with over 86% tackle success rate were able to limit line-breaks to 10
@@ -209,8 +201,7 @@ Armed with this knowledge, Kinoshita-san investigated further and found
 that across the entire season around half the teams totaled around
 100\~150 tackles in any single game. Assuming an 80% tackle success
 rate, a team with 100 tackles will have 20 mistackles while a team with
-150 tackles will have 30 mistackles. So, the big question was: “**How
-much will this 10 mistackle difference cost a team?**”
+150 tackles will have 30 mistackles. So, the big question was: "**How much will this 10 mistackle difference cost a team?**"
 
 Consequently, Kinoshita-san ran a regression analysis on line-breaks
 against a mistackles and found that on average you concede 10
@@ -281,10 +272,8 @@ subject [before](https://heavywatal.github.io/slides/tokyor71/) and this
 time was no different as he talked about incorporating and using C/C++
 libraries with R. First, he introduced a number of great online
 resources for developing `Rcpp` packages including stuff from his own
-website as well as the free [“Rcpp for Everyone (English
-version)”](https://teuder.github.io/rcpp4everyone_en/) written by
-fellow Japanese R user [Masaki
-Tsuda](https://twitter.com/teuder).
+website as well as the free ["Rcpp for Everyone" (English version)](https://teuder.github.io/rcpp4everyone_en/) written by
+fellow Japanese R user [Masaki Tsuda](https://twitter.com/teuder).
 
 <center>
 
@@ -294,8 +283,7 @@ Tsuda](https://twitter.com/teuder).
 
 Next, he talked about a couple of basic steps needed to incorporate
 C/C++ libraries as well as the advantages and disadvantages of the
-various styles of doing
-so.
+various styles of doing so.
 
 <center>
 
@@ -386,8 +374,7 @@ of success and struggle alike\!
 The main organizer, [Atsushi Hayakawa](https://twitter.com/gepuro)
 mentioned that he eventually wants **JapanR** to grow even bigger in the
 coming years and to have every participant give a LT\! Whether as a joke
-or if that is actually feasible it would be cool if we set the *Guiness
-World Record for Most Presentations at an R Conference*\!
+or if that is actually feasible it would be cool if we set the *Guiness World Record for Most Presentations at an R Conference*\!
 
 As you saw the quality of presentations at JapanR was very high.
 Unfortunately, most of the content was only in Japanese which I thought
