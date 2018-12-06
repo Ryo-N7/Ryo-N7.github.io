@@ -1,3 +1,11 @@
+---
+layout: post
+title: "The JapanR Conference 2018 Round-Up!"
+fb-img: https://i.imgur.com/YZXPElx.png
+share-img: https://i.imgur.com/YZXPElx.png
+tags: [japan, japanr, community, tokyor]
+---
+
 This past weekend was the **9th JapanR Conference** hosted at [LINE
 Corporation](https://linecorp.com/en/) in Tokyo, Japan!
 
