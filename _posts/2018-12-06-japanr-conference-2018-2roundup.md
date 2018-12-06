@@ -215,22 +215,22 @@ below:
 
 <center/>
 
-After looking at the diagnostic plots for the model she took out a few
+<p> After looking at the diagnostic plots for the model she took out a few
 outliers that she confirmed was mainly due to incorrect data on the
 housing website and was able to cut her list down to around 70 houses\!
 Then using leaflet Sawamura-san mapped out all the potential houses that
 fit her criteria and labelled them with details about the
-house/apartment.
+house/apartment.</p>
 
-After doing the analysis, she showed it to her co-worker and got him to
+<p>After doing the analysis, she showed it to her co-worker and got him to
 take a look around. Unfortunately, the information provided by the
 website didn’t account for things such as construction work, cleanliness
 and safety of the neighborhood, along with the added bonus of having to
 live with the landlord. So this case study was also a great reminder
 about the necessity of doing some field work in addition to
-analytics\!
+analytics\!</p>
 
-### Using external C/C++ libraries with R\! - [Wataru Iwasaki](https://twitter.com/heavywatal)
+<h3 id="using-external-c-libraries-with-R">Using external C/C++ libraries with R\! - <a href="https://twitter.com/heavywatal">Wataru Iwasaki</a></h3>
 
   - [Slides (in
     English\!)](https://heavywatal.github.io/slides/japanr2018/)
