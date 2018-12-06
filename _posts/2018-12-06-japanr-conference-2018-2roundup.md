@@ -143,48 +143,7 @@ I recommend watching the
 of the presentation as `@Med_KU` goes through a lot of different
 examples\!
 
-### DID Analysis with R\! - [Yuki Yagi](https://twitter.com/Yagi__Bei)
-
-University student **Yuki Yagi** presented on DID
-(Difference-in-differences) analysis and how he utilized it in one of
-his research papers. For those unfamiliar, DID is a statistical
-technique that observes that differential effect of a treatment
-(training program, medication intake, etc.) on a treatment group vs. a
-control group. A quick overview of DID can be found
-[here](https://www.mailman.columbia.edu/research/population-health-methods/difference-difference-estimation).
-
-The main question that Yagi-san investigated in his research paper was:
-“What would be the impact on the number of patents produced when
-research subsidies were given to companies that were already highly
-skilled and had a track record of producing many
-patents.”
-
-<center>
-
-<img src = "https://i.imgur.com/13MQoUu.jpg" width = "650" height = "600"  />
-
-<center/>
-
-DID is really easy to understand given the above diagram. On the left
-hand side is the measurement of the outcome variable, in this case the
-number of patents before the treatment while on the right is the
-measurement of the number of patents after the treatment (research
-subsidies) were given to the treatment group (blue dot is the control
-and red dot is the treatment
-group).
-
-<center>
-
-<img src = "https://i.imgur.com/555oM5Z.jpg" width = "650" height = "600"  />
-
-<center/>
-
-Above is how the model looked like for the research question with the
-use of dummy variables for B (subsidy), C (post-treatment), and D
-(subsidy +
-post-treatment).
-
-# Rugby Analytics with R\! - [Koichi Kinoshita](https://twitter.com/K_Shoppi)
+### Rugby Analytics with R\! - [Koichi Kinoshita](https://twitter.com/K_Shoppi)
 
 **Koichi Kinoshita**, a rugby performance analyst for the
 [HITO-Communications Sunwolves](https://sunwolves.or.jp/en/) and the
