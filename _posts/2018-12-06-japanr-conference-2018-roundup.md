@@ -3,7 +3,7 @@ layout: post
 title: "The JapanR Conference 2018 Round-Up!"
 fb-img: https://i.imgur.com/YZXPElx.png
 share-img: https://i.imgur.com/YZXPElx.png
-tags: [japan, japanr, community, tokyor, r-bloggers]
+tags: [japan, japanr, community, tokyor]
 ---
 
 This past weekend was the **9th JapanR Conference** hosted at [LINE
@@ -149,7 +149,7 @@ University student **Yuki Yagi** presented on DID
 (Difference-in-differences) analysis and how he utilized it in one of
 his research papers. For those unfamiliar, DID is a statistical
 technique that observes that differential effect of a treatment
-(training program, medication intake, etc.) on a treatment group vs. a
+(training program, medication intake, etc.) on a treatment group vs. a
 control group. A quick overview of DID can be found
 [here](https://www.mailman.columbia.edu/research/population-health-methods/difference-difference-estimation).
 
@@ -161,7 +161,7 @@ patents.”
 
 <center>
 
-<img src = "https://i.imgur.com/13MQoUu.jpg" width = "650" height = "600"  />
+<img src ="https://i.imgur.com/13MQoUu.jpg" width="650" height="600"  />
 
 <center/>
 
@@ -175,7 +175,7 @@ group).
 
 <center>
 
-<img src = "https://i.imgur.com/555oM5Z.jpg" width = "650" height = "600"  />
+<img src ="https://i.imgur.com/555oM5Z.jpg" width="650" height="600"/>
 
 <center/>
 
@@ -197,8 +197,8 @@ website.
 
 Throughout the presentation Kinoshita-san tried to answer several
 questions such as “*Is tackling percentage related to lost tries?*”,
-“*Do a higher number of tackles help stop line-breaks?*”, “*Can you
-stop line-breaks if you have a higher tackle success percentage?*” among
+“*Do a higher number of tackles help stop line-breaks?*”, "Can you
+stop line-breaks if you have a higher tackle success percentage?" among
 others as he explained his results in thorough detail using plots as a
 visual aid. Ultimately, his data showed that those Japanese rugby teams
 with over 86% tackle success rate were able to limit line-breaks to 10
@@ -217,8 +217,8 @@ against a mistackles and found that on average you concede 10
 line-breaks from 30 mistackles. Coupling this with data presented that
 if a team concedes 10 line-breaks or over a team is \~70% likely to lose
 a game, a higher number of attempted tackles isn’t necessarily a good
-thing, what matters is **preventing line-breaks** with **successful
-tackles**\!
+thing, what matters is **preventing line-breaks** with successful
+tackles\!
 
 In his conclusion, Kinoshita-san brought up a really good point in that
 it’s not enough to look at pure success/fail percentages and he brought
