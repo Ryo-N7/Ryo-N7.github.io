@@ -47,6 +47,10 @@ it’s just a cultural thing I’ve found here relating to privacy.
 been uploaded yet but I will put more screenshots in as they become
 available so please check back in the coming days!
 
+<center>
+<img src = "https://i.imgur.com/YZXPElx.png" width = "450" height = "400" />
+</center>
+
 The Presentations
 =================
 
