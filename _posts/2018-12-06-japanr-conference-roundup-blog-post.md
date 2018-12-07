@@ -48,7 +48,7 @@ been uploaded yet but I will put more screenshots in as they become
 available so please check back in the coming days!
 
 <center>
-<img src = "https://i.imgur.com/YZXPElx.png" width = "450" height = "400" />
+<img src = "https://i.imgur.com/YZXPElx.png" width = "450" />
 </center>
 
 The Presentations
@@ -106,7 +106,7 @@ Java and is compatible with Windows, Mac, and Linux OSs as well as being
 available in English, Japanese, Chinese, and many more languages.
 
 <center>
-<img src = "https://i.imgur.com/82vTlE6.jpg" width = "750" height = "700" />
+<img src = "https://i.imgur.com/82vTlE6.jpg" height = "500" />
 </center>
 As you can see in the picture above, **R AnalyticFlow** allows you to
 represent your data analysis workflow through nodes and edges in a
@@ -157,7 +157,7 @@ research subsidies were given to companies that were already highly
 skilled and had a track record of producing many patents.”
 
 <center>
-<img src = "https://i.imgur.com/13MQoUu.jpg" width = "650" height = "600"  />
+<img src = "https://i.imgur.com/13MQoUu.jpg" width = "550" />
 </center>
 DID is really easy to understand given the above diagram. On the left
 hand side is the measurement of the outcome variable, in this case the
@@ -167,7 +167,7 @@ subsidies) were given to the treatment group (blue dot is the control
 and red dot is the treatment group).
 
 <center>
-<img src = "https://i.imgur.com/555oM5Z.jpg" width = "650" height = "600"  />
+<img src = "https://i.imgur.com/555oM5Z.jpg" width = "550" />
 </center>
 Above is how the model looked like for the research question with the
 use of dummy variables for B (subsidy), C (post-treatment), and D
@@ -238,7 +238,7 @@ After filtering out houses above 200,000 Yen monthly rent Sawamura-san
 fitted a multiple linear regression as seen below:
 
 <center>
-<img src = "https://i.imgur.com/TvsEmpw.jpg" width = "600" height = "550" />
+<img src = "https://i.imgur.com/TvsEmpw.jpg" width = "500" />
 </center>
 After looking at the diagnostic plots for the model she took out a few
 outliers that she confirmed was mainly due to incorrect data on the
@@ -269,7 +269,7 @@ version)”](https://teuder.github.io/rcpp4everyone_en/) written by fellow
 Japanese R user [Masaki Tsuda](https://twitter.com/teuder).
 
 <center>
-<img src = "https://i.imgur.com/WvOGgHa.jpg" width = "550" height = "500"  />
+<img src = "https://i.imgur.com/WvOGgHa.jpg" width = "650" height = "500"  />
 </center>
 Next, he talked about a couple of basic steps needed to incorporate
 C/C++ libraries as well as the advantages and disadvantages of the
@@ -297,13 +297,13 @@ Here are some examples:
 Simple addition:
 
 <center>
-<img src = "https://i.imgur.com/xlBhBA3.jpg" width = "550" height = "500" />
+<img src = "https://i.imgur.com/xlBhBA3.jpg" width = "650" />
 </center>
 You can even assign and use variables! (the function that got cut off is
 `execute`):
 
 <center>
-<img src = "https://i.imgur.com/pZePhpc.jpg" width = "550" height = "500" />
+<img src = "https://i.imgur.com/pZePhpc.jpg" width = "650" />
 </center>
 I unfortunately don’t have much experience with compilers so it was
 tough for me to understand the technical details but it was another
@@ -322,7 +322,7 @@ package to conjure up some visualizations on tennis player rankings over
 time.
 
 <center>
-<img src = "https://i.imgur.com/zU0oUGD.jpg" width = "650" height = "600"  />
+<img src = "https://i.imgur.com/zU0oUGD.jpg" width = "650" height = "500"  />
 </center>
 As a matter of course, he also looked at **Kei Nishikori**’s performance
 and highlighted his rapid rise in the rankings during 2014 where he
@@ -330,7 +330,7 @@ became the first Asian to reach a [Grand Slam tournament
 final](https://en.wikipedia.org/wiki/2014_US_Open_%E2%80%93_Men%27s_Singles)!
 
 <center>
-<img src = "https://i.imgur.com/RyE4xhk.jpg" width = "650" height = "600"  />
+<img src = "https://i.imgur.com/RyE4xhk.jpg" width = "650" height = "500"  />
 </center>
 Overall, it was nice to see how sports analytics have grown these past
 few years in Japan as besides this tennis presentation and the rugby
