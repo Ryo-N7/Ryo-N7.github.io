@@ -126,6 +126,8 @@ you know your way around Java and want to help, let him know!
 
 ### I have completely understood Shiny! - [Med\_KU](https://twitter.com/Med_KU)
 
+- [Slides and Shiny examples](http://rpubs.com/Med_KU/448118)
+
 In what was a very lively and fun presentation, `@Med_KU` took us
 through a very comprehensive tour of Shiny apps. First he talked about
 how to create a Shiny app via R Studio, working with the app.R and ui.R
@@ -269,14 +271,14 @@ version)”](https://teuder.github.io/rcpp4everyone_en/) written by fellow
 Japanese R user [Masaki Tsuda](https://twitter.com/teuder).
 
 <center>
-<img src = "https://i.imgur.com/WvOGgHa.jpg" width = "650" height = "500"  />
+<img src = "https://i.imgur.com/WvOGgHa.jpg" width = "650" />
 </center>
 Next, he talked about a couple of basic steps needed to incorporate
 C/C++ libraries as well as the advantages and disadvantages of the
 various styles of doing so.
 
 <center>
-<img src = "https://i.imgur.com/AtAILYt.jpg" width = "550" height = "500"  />
+<img src = "https://i.imgur.com/AtAILYt.jpg" width = "550" />
 </center>
 In Iwasaki-san’s concluding remarks he called on the community to share
 their knowledge of handling external C++ libraries via social media or
