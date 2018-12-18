@@ -178,7 +178,7 @@ The interpretation of the humidex is as follows:
 library(comf)
 
 summer_weather <- summer_weather %>% 
-                    mutate(humidex = calcHumx(ta = tmpc, rh = dwpc))
+                    mutate(humidex = calcHumx(ta = tmpc, rh = relh))
 
 summer_data <- summer_weather %>% 
                  group_by(station) %>% 
@@ -278,16 +278,16 @@ climate_japan %>%
   theme_xkcd() +
   theme(text = element_text(size = 16, family = "xkcd")) +
   theme(text = element_text(size = 16, family = "xkcd")) +
-  annotate("text", x = 14, y = 1.25, label = "Hokkaido Island", family = "xkcd", size = 5) +
-  annotate("segment", y = 1.25, yend = -5.5, x = 16, xend = 17.5, color = "blue", size = 1.5) +
-  annotate("segment", y = -4.25, yend = -6.5, x = 11.75, xend = 13.5, color = "blue", size = 1.5) +
-  annotate("text", x = 25, y = 20, label = "Okinawa and \nRyukyu Islands", family = "xkcd", size = 5) +
-  annotate("segment", y = 17.5, yend = 15, x = 26, xend = 29.5, color = "darkred", size = 1.5) +
-  annotate("segment", y = 22, yend = 22, x = 27, xend = 30.5, color = "darkred", size = 1.5) +
-  annotate("text", x = 16.5, y = 10, label = "Honshu, Kyushu, \n and Shikoku Islands", family = "xkcd", size = 5.5)
+  annotate("text", x = 22, y = 1.25, label = "Hokkaido Island", family = "xkcd", size = 5) +
+  annotate("segment", y = 1.25, yend = -5.5, x = 26.5, xend = 29.5, color = "blue", size = 1.5) +
+  annotate("segment", y = -4.25, yend = -6.5, x = 19.75, xend = 21.5, color = "blue", size = 1.5) +
+  annotate("text", x = 35, y = 20, label = "Okinawa and \nRyukyu Islands", family = "xkcd", size = 5) +
+  annotate("segment", y = 15.5, yend = 14, x = 38, xend = 41, color = "darkred", size = 1.5) +
+  annotate("segment", y = 22, yend = 22, x = 40, xend = 44.5, color = "darkred", size = 1.5) +
+  annotate("text", x = 23.5, y = 10, label = "Honshu, Kyushu, \n and Shikoku Islands", family = "xkcd", size = 5.5)
 ```
 
-<img src="../assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2017-11-22-japan-xkcd-weather-index_files/xkcd-graph-2.png" style="display: block; margin: auto;" />
 
 The graph looks like a map of Japan... with cities in Hokkaido on the bottom left instead of the top right, vice-versa for Okinawa! Let's try plotting our data onto an actual map of Japan to get a different perspective.
 
@@ -365,7 +365,7 @@ climate_japan_map %>%
   scale_color_gradient(low = "#FCBBA1", high = "#67000D")
 ```
 
-<img src="../assets/2017-11-22-japan-xkcd-weather-index_files/Japan-maps-2.png" style="display: block; margin: auto;" />
+<img src="../assets/2017-11-22-japan-xkcd-weather-index_files/Japan-maps-3.png" style="display: block; margin: auto;" />
 
 A large area in the middle of Honshu Island that does not have any data is the Central Highland region, which is a very mountainous region and therefore there aren't any airport weather stations located there for our plot. This is a great area to go if you love to ski and relax in an onsen! In Nagano Prefecture you can go to [Jigokudani Monkey Park](http://en.jigokudani-yaenkoen.co.jp/) where you can see snow monkeys relaxing in the onsen!
 
@@ -413,7 +413,7 @@ climate_japan_map %>%
   scale_color_gradient(low = "#FCBBA1", high = "#67000D")
 ```
 
-![](..\assets\2017-11-22-japan-xkcd-weather-index_files\Okinawa-Ryukyu-map-2.png)
+![](..\assets\2017-11-22-japan-xkcd-weather-index_files\Okinawa-Ryukyu-map-3.png)
 
 As we can see from all the maps, the differences are pretty obvious. The segmentations we saw in the Humidex/Avg. Winter Temperature graph can be clearly seen with the map. With Japan being such a narrow chain of islands going from as far north as Hokkaido to the warm beaches of Okinawa there aren't many surprises in the data. As Japan is known for it's very distinct four seasons, maybe I'll incorporate spring and autumn data for different blog post...! It can be **very** humid in Japan during the summer time, it feels like you are melting constantly and I much prefer the spring months of Japan, the beginning of which is heralded by the blooming of the sakura/cherry blossoms!
 
