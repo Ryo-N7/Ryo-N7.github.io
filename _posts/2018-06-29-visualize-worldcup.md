@@ -8,6 +8,9 @@ tags: [worldcup, ggplot2, gganimate, tweenr, ggsoccer, soccer, r-bloggers]
 
 After posting a couple of my World Cup viz on [Twitter](https://twitter.com/R_by_Ryo), I thought I'll collate some of them into a blog post. This will be **Part 1** of a series as the World Cup goes on and I keep improving my viz skills throughout the tournament. I will also explain how I made improvements in each new plot, practice makes perfect!
 
+* Part 2: [Final Matchday Group Tables](https://ryo-n7.github.io/2018-07-05-visualize-worldcup-part-2/)
+* Part 3: [Animating Goals with the NEW gganimate API](https://ryo-n7.github.io/2018-07-24-visualize-worldcup-part-3/)
+
 Let's look at some of the packages I will use!
 
 ``` r
