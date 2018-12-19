@@ -96,6 +96,8 @@ good links to creating your own R Markdown template in English below:
 
 ### Easy and modern data analysis with **“R AnalyticFlow”**! - [Ryota Suzuki](https://www.ef-prime.com/index_en.html)
 
+- [Slides (pdf)](http://r.analyticflow.com/ja/cms/wp-content/uploads/2018/12/JapanR_suzuki_20181201.pdf)
+
 **Ryota Suzuki**, CEO of
 [ef-prime](https://www.ef-prime.com/index_en.html) and author of the
 [pvclust](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/) package, gave a
@@ -338,6 +340,17 @@ Overall, it was nice to see how sports analytics have grown these past
 few years in Japan as besides this tennis presentation and the rugby
 presentation earlier there have been presentations relating to soccer
 and baseball analytics at past TokyoR meetups.
+
+Other Slides and Resources
+==========================
+
+- [Ethnomethodology with R!](https://www.slideshare.net/otanet/japanr-2018-slide-ota20181201?next_slideshow=1)
+- [Multi-armed bandit problem with the "contextual" package!](https://www.slideshare.net/shotayasui/contextual-package)
+- [Using Amazon SageMaker with R!](https://www.slideshare.net/hiratake55/sagemaker-124629841)
+- [Quantile treatment effects with the "qte" package!](https://www.slideshare.net/YusukeKaneko6/japanr-2018r-packageqte)
+- [Automate your R workflow with digdag!](https://speakerdeck.com/chengvt/japan-dot-r-2018-lt)
+- [Introduction to formals!](https://atusy.github.io/presentation/japanr2018/formals-for-black-magicians.html#/)
+- [Environmental stability with R!](https://speakerdeck.com/tanaka_marimo/bokufalseting-falsebu-an-ding)
 
 Conclusion
 ==========
