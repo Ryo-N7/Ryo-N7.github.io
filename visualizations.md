@@ -3,14 +3,19 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
-#### [geofacet map] :: Average Daily Temperature in Japan (Summer 2018)
+#### [Line Graph] :: Jürgen Klopp's Managerial Career Through Elo Ratings!
+
+- [Gist](https://gist.github.com/Ryo-N7/2067e6c63f66ca7a7039b114d51bd40d)
+![](https://i.imgur.com/Xcw2nAK.png)
+
+#### [geofacet Map] :: Average Daily Temperature in Japan (Summer 2018)
 
 - [Blog Post](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/)
 - NOTE: Temperatures are from the weather stations closest to each prefecture's capital city, see blog post for details.
 ![](https://i.imgur.com/v4DTyOw.png)
 
 
-#### [heat map] :: Summers in Tokyo are Getting Longer and Hotter (1876-2017)
+#### [Heat Map] :: Summers in Tokyo are Getting Longer and Hotter (1876-2017)
 #### Inspired by Toyo Keizai News
 
 - [Gist](https://gist.github.com/Ryo-N7/826fc8c755f9a7c1fab236cd17d8a352)
@@ -19,28 +24,28 @@ title: Visualizations Gallery
 
 ***
 
-#### [dot plot] :: Age-Utility Matrix for Liverpool FC!
+#### [Dot Plot] :: Age-Utility Matrix for Liverpool FC!
 
 [Gist](https://gist.github.com/Ryo-N7/5309ba2496b4f75a0747166bfbc52270)
 ![](https://i.imgur.com/Lk1lpMg.png)
 
 ***
 
-#### [animate uniforms] :: Japan's World Cup history through uniforms!
+#### [Animate Uniforms] :: Japan's World Cup history through uniforms!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
 ![](https://i.imgur.com/UTirZjG.gif)
 
 ***
 
-#### [animate soccer] :: FIFA World Cup - Japan's Perfect Offside Trap vs. Senegal
+#### [Animate Soccer] :: FIFA World Cup - Japan's Perfect Offside Trap vs. Senegal
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
 ![](https://i.imgur.com/ceSA3YB.gif)
 
 ***
 
-#### [bump chart] :: FIFA World Cup - Group D Table Throughout The Last Matchday!
+#### [Bump Chart] :: FIFA World Cup - Group D Table Throughout The Last Matchday!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
 [Group A](https://i.imgur.com/6yaOA31.png), [Group B](https://i.imgur.com/4AEIbgq.png), [Group C](https://i.imgur.com/cGs2mf0.png), [Group D](https://i.imgur.com/FlntjgH.png), 
@@ -50,14 +55,14 @@ title: Visualizations Gallery
 
 ***
 
-#### [ggsoccer chart] :: FIFA World Cup 2018, First Goal!
+#### [ggsoccer Chart] :: FIFA World Cup 2018, First Goal!
 [GitHub link](https://github.com/Ryo-N7/soccer_ggplots)
 
 ![](https://i.imgur.com/7tRZnm7.png)
 
 ***
 
-#### [Non-contiguous area cartgoram] :: Number of Starbucks per capita (State size by state population)
+#### [Non-Contiguous Area Cartgoram] :: Number of Starbucks per capita (State size by state population)
 [GitHub link](https://github.com/Ryo-N7/tidy_tuesday#may-7)
 
 ![](https://i.imgur.com/kRbXSQn.png)

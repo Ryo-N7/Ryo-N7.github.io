@@ -17,7 +17,7 @@ Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bul
 
 Recently, I gave a presentation at the TokyoR User Group - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
 
-_**Currently looking for full-time opportunities from January 2019 in Japan (Tokyo)/ USA (California)/ UK (London)/ etc. or remote work!**_
+_**Currently looking for full-time opportunities from April 2019 in Japan (Tokyo)/ USA (California)/ UK (London)/ etc. or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
@@ -60,7 +60,7 @@ _**Currently looking for full-time opportunities from January 2019 in Japan (Tok
   + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
 
-* **SQL**
+* **SQL (MySQL)**
 
 * **Microsoft Access**
 
