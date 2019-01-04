@@ -45,8 +45,7 @@ _**Currently looking for full-time opportunities from April 2019 in Japan (Tokyo
   [4](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/)
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
-  + Linear regression
-  + PCA and Cluster analysis
+  + Statistics/Econometrics
   + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr), co-author of various [ACDI/VOCA](http://www.acdivoca.org/) internal packages
 
 * **Graphical visualization**:

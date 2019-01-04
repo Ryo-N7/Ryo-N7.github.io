@@ -324,7 +324,7 @@ library(comf)
 sum_air %>% 
   mutate_at(vars(contains("avg")), 
             ~convert_temperature(temperature = ., old_metric = "f", new_metric = "c")) %>% 
-  mutate(humidex = calcHumx(ta = avg_temp, rh = avg_dewp)) %>% 
+  mutate(humidex = calcHumx(ta = avg_temp, rh = relh)) %>% 
   select(month, day, station, airport, humidex) %>% 
   slice(1:5)
 ```
