@@ -410,7 +410,7 @@ b <- image_composite(image_scale(a, "x100"), image_scale(logo_proc, "x75"),
                      offset = "+880+25")
 # add in the title text
 logo_header <- b %>% 
-  image_annotate(text = glue("Goals per Game throughout the history of the Asian Cup"),
+  image_annotate(text = glue("Goals per Game Throughout the History of the Asian Cup"),
                  color = "black", size = 24, font = "Roboto Condensed",
                  location = "+63+50", gravity = "northwest")
 
