@@ -3,12 +3,12 @@ layout: post
 title: "Visualizing the Asian Cup with R!"
 fb-img: https://i.imgur.com/F5TOJQP.png
 share-img: https://i.imgur.com/F5TOJQP.png
-tags: [japan, ggplot2, web-scraping, asian-cup-2019, soccer, rvest, tidyverse]
+tags: [japan, ggplot2, web-scraping, asian-cup-2019, soccer, rvest, tidyverse, r-bloggers]
 ---
 
 Another year, another big soccer/football tournament! This time it’s the
-top international competition in Asia, the Asian Cup hosted in the
-U.A.E. I’ll be covering (responsible) web-scraping, data wrangling
+top international competition in Asia, the [Asian Cup](http://www.the-afc.com/asiancup/) hosted in the
+U.A.E. In this blog post I’ll be covering (responsible) web-scraping, data wrangling
 (tidyverse FTW!), and of course, data visualization with `ggplot2`.
 
 Let’s get started!
@@ -26,14 +26,12 @@ loadfonts()
 Top Goalscorers of the Asian Cup
 --------------------------------
 
-The first thing I looked at was, “Who were the top goalscorers in the
+The first thing I looked at was, “Who are the top goalscorers in the
 history of the Asian Cup?”
 
 Here I use the [polite](https://github.com/dmi3kno/polite) package to
 take a look at the `robots.txt` for the web page and see if it is OK to
-web scrape. It’s good to make things like this a habit!
-
-First you pass the URL to the `bow()` function, check that you are
+web scrape from it. First you pass the URL to the `bow()` function, check that you are
 indeed allowed to scrape, then use `scrape()` to retrieve data, and the
 rest is the usual `rvest` web-scraping workflow.
 
@@ -60,7 +58,7 @@ ac_top_scorers <- ac_top_scorers %>%
   mutate(image = "https://www.emoji.co.uk/files/microsoft-emojis/activity-windows10/8356-soccer-ball.png")
 ```
 
-Slightly different to your standard bar graph as here I
+I made something slightly different to your standard bar graph as I
 use the `geom_isotype_col()` function from `ggtextures` to create a bar
 of soccer ball images. Compared to other functions in `ggtextures`,
 `geom_isotype_col()` allows each image to correspond to the value of the
@@ -154,20 +152,11 @@ acup_winners_raw <- scrape(session) %>%
   flatten_df()
 ```
 
-Now I can use the `clean_names()` function to quickly clean up my names
+Now I can use the `clean_names()` function to quickly clean up my column names
 (mainly when I can’t be bothered to `set_names()` them myself…).
 
 The next steps are splitting up the number of times a team placed
-between 1st and 3rd and the year that occurred with `separate()`.
-
-The variants of `mutate()` are then used to tidy the string columns of
-the data into numeric type.
-
-I use `gather()` so each team will have a row for each of the rank
-positions (1st-3rd).
-
-Finally, I arrange the data in a way that the facets will be ordered in
-the way that I want.
+between 1st and 3rd and the year that occurred with `separate()`. Then variants of `mutate()` are used to tidy the string columns of the data into numeric type. I use `gather()` so each team will have a row for each of the rank positions (1st-3rd). Finally, I arrange the data in a way that the facets will be ordered in the way that I want.
 
 ``` r
 acup_winners_clean <- acup_winners_raw %>% 
@@ -235,9 +224,7 @@ Goals per Game
 --------------
 
 One new thing I learned very recently, while working on this viz in
-fact, was using [magrittr aliases](https://twitter.com/Emil_Hvitfeldt/status/1081080919073542144)!
-
-Usually for web scraping I always wind up having to use `.[x]` or
+fact, was using [magrittr aliases](https://twitter.com/Emil_Hvitfeldt/status/1081080919073542144)! In this workflow I always wind up having to use `.[x]` or
 `.[[x]]` but now I can just use `extract()` or `extract2()` respectively
 to do the same thing!
 
@@ -262,7 +249,7 @@ Another cool thing I found while scraping this data was the `jump_to()`
 function that allows you to navigate to a new URL. This makes
 `map()`-ing over multiple URL links from a base URL very easy! Here, the
 base URL is the AFC Asian Cup Wikipedia page and the function iterates
-over each of the links to the URL of the respective tournament pages.
+over each of the URL links of the respective tournament pages.
 Another way that I could’ve done this was to `map()` over the different
 dates of the tournaments as the Wikipedia page of each edition of the
 Asian Cup only differed in the “year” appended at the beginning of the
@@ -311,7 +298,7 @@ goals_data <- acup_df %>%
          match_num = map(acup_df$link, match_num_info) %>% unlist)
 ```
 
-Next, clean it up a bit and add in the number of teams that participated
+Next, I clean it up a bit and add in the number of teams that participated
 in each tournament.
 
 ``` r
@@ -337,7 +324,7 @@ glimpse(ac_goals_df)
     ## $ match_num      <dbl> 6, 6, 6, 10, 13, 10, 24, 24, 24, 16, 26, 26, 32...
     ## $ label          <fct> '56, '60, '64, '68, '72, '76, '80, '84, '88, '9...
 
-Now we make a line graph but with LOTS of `annotate()` code to add in
+Now we make a line graph but with __lots__ of `annotate()` code to add in
 comments, labels, and segments for the labels. At the end I use
 `geom_emoji()` to add a soccer ball to the plot for each of the data
 points.
@@ -395,9 +382,9 @@ plot
 <img src="../assets/2019-01-11-visualize-asian-cup_files/unnamed-chunk-109-1.png" style="display: block; margin: auto;" />
 
 ``` r
-ggsave(filename = paste0(here::here("Asian Cup 2019"), "/gpg_plot.png"), 
+ggsave(filename = glue("{here::here('Asian Cup 2019')}/gpg_plot_final.png"), 
        width = 8, height = 7, dpi = 300)
-plot <- image_read(paste0(here::here("Asian Cup 2019"), "/gpg_plot.png"))
+plot <- image_read(glue("{here::here('Asian Cup 2019')}/gpg_plot_final.png"))
 ```
 
 However, I’m not finished yet! I wanted to try to make this look a bit
@@ -409,9 +396,7 @@ Hadley](https://twitter.com/danielphadley) who used the `magick` package
 to add a footer with a logo onto a `ggplot` object. I’ve used `magick`
 before for animations and this was a good chance to try it out for image
 editing. Compared to Daniel Hadley’s example I needed to have the logo
-on the right corner so I had to find an alternative way of creating a
-blank canvas with `image_blank()` and then placing everything on top of
-that with `image_composite()` and `image_append()`.
+on the right corner so I had to create a blank canvas with `image_blank()` and then placing everything on top of that with `image_composite()` and `image_append()`.
 
 ``` r
 logo_raw <- image_read("https://upload.wikimedia.org/wikipedia/en/a/ad/2019_afc_asian_cup_logo.png")
@@ -447,16 +432,16 @@ improvement in regards to sizing and scaling though.
 Ultimately, I couldn’t find much information on why those tournaments in
 the 80s in particular were such low scoring affairs. I wasn’t alive to
 watch those games on TV nor could I find any illuminating articles or
-blog posts on the style of Asian football back in the 80s…This was also
+blog posts on the style of Asian football back then… This was also
 before Japan really got into soccer so there wasn’t anything I could
 find in Japanese either.
 
-Japan’s record vs. Group D opponents and rivals
------------------------------------------------
+Japan’s Record vs. Historical Rivals and Group D Opponents
+----------------------------------------------------------
 
 Japan is the most successful team in the competition with 4
 championships but who are their opponents in the group stages and how
-have they fared against them? While I’m at it I will also check their
+have they fared against them in the past? While I’m at it I will also check Japan's
 records against long-time continental rivals such as Iran, South Korea,
 Saudi Arabia and more recently, Australia.
 
@@ -785,7 +770,7 @@ Saudi Arabia
 </tbody>
 </table>
 Now let’s take a look at how Japan have historically played against the
-other teams in __Group F__ of this year’s Asian Cup.
+other teams in __Group F__ of this year’s Asian Cup (in all competitions).
 
 ``` r
 results_jp_asia %>% 
@@ -887,12 +872,11 @@ Conclusion
 In this blog post I went through a few examples of visualizing some very
 basic stats on the Asian Cup happening this month. I'll devote this last
 section on my views on this edition of the Asian Cup and Japan's national 
-team. Although Japan’s first game was quite horrible I’m hoping it’ll wake 
-the players and coaches out of their complacency and not underestimate our
-opponents in the next two games.
+team. 
 
-Thankfully, South Korea should be on the other side of the bracket for
-the knock-out stages and we would also only meet Iran in the semifinals 
+Although Japan’s first game was quite horrible I’m hoping it’ll wake 
+the players and coaches out of their complacency and not underestimate our
+opponents in the next two games. Thankfully, South Korea should be on the other side of the bracket for the knock-out stages and we would also only meet Iran in the semifinals 
 (provided both teams finish top of their respective groups). Japan could 
 meet Australia in the Quarters but without Aaron Mooy they’re a much 
 weaker side as shown in their abject loss to Jordan in their opening 
@@ -904,7 +888,7 @@ Hannover regular, Genki Haraguchi, stepping up from the bench shows how
 much Japanese football has progressed these past 25 years.
 
 It’s a changing of the guard for Japan after the retirement of captain Hasebe
-and Keisuke Honda but with more young Japanese players headed to Europe from 
+and Keisuke Honda but with more Japanese players headed to Europe from 
 a young age these are exciting times to be a Japanese football fan. It's been 
 quite awe-inspiring seeing how the number of Japanese players playing for 
 foreign clubs have been steadily increasing since the 1988 Asian Cup squad (Japan's first
