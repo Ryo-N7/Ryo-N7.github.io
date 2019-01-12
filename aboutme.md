@@ -52,11 +52,11 @@ _**Currently looking for full-time opportunities from April 2019 in Japan (Tokyo
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
   [5](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/),
   [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
+  + Various soccer/football viz: Examples [soccer_ggplots Github repo](https://github.com/Ryo-N7/soccer_ggplots)
   + Shiny: Example [1](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
   + Leaflet
   + gganimate/tweenr: Examples [1](https://github.com/Ryo-N7/soccer_ggplots), [2](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
-  + Various soccer/football viz: Examples [1](https://github.com/Ryo-N7/soccer_ggplots)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
 
 * **SQL (MySQL)**

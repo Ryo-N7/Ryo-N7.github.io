@@ -9,7 +9,7 @@ tags: [japan, ggplot2, web-scraping, asian-cup-2019, soccer, rvest, tidyverse, r
 Another year, another big soccer/football tournament! This time it’s the
 top international competition in Asia, the [Asian Cup](http://www.the-afc.com/asiancup/) hosted in the
 U.A.E. In this blog post I’ll be covering (responsible) web-scraping, data wrangling
-(tidyverse FTW!), and of course, data visualization with `ggplot2`.
+(tidyverse FTW!), and of course, data visualization with `ggplot2`. All of the code and data below is also uploaded in my [soccer_ggplots](https://github.com/Ryo-N7/soccer_ggplots) Github repo.
 
 Let’s get started!
 
@@ -436,7 +436,7 @@ blog posts on the style of Asian football back then… This was also
 before Japan really got into soccer so there wasn’t anything I could
 find in Japanese either.
 
-Japan’s Record vs. Historical Rivals and Group D Opponents
+Japan’s Record vs. Historical Rivals and Group F Opponents
 ----------------------------------------------------------
 
 Japan is the most successful team in the competition with 4
@@ -769,6 +769,37 @@ Saudi Arabia
 </tr>
 </tbody>
 </table>
+
+A new rival, Australia, emerged to challenge Japan in Asia as they
+joined the AFC in 2006. From the come-from-behind defeat in the Group
+Stages of the 2006 World Cup (still one of my most painful memories as a
+Japanese football fan…) and to an extra-time win in the 2011 Asian Cup
+Final (from a [Zidane-esque finish](https://www.youtube.com/watch?v=vWLlFEf3dEE) by Tadanari Lee), Japan and Australia have dramatically clashed throughout the past decade.
+
+Using the `waffle` package I can create a graphic that summarizes the
+results between the two sides.
+
+``` r
+jp_aus <- results_jp_asia %>% 
+  japan_versus(opponent == "Australia") %>% 
+  select(-opponent, Japan = Win, Australia = Loss) %>% 
+  gather(key = "team", value = "values", -`Goals For`, -`Goals Against`) %>% 
+  select(-contains("Goals"))
+
+# Waffle plot!
+waffle(
+  jp_aus, rows = 4, size = 1, 
+  title = glue("
+               Japan vs. Australia: 
+               The New 'Asian' Rivalry"),
+  colors = c("red", "grey", "blue"), 
+  use_glyph = "futbol", glyph_size = 5,
+  legend_pos = "bottom"
+)
+```
+
+<img src="../assets/2019-01-11-visualize-asian-cup_files/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+
 Now let’s take a look at how Japan have historically played against the
 other teams in __Group F__ of this year’s Asian Cup (in all competitions).
 
