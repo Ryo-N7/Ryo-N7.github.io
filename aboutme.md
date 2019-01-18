@@ -11,13 +11,13 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests include Soccer/Football, Star Wars, and of course -  Data Science!
 
-Currently working for [ACDI/VOCA](http://acdivoca.org/), an international development NGO, as a **Junior Data Scientiest** on a _Fixed-Term Contract_!
+Currently working for [ACDI/VOCA](http://acdivoca.org/), an international development NGO, for the past year and a bit as a **Junior Data Scientiest** on a _Fixed-Term Contract_!
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 
-Recently, I gave a presentation at the TokyoR User Group - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
+Last summer, I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
 
-_**Currently looking for full-time opportunities from April 2019 in Japan (Tokyo)/ USA (California)/ UK (London)/ etc. or remote work!**_
+_**Currently looking for full-time opportunities from May 2019 in Japan (Tokyo)/ USA (California)/ UK (London)/ etc. or remote work!**_
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
