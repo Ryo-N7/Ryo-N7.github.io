@@ -5,13 +5,13 @@ title: About Me
 
 Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London, and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
 
-Recently finished a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). During the MSc. my main research interests were in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
+__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an international development NGO, as a Junior Data Scientist. Interested in doing data analysis/visualization with R and SQL for NGOs, charities, non-profits (#DataForGood).
+
+I have a **MSc. in Industrial-Organizational and Business Psychology** at the University College London (UCL). During the MSc. my main research interests were in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
 My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public. My main strengths in R are in **data wrangling** and **visualization**, many examples of which you can see throughout my blog posts and my [viz gallery](https://ryo-n7.github.io/visualizations/)!
 
-Other interests include Soccer/Football, Star Wars, and of course -  Data Science!
-
-Currently working for [ACDI/VOCA](http://acdivoca.org/), an international development NGO, for the past year and a bit as a **Junior Data Scientiest** on a _Fixed-Term Contract_!
+Other interests/hobbys include Soccer/Football, Star Wars, and of course - Data Science!
 
 Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 
