@@ -289,8 +289,7 @@ timid in the past and I want to try and be more outgoing in future
 conferences (possibly [UseR](http://user2019.r-project.org/) in Toulouse
 this year)!
 
-For those who missed out, RStudio will be throwing all the recordings up
-on Youtube in the coming weeks and you can see most of the slides
+For those who missed out, RStudio have uploaded all of the talks [here](https://resources.rstudio.com/rstudio-conf-2019) and you can view most of the slides
 courtesy of [Karl Broman’s](https://twitter.com/kwbroman) RStudio::Conf
 Github repo [here](https://github.com/kbroman/RStudioConf2019Slides)!
 
