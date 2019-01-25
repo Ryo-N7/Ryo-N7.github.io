@@ -94,7 +94,7 @@ still a few things that needed changing:
 
 |                            forcats                            |                             purrr                             |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-| <img src = "https://i.imgur.com/6b874kK.jpg" width = "450" /> | <img src = "https://i.imgur.com/ZVwGyPa.jpg" width = "450" /> |
+| <img src = "https://i.imgur.com/6b874kK.jpg" width = "550" /> | <img src = "https://i.imgur.com/ZVwGyPa.jpg" width = "550" /> |
 
 OK! After reading the comments from Hadley (!) and Lionel (!) I go back
 into my branch in RStudio and fix those changes. When I commit and push
@@ -104,12 +104,14 @@ again.
 
 |                            forcats                            |                             purrr                             |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-| <img src = "https://i.imgur.com/gMS7y12.jpg" width = "450" /> | <img src = "https://i.imgur.com/fB2wP27.jpg" width = "450" /> |
+| <img src = "https://i.imgur.com/gMS7y12.jpg" width = "550" /> | <img src = "https://i.imgur.com/fB2wP27.jpg" width = "550" /> |
 
 There we go, I have now officially contributed to the Tidyverse!
+
 <center>
-![](https://media2.giphy.com/media/l4JySAWfMaY7w88sU/source.gif)
+<img src = "https://media2.giphy.com/media/l4JySAWfMaY7w88sU/source.gif" width = "450" />
 </center>
+
 Another good resource for contributing to open-source is [Nic
 Crane’s](https://twitter.com/nic_crane) step-by-step [blog
 post](https://thisisnic.github.io/2018/11/28/ten-steps-to-becoming-a-tidyverse-contributor/)
@@ -269,9 +271,11 @@ Conclusion
 
 Throughout the conference I managed about four-five hours of sleep on
 average, which seemed to have been a thing for other people as well:
+
 <center>
-![](https://i.imgur.com/KinXTxS.jpg)
+<img src = "https://i.imgur.com/KinXTxS.jpg" width = "450" />
 </center>
+
 For me it was mostly jet lag but also I was kept up by looking up all
 the cool stuff I learned and how I could apply it at work and for my own
 personal projects… well, and looking up taco places to eat at on the
