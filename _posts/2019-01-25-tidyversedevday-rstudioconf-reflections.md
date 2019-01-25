@@ -94,7 +94,7 @@ still a few things that needed changing:
 
 |                            forcats                            |                             purrr                             |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-| <img src = "https://i.imgur.com/6b874kK.jpg" width = "550" height = "800" /> | <img src = "https://i.imgur.com/ZVwGyPa.jpg" width = "550" height = "800" /> |
+| <img src = "https://i.imgur.com/6b874kK.jpg" width = "600" /> | <img src = "https://i.imgur.com/ZVwGyPa.jpg" width = "600" /> |
 
 OK! After reading the comments from Hadley (!) and Lionel (!) I go back
 into my branch in RStudio and fix those changes. When I commit and push
@@ -104,7 +104,7 @@ again.
 
 |                            forcats                            |                             purrr                             |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-| <img src = "https://i.imgur.com/gMS7y12.jpg" width = "550" height = "800" /> | <img src = "https://i.imgur.com/fB2wP27.jpg" width = "550" height = "800" /> |
+| <img src = "https://i.imgur.com/gMS7y12.jpg" width = "600" /> | <img src = "https://i.imgur.com/fB2wP27.jpg" width = "600" /> |
 
 There we go, I have now officially contributed to the Tidyverse!
 
