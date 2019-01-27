@@ -61,6 +61,10 @@ There is another way to do most of this through the Git Bash terminal,
 which you can learn from Tony’s blog post
 [here](https://tonyelhabr.rbind.io/post/making-first-pull-request/).
 
+An important thing that I learned was that it’s good practice to create
+a different branch for working on a Pull Request for different issues on
+the same package! In terms of labeling the branches you're working on [Claus Wilke](https://twitter.com/dariyasydykova/status/1087110371817721856) recommends the format "issue-issue#-brief-description-of-an-issue".
+
 The main things I focused on were improving documentation and providing
 additional examples. For these tasks I found it important to do a lot of
 research first. Thankfully I was able to find many Stack Overflow posts
@@ -68,9 +72,7 @@ of people explaining the issues that I wanted to write about as well as
 \#rstats blog posts/tutorials that could provide me with ideas on how to
 phrase things and write good small examples!
 
-An important thing that I learned was that it’s good practice to create
-a different branch for working on a Pull Request for different issues on
-the same package! When you’re changing documentation in a package it’s
+When you’re changing documentation in a package it’s
 important to make sure you use `roxygen2` package’s `roxygenize()`
 function to update changes. Don’t forget to run the R CMD Check as well
 (the “Check” icon in the `Build` tab). After you’re done with all of
