@@ -21,16 +21,16 @@ Packages
 ========
 
 ``` r
-pacman::p_load(tidyverse, rvest, glue, cowplot, ggbeeswarm, gt,
-               polite, extrafont, scales, gridExtra, knitr, kableExtra)
+pacman::p_load(tidyverse, rvest, glue, cowplot, ggbeeswarm, 
+               polite, extrafont, knitr, kableExtra)
 loadfonts() # "Univers" and "Univers LT 93 ExtraBlackEx" fonts
 ```
 
 B99 Custom Theme
 ================
 
-First, I will create a custom *Brooklyn Nine-Nine* theme that I can put
-on every plot that I will create. This will save me time from typing in
+First, I created a custom *Brooklyn Nine-Nine* theme that I can put
+on every plot. This will save me time from typing in
 the same options over and over again! I googled the font type that the
 official *Brooklyn Nine-Nine* media uses, downloaded them, and got it
 installed for R using the `extrafont` package. For some of the different
@@ -77,8 +77,7 @@ theme_b99 <- function(){
 }
 ```
 
-Now the plots will all look very similar like a good police squad
-should:
+Now the plots will all look very similar, just like a good police squad:
 
 <center>
 <img src = "https://media3.giphy.com/media/3oxHQoyto7T8wBjUJ2/giphy.gif" width = "450" />
@@ -90,7 +89,7 @@ Episode Ratings
 
 As in my more
 [recent](https://ryo-n7.github.io/2019-01-11-visualize-asian-cup/) blog
-posts I will use the `polite` package to web scrape responsibly (note
+posts I used the `polite` package to web scrape responsibly (note
 the `bow()` and `scrape()` functions).
 
 I `map_2()` over the IMDB page for the episodes for each season and I
@@ -165,8 +164,8 @@ Episode Ratings Plot: Heatmap and Boxplot
 
 I used `geom_tile()` to create a heat map of episode ratings with the
 season number as the rows and the episode number for that season as the
-columns. I used the `dichromat` package for the color scheme
-“LightBluetoDarkBlue.10”, it meshes pretty well with the *Brooklyn 99*
+columns. I also used the `dichromat` package for the color scheme
+“LightBluetoDarkBlue.10”, it meshes pretty well with the *Brooklyn Nine-Nine*
 color theme!
 
 ``` r
@@ -195,7 +194,7 @@ rating_plot
 <img src="../assets/2019-02-15-visualize-brooklyn-nine-nine_files/unnamed-chunk-29-1.png" style="display: block; margin: auto;" />
 
 From what we can see on the graph there doesn’t seem to be any trends
-along either axes besides the fact that the finales and the subsequent
+along either axis besides the fact that the finales and the subsequent
 opening episode of the following season are generally well-received. Two
 stand out episodes from **Season 5** can be clearly seen in the plot.
 These episodes are “HalloVeen” (the fifth Halloween episode of the
@@ -213,8 +212,7 @@ The debate between violin plot vs. box plot vs. sina plot vs. etc. rages
 on to this day (some examples I’ve read over the years:
 [1](https://cerebralmastication.com/2009/02/box-plot-vs-violin-plot-in-r/),
 [2](https://simplystatistics.org/2017/07/13/the-joy-of-no-more-violin-plots/),
-[3](https://rpubs.com/crazyhottommy/sina-plot)) and some of the
-arguments made seem to come down to personal preference. Since the data
+[3](https://rpubs.com/crazyhottommy/sina-plot)) and at the end of the day, it may come down to personal preference. Since the data
 I’m using is quite small (\~20 episode ratings for each season), in my
 case it might be better to use box plots (instead of violin plots) and
 sprinkle bee swarm points on top with the
@@ -271,7 +269,7 @@ ep_rating_df %>%
     ## 3 The Box            9.4      5     14
 
 Besides the (re)appearances of Doug Judy, *Brooklyn Nine-Nine* is known
-for its Halloween Episodes. I wanted to use `gt` somewhere in this blog
+for its __Halloween Episodes__. I wanted to use `gt` somewhere in this blog
 post but that’s little bit overkill so a `kable` table will suffice for
 now.
 
@@ -447,8 +445,9 @@ members of the same precinct it makes sense that they’ll generally
 appear together. So instead, I wanted to look at which non-main cast
 members and guests made the most appearances on the show. **Special
 note**: Hitchcock and Scully weren’t officially “main cast” until
-**Season 2** but I left them out of the non-main cast list. After
-scraping for the full cast list and main cast list, I `anti_join()` them
+**Season 2** but I left them out of the non-main cast list. 
+
+After scraping for the full cast list and main cast list, I `anti_join()` them
 so I am left with the non-main cast and the number of episodes that they
 appeared in.
 
@@ -498,7 +497,7 @@ Non-Main Cast Appearances Plot
 ------------------------------
 
 To shorten the list I’ll just look at the top five cast members. I
-create a “halfway” variable so that the number labels will appear right
+created a `halfway` variable so that the number labels will appear right
 in the middle of each bar. Using the `axis_canvas()`, `draw_image()`,
 and `insert_axis_grob()` from the `cowplot` package I can insert images
 of the characters along the bottom of the plot.
@@ -549,8 +548,7 @@ ncast_plot
 <img src="../assets/2019-02-15-visualize-brooklyn-nine-nine_files/unnamed-chunk-35-1.png" style="display: block; margin: auto;" />
 
 Adrian has appeared in the most episodes just beating out Kevin. This
-really shows how involved Adrian was in the story in **Season 4** and
-**5** especially compared to Kevin who has been popping in and out since
+really shows how involved Adrian was in the story in **Season 4 and 5** especially compared to Kevin who has been popping in and out since
 the first season. Everybody’s favorite **DOUG JUDY** rounds off this bar
 chart next to The Vulture.
 
@@ -685,7 +683,7 @@ information so let’s chop it down a bit to get data on the number of
 viewers per episode.
 
 From what we saw of `ep_info_df` earlier, the data looked pretty clean
-already except for “The Fugitive” episodes being formatted differently…
+already except for __Episode 79 and 80__ ("The Fugitive" episodes)…
 
 <center>
 <img src = "https://66.media.tumblr.com/cc01463acbe445711497b5c979b996d1/tumblr_ov5bc3udjC1ty7lb2o1_540.gif" width = "450" />
@@ -695,7 +693,7 @@ the only one that aired on the same day, on New Years Day 2017, so they
 got smushed together in the Wikipedia table when we scraped it. There
 wasn’t a quick and easy way to `regex` them into separate rows so I just
 filtered them out and added them back in. Then at the end of the pipe, I
-create a `first` and `last` variable for each season taking note of what
+created a `first` and `last` variable for each season taking note of what
 overall episode number the first and last episodes of each season were.
 You’ll see why I did this soon.
 
@@ -721,7 +719,7 @@ viewers_df <- ep_info_df %>%
 Viewers Plot
 ------------
 
-For this plot I use `geom_rect()` to give a colored background for each
+For this plot I used `geom_rect()` to give a colored background for each
 season. I set the span of the Xs as the `first` and `last` episode
 number of each season for the width and using `Inf` and `-Inf` for the
 Ys to cover the entire height of the plot. For the season labels I
@@ -730,7 +728,7 @@ as the x values (not shown in the code). I could have used facets but to
 the best of my knowledge I wouldn’t have been able to place the labels
 on top across multiple facets anyways. It may be possible by placing
 text grobs on top of the facetted plot but I thought that would take
-more time compared to what I did with `geom_rect()`. Otherwise I use a
+more time compared to what I did with `geom_rect()`. Otherwise I used a
 lot of `annotate()` code to add in the episode details and season
 titles.
 
@@ -805,7 +803,7 @@ those days that would explain the high viewer numbers (relative to the
 other episodes in the season).
 
 Throughout it’s run on FOX, the show averaged around 2\~3.5 million
-viewers with numerous peaks and troughs until the 5th season where it
+viewers with numerous peaks and troughs until __Season 5__ where it
 only averaged around 1.8 million viewers but kept those numbers very
 consistently across the entire season.
 
@@ -821,7 +819,7 @@ what it looks like:
 <center>
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Brooklyn_nine-nine_logo.png/800px-Brooklyn_nine-nine_logo.png" width = "450" />
 </center>
-Now I could just paste the `URL` for the picture into my graph but I
+Now I could've just added the picture into my graph but I
 thought why not try making it myself? So, I used `geom_polygon()` to
 construct the two diagonal colored bars and then placed the text on top
 of them with `annotate()`.
@@ -862,8 +860,8 @@ header
 <center>
 <img src = "https://media.tenor.com/images/098e4852dfdc41991add5983e9262a92/tenor.gif" width = "200" />
 </center>
-After going through this process (read:time-consuming ordeal) I don’t
-recommend making stuff like this manually as it can be quite frustrating
+After going through this process (read: very time-consuming ordeal) I don’t
+recommend making stuff like this manually as it can be quite frustrating,
 especially if you have to get it to fit alongside other plots and grobs!
 
 Finally, let me just add a footer:
