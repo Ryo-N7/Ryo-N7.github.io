@@ -192,7 +192,7 @@ rating_plot <- ep_rating_df %>%
 rating_plot
 ```
 
-<img src="blog_99_files/figure-markdown_github/unnamed-chunk-29-1.png" style="display: block; margin: auto;" />
+<img src="../assets/2019-02-15-visualize-brooklyn-nine-nine_files/unnamed-chunk-29-1.png" style="display: block; margin: auto;" />
 
 From what we can see on the graph there doesn’t seem to be any trends
 along either axes besides the fact that the finales and the subsequent
@@ -557,6 +557,7 @@ chart next to The Vulture.
 <center>
 <img src = "https://66.media.tumblr.com/87972a8335ae460091c2005ff519f009/tumblr_omcy241y071w4nkyqo4_400.gif" width = "450" />
 </center>
+
 Viewer Numbers
 ==============
 
@@ -912,6 +913,7 @@ the_nine_nine_plot
 <center>
 <img src = "https://media2.giphy.com/media/l4JySAWfMaY7w88sU/source.gif" width = "450" />
 </center>
+
 Conclusion
 ==========
 
