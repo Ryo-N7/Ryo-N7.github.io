@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing Brooklyn Nine-Nine with R!"
 fb-img: https://i.imgur.com/TgZBzX2.png
 share-img: https://i.imgur.com/XrrJeOK.png
-tags: [ggplot2, web-scraping, brooklyn-nine-nine, rvest, tidyverse]
+tags: [ggplot2, web-scraping, brooklyn-nine-nine, rvest, tidyverse, r-bloggers]
 ---
 
 > “Hey there criminal. It’s me, Johnny Law!” - Jake Peralta, NYPD.
