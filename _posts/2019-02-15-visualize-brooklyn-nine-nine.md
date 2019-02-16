@@ -80,7 +80,7 @@ theme_b99 <- function(){
 Now the plots will all look very similar, just like a good police squad:
 
 <center>
-<img src = "https://media3.giphy.com/media/3oxHQoyto7T8wBjUJ2/giphy.gif" width = "450" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/similar.gif" width = "350" />
 </center>
 With that done, I can start making plots!
 
@@ -404,7 +404,7 @@ those that rate *Brooklyn Nine-Nine* on IMDB (although I’m sure most
 fans including myself will agree).
 
 <center>
-<img src = "https://78.media.tumblr.com/5fd58d43ff6eeb965c9d623d783f31eb/tumblr_oy44wkivKi1vj8gn9o1_540.gif" width = "450" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/halloween.gif" width = "350" />
 </center>
 A more recent variant for showing a distribution is the ridge-line plot,
 courtesy of the [ggridges](https://github.com/clauswilke/ggridges)
@@ -553,7 +553,7 @@ the first season. Everybody’s favorite **DOUG JUDY** rounds off this bar
 chart next to The Vulture.
 
 <center>
-<img src = "https://66.media.tumblr.com/87972a8335ae460091c2005ff519f009/tumblr_omcy241y071w4nkyqo4_400.gif" width = "450" />
+<img src = "https://66.media.tumblr.com/87972a8335ae460091c2005ff519f009/tumblr_omcy241y071w4nkyqo4_400.gif" width = "400" />
 </center>
 
 Viewer Numbers
@@ -686,7 +686,7 @@ From what we saw of `ep_info_df` earlier, the data looked pretty clean
 already except for __Episode 79 and 80__ ("The Fugitive" episodes)…
 
 <center>
-<img src = "https://66.media.tumblr.com/cc01463acbe445711497b5c979b996d1/tumblr_ov5bc3udjC1ty7lb2o1_540.gif" width = "450" />
+<img src = "https://66.media.tumblr.com/cc01463acbe445711497b5c979b996d1/tumblr_ov5bc3udjC1ty7lb2o1_540.gif" width = "350" />
 </center>
 There are other multi-part episodes throughout the show but this pair is
 the only one that aired on the same day, on New Years Day 2017, so they
@@ -909,7 +909,7 @@ the_nine_nine_plot
 <img src="../assets/2019-02-15-visualize-brooklyn-nine-nine_files/unnamed-chunk-43-1.png" style="display: block; margin: auto;" />
 
 <center>
-<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/yeahh.gif" width = "300" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/yeahh.gif" width = "350" />
 </center>
 
 Conclusion
@@ -946,5 +946,5 @@ I hope you had as much fun reading this as I did making it. If you
 didn’t, then well…
 
 <center>
-<img src = "https://66.media.tumblr.com/c0584c949c88744289b97aecd7186eba/tumblr_osdftshJze1ukq7ljo4_400.gif" width = "450" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/yaboringjake.gif" width = "350" />
 </center>
