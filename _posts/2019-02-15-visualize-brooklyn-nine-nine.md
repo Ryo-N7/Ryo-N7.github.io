@@ -553,7 +553,7 @@ the first season. Everybody’s favorite **DOUG JUDY** rounds off this bar
 chart next to The Vulture.
 
 <center>
-<img src = "https://66.media.tumblr.com/87972a8335ae460091c2005ff519f009/tumblr_omcy241y071w4nkyqo4_400.gif" width = "400" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/NYsFinest.gif" width = "400" />
 </center>
 
 Viewer Numbers
@@ -686,7 +686,7 @@ From what we saw of `ep_info_df` earlier, the data looked pretty clean
 already except for __Episode 79 and 80__ ("The Fugitive" episodes)…
 
 <center>
-<img src = "https://66.media.tumblr.com/cc01463acbe445711497b5c979b996d1/tumblr_ov5bc3udjC1ty7lb2o1_540.gif" width = "350" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/whyyy.gif" width = "350" />
 </center>
 There are other multi-part episodes throughout the show but this pair is
 the only one that aired on the same day, on New Years Day 2017, so they
