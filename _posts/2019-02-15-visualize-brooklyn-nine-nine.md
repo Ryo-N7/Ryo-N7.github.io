@@ -432,7 +432,7 @@ ep_rating_df2 %>%
 <img src="../assets/2019-02-15-visualize-brooklyn-nine-nine_files/unnamed-chunk-33-1.png" style="display: block; margin: auto;" />
 
 <center>
-<img src = "https://media.giphy.com/media/8PQOq6nMYO0kU/giphy.gif" width = "450" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/statistical_analysis2.gif" width = "350" />
 </center>
 Well OK, we’re just looking at distributions… but I wanted to use this
 GIF in some capacity!
@@ -909,7 +909,7 @@ the_nine_nine_plot
 <img src="../assets/2019-02-15-visualize-brooklyn-nine-nine_files/unnamed-chunk-43-1.png" style="display: block; margin: auto;" />
 
 <center>
-<img src = "https://media2.giphy.com/media/l4JySAWfMaY7w88sU/source.gif" width = "450" />
+<img src = "../assets/2019-02-15-visualize-brooklyn-nine-nine_files/yeahh.gif" width = "300" />
 </center>
 
 Conclusion
