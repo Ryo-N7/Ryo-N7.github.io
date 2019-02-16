@@ -5,7 +5,7 @@ title: About Me
 
 Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London, and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
 
-__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an international development NGO, as a Junior Data Scientist. For the past year-and-a-bit I have been doing work as both a reporting analyst and a software developer in R/SQL to improve ACDI/VOCA's data pipeline and create reports/dashboards to communicate how our projects are progressing. 
+__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an international development NGO, as a Junior Data Scientist. For the past year-and-a-bit I have been doing work as both a reporting analyst and a software developer in R and SQL to improve ACDI/VOCA's data pipeline and create reports/dashboards/Shiny apps to communicate how our projects are progressing. 
 
 Interested in doing data analysis/visualization with R and SQL for NGOs, charities, non-profits (#DataForGood). 
 
@@ -47,7 +47,7 @@ _**Currently looking for full-time opportunities from May 2019 in Japan (Tokyo)/
   [4](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/)
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
-  + Statistics/Econometrics
+  + Statistics/Economics/Econometrics: [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr), co-author of various [ACDI/VOCA](http://www.acdivoca.org/) internal packages
 
 * **Graphical visualization**:
