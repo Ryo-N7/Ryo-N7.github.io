@@ -3,10 +3,26 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [Dumbbell Chart] :: Tokyo is Warming Up (1876-1886 vs. 2008-2018)!
+
+- [Gist](https://gist.github.com/Ryo-N7/3e14b1ab637ce09091cb9c6c048a14a4)
+![](https://i.imgur.com/Js4UUQX.png)
+
+***
+
+#### [Infographic] :: Visualizing Brooklyn Nine-Nine!
+
+- [Blog Post](https://ryo-n7.github.io/2019-02-15-visualize-brooklyn-nine-nine/)
+![](https://i.imgur.com/aXFSqzJ.png)
+
+***
+
 #### [Line Graph] :: Jürgen Klopp's Managerial Career Through Elo Ratings!
 
 - [Gist](https://gist.github.com/Ryo-N7/2067e6c63f66ca7a7039b114d51bd40d)
 ![](https://i.imgur.com/Xcw2nAK.png)
+
+***
 
 #### [geofacet Map] :: Average Daily Temperature in Japan (Summer 2018)
 
@@ -14,6 +30,7 @@ title: Visualizations Gallery
 - NOTE: Temperatures are from the weather stations closest to each prefecture's capital city, see blog post for details.
 ![](https://i.imgur.com/v4DTyOw.png)
 
+***
 
 #### [Heat Map] :: Summers in Tokyo are Getting Longer and Hotter (1876-2017)
 #### Inspired by Toyo Keizai News
