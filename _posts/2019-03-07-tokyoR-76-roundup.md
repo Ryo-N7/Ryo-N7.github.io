@@ -221,6 +221,7 @@ output as he did not like the default plotting method.
 <center>
 <img src = "https://i.imgur.com/V4dZi69.jpg" width = "550" />
 </center>
+
 Lightning Talks
 ===============
 
@@ -251,6 +252,7 @@ the usual tidyverse operations on it, the data frame was turned into a
 <center>
 <img src = "https://i.imgur.com/Ld1jmWp.jpg" width = "550" />
 </center>
+
 [saltcooky](https://twitter.com/saltcooky): Organizing a R Study Group at My Company!
 -------------------------------------------------------------------------------------
 
