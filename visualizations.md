@@ -3,7 +3,7 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
-#### [Dumbbell Chart] :: Tokyo is Warming Up (1876-1886 vs. 2008-2018)!
+#### [Modified Lollipop Chart] :: Tokyo is Warming Up (1876-1886 vs. 2008-2018)!
 
 - [Gist](https://gist.github.com/Ryo-N7/3e14b1ab637ce09091cb9c6c048a14a4)
 ![](https://i.imgur.com/Js4UUQX.png)
