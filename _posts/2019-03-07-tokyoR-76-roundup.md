@@ -310,12 +310,14 @@ recommendation engine for recipes!
 <center>
 <img src = "https://i.imgur.com/Rf1sJkm.jpg" width = "550" />
 </center>
-As seen in the above flowchart `@moratoriamuo271`: - 1. Web scraped
-recipes using `rvest` - 2. Created some word-clouds for some EDA - 3.
-Used the `RMeCab` and `tm` to create an organized document term matrix
-(`RMeCab` is a package specifically for Japanese text analysis) - 4.
-Latent Dirichlet Analysis with `topicmodels` and `ldatuning` packages -
-5. Finally, splitting recipes into categories with `tidytext`
+As seen in the above flowchart `@moratoriamuo271`: 
+
+- 1. Web scraped recipes using `rvest` 
+- 2. Created some word-clouds for some EDA 
+- 3. Used the `RMeCab` and `tm` to create an organized document term matrix
+(`RMeCab` is a package specifically for Japanese text analysis) 
+- 4. Latent Dirichlet Analysis with `topicmodels` and `ldatuning` packages 
+- 5. Finally, splitting recipes into categories with `tidytext`
 
 Before he showed us the results of his work, `@moratoriamuo271` took us
 through a crash course on various topic modeling techniques from the
