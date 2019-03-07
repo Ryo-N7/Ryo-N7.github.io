@@ -6,6 +6,10 @@ share-img: https://i.imgur.com/UlstyyS.png
 tags: [japan, japanr, japan.r, community, tokyor]
 ---
 
+<center>
+<img src = "https://i.imgur.com/UlstyyS.png" width = "450" />
+</center>
+
 The 76th [Tokyo R](https://tokyor.connpass.com/) User Meetup happened on
 March 2nd, graciously hosted by DeNA (an entertainment and
 e-commerce company) in their lovely headquarters located in Shibuya.
@@ -28,7 +32,7 @@ will be going through around half of all the talks. Hopefully, my
 efforts will help spread the vast knowledge of Japanese R users to the
 wider R community. Throughout I will also post helpful blog posts and
 links from other sources if you are interested in learning more about
-the topic of a certain talk. You can follow Tokyo.R by searching for the
+the topic of a certain talk. You can follow __Tokyo.R__ by searching for the
 [\#TokyoR](https://twitter.com/hashtag/TokyoR?src=hash) hashtag on
 Twitter.
 
@@ -44,8 +48,8 @@ Let’s get started!
 Beginner Tutorials
 ==================
 
-Every Tokyo.R sessions starts off with three talks given by one of the
-organizing team who go over some of the very basic aspects of R for
+Every __Tokyo.R__ sessions starts off with three talks given by one of the
+organizing team members who go over some of the very basic aspects of R for
 beginner users. These talks are given by very experienced R users and
 are a way to let newbies feel comfortable before diving into real world
 applications of R in the main talks and LTs happening later on.
@@ -123,7 +127,7 @@ Learning](https://christophm.github.io/interpretable-ml-book/) which
 amount of slides (146 of them!) filled with a ton of great info that you
 can can read (a lot of the slides have explanations taken straight from
 the documentation in English) so I highly recommend taking a look
-through them if you are interested in what the `dalex` and `iml`
+through them if you are interested in what the `DALEX` and `iml`
 packages have to offer for interpreting models.
 
 A great code-through explanation of using `DALEX` with `mlr` in English
@@ -137,7 +141,7 @@ using the same data set as seen in `@kato_kohaku's` slides.
 -   [Slides](https://ymattu.github.io/TokyoR76/slide.html#/)
 
 One of the organizers of Tokyo.R, `@y_mattu`, presented on objects in R.
-Specifically he went over using the `pryr` and `lobstr` to dig inside R
+Specifically he went over using the `pryr` and `lobstr` packages to dig inside R
 objects and see what is happening “under the hood” of your everyday R
 operations.
 
@@ -262,15 +266,15 @@ the usual tidyverse operations on it, the data frame was turned into a
 usually get mentioned at Tokyo.R, as he reported about the success of an
 intra-company R workshop he hosted. At `@saltcooky's` company the
 majority of his co-workers are *Pythonistas* with only three other
-co-workers and him being R users. Hoping to change this dynamic
-especially as their company does a lot of data analytics `@saltcooky`
+co-workers and him being R users. Hoping to change this dynamic,
+especially as their company does a lot of data analytics, `@saltcooky`
 set out to create some workshops. What he came up with were three
 separate sessions heavily inspired by the Tokyo.R method that I talked
 about in “Beginner Tutorial” section.
 
 -   The first session was basically around an hour on R basics and
     talking about what exactly you can do with R, where he got the
-    Pythonistas to slowly get interested in using R for various
+    *Pythonistas* to slowly get interested in using R for various
     analytical tasks.
 -   Second, was a tidyverse data handling/processing session with some
     hands-on exercises with help from `@y_mattu`.
@@ -283,7 +287,7 @@ with the same functionality!?”.
 
 One of the major hurdles that `@saltcooky` faced was in installing R for
 all the different OSes that his co-workers used. The solution he came up
-with was to use **R Studio Cloud**. This eased the burden for him as he
+with was to use **RStudio Cloud**. This eased the burden for him as he
 didn’t need to set up or manage any servers while the students did not
 need to install any software at all! There was actually a great talk on
 using [“RStudio Cloud for
@@ -332,7 +336,7 @@ of topics for his recommendation engine. This was done by looking at the
 perplexity values from the `ldatuning` package.
 [Here](http://freerangestats.info/blog/2017/01/05/topic-model-cv) is a
 great blog post by [Peter Ellis](https://twitter.com/ellis2013nz) on
-using cross-validation on “perplexity” to determine the optimal number
+using cross-validation on perplexity to determine the optimal number
 of topics. Below is the final finished product that gives you recipes
 for nutritious and balanced meals for seven dinners!
 
@@ -366,9 +370,9 @@ wore on R users from all over Tokyo talked about their successes and
 struggles with R.
 
 Unfortunately, there is only so much I can do to translate the talks,
-especially as Tokyo.R doesn’t do recordings anymore, but I hope that I
+especially as __Tokyo.R__ doesn’t do recordings anymore, but I hope that I
 could be of some help and maybe you’ll be inspired by a code snippet
-there or a certain package name elsewhere, etc.! Tokyo.R happens almost
+there or a certain package name elsewhere, etc.! __Tokyo.R__ happens almost
 monthly and it’s a great way to mingle with Japanese R users as it is
 the largest regular meetup here in Japan. Talks in English are also
 welcome so if you’re ever in Tokyo come join us!
