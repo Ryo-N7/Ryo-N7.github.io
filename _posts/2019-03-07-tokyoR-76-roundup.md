@@ -3,7 +3,7 @@ layout: post
 title: "76th Tokyo.R Users Meetup Roundup!"
 fb-img: https://i.imgur.com/UlstyyS.png
 share-img: https://i.imgur.com/UlstyyS.png
-tags: [japan, japanr, japan.r, community, tokyor]
+tags: [japan, japanr, japan.r, community, tokyor, r-bloggers]
 ---
 
 <center>
