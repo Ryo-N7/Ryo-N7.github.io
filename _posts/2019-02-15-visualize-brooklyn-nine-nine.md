@@ -23,7 +23,7 @@ Packages
 ``` r
 pacman::p_load(tidyverse, rvest, glue, cowplot, ggbeeswarm, 
                polite, extrafont, knitr, kableExtra)
-loadfonts() # "Univers" and "Univers LT 93 ExtraBlackEx" fonts
+loadfonts() 
 ```
 
 B99 Custom Theme
@@ -33,7 +33,7 @@ First, I created a custom *Brooklyn Nine-Nine* theme that I can put
 on every plot. This will save me time from typing in
 the same options over and over again! I googled the font type that the
 official *Brooklyn Nine-Nine* media uses, downloaded them, and got it
-installed for R using the `extrafont` package. For some of the different
+installed for R using the `extrafont` package (EDIT: the Univers fonts are by Adrian Frutiger (Deberny & Peignot Foundry/Linotype). You can buy the fonts for around $30. A free and most similar alternative is `Helvetica`). For some of the different
 colors you’ll see in the plots I sourced them from pasting in the
 *Brooklyn Nine-Nine* logo and other official media images into
 [imagecolorpicker.com](https://imagecolorpicker.com/en) and saving the
