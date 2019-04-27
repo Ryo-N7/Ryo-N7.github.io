@@ -10,6 +10,7 @@ After posting a couple of my World Cup viz on [Twitter](https://twitter.com/R_by
 
 * Part 2: [Final Matchday Group Tables](https://ryo-n7.github.io/2018-07-05-visualize-worldcup-part-2/)
 * Part 3: [Animating Goals with the NEW gganimate API](https://ryo-n7.github.io/2018-07-24-visualize-worldcup-part-3/)
+* GitHub Repo of all of my soccer visualizations: [soccer_ggplots](https://github.com/Ryo-N7/soccer_ggplots)
 
 Let's look at some of the packages I will use!
 

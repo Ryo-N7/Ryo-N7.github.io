@@ -8,7 +8,8 @@ tags: [worldcup, gganimate, tweenr, ggplot2, soccer, r-bloggers]
 
 Welcome to **Part 3** of my series on "Visualizing the World Cup with R"! This is the culmination of this mini project that I've been working on throughout the World Cup. In addition, from having listened to **Thomas Pedersen's** excellent [keynote](https://www.youtube.com/watch?v=21ZWDrTukEs) at __UseR! 2018__ in Brisbane on the **NEW** gganimate and tweenr API, I am taking advantage of the fortuitous timing to also compare the APIs using the goals as the examples!
 
-I've had finished these animations a couple of weeks ago but didn't make them available until I presented at the [TokyoR](https://twitter.com/TokyoRCommunity) MeetUp last week! **Hadley Wickham** and **Joe Rickert** were the special guests and with the amount of speakers and attendees it felt more like a mini-conference than a regular meetup, if you're ever in Tokyo come join us for some R&R...and R! You can check out a recording of my talk on [YouTube](https://www.youtube.com/watch?v=tNncHFd5dVo).
+I've had finished these animations a couple of weeks ago but didn't make them available until I presented at the [TokyoR](https://twitter.com/TokyoRCommunity) MeetUp last week! **Hadley Wickham** and **Joe Rickert** were the special guests and with the amount of speakers and attendees it felt more like a mini-conference than a regular meetup, if you're ever in Tokyo come join us for some R&R...and R! You can check out a recording of my talk on [YouTube](https://www.youtube.com/watch?v=tNncHFd5dVo). 
+* GitHub Repo of all of my soccer visualizations: [soccer_ggplots](https://github.com/Ryo-N7/soccer_ggplots)
 
 Let's get started!
 
