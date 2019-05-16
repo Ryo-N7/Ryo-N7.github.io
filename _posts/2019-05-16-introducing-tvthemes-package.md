@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing {tvthemes}: ggplot2 palettes and themes from your favorite TV shows!"
-fb-img: https://i.imgur.com/URy88Fll.png
+fb-img: https://i.imgur.com/Psjwe3V.png?1
 share-img: https://i.imgur.com/URy88Fl.png
 tags: [ggplot2, color-palettes, ggplot2-themes, TV-shows, data-viz]
 ---
