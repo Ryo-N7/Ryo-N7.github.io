@@ -3,7 +3,7 @@ layout: post
 title: "Introducing {tvthemes}: ggplot2 palettes and themes from your favorite TV shows!"
 fb-img: https://i.imgur.com/0t1qEAVh.png
 share-img: https://i.imgur.com/URy88Fl.png
-tags: [ggplot2, color-palettes, ggplot2-themes, TV-shows, data-viz]
+tags: [ggplot2, color-palettes, ggplot2-themes, TV-shows, data-viz, r-bloggers]
 ---
 
 This blog post will provide an intro to {tvthemes} as well as some
@@ -246,7 +246,7 @@ ggplot(diamonds, aes(price, fill = cut)) +
 
 As a fan of the books and medieval heraldry looking around for
 inspiration for the Great Houses of Westeros was quite fun. I hope to
-add others in the future, even smaller houses if they have a great color
+add others in the future (Martell, Arryn), even smaller houses if they have a great color
 scheme, like House Bolton, Dayne, Flint (Widow’s Watch), etc.
 
 ``` r
