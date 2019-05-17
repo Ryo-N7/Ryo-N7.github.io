@@ -48,7 +48,7 @@ _**Currently looking for full-time opportunities/remote work from July 2019!**_
   + Sentiment analysis (tidytext, stringr): Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/)
   + Web scraping (rvest): Example [1](https://ryo-n7.github.io/2017-09-18-global-peace-index/)
   + Statistics/Economics/Econometrics: [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
-  + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr), co-author of various [ACDI/VOCA](http://www.acdivoca.org/) internal packages
+  + Package development: Maintainer & co-author of [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr), Maintainer & author of [tvthemes](https://github.com/Ryo-N7/tvthemes), co-author of various [ACDI/VOCA](http://www.acdivoca.org/) internal packages
 
 * **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
@@ -60,6 +60,8 @@ _**Currently looking for full-time opportunities/remote work from July 2019!**_
   + gganimate/tweenr: Examples [1](https://github.com/Ryo-N7/soccer_ggplots), [2](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
   + cartograms: Example [1](https://twitter.com/R_by_Ryo/status/995173762940063744)
   + highcharts: Example [1](https://ryo-n7.github.io/2018-01-12-japan-postwar-economic-recovery/)
+
+* **Git/Github**
 
 * **SQL (MySQL)**
 
@@ -79,6 +81,7 @@ _**Currently looking for full-time opportunities/remote work from July 2019!**_
 
 ### Communication and teamwork skills
 * Bilingual: **Japanese** and **English**
+* I translate Japan.R and Tokyo.R Meetups and post roundup blogposts! [JapanR 2018](https://ryo-n7.github.io/2018-12-06-japanr-conference-roundup-blog-post/), [TokyoR #76](https://ryo-n7.github.io/2019-03-07-tokyoR-76-roundup/), [TokyoR #77](https://ryo-n7.github.io/2019-04-24-tokyoR-77/).
 * Work experience in a variety of cultures: **Ghana**, **India**, **Germany**, **USA**, **Ireland**, and **Japan**
 * **Research Analyst** in a [National Science Foundation project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1322305&HistoricalAwards=false) while at Chapman University
   + **Web Content Developer** for communicating project progress and findings (as part of the [OCT Group](http://octgroup.org/))
