@@ -485,6 +485,34 @@ test_that("theme_brooklyn99 works", {
 test_that("brooklyn99_pal raises warning with number greater than colors available, x > 10", {
   expect_warning(brooklyn99_pal()(11))
 })
+
+## EDIT (May 18): expanded tests for themes, check for all defaults
+test_that("theme_brooklyn99 works", {
+  thm <- theme_brooklyn99()
+  expect_s3_class(thm, "theme")
+  ## font
+  expect_equal(thm$text$family, "")
+  expect_null(thm$plot.title$family)
+  expect_null(thm$legend.title$family)
+  expect_null(thm$legend.text$family)
+  ## size
+  expect_equal(thm$text$size, 14)
+  expect_equal(thm$plot.title$size, 18)
+  expect_equal(thm$plot.subtitle$size, 12)
+  expect_equal(thm$axis.text$size, 12)
+  expect_equal(thm$axis.title$size, 14)
+  expect_equal(thm$legend.text$size, 9)
+  expect_equal(thm$legend.title$size, 10)
+  ## color
+  expect_equal(thm$text$colour, "#F9FEFF")
+  expect_equal(thm$plot.title$colour, "#F9FEFF")
+  expect_equal(thm$plot.subtitle$colour, "#F9FEFF")
+  expect_equal(thm$axis.text$colour, "#F9FEFF")
+  expect_equal(thm$axis.title$colour, "#F9FEFF")
+  expect_equal(thm$legend.text$colour, "#F9FEFF")
+  expect_equal(thm$legend.title$colour, "#F9FEFF")
+  expect_equal(thm$legend.position, "bottom")
+})
 ```
 
 In addition, I used [codecov](https://codecov.io/) to see the exact
@@ -495,10 +523,10 @@ percentage of my code that my tests covers.
 </center>
 
 Although all of the actual theme or palette functions are “covered” I
-could still add more depth to them. Currently I only have a test that
+could still add more __depth__ to them. Currently I only have a test that
 checks for one component of the theme, the font family, but I should
 expand this to include other key components of the particular theme I’m
-testing for. For example, the exact color of the `panel.background` for
+testing for (EDIT: see above code chunk for the expanded tests, managed to fix some bugs in a few `themes` that I missed, hooray for `testthat`!). For example, the exact color of the `panel.background` for
 `theme_spongBob()` or the correct default size of the title. I also need
 to figure out how to write tests for the `import_*()` functions and the
 add-background-to-plot `paintBikiniBottom()` function!
