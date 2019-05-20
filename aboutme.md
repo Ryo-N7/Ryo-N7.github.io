@@ -15,7 +15,8 @@ My interest in R comes from my belief in the need for more **reproducibility** a
 
 Other interests/hobbys include Soccer/Football, Star Wars, and of course - Data Science!
 
-Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
+* Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
+* Maintainer & author of the [tvthemes](https://github.com/Ryo-N7/tvthemes) package.
 
 Last summer, I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
 
