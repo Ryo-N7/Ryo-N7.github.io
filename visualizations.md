@@ -3,6 +3,11 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [Dot plot] :: Goal Contribution Matrix: Premier League (2018-2019 Season)
+
+- [Gist](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445)
+![](https://i.imgur.com/caJhjr3.png)
+
 #### [Modified Lollipop Chart] :: Tokyo is Warming Up (1876-1886 vs. 2008-2018)!
 
 - [Gist](https://gist.github.com/Ryo-N7/3e14b1ab637ce09091cb9c6c048a14a4)
