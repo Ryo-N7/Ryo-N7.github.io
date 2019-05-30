@@ -11,7 +11,7 @@ Meetup](https://tokyor.connpass.com/event/130254/)! On May 25th, useRs
 from all over Tokyo (and some even from further afield - including Kan
 Nishida of [Exploratory](https://exploratory.io/), all the way from
 California!) flocked to Jimbocho, Tokyo for another jam-packed session
-of \#rstats hosted by [Mitsui Sumitomo Insurance
+of R hosted by [Mitsui Sumitomo Insurance
 Group](https://www.ms-ins.com/english/).
 
 <img src="../assets/2019-04-24-tokyoR-77_files/tokyorlogo.png" style="display: block; margin: auto;" width = "350" />
@@ -162,7 +162,7 @@ Some other resources:
 
 -   [Slides](https://github.com/TomKellyGenetics/TokyoR78)
 
-`@tomkxy` presented in English (he’s a Kiwi that works for RIKEN!) on
+`@tomkxy` presented in English (he’s a Kiwi that works for [RIKEN](http://www.riken.jp/en/)!) on
 vectorizing your code and parallel computing with R. In response to a
 lot of the accusations that “R is slow”, Tom talked about different
 techniques to use to make your R code faster along with some some
@@ -232,12 +232,12 @@ started:
     al.](https://github.com/MatsuuraKentaro/RStanBook)
 
 Just recently [TJ Mahr](https://twitter.com/tjmahr), one of the authors
-of `bayesplot`, presented on the package at Chicago SatRDays. You can
-check out the slides out
+of `bayesplot`, presented on the package at [Chicago SatRDays](https://github.com/satRdays/chicago2019-slides). You can
+check the slides out
 [here](https://www.tjmahr.com/bayesplot-satrdays-2019). The new version
 of `bayesplot`, 1.7.0, will also support tidyselect:
 
-![](https://i.imgur.com/9nMS5nu.png)
+<img src="https://i.imgur.com/9nMS5nu.png" style="display: block; margin: auto;" width = "350" />
 
 Other resources:
 
@@ -274,9 +274,7 @@ help?
 ## Alternatively:
 felp(help)
 felp("help")
-```
 
-``` r
 ## Source code is nicely highlighted by `prettycode`:
 ## Output shortened for brevity...
 grep()?.
@@ -421,7 +419,7 @@ cleaning processes!
 
 Key takeaways:
 
--   Reduce overtime by using the `tidyverse` to clean data and automate
+-   Reduce overtime by using the `tidyverse` to automate
     a lot of the grunt work involved with cleaning and transforming
     marketing data.
 -   Not have to open up extraordinarily large Excel files (as much as
@@ -470,7 +468,7 @@ successes and struggles with R. A fun tradition at `TokyoR` is a
 **Rock-Paper-Scissors** tournament with the prize being free data
 science books!
 
-The prizes for this month was:
+The prize for this month was:
 
 -   [Pandas for
     Everyone](https://github.com/chendaniely/pandas_for_everyone) by
