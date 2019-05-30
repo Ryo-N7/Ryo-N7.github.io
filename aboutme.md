@@ -20,8 +20,6 @@ Other interests/hobbys include Soccer/Football, Star Wars, and of course - Data 
 
 Last summer, I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
 
-_**Currently looking for full-time opportunities/remote work from July 2019!**_
-
 **Contact**: ryonakagawara[at]gmail[dot]com
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
