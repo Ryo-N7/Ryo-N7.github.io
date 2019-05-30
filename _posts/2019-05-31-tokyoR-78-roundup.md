@@ -3,7 +3,7 @@ layout: post
 title: "78th #TokyoR Meetup Roundup!"
 fb-img: https://i.imgur.com/hg9hrZB.png
 share-img: https://i.imgur.com/hg9hrZB.png
-tags: [japan, japanr, japan.r, community, tokyor]
+tags: [japan, japanr, japan.r, community, tokyor, r-bloggers]
 ---
 
 With the arrival of summer, another [TokyoR User
@@ -70,7 +70,7 @@ Markdown, writing your own R code to use within the GUI, creating and
 evaluating models (linear/logistic regression, neural networks, naive
 Bayes, and more), and design of experiments (DOE)!
 
-![](https://i.ytimg.com/vi/7L3hDpLw53I/maxresdefault.jpg)
+<img src="https://i.ytimg.com/vi/7L3hDpLw53I/maxresdefault.jpg" style="display: block; margin: auto;" width = "350" />
 
 You can run it from a variety of set ups from online, offline, on
 `shinyapps.io`, Shiny server, and even on a cloud service like AWS via a
@@ -169,7 +169,7 @@ techniques to use to make your R code faster along with some some
 demonstrations (the RMD can be found
 [here](https://github.com/TomKellyGenetics/TokyoR78/blob/master/demo.Rmd)).
 
-![](https://i.imgur.com/KxNrMZN.png)
+<img src="https://i.imgur.com/KxNrMZN.png" style="display: block; margin: auto;" width = "350" />
 
 One of my key take-aways from this talk was, “Code first, optimize
 later!”. In that it’s important to not get stuck doing premature
@@ -178,7 +178,7 @@ again anyways! Also, sometimes parallel computing may not always be the
 fastest solution due to overhead costs associated with setting up
 clusters and communication between clusters.
 
-![](https://i.imgur.com/dVmhXgE.png)
+<img src="https://i.imgur.com/dVmhXgE.png" style="display: block; margin: auto;" width = "350" />
 
 In addition, the newly developed “Jobs” pane in RStudio 1.2, [released
 last month](https://blog.rstudio.com/2019/04/30/rstudio-1-2-release/),
@@ -218,14 +218,14 @@ reversible jump, HMC, etc.) then we attempt to construct a Markov chain
 such that its equilibrium probability distribution is as close to our
 target distribution as possible by iterating the chain many times.
 
-![](https://i.imgur.com/yuwkwO2.png)
+<img src="https://i.imgur.com/yuwkwO2.png" style="display: block; margin: auto;" width = "350" />
 
 As I’m not familiar with MCMC very much I won’t go into too much detail
 here, however for others unfamiliar with MCMC and Bayesian
 inference,`@ill_identified` provided a nice list of books to get you
 started:
 
--   [Bayesian Data Analysis - Gelman et al.]()
+-   [Bayesian Data Analysis - Gelman et al.](http://www.stat.columbia.edu/~gelman/book/)
 -   [Introduction to Bayesian Statistics with R (Japanese) - Okumura et
     al.](https://github.com/okumuralab/bayesbook)
 -   [Bayesian Modeling with Stan & R (Japanese) - Matsuura et
