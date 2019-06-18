@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing the Copa América: Historical Records, Squad Profiles, and Player Profiles with xG statistics!"
 fb-img: https://i.imgur.com/Elzd0Sc.png
 share-img: https://i.imgur.com/Elzd0Sc.png
-tags: [brazil, messi, ggplot2, web-scraping, copa-america-2019, soccer, futbol, rvest, tidyverse]
+tags: [brazil, messi, ggplot2, web-scraping, copa-america-2019, soccer, futbol, rvest, tidyverse, r-bloggers]
 ---
 
 Another summer and another edition of the Copa América! Along with the
