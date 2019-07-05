@@ -3,7 +3,7 @@ layout: post
 title: "79th #TokyoR Meetup: {tidyr} 1.0.0, RAW image processing, and more!"
 fb-img: https://i.imgur.com/hg9hrZB.png
 share-img: https://i.imgur.com/hg9hrZB.png
-tags: [japan, japanr, japan.r, community, tokyor, tokyo.r]
+tags: [japan, japanr, japan.r, community, tokyor, tokyo.r, r-bloggers]
 ---
 
 As the monsoon rains fall, another [TokyoR User
@@ -138,9 +138,9 @@ the user’s action. Others commented that the very messy nature of real
 world data necessitates the extra layer of complexity in the
 `spread()/gather()/pivot_*()` functions.
 
-It has been speculated that tidyr 1.0.0 was going to be released by the
-useR Conference in early July, however more likely it will be the late
-July if not early August. As this was only a 20 minute talk
+It has been speculated that `tidyr 1.0.0` was going to be released by the
+[useR\! Conference](http://user2019.r-project.org/) in early July, however more likely it will be the late
+July if not early August. As this was only a 20 minute talk, 
 `@yutannihilation` wasn't able to talk about every change such as
 information regarding `specs` but I've listed resources for further
 reading below. Do keep in mind that the vignettes below are still in development and
