@@ -3,7 +3,7 @@ layout: post
 title: "78th #TokyoR Meetup Roundup!"
 fb-img: https://i.imgur.com/hg9hrZB.png
 share-img: https://i.imgur.com/hg9hrZB.png
-tags: [japan, japanr, japan.r, community, tokyor, r-bloggers]
+tags: [japan, japanr, japan.r, community, tokyor, tokyo.r, r-bloggers]
 ---
 
 With the arrival of summer, another [TokyoR User
