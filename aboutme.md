@@ -80,16 +80,14 @@ Last summer, I gave a presentation at the TokyoR User Group on "Visualizing the 
 
 ### Communication and teamwork skills
 * Bilingual: **Japanese** and **English**
-* I translate Japan.R and Tokyo.R Meetups and post roundup blogposts! [JapanR 2018](https://ryo-n7.github.io/2018-12-06-japanr-conference-roundup-blog-post/), [TokyoR #76](https://ryo-n7.github.io/2019-03-07-tokyoR-76-roundup/), [TokyoR #77](https://ryo-n7.github.io/2019-04-24-tokyoR-77/).
+* I translate Japan.R and Tokyo.R Meetups and post roundup blogposts! [JapanR 2018](https://ryo-n7.github.io/2018-12-06-japanr-conference-roundup-blog-post/), [TokyoR #76](https://ryo-n7.github.io/2019-03-07-tokyoR-76-roundup/), [TokyoR #77](https://ryo-n7.github.io/2019-04-24-tokyoR-77/), [TokyoR #78](https://ryo-n7.github.io/2019-05-31-tokyoR-78-roundup/), [TokyoR #79](https://ryo-n7.github.io/2019-07-05-tokyoR-79-roundup/).
 * Work experience in a variety of cultures: **Ghana**, **India**, **Germany**, **USA**, **Ireland**, and **Japan**
 * **Research Analyst** in a [National Science Foundation project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1322305&HistoricalAwards=false) while at Chapman University
   + **Web Content Developer** for communicating project progress and findings (as part of the [OCT Group](http://octgroup.org/))
 * **Marketing** and **Business Development** Intern at [RedNight Consulting](https://www.rednightconsulting.com/) 
-* Football (soccer) player: Maccabi Herzliya U-15s, Sportfreunde Katernberg U-16s
+* **Football** (soccer) player: Maccabi Herzliya U-15s, Sportfreunde Katernberg U-16s
 * Youth Football (Soccer) **Coach** in Ghana, India, and Japan: Under-9s to Under-14s
 * Volunteer **Teacher** in India: Reading comprehension, spelling, grammar, physical education
 * [Blogging about data analysis using R](https://ryo-n7.github.io/index)
-
-
 
 ![](../img/about-me.JPG)
