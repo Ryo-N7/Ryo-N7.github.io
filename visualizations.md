@@ -5,8 +5,17 @@ title: Visualizations Gallery
 
 #### [Dot plot] :: Goal Contribution Matrix: Premier League (2018-2019 Season)
 
+- [Blog Post](https://ryo-n7.github.io/2019-06-18-visualize-copa-america/)
+![](..\assets\2019-06-18-visualize-copa-america_files\unnamed-chunk-51-1.png)
+
+***
+
+#### [Dot plot] :: Goal Contribution Matrix: Premier League (2018-2019 Season)
+
 - [Gist](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445)
-![](https://i.imgur.com/caJhjr3.png)
+![](https://i.imgur.com/Vr7VvJp.png)
+
+***
 
 #### [Modified Lollipop Chart] :: Tokyo is Warming Up (1876-1886 vs. 2008-2018)!
 
