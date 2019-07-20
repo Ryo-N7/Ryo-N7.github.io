@@ -3,7 +3,7 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
-#### [Dot plot] :: Goal Contribution Matrix: Premier League (2018-2019 Season)
+#### [Dot plot] :: Expected vs. Actuals Goals for Select Group of South American Players (2018-2019 Season)
 
 - [Blog Post](https://ryo-n7.github.io/2019-06-18-visualize-copa-america/)
 ![](..\assets\2019-06-18-visualize-copa-america_files\unnamed-chunk-51-1.png)
