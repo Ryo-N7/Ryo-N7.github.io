@@ -471,8 +471,7 @@ translating to the language you want for the variable names, value
 names, help files, etc. After creating the spec file you just have to
 add it as an argument into the
 `datalang::translate_data()/translate_folder()` function and you’ll have
-a translated data set! The [R para Ciencia de Datos Twitter]() also hosts
-a Spanish version of \#TidyTuesday called \#DatosDeMiercoles so check it
+a translated data set! The [R para Ciencia de Datos Twitter](https://twitter.com/R4DS_es) also hosts a Spanish version of \#TidyTuesday called \#DatosDeMiercoles so check it
 out!
 
 Another thought I had after this presentation was that maybe this might
