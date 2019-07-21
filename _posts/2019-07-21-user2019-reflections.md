@@ -164,20 +164,20 @@ The different possible outputs we might want from a Shiny app are:
 From there Joe talks about how there are a number of options available
 such as :
 
-1. Copy-paste: Have a Shiny app **and** RMD report
+1.  Copy-paste: Have a Shiny app **and** RMD report
     - Pros: Copy-pasted code is high fidelity and easy to understand
     - Cons: Two copies must be kept in sync and method will not work for
       more dynamic apps
 
-2. Lexical analysis: automatically generate scripts from app source
-   code (static analysis and heuristics)
+2.  Lexical analysis: automatically generate scripts from app source
+    code (static analysis and heuristics)
     - Pros: Easy to add to app
     - Cons: Not ALL apps can be translated automatically
     - Generated code may **not** be camera ready as it may contain lots of
       code relating to the Shiny app’s structure
 
-3. Programmatic: Meta-programming techniques to write code for **dual**
-   purposes (execute interactive **and** export static)
+3.  Programmatic: Meta-programming techniques to write code for **dual**
+    purposes (execute interactive **and** export static)
     - Pros: Flexible
     - Cons: **High** learning curve and significant effort needed to adapt
       old Shiny apps
@@ -189,8 +189,8 @@ help of [Carson Sievert](https://twitter.com/cpsievert) created the…
 
 There are four main steps to follow when using {shinymeta}:
 
-1. Identify the domain logic inside the code and separate it from
-   Shiny’s reactive structure
+1.  Identify the domain logic inside the code and separate it from
+    Shiny’s reactive structure
     - Activate meta mode with `withMetaMode()` or `expandChain()`
     - Use `metaReactive()` to create a `reactive()` that returns a code
       expression
@@ -201,16 +201,16 @@ There are four main steps to follow when using {shinymeta}:
 
 <img src="../assets/2019-07-21-user2019-reflections_files/shinymeta.PNG" style="display: block; margin: auto;" width = "450" />
 
-2. Within the domain logic you identified, identify references to
-   reactive values and expressions that need to be replaced with static
-   values and static code
+2.  Within the domain logic you identified, identify references to
+    reactive values and expressions that need to be replaced with static
+    values and static code
     - De-reference reactive values with `!!`
     - Replace reactive values with the **actual** values
 
 <img src="../assets/2019-07-21-user2019-reflections_files/shinymeta2.PNG" style="display: block; margin: auto;" width = "450" />
 
-3. At run time, choose **which** pieces of domain logic to expose to
-   the user
+3.  At run time, choose **which** pieces of domain logic to expose to
+    the user
     - `expandChain()`: turns `!!` code into variable and introduces code
       snippet above the function
     - The chain of variable declarations grow upwards as you sequentially
@@ -218,7 +218,7 @@ There are four main steps to follow when using {shinymeta}:
 
 <img src="../assets/2019-07-21-user2019-reflections_files/shinymeta3.PNG" style="display: block; margin: auto;" width = "450" />
 
-4. Present the code to the user!
+4.  Present the code to the user!
     - Use `outputCodeButton()` to add a button for a specific output
     - Use `displayCodeModal()` to display underlying code
     - Use `downloadButton()` to allow people to click and download a R
