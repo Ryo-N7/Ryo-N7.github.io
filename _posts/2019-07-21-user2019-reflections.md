@@ -100,10 +100,8 @@ functions with `list()`.
 
 <img src="../assets/2019-07-21-user2019-reflections_files/summarize-at.PNG" style="display: block; margin: auto;" width = "450" />
 
-Romain also talked about the {dance} package which is mainly used to
-experiment and test out possible new {dplyr} functions by leveraging the
-relatively new {vctrs} and {rlang} packages’ features. The package has a
-theme of using famous dance moves as the function names!
+Romain also talked about the [{dance}](https://github.com/romainfrancois/dance) package which is mainly used to experiment and test out possible new {dplyr} functions by leveraging the
+relatively new [{vctrs}](https://github.com/r-lib/vctrs) and [{rlang}](https://rlang.r-lib.org/) packages’ features. The package has a theme of using famous dance moves as the function names!
 
 <img src="../assets/2019-07-21-user2019-reflections_files/dance-pkg.PNG" style="display: block; margin: auto;" width = "450" />
 
@@ -126,8 +124,7 @@ computing in a data mask.
 <img src="../assets/2019-07-21-user2019-reflections_files/data-mask2.PNG" width="49%" />
 </p>
 
-This is where `tidyeval` comes into play via {rlang} for flexible and
-robust programming in the tidyverse. However {rlang} confused a lot of
+This is where `tidyeval` comes into play via [{rlang}](https://rlang.r-lib.org/) for flexible and robust programming in the tidyverse. However {rlang} confused a lot of
 people due to the strange new syntax it introduced such as the `!!`,
 `!!!`, and `enquo()`. Also, it introduced new concepts such as
 quasi-quotation and quosures that made it hard to learn for people
@@ -305,35 +302,29 @@ the various Shiny packages that can extend the functionality of your
 Shiny applications!
 
 The first and probably the most well-known of this group is the
-{shinyWidgets} package which gives you a variety of cool custom widgets
-that you can add to make your Shiny app via JavaScript and CSS.
+[{shinyWidgets}](https://github.com/dreamRs/shinyWidgets) package which gives you a variety of cool custom widgets that you can add to make your Shiny app via JavaScript and CSS.
 
 <img src="../assets/2019-07-21-user2019-reflections_files/shinywidgets.PNG" style="display: block; margin: auto;" width = "350" />
 
 Next, wondering about how exactly users interacted with their Shiny apps
 and whether they used the included widgets the dreamRs team created the
-{shinylogs} package. This packages records any and all inputs that are
-changed as well as the outputs and errors. This is done by storing the
+[{shinylogs}](https://github.com/dreamRs/shinylogs) package. This packages records any and all inputs that are changed as well as the outputs and errors. This is done by storing the
 JavaScript objects via the
 [localForage](https://github.com/localForage/localForage) JavaScript
 library. With this in place shiny developers can see the number of
 connections per day, the user agent family, most viewed tabs, etc.
 
-The {shinybusy} package gives a user feedback when a server operation
-running or busy such as a spinning circle, a moving bar, or even any
+The [{shinybusy}](https://github.com/dreamRs/shinybusy) package gives a user feedback when a server operation running or busy such as a spinning circle, a moving bar, or even any
 kind of gif you choose!
 
 <img src="../assets/2019-07-21-user2019-reflections_files/shinybusy-gif.gif" style="display: block; margin: auto;" width = "550" />
 
-Last but not least is the {shinymanager} package which allows you to
-administrate and manage who can access your application and protects the
-source code of your app until authentication is successful!
+Last but not least is the [{shinymanager}](https://github.com/datastorm-open/shinymanager) package which allows you to administrate and manage who can access your application and protects the source code of your app until authentication is successful!
 
 <img src="../assets/2019-07-21-user2019-reflections_files/shinymanager.PNG" style="display: block; margin: auto;" width = "350" />
 
 The dreamRs organization are also the organization that created the
-{esquisse} package that lets you interactively make ggplot2 graphs with
-an RStudio addin!
+[{esquisse}](https://github.com/dreamRs/esquisse) package that lets you interactively make ggplot2 graphs with an RStudio addin!
 
 Talking about packages leads me to the next section…
 
@@ -386,8 +377,8 @@ in the package.
 
 <img src="../assets/2019-07-21-user2019-reflections_files/datatableOPT.PNG" style="display: block; margin: auto;" width = "350" />
 
-At the end of the talk Arun thanked the 69 people (among them Michael
-Chirico, Philippe Chataignon, Jan Gorecki, etc.) who have contributed a
+At the end of the talk Arun thanked the 69 people (among them [Michael
+Chirico](https://twitter.com/michael_chirico), [Philippe Chataignon](https://twitter.com/phchataignon), Jan Gorecki, etc.) who have contributed a
 lot to what {data.table} is today!
 
 {polite} - Dmytro Perepolkin
@@ -404,17 +395,16 @@ to hear that the creator was giving a LT on it! [Dmytro](https://twitter.com/dmi
 
 Secondly, you should always check the `robots.txt` for the website which is a file that
 stipulates various conditions for scraping activity. This can be done
-via `@hrbrmstr`’s {robotstxt} package or by checking the output from
-`polite::bow("theWebsiteYouAreScraping.com")`(`polite::bow()` function
+via `@hrbrmstr`’s [{robotstxt}](https://github.com/ropenscilabs/robotstxt) package or by checking the output from `polite::bow("theWebsiteYouAreScraping.com")`(`polite::bow()` function
 is what establishes the {polite} session)!
 
 After getting permission you also need to limit the rate at which you
 scrape, you don’t want to overload the servers of the website you are
-using, so **no** parallelization! This can be done with the {ratelimitr}
+using, so **no** parallelization! This can be done with the [{ratelimitr}](https://github.com/tarakc02/ratelimitr)
 package, `purrr::slowly()` while the {polite} package automatically
 delays by 5 seconds when you run `polite::scrape()`. 
 
-After scraping, you should definitely cache your responses with {memoise}, which is what is used inside the `polite::scrape()` function. Also, wrap your scraper function
+After scraping, you should definitely cache your responses with [{memoise}](https://github.com/r-lib/memoise), which is what is used inside the `polite::scrape()` function. Also, wrap your scraper function
 with something like `purrr:::safely()` so it returns a list of two
 components, a “result” for successes and “error” object for errors in
 your scraping.
