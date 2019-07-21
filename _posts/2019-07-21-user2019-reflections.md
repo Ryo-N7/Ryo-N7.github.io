@@ -27,9 +27,7 @@ You can find slides and videos (in a week or so) in:
 As usual there were many talks that I didn’t get to go to as there are
 around 3\~5 tracks across different rooms featuring talks on a certain
 aspect of R such as Shiny, Modelling, Data handling, DevOps, Education,
-etc. It also goes without saying that the talks highlighted below are
-mainly based on **my** interests so they may not be all that interesting
-to you specifically. In the coming weeks I’ll also add video links to
+etc. In the coming weeks I’ll also add video links to
 the presentations below when they become available from R Consortium’s
 Youtube channel.
 
@@ -558,7 +556,7 @@ usually surrounded by other people and I don’t want to interrupt their
 conversation and… “Oh no it’s time for the next session!”, etc.)!
 
 During a post-conference dinner I had with a dozen or so random
-R users that were still in Toulouse we all talked about how important the
+R users that were still in Toulouse (including [Diane Cook](https://twitter.com/visnut), [Will Chase](https://twitter.com/W_R_Chase), [Saras Windecker](https://twitter.com/smwindecker), [Irene Steves](https://twitter.com/i_steves), [Alimi Eyitayo](https://twitter.com/alimieyitayo) among others - and some that I didn't even get to talk to because our group was so big) we all talked about how important the
 **community** is. With how open everything is in regards to the talks
 being recorded and the materials being put online you don’t necessarily
 have to come all the way to the conference to be able to **learn** the material.
