@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My #useR!2019 Highlights & Experience: Shiny, R Community, {packages}, and more!"
+title: "My useR! 2019 Highlights & Experience: Shiny, R Community, {packages}, and more!"
 fb-img: https://i.imgur.com/xTiqEIN.jpg
 share-img: https://i.imgur.com/xTiqEIN.jpg
 tags: [tidyverse, user2019, useR2019, shiny, shinymeta, data.table, rstats]
