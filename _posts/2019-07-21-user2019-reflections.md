@@ -386,7 +386,7 @@ to hear that the creator was giving a LT on it! [Dmytro](https://twitter.com/dmi
 
 Secondly, you should always check the `robots.txt` for the website which is a file that
 stipulates various conditions for scraping activity. This can be done
-via `@hrbrmstr`’s [{robotstxt}](https://github.com/ropenscilabs/robotstxt) package or by checking the output from `polite::bow("theWebsiteYouAreScraping.com")`(`polite::bow()` function
+via [Peter Meissner](https://twitter.com/peterlovesdata)'s [{robotstxt}](https://github.com/ropenscilabs/robotstxt) package or by checking the output from `polite::bow("theWebsiteYouAreScraping.com")`(`polite::bow()` function
 is what establishes the {polite} session)!
 
 After getting permission you also need to limit the rate at which you
