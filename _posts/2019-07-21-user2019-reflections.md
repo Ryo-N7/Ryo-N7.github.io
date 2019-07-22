@@ -528,7 +528,7 @@ weekend to explore Toulouse! I was staying near the Capitole and as
 Toulouse is pretty walkable I didn’t have to use public transportation
 at all during my stay. I think I just about walked every street in the
 city center! Unfortunately, the Musee de Augustins was closed but I was
-able to visit most of the other sites! Below are some pictures:
+able to visit most of the other sites! My favorite sights were the [Couvent des Jacobins](https://www.jacobins.toulouse.fr/) (pictured bottom-left) and the [Musée Saint-Raymond](https://www.saintraymond.toulouse.fr/), an archeological museum full of Roman/Greek/Celtic artifacts! Below are some pictures:
 
 <p float="left" align="center">
 <img src="../assets/2019-07-21-user2019-reflections_files/tour1.PNG" width="49%" />
