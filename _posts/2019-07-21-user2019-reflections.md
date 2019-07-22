@@ -106,7 +106,7 @@ relatively new [{vctrs}](https://github.com/r-lib/vctrs) and [{rlang}](https://r
 Reusing tidyverse code - Lionel Henry
 -------------------------------------
 
-* [Slides](https://user2019.r-project.org/static/pres/t258268.pdf)
+* [Slides](https://speakerdeck.com/lionelhenry/reusing-tidyverse-code)
 
 [Lionel Henry](https://twitter.com/_lionelhenry) talked about programming using {tidyverse} functions. As an
 introduction he went over data masking in {dplyr} and how it is
