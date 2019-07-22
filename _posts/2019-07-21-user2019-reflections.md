@@ -127,7 +127,7 @@ people due to the strange new syntax it introduced such as the `!!`,
 `!!!`, and `enquo()`. Also, it introduced new concepts such as
 quasi-quotation and quosures that made it hard to learn for people
 especially with those without a programming background. Acknowledging
-this obstacle, `{``{` arg `}``}` was introduced to make creating tidyeval
+this obstacle, `{``{`  `}``}` was introduced to make creating tidyeval
 functions easier. The new `{``{` `}``}` (read as “curly-curly”) operator was
 inspired by the {glue} package and is a short cut for `!!enquo(var)`.
 
