@@ -378,7 +378,7 @@ lot to what {data.table} is today!
 * [Slides](https://github.com/dmi3kno/user19-polite) 
 * [{polite}](https://github.com/dmi3kno/polite)
 
-The {polite} package is one I've been used for over a year now (you
+The {polite} package is one I've been using for over a year now (you
 might’ve seen me use it in my soccer or TV data viz) and I was delighted
 to hear that the creator was giving a LT on it! [Dmytro](https://twitter.com/dmi3k) began with a few do's and don'ts concerning user-agents and being explicit about them:
 
