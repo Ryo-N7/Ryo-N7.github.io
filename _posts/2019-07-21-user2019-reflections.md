@@ -36,7 +36,7 @@ Let’s begin!
 Programming
 ===========
 
-Enhancements to data tidying: Hadley Wickham
+Enhancements to data tidying - Hadley Wickham
 --------------------------------------------
 
 Acknowledging the difficulty of `spread()` and `gather()` you might have heard of the creation of the `pivot_wider()` and `pivot_longer()` functions in recent
@@ -56,7 +56,7 @@ of code and explanatory graphics that may aid you in visualizing how the
 new functions work. You can also read a short English summary of the
 talk [here](https://ryo-n7.github.io/2019-07-05-tokyoR-79-roundup/).
 
-n() cool dplyr things: Romain Francois
+n() cool dplyr things - Romain Francois
 --------------------------------------
 
 * [Slides](https://speakerdeck.com/romainfrancois/n-cool-number-dplyr-things)
@@ -372,7 +372,7 @@ At the end of the talk Arun thanked the 69 people (among them [Michael
 Chirico](https://twitter.com/michael_chirico), [Philippe Chataignon](https://twitter.com/phchataignon), Jan Gorecki, etc.) who have contributed a
 lot to what {data.table} is today!
 
-{polite} - Dmytro Perepolkin
+Be {polite} on the web! - Dmytro Perepolkin
 ----------------------------
 
 * [Slides](https://github.com/dmi3kno/user19-polite) 
@@ -405,7 +405,7 @@ You can also read his blog post on the talk
 bit more about the `polite::use_manners()` function that allows you to
 include {polite} scrapers into your own R packages.
 
-goodpractice: good pkg development Hannah Frick
+{goodpractice}: good package development - Hannah Frick
 -----------------------------------------------
 
 * [Slides](https://github.com/hfrick/presentations/blob/master/2019-07-11_goodpractice/gp_lightning.pdf)
