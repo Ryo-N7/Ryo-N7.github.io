@@ -10,6 +10,13 @@ title: Visualizations Gallery
 
 ***
 
+#### [plots] :: {tvthemes} package - `ggplot2` themes & palettes from TV shows!
+
+- [Blog Post](https://ryo-n7.github.io/2019-05-16-introducing-tvthemes-package/)
+![](https://i.imgur.com/IN7DE5d.png)
+
+***
+
 #### [Dot plot] :: Goal Contribution Matrix: Premier League (2018-2019 Season)
 
 - [Gist](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445)
