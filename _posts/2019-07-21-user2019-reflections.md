@@ -39,8 +39,8 @@ Programming
 Enhancements to data tidying - Hadley Wickham
 --------------------------------------------
 
-Acknowledging the difficulty of `spread()` and `gather()` you might have heard of the creation of the `pivot_wider()` and `pivot_longer()` functions in recent
-months. You really should take a look at the work-in-progress
+Acknowledging the difficulty of `spread()` and `gather()`, the tidyverse team created the `pivot_wider()` and `pivot_longer()` functions. You might have heard of them in recent
+months or even participated in suggesting a name for them! You really should take a look at the work-in-progress
 [Vignette](https://tidyr.tidyverse.org/dev/articles/pivot.html) for a comprehensive understanding of the new functions but the
 talk featured some live-coding by Hadley
 ([Code](https://gist.github.com/hadley/eb5c97bfbf257d133a7337b33d9f02d1))
