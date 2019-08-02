@@ -3,7 +3,7 @@ layout: post
 title: "80th #TokyoR Meetup Roundup: Econometrics vs. ML, Python with R, & Translating tidyverse.org into Japanese!"
 fb-img: https://i.imgur.com/hg9hrZB.png
 share-img: https://i.imgur.com/hg9hrZB.png
-tags: [japan, japanr, japan.r, community, tokyor, tokyo.r]
+tags: [japan, japanr, japan.r, community, tokyor, tokyo.r, r-bloggers]
 ---
 
 Within a typhoon, another TokyoR Meetup! … well not really it turned out
