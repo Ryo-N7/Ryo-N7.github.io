@@ -1223,7 +1223,8 @@ Some people you may want to follow for inspiration:
 -   And many many more…
 
 If I can refine/improve upon any of the above then I’ll show my own
-version of these in a future part.
+version of these in a future part. Anything new whether its a standalone viz or a full blog post will be linked with the code [here](https://github.com/Ryo-N7/soccer_ggplots) on my __soccer\_ggplot__ GitHub
+repository!
 
 If you want to iterate this process over many players/teams/seasons
 there are ways to do so using the `purrr::map()` family of functions or
@@ -1239,7 +1240,7 @@ You may also want to have a unified theme to all your plots, I talk
 about creating your own {ggplot2} themes
 [here](https://ryo-n7.github.io/2019-05-16-introducing-tvthemes-package/)
 and there’s other great resources like
-[this](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/) that you might want to read.
+[this](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/) that you might want to read. 
 
 Part 2 will be more xG plots and also on plotting out the data on soccer
 pitches using packages like
