@@ -52,6 +52,9 @@ Last summer, I gave a presentation at the TokyoR User Group on "Visualizing the 
 * **Graphical visualization**:
   + ggplot2: Example [1](https://ryo-n7.github.io/2017-10-22-thrice-part-3/), [2](https://ryo-n7.github.io/2017-09-18-global-peace-index/), [3](https://ryo-n7.github.io/2017-10-10-thrice-part-2/), [4](https://ryo-n7.github.io/2018-04-02-sakura-surprise/),
   [5](https://ryo-n7.github.io/2018-10-04-visualize-weather-in-japan/),
+  [6](https://ryo-n7.github.io/2019-05-16-introducing-tvthemes-package/),
+  [7](https://ryo-n7.github.io/2019-01-11-visualize-asian-cup/),
+  [8](https://ryo-n7.github.io/2019-02-15-visualize-brooklyn-nine-nine/),
   [Tidy Tuesday (Weekly Data Viz)](https://github.com/Ryo-N7/tidy_tuesday)
   + Various soccer/football viz: Examples [soccer_ggplots Github repo](https://github.com/Ryo-N7/soccer_ggplots)
   + Shiny: Example [1](https://ryo-n7.shinyapps.io/tokyo_weather_shiny_app/)
@@ -84,9 +87,9 @@ Last summer, I gave a presentation at the TokyoR User Group on "Visualizing the 
 * Work experience in a variety of cultures: **Ghana**, **India**, **Germany**, **USA**, **Ireland**, and **Japan**
 * **Research Analyst** in a [National Science Foundation project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1322305&HistoricalAwards=false) while at Chapman University
   + **Web Content Developer** for communicating project progress and findings (as part of the [OCT Group](http://octgroup.org/))
-* **Marketing** and **Business Development** Intern at [RedNight Consulting](https://www.rednightconsulting.com/) 
-* **Football** (soccer) player: Maccabi Herzliya U-15s, Sportfreunde Katernberg U-16s
+* **Football (soccer) player**: Maccabi Herzliya U-15s, Sportfreunde Katernberg U-16s
 * Youth Football (Soccer) **Coach** in Ghana, India, and Japan: Under-9s to Under-14s
+* **Marketing** and **Business Development** Intern at [RedNight Consulting](https://www.rednightconsulting.com/) 
 * Volunteer **Teacher** in India: Reading comprehension, spelling, grammar, physical education
 * [Blogging about data analysis using R](https://ryo-n7.github.io/index)
 
