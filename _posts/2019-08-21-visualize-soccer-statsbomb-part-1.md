@@ -309,7 +309,7 @@ Now that we’ve got a clean data set it might be a good idea to save it.
 I use the `here::here()` function for setting the path root to the
 top-level of the current project directory and then jumping into the
 “data” folder. Read this blog post
-[here](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/)
+[here](https://malco.io/2018/11/05/why-should-i-use-the-here-package/)
 for more info on why it’s useful to do so.
 
 ``` r
@@ -1239,8 +1239,7 @@ You may also want to have a unified theme to all your plots, I talk
 about creating your own {ggplot2} themes
 [here](https://ryo-n7.github.io/2019-05-16-introducing-tvthemes-package/)
 and there’s other great resources like
-[this](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/)
-and [this]() that you might want to read.
+[this](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/) that you might want to read.
 
 Part 2 will be more xG plots and also on plotting out the data on soccer
 pitches using packages like
