@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing Soccer with StatsBomb Data and R, Part 1: Simple xG and Pass Partner Plots!"
 fb-img: https://i.imgur.com/K2AMWnG.png
 share-img: https://i.imgur.com/K2AMWnG.png
-tags: [ggplot2, soccer, football, StatsBomb, data-viz, football-analytics, soccer-analytics]
+tags: [ggplot2, soccer, football, StatsBomb, data-viz, football-analytics, soccer-analytics, r-bloggers]
 ---
 
 This will be **Part 1** of what I hope to be a multi-part series of
