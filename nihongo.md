@@ -3,6 +3,9 @@ layout: page
 title: ブログ（日本語）
 ---
 
+Tokyo.RとJapan.R の [まとめ記事](https://github.com/Ryo-N7/TokyoR_Notes)
+
+
 COMPLETED:
 
 - June 7th: Webスクレーピングから可視化まで、Tidyverseパッケージで探索データ解析（EDA）!: <https://ryo-n7.github.io/2018-06-07-global-peace-index-JP/>
