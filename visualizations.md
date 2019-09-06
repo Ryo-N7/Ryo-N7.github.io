@@ -3,6 +3,11 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [Infographic] :: El Clasico (Dec. 10, 2011) Match Summary Graphic
+
+- [Blog Post](https://ryo-n7.github.io/2019-08-21-visualize-soccer-statsbomb-part-1/)
+<img src="https://i.imgur.com/K2AMWnG.png" style="display: block; margin: auto;" align ="middle" width = "500" />
+
 #### [Dot plot] :: Expected vs. Actuals Goals for Select Group of South American Players (2018-2019 Season)
 
 - [Blog Post](https://ryo-n7.github.io/2019-06-18-visualize-copa-america/)
