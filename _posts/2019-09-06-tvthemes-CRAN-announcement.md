@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "tvthemes 1.0.0 is on CRAN: code improvements, Kim Possible, Stannis Baratheon, Hilda palettes/themes and more!"
+title: "{tvthemes 1.0.0} is on CRAN: Code improvements, Kim Possible, Stannis Baratheon, Hilda palettes/themes, and more!"
 fb-img: https://i.imgur.com/YuOfRBE.png
 share-img: https://i.imgur.com/YuOfRBE.png
 tags: [ggplot2, color-palettes, ggplot2-themes, TV-shows, data-viz]
