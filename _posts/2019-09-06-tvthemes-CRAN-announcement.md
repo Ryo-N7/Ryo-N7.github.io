@@ -42,8 +42,8 @@ additions of interest, new palettes and themes!
 <thead>
 <tr class="header">
 <th>TV Show</th>
-<th>Palette(s)</th>
-<th>Theme(s)</th>
+<th>New Palette(s)</th>
+<th>New Theme(s)</th>
 </tr>
 </thead>
 <tbody>
