@@ -307,6 +307,12 @@ think I had the `gh::gh()` credentials set up properly. Instead, I just
 followed along Jim’s video as he checked items off on the Github issue
 on his screen.
 
+<img src="https://i.imgur.com/WGiEzUb.png" style="display: block; margin: auto;" align ="middle" width = "450" />
+
+Using the different `check_*()` functions allow you to test installing/building your package across different operating systems and it's very useful. They also send you an email so you can check the full build log at your convenience.
+
+<img src="https://i.imgur.com/tW0V36S.png" style="display: block; margin: auto;" align ="middle" width = "450" />
+
 A problem I came up against initially was that I was using the {emo} and
 {patchwork} packages in the example plots for the README and as you
 might know, having packages via “remotes”/GitHub aren’t allowed as
