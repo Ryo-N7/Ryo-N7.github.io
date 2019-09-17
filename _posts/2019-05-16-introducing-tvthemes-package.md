@@ -6,7 +6,7 @@ share-img: https://i.imgur.com/URy88Fl.png
 tags: [ggplot2, color-palettes, ggplot2-themes, TV-shows, data-viz, r-bloggers]
 ---
 
-**A lot has changed with `tvthemes 1.0.0` so please check the [README section](https://github.com/Ryo-N7/tvthemes#tvthemes-100-major-changes) on the GitHub Repo along with this blog post!**
+**A lot has changed with `tvthemes 1.0.0` so please check the [CRAN announcement](https://ryo-n7.github.io/2019-09-06-tvthemes-CRAN-announcement/) along with this blog post!**
 
 This blog post will provide an intro to {tvthemes} as well as some
 lessons learned (codecov, Github badges, creating a hexsticker,
