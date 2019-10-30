@@ -3,7 +3,7 @@ layout: post
 title: "81st TokyoR Meetup Roundup: A Special Session in {Shiny}!"
 fb-img: https://i.imgur.com/hg9hrZB.png
 share-img: https://i.imgur.com/hg9hrZB.png
-tags: [japan, japanr, japan.r, community, tokyor, tokyo.r]
+tags: [japan, japanr, japan.r, community, tokyor, tokyo.r, r-bloggers]
 ---
 
 As another sweltering summer ends, another TokyoR Meetup! With global
@@ -20,7 +20,7 @@ In line with my previous round up posts:
 
 -   [TokyoR
     \#76](https://ryo-n7.github.io/2019-03-07-tokyoR-76-roundup/)
--   [TokyoR \#77](https://ryo-n7.github.io/2019-04-24-tokyoR-77/))
+-   [TokyoR \#77](https://ryo-n7.github.io/2019-04-24-tokyoR-77/)
 -   [TokyoR
     \#78](https://ryo-n7.github.io/2019-05-31-tokyoR-78-roundup/)
 -   [TokyoR
@@ -74,7 +74,7 @@ and free up time for other users’ tasks and reduce their waiting time.
 <img src="../assets/2019-10-30-tokyoR-81-roundup_files/async-programming.PNG" style="display: block; margin: auto;" width = "350" />
 
 The `plan()` function allows you to choose from a variety of options for
-launching/attaching R processes. The choices are `multosession`,
+launching/attaching R processes. The choices are `multisession`,
 `multicore`, and `multiprocess`. You can read more about it
 [here](https://rstudio.github.io/promises/articles/futures.html#choosing-a-launch-method).
 
@@ -82,7 +82,7 @@ There’s not a whole lot you need to do to grab the results from another
 process as all the `render_*()` are able to take “promise” objects. As a
 reminder, a “promise” in this context is an object that takes a result
 from an asynchronous process that happens later/slightly later. A
-“promise” objects takes the result from a {future} code result and it
+“promise” object takes the result from a {future} code result and it
 will wait until a result appears from another process finishes running
 the code.
 
@@ -115,7 +115,7 @@ Although the above code works in both cases, for some functions such as
 output can **not** be returned by the main process. The solution is to
 use the “promise pipe” to make sure that `plot()`/`print()` is being run
 by the main process instead. On the other hand you can still use
-promises within `observer*()` and `eventReactive*()`/`reactive()` code,
+promises within `observe*()` and `eventReactive*()`/`reactive()` code,
 you just have to remember to use the “promise pipes”.
 
 <img src="../assets/2019-10-30-tokyoR-81-roundup_files/future-reactive-shiny.PNG" style="display: block; margin: auto;" width = "350" />
@@ -141,7 +141,7 @@ from other packages such as {DT} and {shinycssloaders}, `@Np_Ur` took us
 through the code and showed us completed Shiny apps for each step of the
 way.
 
-<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shiny-example-npur.PNG" style="display: block; margin: auto;" width = "350" />
+<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shiny-example-npur.PNG" style="display: block; margin: auto;" width = "450" />
 
 I recommend going through his slides (also hosted on Shiny) as well as
 checking out the code for each of the Shiny apps he made for all
@@ -204,7 +204,7 @@ function.
 -   [Slides](https://speakerdeck.com/okiyuki99/190928-tokyor81-shiny)
 
 `@okiyuki` presented on the various R packages used for the software
-engineering that goes into supporting Shiny apps.
+engineering that supports Shiny apps.
 
 -   [{memoise}](https://github.com/r-lib/memoise): Caches data when
     certain function is run for the first time (useful for dashboard
@@ -220,10 +220,10 @@ engineering that goes into supporting Shiny apps.
 -   [{shinyloadtest}](https://rstudio.github.io/shinyloadtest/): Helps
     analyze load tests and Shiny app performance with multiple users.
 
-<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shinyloadtest.png" style="display: block; margin: auto;" width = "350" />
+<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shinyloadtest.png" style="display: block; margin: auto;" width = "450" />
 
 `@okiyuki` also talked about some of his personal struggles and pitfalls
-that he’s come across when building Shiny apps at work. These include:
+that he has come across when building Shiny apps at work. These include:
 
 -   Deployed on ShinyServer but there was an error! Even though it was
     working fine a minute ago!
@@ -264,7 +264,7 @@ presentation, `@igjit` decided to base it on “Adobe Lightroom”, and call
 it the {shinyroom} package. You can take a look at it
 [here](https://shinyroom.herokuapp.com/).
 
-<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shinyroom.PNG" style="display: block; margin: auto;" width = "350" />
+<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shinyroom.PNG" style="display: block; margin: auto;" width = "450" />
 
 In terms of actually building the Shiny app he used the {imager} package
 for the actual photo editing functionality while {golem} was used as the
@@ -300,7 +300,7 @@ with very dynamic Shiny apps with many different features. With the
 {shinymeta} package you can now download R scripts highlight the steps
 you took in interacting with the app.
 
-<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shinymeta.PNG" style="display: block; margin: auto;" width = "350" />
+<img src="../assets/2019-10-30-tokyoR-81-roundup_files/shinymeta.PNG" style="display: block; margin: auto;" width = "450" />
 
 The next step that is currently in development is to output an `.RMD`
 report among a number of other features as the package is still in the
