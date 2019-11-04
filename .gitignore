@@ -8,3 +8,4 @@ _site
 Thumbs.db
 ehthumbs.db
 .Rproj.user
+_posts/*.rmd
