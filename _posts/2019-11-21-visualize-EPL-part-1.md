@@ -1059,8 +1059,7 @@ Here’s an example:
 In recent games I also started taking notes during the match and then
 posting an edited version under the report viz. Basically, a rough
 bullet-point summary of what I saw, some random thoughts, and trying to
-find patterns among my match notes. Here’s an example from the Liverpool
-- City game:
+find patterns among my match notes. Here’s an example from the Liverpool vs. City game:
 
 <img src="../assets/2019-11-21-visualize-EPL-part-1_files/lfc-city-notes.PNG" style="display: block; margin: auto;" align ="middle" width = "600" />
 
