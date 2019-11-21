@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing the Premier League So Far, Part 1: Overview with xPts Tables and xG Plots"
 fb-img: https://i.imgur.com/8f94CWK.png
 share-img: https://i.imgur.com/8f94CWK.png
-tags: [ggplot2, soccer, football, data-viz, football-analytics, soccer-analytics]
+tags: [ggplot2, soccer, football, data-viz, football-analytics, soccer-analytics, r-bloggers]
 ---
 
 It’s the November International Break and we’re around a third of the
