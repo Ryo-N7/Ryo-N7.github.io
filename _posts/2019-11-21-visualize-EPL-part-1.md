@@ -1096,5 +1096,5 @@ As mentioned, the next part will take a look at team stats based on
 different game situations like from open play, free kicks, and corners.
 Here’s a sample (still very much a **work-in-progress**):
 
-<img src="../assets/2019-11-21-visualize-EPL-part-1_files/setpiece_draft.PNG"
+<img src="../assets/2019-11-21-visualize-EPL-part-1_files/setpiece_draft.png"
 style="display: block; margin: auto;" align ="middle" width = "600" />
