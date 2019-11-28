@@ -30,6 +30,10 @@ code to get the data and create the viz in a separate file this time. As
 always all the data is gathered with R, tidied with the {tidyverse}, and
 the viz are created with {ggplot2} and friends.
 
+-   [Part 1: Overview with xPts Tables and xG Plots](https://ryo-n7.github.io/2019-11-21-visualize-EPL-part-1/)
+-   [Part 2: Stats from Open Play and Set Pieces](https://ryo-n7.github.io/2019-11-28-visualize-EPL-part-2/)
+-   [Part 3: TBA]()
+
 **You can follow along with the code:
 [here](https://gist.github.com/Ryo-N7/e439c5da60bb80c8c9ce646e87149e56)**
 
