@@ -6,6 +6,8 @@ share-img: https://i.imgur.com/gGCP86s.png
 tags: [ggplot2, soccer, football, data-viz, football-analytics, soccer-analytics, r-bloggers]
 ---
 
+**"per shot" values from set pieces in the 'Set Pieces' section (and other places where mentioned) have been corrected. (11/30/2019)**
+
 In Part 2, I will be looking into various statistics from different game
 situations in the English Premier League, specifically from **open
 play**, **set pieces**, and **corner kicks**. As with stats taken from
@@ -125,10 +127,10 @@ to switch from a pure zonal marking system to a **mixed system** from
 October.
 
 Some special notice must be given to **Bournemouth** (who I’ve
-highlighted in purple) who appear in the top three of **every**
+highlighted in purple) who appear in the top four of **every**
 offensive metric shown here! They are tied with Liverpool with 5 goals
 from 5.75 xG and posting an decent 0.13 xG per shot (42 shots) from these
-situations, behind Sheffield United, Manchester United, and Burnley. The
+situations, fourth best behind Sheffield United, Manchester United, and Burnley. The
 Cherries are heavily reliant on set pieces as they are below the 25th
 percentile for shots, goals, and xG from open play. They lead the league
 in **proportion of total xG from set pieces** (corners and free kicks,
