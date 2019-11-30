@@ -92,54 +92,7 @@ good for only 0.31 xPts)!
 Set Pieces (Free Kicks and Corners excluding Direct FKs)
 ========================================================
 
-There isn’t a very large sample of shots from just free kicks so for
-this section I will combine **free kicks and corners** (while still
-excluding direct free kicks). It would have been very informative if the
-total number of set piece attempts and coordinates for where these set
-pieces took place were recorded but unfortunately `understat` doesn’t
-have that info on hand. Maybe in the future I’ll try to combine it with
-attempts data from another source.
-
-<img src="../assets/2019-11-28-visualize-EPL-part-2_files/xG_setpieceAT_top7_plot.png" style="display: block; margin: auto;" align ="middle" width = "700" />
-
-<img src="../assets/2019-11-28-visualize-EPL-part-2_files/xG_setpieceDF_top7_plot.png" style="display: block; margin: auto;" align ="middle" width = "700" />
-
-**Liverpool** have only given up 24 (of which only 5 are from free
-kicks) which is tied fourth best alongside Manchester United. In
-general, Liverpool do well on both ends of the pitch concerning corners
-and set pieces although they don’t seem to create many high quality
-chances as they’re just about league average (median) for expected
-goals, 2.65 xG from 39 shots. Results-wise they are tied first with
-Bournemouth with 5 goals scored from these situations.
-
-**Chelsea** are one of the worst teams defending set pieces with all of
-their defensive metrics except shots conceded being below the 25th
-percentile. Looking at the raw numbers they’ve conceded 2 goals (both
-against Liverpool back in September) from 2.31 xGA, from a total of 13
-shots. They have also been conceding from set pieces in the Champions
-League (not shown in the data) as well which has prompted Frank Lampard
-to switch from a pure zonal marking system to a **mixed system** from
-October.
-
-Some special notice must be given to **Bournemouth** (who I’ve
-highlighted in purple) who appear in the top three of **every**
-offensive metric shown here! They are tied with Liverpool with 5 goals
-from 5.75 xG and posting an impressive 0.33 xG per shot from these
-situations, only Manchester United are better with 0.39 xG per shot
-(these numbers come from 42 and 35 total shots respectively). The
-Cherries are heavily reliant on set pieces as they are below the 25th
-percentile for shots, goals, and xG from open play. They lead the league
-in **proportion of total xG from set pieces** (corners and free kicks,
-excluding direct free kicks) with 35.1%. I’ll go into a specific example
-of one of their attacking routines that have proved quite effective in
-the next section.
-
-However, this prowess in attack doesn’t translate on the **defensive**
-side of things where Bournemouth are around the 50th percentile (shots
-against: 33, xGA: 3.255) and downright bad in terms of xGA per shot
-(0.35 xGA per shot) and goals conceded (4). Even with these stats only
-17.5% of their total xGA come from their inability to defend set pieces,
-8th best in the league!
+**Under Revision**: It seems I made some silly mistakes in regards to calculating the __per shot__ values in this section. Any other part of this blog post talking about the __per shot values from set pieces__ (free kicks + corners) should also be ignored until I fix this. The "corner kicks" section should be fine. Sorry!
 
 Corner Kicks
 ============
