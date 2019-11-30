@@ -92,7 +92,7 @@ good for only 0.31 xPts)!
 Set Pieces (Free Kicks and Corners excluding Direct FKs)
 ========================================================
 
-**Under Revision**: It seems I made some silly mistakes in regards to calculating the __per shot__ values in this section. Any other part of this blog post talking about the __per shot values from set pieces__ (free kicks + corners) should also be ignored until I fix this. The "corner kicks" section should be fine. Sorry!
+**Under Revision** (11/30/2019): It seems I made some silly mistakes in regards to calculating the __per shot__ values in this section. Any other part of this blog post talking about the __per shot values from set pieces__ (free kicks + corners) should also be ignored until I fix this. The "corner kicks" section should be fine. Sorry!
 
 Corner Kicks
 ============
