@@ -20,7 +20,7 @@ Other interests/hobbys include Soccer/Football, Star Wars, and of course - Data 
 
 Last summer (July 2018), I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
 
-This past month (October 2019), I gave a presentation at the ToktoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
+This past month (October 2019), I gave a presentation at the TokyoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
