@@ -1097,9 +1097,9 @@ posts.
 
 As mentioned, the next part will take a look at team stats based on
 different game situations like from open play, free kicks, and corners.
-Here’s a sample (still very much a **work-in-progress**):
+Here’s a sample:
 
-<img src="../assets/2019-11-21-visualize-EPL-part-1_files/setpiece_draft.png"
+<img src="../assets/2019-11-28-visualize-EPL-part-2_files/xG_setpieceDF_top7_plot2.png"
 style="display: block; margin: auto;" align ="middle" width = "600" />
 
 -   [Part 2: Stats from Open Play and Set Pieces](https://ryo-n7.github.io/2019-11-28-visualize-EPL-part-2/)
