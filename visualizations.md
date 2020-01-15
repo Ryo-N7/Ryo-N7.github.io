@@ -3,6 +3,20 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [Dot plot] :: Progressive Pass Plot for the Bundesliga (2019-2020 Hinrunde)
+
+- [Tweet](https://twitter.com/R_by_Ryo/status/1217406920199327744)
+<img src="https://i.imgur.com/21HNfhd.png" style="display: block; margin: auto;" align ="middle" width = "550" />
+
+***
+
+#### [Dot plot] :: Manchester City players dominate the 'expected' stats: np-xG per 90 & xA per 90 for the Premier League (2019-2020)
+
+- [Tweet](https://twitter.com/R_by_Ryo/status/1213095273703952384)
+<img src="https://i.imgur.com/eaj8iGH.png" style="display: block; margin: auto;" align ="middle" width = "550" />
+
+***
+
 #### [Infographic] :: Liverpool FC Match Summary Graphic
 
 - [Twitter Thread for 2019-2020 Season](https://twitter.com/R_by_Ryo/status/1175774705967452160)
