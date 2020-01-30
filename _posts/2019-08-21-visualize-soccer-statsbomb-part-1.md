@@ -16,7 +16,7 @@ stuff I’ve done, preview blog posts for the [Asian
 Cup](https://ryo-n7.github.io/2019-01-11-visualize-asian-cup/) and the
 [Copa
 America](https://ryo-n7.github.io/2019-06-18-visualize-copa-america/),
-along with the code to all the standalone viz I’ve done on my
+along with the code to **all the standalone soccer viz** I’ve done on my
 [soccer\_ggplot GitHub
 repository](https://github.com/Ryo-N7/soccer_ggplots).
 
