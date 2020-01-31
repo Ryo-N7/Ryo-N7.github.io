@@ -13,14 +13,16 @@ I have a **MSc. in Industrial-Organizational and Business Psychology** from the 
 
 My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public. My main strengths in R are in **data wrangling** and **visualization**, many examples of which you can see throughout my blog posts and my [viz gallery](https://ryo-n7.github.io/visualizations/)!
 
+You can learn a bit more about my hobby/work in R and in soccer analytics from interviews I did [here](https://undervalu9.blogspot.com/2020/01/the-pursuit-of-wisdom-in-any-walk-of.html) and [here](https://undervalu9.blogspot.com/2020/01/11-questions-with-ryo-nakagawara.html).
+
 Other interests/hobbys include Soccer/Football, Star Wars, and of course - Data Science!
 
 * Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
 * Maintainer & author of the [tvthemes](https://github.com/Ryo-N7/tvthemes) package.
 
-Last summer (July 2018), I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
+In July 2018, I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
 
-This past month (October 2019), I gave a presentation at the TokyoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
+Back in October 2019, I gave a presentation at the TokyoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
