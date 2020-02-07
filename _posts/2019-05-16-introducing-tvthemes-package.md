@@ -6,7 +6,9 @@ share-img: https://i.imgur.com/URy88Fl.png
 tags: [ggplot2, color-palettes, ggplot2-themes, TV-shows, data-viz, r-bloggers]
 ---
 
-**A lot has changed with `tvthemes 1.0.0` so please check the [CRAN announcement](https://ryo-n7.github.io/2019-09-06-tvthemes-CRAN-announcement/) along with this blog post!**
+**A lot has changed with `tvthemes 1.0.0` so please check the [CRAN announcement blog post](https://ryo-n7.github.io/2019-09-06-tvthemes-CRAN-announcement/) along with this blog post!**
+
+**`tvthemes 1.1.0` is on CRAN (Oct. 31, 2019), please checkout the [update blog post](https://ryo-n7.github.io/2019-11-04-tvthemes-1.1.0-announcement/)**
 
 This blog post will provide an intro to {tvthemes} as well as some
 lessons learned (codecov, Github badges, creating a hexsticker,
@@ -594,3 +596,6 @@ it in my free time!
 Suggestions and Pull Requests for palettes/themes are most welcome, you
 can find the Github repo for the package
 [HERE](https://github.com/Ryo-N7/tvthemes)!
+
+* [tvthemes 1.0.0 blog post](https://ryo-n7.github.io/2019-09-06-tvthemes-CRAN-announcement/)
+* [tvthemes 1.1.0 blog post](https://ryo-n7.github.io/2019-11-04-tvthemes-1.1.0-announcement/)
