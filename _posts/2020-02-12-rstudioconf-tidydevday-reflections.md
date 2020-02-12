@@ -3,7 +3,7 @@ layout: post
 title: "My RStudio::Conf 2020 / TidyDevDay Roundup & Reflections!"
 fb-img: https://i.imgur.com/YBTCPGe.jpg
 share-img: https://i.imgur.com/YBTCPGe.jpg
-tags: [rstudioconf, tidydevday, open-source, tidyverse, r-community, r-ladies]
+tags: [rstudioconf, tidydevday, open-source, tidyverse, r-community, r-bloggers]
 ---
 
 RStudio::Conference 2020 was held in San Francisco, California and kick
