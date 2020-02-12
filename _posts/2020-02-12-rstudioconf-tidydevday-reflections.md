@@ -626,7 +626,7 @@ Pedersen](https://twitter.com/thomasp85/) was delightful as I use
 {cowplot} and {ggforce} extensively (not to mention {ggplot2},
 obviously) but of course, I was very nervous at first!
 
-<img src="../assets/2020-02-12-rstudioconf-tidydevday-reflections_files/devday-badge.JPG" style="display: block; margin: auto;" width = "550" />
+<img src="../assets/2020-02-12-rstudioconf-tidydevday-reflections_files/devday-badge.JPG" style="display: block; margin: auto;" width = "400" />
 
 Conclusion
 ==========
@@ -657,7 +657,7 @@ editorial team members for the first time! I also think this might have
 been the first time that **four** editors were at the same place at the
 same time!
 
-<img src="../assets/2020-02-12-rstudioconf-tidydevday-reflections_files/rweekly-team.jpg" style="display: block; margin: auto;" width = "550" />
+<img src="../assets/2020-02-12-rstudioconf-tidydevday-reflections_files/rweekly-team.jpg" style="display: block; margin: auto;" width = "500" />
 
 Outside of the conference I went to visit Alcatraz for the first time
 since I was a little kid along with first-time visitors,
@@ -666,7 +666,7 @@ since I was a little kid along with first-time visitors,
 favorite hockey team, the San Jose Sharks, play live at the Shark Tank
 for what feels like the first time in forever!
 
-<img src="../assets/2020-02-12-rstudioconf-tidydevday-reflections_files/sj-sharks.JPG" style="display: block; margin: auto;" width = "550" />
+<img src="../assets/2020-02-12-rstudioconf-tidydevday-reflections_files/sj-sharks.JPG" style="display: block; margin: auto;" width = "500" />
 
 This was my third consecutive RStudio::Conf and I enjoyed it quite a
 lot. As the years have gone by I’ve talked to a lot of people on
