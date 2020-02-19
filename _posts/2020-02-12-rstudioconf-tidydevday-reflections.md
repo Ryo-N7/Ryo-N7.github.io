@@ -352,7 +352,7 @@ Some of the highlights for 2019 included:
 
 -   `citation("tidyverse")`: Which allows people to cite the tidyverse
     in their academic papers
--   The `{{}}` (read: curly-curly) operator: Which reduces the cognitive
+-   The `{``{`  `}``}` (read: curly-curly) operator: Which reduces the cognitive
     load for many users confused about all of the new {rlang} syntax
 -   {vctrs}: A developer-focused package for creating new classes of S3
     vectors
