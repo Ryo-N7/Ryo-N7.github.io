@@ -87,65 +87,8 @@ With that done, I can start making plots!
 Episode Ratings
 ===============
 
-As in my more
-[recent](https://ryo-n7.github.io/2019-01-11-visualize-asian-cup/) blog
-posts I used the `polite` package to web scrape responsibly (note
-the `bow()` and `scrape()` functions).
-
-I `map_2()` over the IMDB page for the episodes for each season and I
-append the season number to each episode row. After I’m done with the
-web scraping I `mutate()` in the episode number for each season.
-
 ``` r
-url_df <- tibble(
-  urls = c("https://www.imdb.com/title/tt2467372/episodes?season=1",
-           "https://www.imdb.com/title/tt2467372/episodes?season=2",
-           "https://www.imdb.com/title/tt2467372/episodes?season=3",
-           "https://www.imdb.com/title/tt2467372/episodes?season=4",
-           "https://www.imdb.com/title/tt2467372/episodes?season=5"),
-  season_num = c(1, 2, 3, 4, 5)) 
-
-# scraping function:
-brooklyn99_ep_rating <- function(url) {
-  
-  session <- bow(url)
-  url2 <- scrape(session)
-  
-  # Grab episode names
-  sX_ep_name <- url2 %>% 
-    html_nodes(".info a") %>% 
-    html_text() %>% 
-    as_tibble() %>% 
-    mutate(value = gsub("\\n", "", x = value))
-  
-  # Grab episode rating
-  sX_rate <- url2 %>% 
-    html_nodes(".ipl-rating-widget > .ipl-rating-star .ipl-rating-star__rating") %>% 
-    html_text() %>% 
-    as_tibble() %>%  
-    mutate(rating = gsub("\\n", "", x = value) %>% as.numeric) %>% 
-    select(-value)
-  
-  # Clean episode name df
-  sX_ep_name <- sX_ep_name %>% 
-    mutate(title = trimws(value)) %>% 
-    filter(!str_detect(title, "Rate"), title != "") %>% 
-    select(-value)
-  
-  # combine name + rating
-  ep_rating <- sX_ep_name %>% 
-    bind_cols(sX_rate)
-}
-
-ep_rating_df <- map2(.x = url_df$urls, .y = url_df$season_num,
-                          ~ brooklyn99_ep_rating(url = .x) %>% 
-         mutate(season = .y)) %>% 
-  reduce(bind_rows)
-
-ep_rating_df <- ep_rating_df %>% 
-  group_by(season) %>% 
-  mutate(ep_num = row_number()) %>% 
-  ungroup()
+ep_rating_df <- readr::read_csv("https://raw.githubusercontent.com/Ryo-N7/brooklyn_NINE_NINE_viz/master/data/data2/ep_rating_df.csv")
 
 glimpse(ep_rating_df)
 ```
@@ -447,33 +390,13 @@ members and guests made the most appearances on the show. **Special
 note**: Hitchcock and Scully weren’t officially “main cast” until
 **Season 2** but I left them out of the non-main cast list. 
 
-After scraping for the full cast list and main cast list, I `anti_join()` them
+After scraping the main cast list, I `anti_join()` them
 so I am left with the non-main cast and the number of episodes that they
 appeared in.
 
 ``` r
 # Entire cast:
-cast_url <- bow("https://www.imdb.com/title/tt2467372/fullcredits?ref_=tt_cl_sm#cast")
-
-cast_info_raw <- scrape(cast_url) %>% 
-  html_nodes(".character") %>% 
-  html_text() %>% 
-  as_tibble()
-
-cast_info_clean <- cast_info_raw %>% 
-  separate(value, into = c("blank", "name", "episode_num", "dots"), sep = "\n") %>% 
-  mutate(episode_num = case_when(
-    episode_num == "         / ...  " ~ dots,
-    TRUE ~ episode_num),
-    episode_num = episode_num %>% word(., 1, sep = "e") %>% as.numeric,
-    name = str_trim(name, side = "both")) %>% 
-  select(-blank, -dots) %>% 
-  mutate(name = case_when(
-    name == "Captain Ray Holt" ~ "Ray Holt",
-    name == "Scully" ~ "Norm Scully",
-    name == "Hitchcock" ~ "Michael Hitchcock",
-    name == "Deputy Chief Madeline Wuntch" ~ "Madeline Wuntch",
-    TRUE ~ name))
+cast_info_clean <- readr::read_csv("https://raw.githubusercontent.com/Ryo-N7/brooklyn_NINE_NINE_viz/master/data/data2/cast_info_clean.csv")
   
 # Main cast:
 cast_main_url <- bow("https://en.wikipedia.org/wiki/List_of_Brooklyn_Nine-Nine_characters")
