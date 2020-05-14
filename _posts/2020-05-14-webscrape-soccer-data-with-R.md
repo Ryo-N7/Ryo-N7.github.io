@@ -18,7 +18,7 @@ feel like a lot of people aren’t aware of the ethical conundrums
 surrounding web scraping (especially if you’re coming from outside of a
 data science/programming/etc. background …and even if you are I might
 add). I am by **no means an expert** but since I started learning about
-all it I’ve tried to **“web scrape responsibly”** and this tenet will be
+it all I’ve tried to **“web scrape responsibly”** and this tenet will be
 emphasized throughout this blog post. I will be going over examples to
 scrape soccer data from
 [Wikipedia](https://en.wikipedia.org/wiki/Main_Page),
@@ -622,6 +622,7 @@ For other examples of scraping multiple pages:
 
 -   transfermarkt: [(Opta-inspired Age-Utility plot from February 28,
     2020)](https://gist.github.com/Ryo-N7/d5b481e1813670f88d67fe40d5295fe4)
+- [Age-Utility plots for most major European teams (Twitter thread)](https://twitter.com/R_by_Ryo/status/1233375468952272898)
 
 <img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/BayernMunich_age_utility_3120.png" style="display: block; margin: auto;" width = "600" />
 
