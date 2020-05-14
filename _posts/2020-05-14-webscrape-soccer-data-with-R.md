@@ -3,7 +3,7 @@ layout: post
 title: "Intro to {polite} Web Scraping of Soccer Data with R!"
 fb-img: https://i.imgur.com/bC1EO4S.png
 share-img: https://i.imgur.com/bC1EO4S.png
-tags: [web-scraping, soccer, football, scraping, rvest, tidyverse]
+tags: [web-scraping, soccer, football, scraping, rvest, tidyverse, r-bloggers]
 ---
 
 Fans of soccer/football have been left bereft of their prime form of
