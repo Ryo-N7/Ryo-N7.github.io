@@ -17,7 +17,7 @@ efficient or possible. The solution to this is web scraping! However, I
 feel like a lot of people aren’t aware of the ethical conundrums
 surrounding web scraping (especially if you’re coming from outside of a
 data science/programming/etc. background …and even if you are I might
-add). I am by **no means an expert ** but since I started learning about
+add). I am by **no means an expert** but since I started learning about
 all it I’ve tried to **“web scrape responsibly”** and this tenet will be
 emphasized throughout this blog post. I will be going over examples to
 scrape soccer data from
@@ -97,13 +97,7 @@ library(rlang)
 ```
 
 For the first example, let’s start with scraping soccer data from
-Wikipedia, specifically the top goal scorers of the Asian Cup. Do be
-warned that web pages can change suddenly and the CSS selector you
-used in the past might not work anymore. I’ve had this happen more than a few times
-as pages get updated with more info from new tournaments and such. This
-is why you really should try to scrape from a more stable website, but a
-lot of times for “simple” data Wikipedia is the easiest and best place
-to scrape.
+Wikipedia, specifically the top goal scorers of the Asian Cup.
 
 We use `polite::bow()` to pass the URL for the Wikipedia article to get
 a polite session object. This object will tell you about the
@@ -139,17 +133,26 @@ options depending on what browser you’re using but on Google Chrome or
 Mozilla Firefox you can find the exact HTML element by right clicking on
 it and then clicking on “Inspect” or “Inspect Element” in the pop-up
 menu. By doing so, a new view will open up showing you the full HTML
-content of the webpage with the element you chose highlighted. You might
-also want to try using a handy JavaScript tool called `SelectorGadget`,
+content of the webpage with the element you chose highlighted. (See first two pics)
+
+You might also want to try using a handy JavaScript tool called `SelectorGadget`,
 you can learn how to use it
 [here](https://rvest.tidyverse.org/articles/selectorgadget.html). It
 allows you to click on different elements of the web page and
-the gadget will try to ascertain the exact CSS Selector in the HTML.
+the gadget will try to ascertain the exact CSS Selector in the HTML. (See bottom pic)
 
-<p float="left" align="center">
-<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/wiki-table1.png" width="49%" />
-<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/wiki-table2.png" width="49%" />
-</p>
+Do be warned that web pages can change suddenly and the CSS Selector you
+used in the past might not work anymore. I’ve had this happen more than a few times
+as pages get updated with more info from new tournaments and such. This
+is why you really should try to scrape from a more stable website, but a
+lot of times for “simple” data Wikipedia is the easiest and best place
+to scrape.
+
+<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/wiki-table1.png" style="display: block; margin: auto;" width = "650" />
+
+<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/wiki-table2.png" style="display: block; margin: auto;" width = "650" />
+
+<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/wiki-selectorgadget.png" style="display: block; margin: auto;" width = "650" />
 
 From here you can right-click again on the highlighted HTML code to
 “Copy”, and then you can choose one of “CSS Selector”, “CSS Path”, or
@@ -234,7 +237,7 @@ session
 
 The basic steps are the same as before but I’ve found that it can be
 quite tricky to find the right nodes on `transfermarkt` even with the
-CSS selector gadget or other methods we described in previous sections.
+CSS Selector Gadget or other methods we described in previous sections.
 After a while you’ll get used to the quirks of how the website is
 structured and know what certain assets (tables, columns, images) are
 called easily. This is a website where the `SelectorGadget` really comes
@@ -253,8 +256,8 @@ can show you a few other `html_*()` {rvest} functions:
 
 -   `html_table()`: Get data from a HTML table
 -   `html_text()`: Extract text from HTML
--   `html_attr()`: Extract attributes from HTML (`src` for image
-    filename, `href` for URL link address)
+-   `html_attr()`: Extract attributes from HTML (`"src"` for image
+    filename, `"href"` for URL link address)
 
 ``` r
 team_name <- scrape(session) %>% 
@@ -329,7 +332,7 @@ multiple pages in one go instead of running the same scraping function
 on different teams’/players’ URL link over and over again.
 
 <center>
-**Thinking about how to scrape**
+<b>Thinking About How to Scrape</b>
 </center>
 
 -   Understand the website structure: How it organizes its pages, check
@@ -339,7 +342,7 @@ on different teams’/players’ URL link over and over again.
 -   Create your own R functions: Pinpoint exactly what you want to
     scrape as well as some cleaning steps post-scraping in one function
     or multiple functions.
--   Start small, then scale up: Try your scraping function on one
+-   Start small, then scale up: Test your scraping function on one
     player/team, then do entire team/league.
 -   Iterate over a set of URL links: Use {purrr}, `for` loops,
     `lapply()` (whatever your preference).
@@ -349,7 +352,7 @@ similarities? What are the differences? If it’s a proper website than
 the web page for a certain data view for each team should be exactly the
 same, as you’d expect it to contain exactly the same type of info just
 for a different team. For this example each “squad view” page for each
-Premier League team are structured similarly:
+Premier League team on `soccerway.com` are structured similarly:
 “<a href="https://us.soccerway.com/teams/england/" class="uri">https://us.soccerway.com/teams/england/</a>”
 and then the “team name/”, the “team number/” and finally the name of
 the web page, “squad/”. So what we need to do here is to find out the
@@ -382,10 +385,9 @@ contains the hyperlink of that element. The left picture is looking at
 the URL link of one of the buttons to a team’s page via “Inspect”. The
 right picture is selecting every team’s link via the `SelectorGadget`.
 
-<p float="left" align="center">
-<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/href-soccerway.png" width="49%" />
-<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/selector-gadget.png" width="49%" />
-</p>
+<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/href-soccerway.png" style="display: block; margin: auto;" width = "650" />
+
+<img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/selector-gadget.png" style="display: block; margin: auto;" width = "650" />
 
 ``` r
 team_links <- scrape(session) %>% 
@@ -512,7 +514,7 @@ for all the other teams… so what can we do? This is where the
 `purrr::map()` family of functions and iteration comes in! The `map()`
 family of functions allows you to apply a function (an existing one from
 a package or one that you’ve created yourself) to each element of a list
-or vector that you pass to the mapping function. For our purposes, this
+or vector that you pass as an argument to the mapping function. For our purposes, this
 means we can use mapping functions to pass along a list of URLs (for
 whatever number of players and/or teams) along with a scraping function
 so that it scrapes it altogether in one go.
@@ -592,8 +594,7 @@ glimpse(goal_contribution_df)
     ## $ assists <chr> "0", "0", "0", "2", "0", "0", "0", "2", "0", "0", "0", "0",...
     ## $ team    <chr> "manchester-city-football-club", "manchester-city-football-...
 
-With that we can clean the data a bit and finally get on to my favorite
-part, the plotting! You can find the code [in the original
+With that we can clean the data a bit and finally get on to the plotting! You can find the code [in the original
 gist](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445)
 to see how I created the plot below. I really would like to go into
 detail especially as I use one of my favorite plotting packages,
@@ -604,24 +605,23 @@ detail especially as I use one of my favorite plotting packages,
 As you can see, this one was for the 2018-2019 season. I made a similar
 one but using `xG per 90` and `xA per 90` for the 2019-2020 season (as
 per January 1st, 2020 at least) using [FBRef](https://fbref.com/) data
-[here](https://twitter.com/R_by_Ryo/status/1213095273703952384).
+[here](https://twitter.com/R_by_Ryo/status/1213095273703952384). You can find the
+code for it
+[here](https://gist.github.com/Ryo-N7/a4b8799328debf335a055d52260f8d03).
 However, I did **not** web scrape it as from their [Terms of
 Use](https://www.sports-reference.com/termsofuse.html) page, FBRef (or
 any of the SportsRef websites) do **not** allow web scraping
 (“spidering”, “robots”). Thankfully, they make it **very easy** to
 access their data as downloadable `.csv` files by just clicking on a few
-buttons, so getting their data isn’t really a problem! You can find the
-code for it
-[here](https://gist.github.com/Ryo-N7/a4b8799328debf335a055d52260f8d03).
+buttons, so getting their data isn’t really a problem!
 
 For practice, try doing it for a different season or for a different
 league altogether!
 
 For other examples of scraping multiple pages:
 
--   transfermarkt (Opta-inspired Age-Utility plot from February 28,
-    2020):
-    <a href="https://gist.github.com/Ryo-N7/d5b481e1813670f88d67fe40d5295fe4" class="uri">https://gist.github.com/Ryo-N7/d5b481e1813670f88d67fe40d5295fe4</a>
+-   transfermarkt: [(Opta-inspired Age-Utility plot from February 28,
+    2020)](https://gist.github.com/Ryo-N7/d5b481e1813670f88d67fe40d5295fe4)
 
 <img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/BayernMunich_age_utility_3120.png" style="display: block; margin: auto;" width = "600" />
 
