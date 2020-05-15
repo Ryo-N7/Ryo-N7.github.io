@@ -86,14 +86,15 @@ Single web-page (Wikipedia)
 ===========================
 
 ``` r
-library(rvest)
-library(polite)
-library(dplyr)
-library(tidyr)
-library(purrr)
-library(stringr)
-library(glue)
-library(rlang)
+## On R 3.5.3
+library(rvest)   # 0.3.5
+library(polite)  # 0.1.1
+library(dplyr)   # 0.8.5
+library(tidyr)   # 1.0.2
+library(purrr)   # 0.3.4
+library(stringr) # 1.4.0
+library(glue)    # 1.4.0
+library(rlang)   # 0.4.6
 ```
 
 For the first example, let’s start with scraping soccer data from
@@ -598,7 +599,8 @@ With that we can clean the data a bit and finally get on to the plotting! You ca
 gist](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445)
 to see how I created the plot below. I really would like to go into
 detail especially as I use one of my favorite plotting packages,
-{ggforce}, here but it deserves its own separate blog post.
+{ggforce}, here but it deserves its own separate blog post. __NOTE__: The data we scraped in the above section is for this season (2019-2020) so the annotations won't be the same as [in the original
+gist](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445) which is for 2018-2019. Try to play around with the different annotations options in R as practice!
 
 <img src="../assets/2020-05-13-webscrape-soccer-data-with-R_files/EPL-goalcontrib1819.png" style="display: block; margin: auto;" width = "550" />
 
