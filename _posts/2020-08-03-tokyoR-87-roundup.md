@@ -3,7 +3,7 @@ layout: post
 title: "87th TokyoR Meetup Roundup: {data.table}, Bioconductor, & more!"
 fb-img: https://i.imgur.com/hg9hrZB.png
 share-img: https://i.imgur.com/hg9hrZB.png
-tags: [japan, japanr, japan.r, community, tokyor, tokyo.r]
+tags: [japan, japanr, japan.r, community, tokyor, tokyo.r, r-bloggers]
 ---
 
 As the monsoon season (finally) ends, another TokyoR meetup! Since COVID
@@ -44,10 +44,10 @@ BeginneR Session
 As with every [TokyoR](http://tokyor.connpass.com/) meetup, we began
 with a set of beginner user focused talks:
 
--   \[Data tidying by
-    y\_\_mattu\](<a href="https://ymattu.github.io/TokyoR87/slide.html#/" class="uri">https://ymattu.github.io/TokyoR87/slide.html#/</a>)
--   \[Data visualization by
-    yuta\_kanzawa\](<a href="https://ytknzw.github.io/TokyoR/%E5%88%9D%E5%BF%83%E8%80%85%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96_TokyoR_20200801.pdf" class="uri">https://ytknzw.github.io/TokyoR/%E5%88%9D%E5%BF%83%E8%80%85%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96_TokyoR_20200801.pdf</a>)
+-   [Data tidying by by
+    ymattu](https://ymattu.github.io/TokyoR87/slide.html#/)
+-   [Data visualization by
+    yuta\_kanzawa](https://ytknzw.github.io/TokyoR/%E5%88%9D%E5%BF%83%E8%80%85%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96_TokyoR_20200801.pdf)
 
 Main Talks
 ==========
