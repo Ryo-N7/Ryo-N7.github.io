@@ -45,9 +45,9 @@ As with every [TokyoR](http://tokyor.connpass.com/) meetup, we began
 with a set of beginner user focused talks:
 
 -   \[Data tidying by
-    @y\_\_mattu\](<a href="https://ymattu.github.io/TokyoR87/slide.html#/" class="uri">https://ymattu.github.io/TokyoR87/slide.html#/</a>)
+    y\_\_mattu\](<a href="https://ymattu.github.io/TokyoR87/slide.html#/" class="uri">https://ymattu.github.io/TokyoR87/slide.html#/</a>)
 -   \[Data visualization by
-    @yuta\_kanzawa\](<a href="https://ytknzw.github.io/TokyoR/%E5%88%9D%E5%BF%83%E8%80%85%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96_TokyoR_20200801.pdf" class="uri">https://ytknzw.github.io/TokyoR/%E5%88%9D%E5%BF%83%E8%80%85%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96_TokyoR_20200801.pdf</a>)
+    yuta\_kanzawa\](<a href="https://ytknzw.github.io/TokyoR/%E5%88%9D%E5%BF%83%E8%80%85%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96_TokyoR_20200801.pdf" class="uri">https://ytknzw.github.io/TokyoR/%E5%88%9D%E5%BF%83%E8%80%85%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96_TokyoR_20200801.pdf</a>)
 
 Main Talks
 ==========
@@ -66,14 +66,14 @@ included side-by-side comparisons with similar {dplyr} and {tidyr}
 syntax (shown in detail below).
 
 <p float="left" align="center">
-<img src="../assets/2020-08-03-tokyoR-87-roundup_files/datatable1.png" width="49%" />
-<img src="../assets/2020-08-03-tokyoR-87-roundup_files/datatable2.png" width="49%" />
+<img src="../assets/2020-08-03-tokyoR-87-roundup_files/datatable1.PNG" width="49%" />
+<img src="../assets/2020-08-03-tokyoR-87-roundup_files/datatable2.PNG" width="49%" />
 </p>
 
-The 3 main differences he made to contrast with {dplyr} were: \* Lower
-\# of dependencies: {data.table} only uses {methods} \* Lower memory
-usage: deep-copy {dplyr} vs. shallow-copy {data.table} \* “Conservative”
-development: Try to minimize the amount of breaking changes in new code
+The 3 main differences he made to contrast with {dplyr} were: 
+-   Lower \# of dependencies: {data.table} only uses {methods} 
+-   Lower memory usage: deep-copy {dplyr} vs. shallow-copy {data.table} 
+-   “Conservative” development: Try to minimize the amount of breaking changes in new code
 
 Other {data.table} resources:
 
@@ -114,7 +114,7 @@ be annoying, couldn’t there be a way to make it shorter? Recently there
 has been talk about creating a shorter anonymous function syntax and the
 following 3 styles were discussed:
 
-<img src="../assets/2020-08-03-tokyoR-87-roundup_files/newfunctionsyntax1.png" style="display: block; margin: auto;" width = "550" />
+<img src="../assets/2020-08-03-tokyoR-87-roundup_files/newfunctionsyntax1.PNG" style="display: block; margin: auto;" width = "550" />
 
 The reason why some implementations are harder than others is due to the
 location of the special characters and R. `@andrew_cb2` then gave us a
@@ -122,8 +122,8 @@ quick tutorial of going into the R source files and adding in your own
 anonymous function syntax into R.
 
 <p float="left" align="center">
-<img src="../assets/2020-08-03-tokyoR-87-roundup_files/newfunctionsyntax2.png" width="49%" />
-<img src="../assets/2020-08-03-tokyoR-87-roundup_files/newfunctionsyntax3.png" width="49%" />
+<img src="../assets/2020-08-03-tokyoR-87-roundup_files/newfunctionsyntax2.PNG" width="49%" />
+<img src="../assets/2020-08-03-tokyoR-87-roundup_files/newfunctionsyntax3.PNG" width="49%" />
 </p>
 
 `@andrew_cb2` has made the entire tutorial available on Github
@@ -140,7 +140,7 @@ series of problem solving exercises meant for beginner and intermediate
 data scientists to practice their data pre-processing/handling skills in
 `SQL`, `Python`, and `R`. The problems are all contained in a Docker
 container so you are able to learn how to use it as well.
-<img src="../assets/2020-08-03-tokyoR-87-roundup_files/100knocks1.png" style="display: block; margin: auto;" width = "550" />
+<img src="../assets/2020-08-03-tokyoR-87-roundup_files/100knocks1.PNG" style="display: block; margin: auto;" width = "550" />
 
 -   [The Japan Data Science Society’s Data Science 100 Knocks for Data
     Pre-processing](https://github.com/The-Japan-DataScientist-Society/100knocks-preprocess)
@@ -165,7 +165,7 @@ to nurture future Bioconductor authors. One of the bigger goals of this
 meetup is to increase the number of Bioconductor devs in Japan so that
 Tokyo could be a candidate to host the Bioc Asia conference in 2021.
 
-<img src="../assets/2020-08-03-tokyoR-87-roundup_files/bioconductor1.png" style="display: block; margin: auto;" width = "550" />
+<img src="../assets/2020-08-03-tokyoR-87-roundup_files/bioconductor1.PNG" style="display: block; margin: auto;" width = "550" />
 
 Earlier this year a Community Advisor Board was also created which aims
 to support training, outreach, and promote cooperation between users and
