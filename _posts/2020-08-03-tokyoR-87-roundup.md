@@ -129,6 +129,8 @@ anonymous function syntax into R.
 `@andrew_cb2` has made the entire tutorial available on Github
 [here](https://github.com/andycraig/r-anonymous-functions).
 
+-   [Recent Twitter discussion on anonymous function syntax](https://twitter.com/MilesMcBain/status/1281043274661167105)
+
 [flaty13](https://twitter.com/flaty13/): Data Science 100 Knocks!
 -----------------------------------------------------------------
 
