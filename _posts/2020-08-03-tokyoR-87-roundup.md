@@ -70,7 +70,7 @@ syntax (shown in detail below).
 <img src="../assets/2020-08-03-tokyoR-87-roundup_files/datatable2.PNG" width="49%" />
 </p>
 
-The 3 main differences he made to contrast with {dplyr} were: 
+The 3 main differences he made to contrast it with {dplyr} were: 
 -   Lower \# of dependencies: {data.table} only uses {methods} 
 -   Lower memory usage: deep-copy {dplyr} vs. shallow-copy {data.table} 
 -   “Conservative” development: Try to minimize the amount of breaking changes in new code
