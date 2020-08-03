@@ -19,7 +19,7 @@ In line with my previous round up posts:
 -   [TokyoR \#76: February
     2019](https://ryo-n7.github.io/2019-03-07-tokyoR-76-roundup/)
 -   [TokyoR \#77: April
-    2019](https://ryo-n7.github.io/2019-04-24-tokyoR-77/))
+    2019](https://ryo-n7.github.io/2019-04-24-tokyoR-77/)
 -   [TokyoR \#78: May
     2019](https://ryo-n7.github.io/2019-05-31-tokyoR-78-roundup/)
 -   [TokyoR \#79: June
