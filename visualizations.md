@@ -3,6 +3,16 @@ layout: gallery
 title: Visualizations Gallery
 ---
 
+#### [{ggforce} annotations] :: Shot Creating Actions: Open-Play Passes & Dribbles for the Bundesliga (2019-2020)
+
+- [Tweet](https://twitter.com/R_by_Ryo/status/1283760965381550086)
+<p float="left" align="center">
+<img src="https://i.imgur.com/ZgadjKI.png" width="49%" />
+<img src="https://i.imgur.com/6AenAn7.png" width="49%" />
+</p>
+
+***
+
 #### [Dot plot] :: Progressive Pass Plot for the Bundesliga (2019-2020 Hinrunde)
 
 - [Tweet](https://twitter.com/R_by_Ryo/status/1217406920199327744)
