@@ -11,6 +11,8 @@ title: Visualizations Gallery
 <img src="https://i.imgur.com/6AenAn7.png" width="49%" />
 </p>
 
+<img src="https://i.imgur.com/xL6feqi.png" style="display: block; margin: auto;" align ="middle" width = "550" />
+
 ***
 
 #### [Dot plot] :: Progressive Pass Plot for the Bundesliga (2019-2020 Hinrunde)
