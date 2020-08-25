@@ -5,7 +5,7 @@ title: About Me
 
 Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London, and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
 
-__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an international development NGO, as a Junior Data Scientist. For the past 2.5 years I have been doing work as both a reporting analyst and a software developer in R and SQL to improve ACDI/VOCA's data pipeline and create R packages, reproducible reports, dashboards, Shiny apps to communicate how our projects worldwide are progressing. 
+__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an international development NGO, as a Junior Data Scientist. For the past 2.5 years I have been doing work as both a reporting analyst and a software developer in R and SQL to improve ACDI/VOCA's data pipeline and create R packages, reproducible reports, dashboards, Shiny apps to communicate how our projects worldwide are progressing. Since January 2020 I have also been doing work as a consultant for [11tegen11](http://www.11tegen11.com/), a soccer scouting/analytics company. 
 
 Interested in doing data analysis/visualization with R and SQL for NGOs, charities, non-profits (#DataForGood). 
 
