@@ -3,7 +3,7 @@ layout: post
 title: "My R Table Competition 2020 Submission: xG Timeline Table for Soccer/Football with {gt}!"
 fb-img: https://i.imgur.com/LoASWe1.png
 share-img: https://i.imgur.com/LoASWe1.png
-tags: [web-scraping, soccer, football, rvest, tidyverse, ggplot2, gt, table, understat]
+tags: [web-scraping, soccer, football, rvest, tidyverse, ggplot2, gt, table, understat, r-bloggers]
 ---
 
 Introduction
