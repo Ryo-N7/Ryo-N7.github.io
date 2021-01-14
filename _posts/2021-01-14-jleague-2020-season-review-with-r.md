@@ -3,7 +3,7 @@ layout: post
 title: "J.League Soccer 2020 Season Review with R!"
 fb-img: https://i.imgur.com/Kdzb80f.png
 share-img: https://i.imgur.com/Kdzb80f.png
-tags: [japan, jleague, soccer, football, ggplot2, tidyverse]
+tags: [japan, jleague, soccer, football, ggplot2, tidyverse, r-bloggers]
 ---
 
 2020 brought another exciting, if temporarily suspended, season of
