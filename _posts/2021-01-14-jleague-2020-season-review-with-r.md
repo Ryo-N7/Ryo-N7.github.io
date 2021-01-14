@@ -726,7 +726,7 @@ more of an analytical piece than an R tutorial so I won’t be showing all
 of my R code here. I will post the code used to create **most** of the
 graphics as well as the data sets in my
 [soccer\_ggplot](https://github.com/Ryo-N7/soccer_ggplots) Github repo
-as per usual.
+as per usual (R code is [here](https://github.com/Ryo-N7/soccer_ggplots/blob/master/J-League%202020/jleague_2020_review_code.Rmd)). 
 
 This is more of a brief survey of the stats than an in-depth review of
 **every** team (breadth over depth). I won’t talk about the viz for
