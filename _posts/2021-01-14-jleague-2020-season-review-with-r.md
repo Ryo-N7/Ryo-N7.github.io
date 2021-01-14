@@ -2197,7 +2197,7 @@ Liverpool’s league games -
 
 <img src="../assets/2021-01-14-jleague-2020-season-review-with-r_files/Match report/29MD_KawGam_summary_plot.png" style="display: block; margin: auto;" width = "850"  />
 
-<img src="../assets/2021-01-14-jleague-2020-season-review-with-r_files/Match report/29MD_KawGam_gt_timeline.png"style="display: block; margin: auto;" width = "850"  />
+<img src="../assets/2021-01-14-jleague-2020-season-review-with-r_files/Match report/29MD_KawGam_gt_timeline.png" style="display: block; margin: auto;" width = "850"  />
 
 <p float="left" align="center">
 <img src="../assets/2021-01-14-jleague-2020-season-review-with-r_files/Match report/29MD_KawGam_xG_sitch_plot_home.png" width="49%" />
