@@ -2565,5 +2565,7 @@ Some English-Language J.League Content!
     Robson](https://twitter.com/FRsoccerSam/), [Michael
     Angioli](https://twitter.com/Michael_Master) on Twitter for general
     Japanese soccer news.
+    
+-   [JSoccer Magazine](https://www.facebook.com/JSoccerMagazine/): Fan run magazine for all things Japanese football ([website](https://jsoccer.com/))! 
 
 -   …and more!
