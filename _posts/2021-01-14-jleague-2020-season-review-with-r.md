@@ -11,7 +11,7 @@ Japanese soccer with the 28th season of the J.League managing to
 complete all of its games amidst the backdrop of COVID-19. Kawasaki
 Frontale went on a barn storming run to win the title with 4 games left
 and accumulating 83 points (both J.League records) as many of the
-previous years top teams struggled with a compact schedule due to the
+previous year's top teams struggled with a compact schedule due to the
 numerous Asian Champions League schedule changes. Still, there’s
 absolutely no doubt that the men in blue & black deserved the title.
 
