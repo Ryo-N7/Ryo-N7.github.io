@@ -5,13 +5,13 @@ title: About Me
 
 Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London, and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
 
-__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an _international development NGO_, as a __Data Scientist__. For the past 2.5 years I have been doing work as both a reporting analyst and a software developer in R and SQL to improve ACDI/VOCA's data pipeline and create R packages, reproducible reports, dashboards, Shiny apps to communicate how our projects worldwide are progressing. I also manage our entire R code base that includes various ETL scripts, R packages, and software applications. Since January 2020 I have also been doing work as a __consultant__ for [11tegen11](http://www.11tegen11.com/), a _soccer scouting/analytics company_. 
+__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an _international development NGO_, as a __Data Scientist__. For the past 3 years I have been doing work as both a reporting analyst and a software developer in R and SQL to improve ACDI/VOCA's data pipeline and create R packages, reproducible reports, dashboards, Shiny apps to communicate how our projects worldwide are progressing. I also manage our entire R code base that includes various ETL scripts, R packages, and software applications for data collection/management. I am also very involved in the R community (in Japan through Tokyo.R and internationally) through my volunteer work as an editor on the RWeekly newsletter (from April 2019). Since January 2020 I have also been doing work as a __consultant__ for [11tegen11](http://www.11tegen11.com/), a _soccer scouting/analytics company_. 
 
 Interested in doing data analysis/visualization with R and SQL for NGOs, charities, non-profits (#DataForGood). 
 
 I have a **MSc. in Industrial-Organizational and Business Psychology** from the University College London (UCL). During the MSc. my main research interests were in consumer behavior, behavioral economics, and influencing/motivating behavioral change for the public good.
 
-My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public. My main strengths in R are in **creating data science tools (R packages, dashboards, data pipeline scripts)**, **data wrangling**, **visualization**, and more. Many examples of which you can see throughout my blog posts and my [viz gallery](https://ryo-n7.github.io/visualizations/)! Since April 2019 I've been an editor on the [RWeekly Newsletter](https://rweekly.org/)!
+My interest in R comes from my belief in the need for more **reproducibility** and **accountability** in psychological and consumer research that can be attained by using R, GitHub, and other open-source software/tools to facilitate increased **transparency** between researchers and the general public. My main strengths in R are in **creating data science tools (R packages, dashboards, data pipeline scripts)**, **data wrangling**, **visualization**, and more. Many examples of which you can see throughout my blog posts and my [viz gallery](https://ryo-n7.github.io/visualizations/)!
 
 You can learn a bit more about my hobby/work in R and in soccer analytics from interviews I did [here](https://undervalu9.blogspot.com/2020/01/the-pursuit-of-wisdom-in-any-walk-of.html) and [here](https://undervalu9.blogspot.com/2020/01/11-questions-with-ryo-nakagawara.html).
 
@@ -82,7 +82,9 @@ Back in October 2019, I gave a presentation at the TokyoR User Group on a new ve
 * **Inquisit Lab 5**:
   * Coding Implicit Association Test experiments for consumer psychology research
 
-* **html + CSS** (basic)
+* **HTML + CSS** (basic)
+
+* **Javascript** (basic)
 
 
 ### Communication and teamwork skills
