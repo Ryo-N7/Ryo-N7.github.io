@@ -122,7 +122,7 @@ timezone: "Europe/London"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 15
+# paginate: 15
 
 kramdown:
   input: GFM
