@@ -1,0 +1,118 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = FALSE,
+  message = FALSE
+)
+```
+
+```{r attach-libraries}
+library(dplyr)
+library(tidyr)
+library(rvest)
+library(ggplot2)
+library(polite)
+library(stringr)
+library(lubridate)
+library(purrr)
+library(knitr)
+library(emo)
+```
+
+```{r scrape-blog}
+scrape_ryon7 <- function(base_url = "https://ryo-n7.github.io/") {
+  
+  session <- polite::bow(base_url)
+  
+  blog_titles <- scrape(session) %>% 
+    html_nodes(".post-title") %>% 
+    html_text()
+  
+  blog_links <- scrape(session) %>% 
+    html_nodes(".post-read-more") %>% 
+    html_attr("href")
+  
+  blog_dates <- scrape(session) %>% 
+    html_nodes(".post-meta") %>% 
+    html_text()
+  
+  blog_dates_clean <- blog_dates %>% 
+    str_trim() %>% 
+    str_remove_all("Posted on ")
+  
+  blog_tags <- scrape(session) %>% 
+    html_nodes(".blog-tags") %>% 
+    html_text()
+  
+  blog_tags_clean <- blog_tags %>% 
+    str_trim() %>% 
+    str_remove_all("Tags:\n") %>% 
+    str_replace_all("[:space:]", "") %>% 
+    str_remove_all(",r-bloggers")
+  
+  posts_data <- tibble(blog_dates_clean, blog_titles, blog_tags_clean) %>% 
+    transmute(
+      n = nrow(.):1,
+      publish_date = mdy(blog_dates_clean),
+      title = blog_titles,
+      tags = blog_tags_clean,
+      link = paste0(base_url, blog_links)
+    )
+  return(posts_data)
+}
+
+posts_df <- scrape_ryon7(base_url = "https://ryo-n7.github.io/")
+```
+
+```{r publish-plot}
+publish_plot <- posts_df %>% 
+  ggplot(aes(x = publish_date, y = 1)) + 
+  geom_point(shape = "|", size = 10, stroke = 1, color = "#1D8016") + 
+  theme_void()
+```
+
+# Ryo-N7.github.io
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This is the Github repository for my website, [R_by_Ryo](https://ryo-n7.github.io/)! 
+
+Usually about soccer, R conference/meetup roundups (RStudio, UseR!, TokyoR, etc.), and other data science-y things - all done in R.
+
+# Expected Blog (xBlog) Stats
+
+`r emo::ji("star")` There have been `r nrow(posts_df)` posts on the blog since `r min(posts_df$publish_date)`. 
+
+`r emo::ji("date")` That's about a post every `r round((as.numeric(today() - min(posts_df$publish_date))) / nrow(posts_df))` days, or about `r round(((nrow(posts_df) / (as.numeric(today() - min(posts_df$publish_date)))) * 30), 1)` posts per month.
+
+`r emo::ji("new")` The latest post was published `r today() - max(posts_df$publish_date)` day(s) ago: [`r posts_df$title[1]`](`r posts_df$link[1]`).
+
+`r emo::ji("chart_with_upwards_trend")` This 2D plot shows posts over time:
+
+```{r plot-out, fig.height=1, fig.width=10, fig.alt="A 2D chart where each point represents a post on an axis of time spanning from 2018 to the present. There are some gaps, but posts have been relatively consistent over time."}
+publish_plot
+```
+
+
+<details><summary> Click to expand a full list of my blog posts</summary>
+```{r posts-table}
+posts_df %>% 
+  transmute(
+    Number = n, 
+    Date = publish_date, 
+    Title = paste0("[", title, "](", link, ")")
+  ) %>% 
+  kable()
+```
+</details>
+
+
+_Last Updated `r today()`_
