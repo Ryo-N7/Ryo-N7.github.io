@@ -19,13 +19,18 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 36 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 97 day(s) ago: [J.League Soccer 2020
+🆕 The latest post was published 98 day(s) ago: [J.League Soccer 2020
 Season Review with
 R\!](https://ryo-n7.github.io//2021-01-14-jleague-2020-season-review-with-r/).
 
 📈 This 2D plot shows posts over time:
 
 ![](README_files/figure-gfm/plot-out-1.png)<!-- -->
+
+Below is a word cloud of all the different tags on my blog posts, it
+seems I mostly blog about " ggplot2":
+
+![](README_files/figure-gfm/plot-wordcloud-1.png)<!-- -->
 
 <details>
 
@@ -71,4 +76,4 @@ R\!](https://ryo-n7.github.io//2021-01-14-jleague-2020-season-review-with-r/).
 |          1 | 2017-09-18 | [Global Peace Index: Web scraping and bump charts\!](https://ryo-n7.github.io//2017-09-18-global-peace-index/)                                                                                 |
 | \</details | \>         |                                                                                                                                                                                                |
 
-*Last Updated 2021-04-21*
+*Last Updated 2021-04-22*
