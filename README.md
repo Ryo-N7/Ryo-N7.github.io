@@ -25,12 +25,12 @@ R\!](https://ryo-n7.github.io//2021-01-14-jleague-2020-season-review-with-r/).
 
 📈 This 2D plot shows posts over time:
 
-![](README_files/figure-gfm/plot-out-1.png)<!-- -->
+<img src="README_files/figure-gfm/plot-out-1.png" title="A 2D chart where each point represents a post on an axis of time spanning from 2018 to the present. There are some gaps, but posts have been relatively consistent over time." alt="A 2D chart where each point represents a post on an axis of time spanning from 2018 to the present. There are some gaps, but posts have been relatively consistent over time."  />
 
 Below is a word cloud of all the different tags on my blog posts, it
 seems I mostly blog about " ggplot2":
 
-![](README_files/figure-gfm/plot-wordcloud-1.png)<!-- -->
+![](README_files/figure-gfm/plot-wordcloud-1.png)
 
 <details>
 
@@ -75,5 +75,6 @@ seems I mostly blog about " ggplot2":
 |          2 | 2017-09-30 | [Thrice: Initial Data Exploration and Song Length Distributions with Joy Plots\!](https://ryo-n7.github.io//2017-09-30-thrice-part-1/)                                                         |
 |          1 | 2017-09-18 | [Global Peace Index: Web scraping and bump charts\!](https://ryo-n7.github.io//2017-09-18-global-peace-index/)                                                                                 |
 | \</details | \>         |                                                                                                                                                                                                |
+
 
 *Last Updated 2021-04-22*
