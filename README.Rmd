@@ -26,8 +26,6 @@ library(purrr)
 library(knitr)
 library(emo)
 library(ggwordcloud)
-library(extrafont)
-loadfonts()
 ```
 
 ```{r scrape-blog}
@@ -82,7 +80,7 @@ publish_plot <- posts_df %>%
   theme_void()
 ```
 
-```{r}
+```{r tags-wordcloud}
 tags_count_df <- posts_df$tags %>% 
   paste0(collapse = ",") %>% 
   str_replace_all(",", ", ") %>% 
@@ -92,16 +90,22 @@ tags_count_df <- posts_df$tags %>%
   count() %>% 
   ungroup() %>% 
   arrange(desc(n))
-```
 
-```{r}
 # redcol <- c('#fb6a4a','#ef3b2c','#cb181d','#a50f15','#67000d') #%>% rev()
 greencol <- c('#74c476','#41ab5d','#238b45','#006d2c','#00441b')
 # colorVec = rep(c('red', 'skyblue'), length.out=nrow(demoFreq))
 
 # wordcloud2(demoFreq, color = colorVec, fontWeight = "bold")
 # wordcloud2::wordcloud2(tags_count_df, fontFamily = "Roboto Slab", color = redcol)
+
+tags_wordcloud <- tags_count_df %>% 
+  ggplot(aes(label = tag, size = n, color = n)) +
+  geom_text_wordcloud(shape = "diamond") +
+  scale_size_area(max_size = 12) +
+  scale_color_gradientn(colours = greencol) +
+  theme_minimal() 
 ```
+
 
 # Ryo-N7.github.io
 
@@ -129,12 +133,7 @@ publish_plot
 Below is a word cloud of all the different tags on my blog posts, it seems I mostly blog about "`r tags_count_df %>% top_n(1) %>% pull(tag)`":
 
 ```{r plot-wordcloud, fig.height=5, fig.width=10}
-tags_count_df %>% 
-  ggplot(aes(label = tag, size = n, color = n)) +
-  geom_text_wordcloud(family = "Cinzel Black", shape = "diamond") +
-  scale_size_area(max_size = 12) +
-  scale_color_gradientn(colours = greencol) +
-  theme_minimal() 
+tags_wordcloud
 ```
 
 <details><summary> Click to expand a full list of my blog posts</summary>
