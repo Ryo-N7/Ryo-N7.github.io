@@ -31,6 +31,76 @@ You can do this by first installing {centralperk}:
 devtools::install_github("Ryo-N7/centralperk")
 ```
 
+Get a random quote via `centralperk()`:
+
+``` r
+library(centralperk)
+
+centralperk()
+```
+
+    ## 
+    ##  But they don't know that we know they know we know! 
+    ## 
+    ##  > Phoebe
+
+Get a quote from any of the main characters with `ross()`, `rachel()`,
+`joey()`, `chandler()`, `phoebe()`, `monica()`!
+
+``` r
+ross()
+```
+
+    ## 
+    ##  I grew up in a house with Monica, okay. If you didn't eat fast, you didn't eat. 
+    ## 
+    ##  > Ross
+
+``` r
+rachel()
+```
+
+    ## 
+    ##  I got off the plane. 
+    ## 
+    ##  > Rachel
+
+``` r
+joey()
+```
+
+    ## 
+    ##  How you doin? 
+    ## 
+    ##  > Joey
+
+``` r
+chandler()
+```
+
+    ## 
+    ##  I'm not so good with the advice. Can I interest you in a sarcastic comment? 
+    ## 
+    ##  > Chandler
+
+``` r
+phoebe()
+```
+
+    ## 
+    ##  But they don't know that we know they know we know! 
+    ## 
+    ##  > Phoebe
+
+``` r
+monica()
+```
+
+    ## 
+    ##  Guys can fake it? Unbelievable! The one thing that’s ours! 
+    ## 
+    ##  > Monica
+
 Then to access your R profile file (it will create one for you if you
 don’t have one already):
 
@@ -90,7 +160,7 @@ this is just an excuse on my part to re-watch TV shows under the guise
 of “this is useful for my programming projects!”.
 
 I can’t really put a timeline on when any of this stuff will come out
-since there are tons of new shows/movies coming out recently for me to watch but stay
-tuned!
+since there are tons of new shows/movies coming out recently for me to
+watch but stay tuned!
 
 <img src="https://i.imgur.com/zhTAyaZ.jpg" style="display: block; margin: auto;" width = "450" />
