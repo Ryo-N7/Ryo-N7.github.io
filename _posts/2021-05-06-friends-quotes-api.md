@@ -20,7 +20,11 @@ RStudio.
 
 <img src="../assets/2021-05-06-friends-quotes-api_files/friends-cover.gif" style="display: block; margin: auto;" width = "450" />
 
-The best usage of {centralperk} is to insert it into your R profile
+To use {centralperk} you can just call the functions directly:
+
+<img src="../assets/2021-05-06-friends-quotes-api_files/centralperk-example.gif" style="display: block; margin: auto;" width = "350" />
+
+But in my opinion the best usage of {centralperk} is to insert it into your R profile
 file. Whenever you open up a new RStudio instance (or just restart your
 R session if you’re in the mood to procrastinate) a new quote from
 Friends will pop up in your console to brighten your day!
