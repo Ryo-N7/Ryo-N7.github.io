@@ -19,7 +19,7 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 37 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 42 day(s) ago: [Introducing
+🆕 The latest post was published 43 day(s) ago: [Introducing
 {centralperk}: Get quotes from the main characters of the TV show
 ‘Friends’](https://ryo-n7.github.io//2021-05-06-friends-quotes-api/).
 
@@ -78,4 +78,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2021-06-17*
+*Last Updated 2021-06-18*
