@@ -15,13 +15,13 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 # Expected Blog (xBlog) Stats
 
-⭐ There have been 36 posts on the blog since 2017-09-18.
+⭐ There have been 37 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 37 days, or about 0.8 posts per month.
+📅 That’s about a post every 38 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 112 day(s) ago: [J.League Soccer 2020
-Season Review with
-R\!](https://ryo-n7.github.io//2021-01-14-jleague-2020-season-review-with-r/).
+🆕 The latest post was published 78 day(s) ago: [Introducing
+{centralperk}: Get quotes from the main characters of the TV show
+‘Friends’](https://ryo-n7.github.io//2021-05-06-friends-quotes-api/).
 
 📈 This 2D plot shows posts over time:
 
@@ -38,6 +38,7 @@ seems I mostly blog about " ggplot2":
 
 | Number | Date       | Title                                                                                                                                                                                          |
 | -----: | :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     37 | 2021-05-06 | [Introducing {centralperk}: Get quotes from the main characters of the TV show ‘Friends’](https://ryo-n7.github.io//2021-05-06-friends-quotes-api/)                                            |
 |     36 | 2021-01-14 | [J.League Soccer 2020 Season Review with R\!](https://ryo-n7.github.io//2021-01-14-jleague-2020-season-review-with-r/)                                                                         |
 |     35 | 2020-11-02 | [My R Table Competition 2020 Submission: xG Timeline Table for Soccer/Football with {gt}\!](https://ryo-n7.github.io//2020-11-02-xG-timeline-table-competition-tutorial/)                      |
 |     34 | 2020-08-03 | [87th TokyoR Meetup Roundup: {data.table}, Bioconductor, & more\!](https://ryo-n7.github.io//2020-08-03-tokyoR-87-roundup/)                                                                    |
@@ -77,4 +78,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2021-05-06*
+*Last Updated 2021-07-23*
