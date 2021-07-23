@@ -322,7 +322,10 @@ df %>%
 ![](../assets/2017-09-30-thrice-part-1_files/unnamed-chunk-16-1.png)
 
 Change to plot by length in minutes (not perfect as it won't be in base 60):
-
+<details>
+  <summary>Click to show code!</summary>
+  <p>
+  
 ``` r
 histogram <- df %>% 
   ggplot(aes(x = as.numeric(lengthS)/60)) + 
@@ -339,6 +342,8 @@ histogram <- df %>%
         axis.title = element_text(size = 8)) 
 ```
 
+</p>
+</details>
 How can we see differences between albums? We can use subset our data to create mini-plots for each individual level of our variable (`album` in our case) using facets. First let's try the `facet_wrap()` function:
 
 ``` r
