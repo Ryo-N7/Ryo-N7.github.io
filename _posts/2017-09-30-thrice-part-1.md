@@ -326,7 +326,7 @@ Change to plot by length in minutes (not perfect as it won't be in base 60):
   <summary>Click to show code!</summary>
   <p>
   
-``` r
+```r
 histogram <- df %>% 
   ggplot(aes(x = as.numeric(lengthS)/60)) + 
   geom_histogram(binwidth = 0.5, 
