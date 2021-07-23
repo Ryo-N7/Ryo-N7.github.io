@@ -327,6 +327,7 @@ Change to plot by length in minutes (not perfect as it won't be in base 60):
   <p>
   
 ```r
+
 histogram <- df %>% 
   ggplot(aes(x = as.numeric(lengthS)/60)) + 
   geom_histogram(binwidth = 0.5, 
@@ -340,6 +341,7 @@ histogram <- df %>%
   theme_bw() +
   theme(axis.text = element_text(size = 8, color = "#252525"),
         axis.title = element_text(size = 8)) 
+        
 ```
 
 </p>
