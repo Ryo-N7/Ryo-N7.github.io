@@ -324,7 +324,7 @@ df %>%
 Change to plot by length in minutes (not perfect as it won't be in base 60):
 <details>
   <summary>Click to show code!</summary>
-  <p>
+  <pre>
   
 ```r
 
@@ -344,7 +344,7 @@ histogram <- df %>%
         
 ```
 
-</p>
+</pre>
 </details>
 How can we see differences between albums? We can use subset our data to create mini-plots for each individual level of our variable (`album` in our case) using facets. First let's try the `facet_wrap()` function:
 
