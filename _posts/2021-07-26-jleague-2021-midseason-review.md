@@ -1519,7 +1519,7 @@ Hokkaido Consadole Sapporo
 </tbody>
 </table>
 
-Some players have “aged out” of this list like Tsuyoshi Watanabe (who
+Some players have “aged out” of the list from the 2020 season review like Tsuyoshi Watanabe (who
 was still eligible for the U-23/24 Olympic squad) while others just
 haven’t kicked on from last season, along with several exciting new
 additions. Notable exclusions include players like **Daiki Kaneko**,
