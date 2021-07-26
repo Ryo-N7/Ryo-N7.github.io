@@ -859,7 +859,7 @@ the expense (not just the $ but also the time to make full use of
 purchasing an account). So, I am only using data from free websites
 which do not have as much detail. Thankfully, I have been able to find a
 bit more on a player and team level from a variety of new sources since
-the 2020 season review I did in January. A big *arigato* to websites
+the [2020 season review I did in January](https://ryo-n7.github.io/2021-01-14-jleague-2020-season-review-with-r/). A big *arigato* to websites
 like [Transfermarkt](https://www.transfermarkt.com/),
 [Sporteria](https://sporteria.jp/),
 [Football-Lab](https://www.football-lab.jp/),
