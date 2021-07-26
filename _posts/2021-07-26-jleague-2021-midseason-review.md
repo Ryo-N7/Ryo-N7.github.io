@@ -864,7 +864,7 @@ like [Transfermarkt](https://www.transfermarkt.com/),
 [Sporteria](https://sporteria.jp/),
 [Football-Lab](https://www.football-lab.jp/),
 [FBref](https://fbref.com/en/), and more! As always, you can always
-check **where** I got the **data** from my taking a look at the bottom
+check **where** I got the **data** from taking a look at the bottom
 right corner of any viz.
 
 The data used below is up to what officially should be **Matchday 22**
@@ -894,8 +894,8 @@ Contents
 -   Squad Age Profiles
 -   Goals Scored/Conceded by 10-minute Time Intervals
 -   Goals Scored/Conceded by Match Situations
--   Rolling Average: Goals vs. Goals Against
--   Rolling Average: xG vs. xGA
+-   Five Game Rolling Average: Goals vs. Goals Against
+-   Five Game Rolling Average: xG vs. xGA
 -   Team Shot Quantity: Shots per 90 vs. Shots Against per 90
 -   Team Shot Quality (xG): xG per 90 vs. xGA per 90
 -   Team-level Shot Quality vs. Quantity: Shots per 90 vs. xG Per Shot &
@@ -927,6 +927,8 @@ Data Visualizations
 
 U-23 Players
 ------------
+
+Using data from Transfermarkt, you can also get a quick look at some of the most promising young J.League players, purely from the “if they’re good enough, age doesn’t matter” perspective. The criteria I chose was “less than or equal to 23 years old and has played 60% or more of total league minutes”.
 
 <details>
   <summary>Click to show code!</summary>
