@@ -1531,7 +1531,7 @@ the past month or so playing in the double pivot for Marinos).
 There are a lot of young goalkeepers making a name for themselves this
 season which meant a very tight race for the 2 spots on the Olympics
 squad. In the end it was **Keisuke Osako** and **Kosei Tani** in the
-final squad but good performances from likes of **Go Hatano**, **Yuya
+final squad but good performances from the likes of **Go Hatano**, **Yuya
 Oki**, and **Zion Suzuki** (not shown in table above) have Japan fans
 excited for the future in a position where the nation has had
 longstanding problems.
@@ -1596,7 +1596,7 @@ minutes in tandem or rotation for the Kanagawa side and this is even
 without a cameo from Kazuyoshi Miura, who has only appeared for one
 whole minute in the league this season. On the bright side they have
 quite a number of young exciting prospects that they’ve brought in the
-past two seasons, **Yuya Takagi**, **Yota Maejima **, and others, whom
+past two seasons, **Yuya Takagi**, **Yota Maejima**, and others, whom
 they’ll need to rely on to make a promotion push from J2 next season
 (yes, I am unfortunately already writing them off as they really have
 been terrible).
@@ -1633,7 +1633,7 @@ season!).
 
 <img src="../assets/2021-07-26-jleague-2021-midseason-review_files/squad_age_profile/SquadAge_KashimaAntlers_2021_mid_EN.png" style="display: block; margin: auto;" width = "750" />
 
-Time interval
+Time Interval
 -------------
 
 I would be very careful of crafting narratives based solely on these
@@ -1716,7 +1716,7 @@ minutes of the game. Not a league-leading stat to be proud of.
 
 <img src="../assets/2021-07-26-jleague-2021-midseason-review_files/interval/interval_goaltimes_ShimizuSPulse.png" style="display: block; margin: auto;" width = "750" />
 
-Match situation
+Match Situation
 ---------------
 
 Ideally, I would have data that concerns all shots or xG accumulated
@@ -1894,7 +1894,7 @@ next worse team, highlighting how porous their defense has been in not
 just giving away shots in general but those that are good opportunities
 to score from as well.
 
-Nagoya have kept their rock-solid defense from last season but the thing
+**Nagoya** have kept their rock-solid defense from last season but the thing
 that prevents them from becoming true title contenders has been the fact
 that they don’t create many shots in the first place, and even of those
 that they do, they aren’t necessarily guilt-edged chances that you might
@@ -1917,7 +1917,7 @@ Shots Against per 90 vs. xGA per Shot
 
 One the defensive side of things **Nagoya Grampus** shine as they only
 allow the 3rd least shots against per 90 while keeping the quality of
-chances (as measured by expected goals) down to a league-best \_\_ xGA
+chances (as measured by expected goals) down to a league-best 0.08 xGA
 per Shot.
 
 <img src="../assets/2021-07-26-jleague-2021-midseason-review_files/quadrant/J-League_2021_mid_team_shot_against_quant_qual_plot.png" style="display: block; margin: auto;" width = "750" />
@@ -2036,7 +2036,7 @@ the back while not necessarily creating more quality chances on average.
 After a rough start to the season, especially in the season opener
 against Kawasaki, **Ange Postecoglou** managed to turn things around and
 slowly rise up to table due to their games in hand. Although Ange has
-now left for Celtic and caretaker Hideki Matsunaga has more or less kept
+now left for Celtic and caretaker **Hideki Matsunaga** has more or less kept
 things the same for the past month or so, only time will tell if
 incoming manager **Kevin Muscat** will be able to keep this form up to
 challenge Kawasaki for the title.
@@ -2095,7 +2095,7 @@ that led to his sacking.
 
 ### Sagan Tosu
 
-Started off the season in terrific defensive form as they kept a clean
+Sagan Tosu tarted off the season in terrific defensive form as they kept a clean
 sheet every game until matchday 7 when Park Il-Gyu was beaten by a
 30-yard screamer from Cerezo Osaka’s Okuno. Things have taken a slight
 bobble in recent games, having only won once in the last five, but with
@@ -2160,7 +2160,7 @@ In this section I’ll talk about some teams and players I mentioned in
 the [2020 season
 review](https://ryo-n7.github.io/2021-01-14-jleague-2020-season-review-with-r/)
 and see whether I got things right or wrong, and generally talk about
-what those teams and a few other interesting ones. Consider the player
+those teams and a few other interesting ones. Consider the player
 sections to be less of the “best” players but more of an assortment of
 interesting players that I happened to be able to watch in detail since
 the season started. I would love to have been able to do a deep dive on
@@ -2198,7 +2198,9 @@ Vissel Kobe’s more recent Center Back pairing is a good example of a
 Kikuchi** and **Yuki Kobayashi**.
 
 **Dog**: A type of center back who is very aggressive and loves to press
-or chase an attacker. **Cat**: A type of center back who is more
+or chase an attacker. 
+
+**Cat**: A type of center back who is more
 patient, steps back and covers. Carefully positioning themselves to be
 able to recover the ball.
 
@@ -2220,7 +2222,7 @@ strong aerial presence standing at 1.88 meters / 6 ft. 1 complemented by
 a big leap from standing and running starts. Kikuchi frequently pushes
 up and prevent players from turning forwards as he is very aggressive in
 following forwards who drop deep, even into their own half. He isn’t
-very fast, so when forced to cover out wide for full backs can get
+very fast, so when forced to cover out wide for full backs he can get
 beaten for pace easily by a winger 1 v 1, especially if he can’t trap
 them against the sideline. He is much better in 1 v 1 situations where
 the opponent hasn’t built up a lot of speed yet and uses his big body to
@@ -2287,7 +2289,7 @@ comfortable shooting with his weaker left foot when cutting in from the
 right.
 
 A concern one might have after reading the above is, whether he’ll be
-able to thrive when Celtic, who routinely play against teams who deny
+able to thrive at Celtic, who routinely play against teams who deny
 the space in behind that Furuhashi loves. While it is true that he’ll be
 much less involved on the ball in these sort of games, he does still
 have value in being able to combine with teammates with one-twos and
@@ -2357,10 +2359,10 @@ despite boasting the talents of **Patric** and **Takashi Usami** only
 Oita Trinita have a worse expected goals per game and are also third
 from bottom in expected goals against per game (as of Matchday 22 \|
 July 11). With a horrid start to the season (3 GF \| 9 GA in 10 games),
-Japan and Gamba legend Tsuneyasu Miyamoto’s managerial tenure ended in
+Japan and Gamba legend **Tsuneyasu Miyamoto**’s managerial tenure ended in
 May under huge clouds of uncertainty. Although some of the blame can be
 attributed to him, he was also not helped by a COVID breakout in the
-squad after the Matchday 2 significantly disrupting their season.
+squad after Matchday 2 significantly disrupted their season.
 
 Caretaker **Masanobu Matsunami** hasn’t made too much progress either as
 the Osaka side still languish in the relegation spots and have just
@@ -2407,7 +2409,7 @@ deficiencies highlighted more if he was playing in a back 4.
 
 **Satoshi Tanaka** was already making waves last season but he was
 mainly forced to play at Left Center Back due to the established duo of
-Daiki Kaneko and Mitsuki Saito playing in midfield. This season he has
+**Daiki Kaneko** and **Mitsuki Saito** playing in midfield. This season he has
 made the \#6 position himself using his strength and aggression that
 belie his age to bully more experienced professionals off the ball. On
 the ball, Satoshi Tanaka is able to set the tempo for the Shonan side,
@@ -2474,7 +2476,7 @@ since coming back from injury showcasing a more expansive passing range
 compared to last season.
 
 **Go Hatano** has grasped at the opportunity presented by veteran
-Akihiro Hayashi’s long term injury as his strong performances throughout
+**Akihiro Hayashi**’s long term injury as his strong performances throughout
 the season means he’ll be keeping his spot for the long haul, as long as
 he doesn’t make any more foolish off-the-field decisions like breaking
 COVID protocols… He was also a long shot for the Olympics squad and was
@@ -2612,8 +2614,8 @@ FC Tokyo
 --------
 
 Rounded up, FC Tokyo have the youngest squad at age 24, as the
-metropolitan side prefer to supplement their depth with young talents
-from their large academy. The off-season brought reinforcements in a few
+metropolitan side prefer to supplement their squad depth with young talents
+from their large academy rather than big name signings. The off-season brought reinforcements in a few
 key positions without instigating wholesale changes with the arrivals of
 **Takuya Aoki**, **Ryoma Watanabe**, and **Bruno Uvini** being the
 non-youth transfers.
@@ -2679,7 +2681,7 @@ they are still undefeated this season. In continental competition, with
 China sending their youth teams and Australian teams pulling out
 entirely, it really is **the** best chance for Kawasaki to erase their
 Asian Champions League voodoo. The Champions league has been the one
-competition that they haven’t been able to crack yet in Tohru Oniki’s
+competition that they haven’t been able to crack yet in **Tohru Oniki**’s
 tenure as manager.
 
 <img src="../assets/2021-07-26-jleague-2021-midseason-review_files/squad_age_profile/SquadAge_KawasakiFrontale_2021_mid_EN.png" style="display: block; margin: auto;" width = "750" />
@@ -2690,10 +2692,10 @@ Kashiwa Reysol
 The big **Michael Olunga** shaped hole in their offense has taken yet
 another big hit recently with the sale of effervescent fantasista,
 **Ataru Esaka**, to Urawa Reds. To offset Olunga’s departure, a large
-contingent of Brazilian nationals (Dodi, Pedro Raul, Rodrigo Angelotti,
-and Emerson Santos) were called upon as reinforcements but they were
+contingent of Brazilian nationals (**Dodi**, **Pedro Raul**, **Rodrigo Angelotti**,
+and **Emerson Santos**) were called upon as reinforcements but they were
 delayed due to COVID immigration protocols. As such they have only been
-integrated into the squad in the past 1\~2 months. Nelsinho has been
+integrated into the squad in the past 1\~2 months. Manager **Nelsinho** has been
 constantly tinkering with this team switching between many different
 formations and shapes and hasn’t really been able to get any consistency
 out of his side. With **Taiyo Koga**, **Keiya Shiihashi**, **Takuya
@@ -2730,7 +2732,7 @@ to injury were by razor thin margins. Their solution was… to buy
 **Yoichiro Kakitani**, who is more of an attacking midfielder than a
 goal getter (not to mention Nagoya already have good \#10s in **Gabriel
 Xavier** and **Hiroyuki Abe**). Most of their threat still comes from
-**Mateus** and **Yuki Soma** out wide and with Mu Kanazaki still looking
+**Mateus** and **Yuki Soma** out wide and with **Mu Kanazaki** still looking
 far from fitness, **Ryogo Yamasaki** has continued as their main
 striker. While he does well holding the ball up and bringing their other
 attackers into the final 3rd, he is still lacking in the goals
