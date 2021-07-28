@@ -3032,7 +3032,7 @@ biggest stories going into the 2nd half of the season will be:
 -   and more…!
 
 I hope this mid-season review has got you interested in the J.League or
-if you were already a fan that it was informative and entertaining. I
+if you were already a fan that it was informative and entertaining. If you got any questions or want more J.League (and when the Premier League starts, Liverpool) content, you can find me on [Twitter](https://twitter.com/R_by_Ryo). I
 will be writing an end-of-the-season review so goodbye for now and…
 
 See you at the end of the season!
