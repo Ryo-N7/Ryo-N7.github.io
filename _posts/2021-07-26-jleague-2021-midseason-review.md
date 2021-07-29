@@ -28,7 +28,7 @@ League Table
 ------------
 
 <details>
-  <summary><b>Click to show code!</b></summary>
+  <summary><b>Click to show R code!</b></summary>
   <pre>
 
 ``` r
@@ -931,7 +931,7 @@ U-23 Players
 Using data from Transfermarkt, you can also get a quick look at some of the most promising young J.League players, purely from the “if they’re good enough, age doesn’t matter” perspective. The criteria I chose was “less than or equal to 23 years old and has played 60% or more of total league minutes”.
 
 <details>
-  <summary><b>Click to show code!</b></summary>
+  <summary><b>Click to show R code!</b></summary>
   <pre>
 
 ``` r
@@ -2140,7 +2140,7 @@ goals more than what Football-Lab’s xG model expected an average league
 player to score from the chances he took.
 
 <details>
-  <summary><b>Click to show code!</b></summary>
+  <summary><b>Click to show R code!</b></summary>
   <pre>
 
 ```{r fig.height=20, fig.width=24}
@@ -2233,7 +2233,7 @@ angle) or shots from outside the box or at bad angles and compare them
 with their shot volume output.
 
 <details>
-  <summary><b>Click to show code!</b></summary>
+  <summary><b>Click to show R code!</b></summary>
   <pre>
 
 ```{r fig.height=20, fig.width=24}
