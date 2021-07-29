@@ -2140,7 +2140,7 @@ goals more than what Football-Lab’s xG model expected an average league
 player to score from the chances he took.
 
 <details>
-  <summary>**Click to show code!**</summary>
+  <summary><b>Click to show code!</b></summary>
   <pre>
 
 ```{r fig.height=20, fig.width=24}
