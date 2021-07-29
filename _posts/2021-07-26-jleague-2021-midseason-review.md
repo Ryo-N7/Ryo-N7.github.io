@@ -28,7 +28,7 @@ League Table
 ------------
 
 <details>
-  <summary>**Click to show code!**</summary>
+  <summary><b>Click to show code!</b></summary>
   <pre>
 
 ``` r
@@ -931,7 +931,7 @@ U-23 Players
 Using data from Transfermarkt, you can also get a quick look at some of the most promising young J.League players, purely from the “if they’re good enough, age doesn’t matter” perspective. The criteria I chose was “less than or equal to 23 years old and has played 60% or more of total league minutes”.
 
 <details>
-  <summary>**Click to show code!**</summary>
+  <summary><b>Click to show code!</b></summary>
   <pre>
 
 ``` r
@@ -2139,6 +2139,87 @@ gathered) from 8.34 non-penalty xG. This means that he’s scored almost 6
 goals more than what Football-Lab’s xG model expected an average league
 player to score from the chances he took.
 
+<details>
+  <summary>**Click to show code!**</summary>
+  <pre>
+
+```{r fig.height=20, fig.width=24}
+create_slope2 <- function(slope, i) {
+  # Calculate the position of the labels, such that
+  # they run along the top horizontally, beyond a
+  # maximum y value
+  max_x <- 15
+  max_y <- 15
+  label_x <- ifelse(slope*max_x <= max_y, max_x, (max_y / slope))
+  label_y <- slope * label_x
+
+  # Only show the full label for the first annotation
+  label <- stringr::str_glue("{slope * 100}% of xG")
+  if (i == 5) {
+    label <- str_glue("Scored {slope * 100}% of xG")
+  }
+
+  # Return the layers
+  list(
+    ggplot2::geom_segment(x = 0, y = 0,
+                 xend = max_x * 2, yend = slope * max_x * 2,
+                 linetype = "dashed", colour = "#e60000", size = 2),
+    ggplot2::annotate(geom = "label", x = label_x, label_y,
+             label = label, hjust = 1, size = 12,
+             fill = "#F0F0F0", colour = "#800000",
+             label.size = 0,
+             family = "Roboto Slab", fontface = "bold")
+  )
+}
+
+create_xG_leaders_plot2 <- function(df, season,
+                                    from = 0.5, to = 1.5, by = 0.25,
+                                    xlim, ylim) {
+  ## df <- xGLeaders_df
+  xGleaders_plot <- df %>%
+    ggplot2::ggplot(ggplot2::aes(x = npxG, y = npGoals)) +
+    purrr::imap(seq(from = from, to = to, by = by),
+                ~ create_slope2(.x, .y)) +
+    ggplot2::geom_point(size = 8) +
+    ggrepel::geom_text_repel(#data = filter(xGLeaders_df,
+      #npxG >= 10, npGoals >= 10),
+      aes(label = player_name_EN),
+      min.segment.length = 0,
+      size = 12,
+      force = 15, force_pull = 0.1,
+      family = "Roboto Slab", fontface = "bold",
+      color = "#000000",
+      segment.size = 2,
+      #point.padding = unit(30, "lines"),
+      #label.padding = 0.5,
+      box.padding = 0.9
+    ) +
+    ggplot2::coord_cartesian(xlim = c(0, xlim), ylim = c(0, ylim)) + #c(0, 32), ylim = c(0, 32)) +
+    ggplot2::scale_x_continuous() +
+    ggplot2::scale_y_continuous() +
+    ggplot2::labs(title = "Elite finishers of the J.League",
+                  subtitle = glue::glue("Top 20 xG leaders in the {season} season (Matchday 22 | July 10-11)"),
+                  caption = "Graphic: Ryo Nakagawara | Twitter: @R_by_Ryo | Source: Football-Lab.jp",
+                  x = "Non-Penalty xG",
+                  y = "Non-Penalty Goals") +
+    ggplot2::theme_minimal() +
+    ggplot2::theme(plot.title = ggplot2::element_text(size = 55),
+                   plot.subtitle = element_text(size = 40),
+                   plot.caption = element_text(size = 30),
+                   text = element_text(size = 40, family = "Roboto Slab"),
+                   plot.background = ggplot2::element_rect(fill = "#F0F0F0"),
+                   panel.grid = ggplot2::element_line(color = "black"))
+  
+  return(xGleaders_plot)
+}
+
+xg_player_leaders_plot <- create_xG_leaders_plot2(df = xG_flab_df, season = 2021,
+                                                  xlim = 15, ylim = 15)
+```
+
+</pre>
+</details>
+
 <img src="../assets/2021-07-26-jleague-2021-midseason-review_files/player_xG/J-League_2021_mid_xG_leaders_plot.png" style="display: block; margin: auto;" width = "750" />
 
 ### Shots per 90 vs. xG per Shot
@@ -2152,10 +2233,12 @@ angle) or shots from outside the box or at bad angles and compare them
 with their shot volume output.
 
 <details>
-  <summary>**Click to show code!**</summary>
+  <summary><b>Click to show code!</b></summary>
   <pre>
 
 ```{r fig.height=20, fig.width=24}
+xG_flab_df <- readr::read_csv(file = "https://raw.githubusercontent.com/Ryo-N7/soccer_ggplots/master/data/J-League_2021_mid_review/jleague_xg_player_2021_mid.csv")
+
 xg_player_qual_quant_plot <- ggplot(xG_flab_df,
        aes(x = npShotsPer90, y = npxGPerShot,
            label = player_name_EN)) + 
