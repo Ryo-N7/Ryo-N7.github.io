@@ -2145,6 +2145,7 @@ player to score from the chances he took.
 
 ```{r fig.height=20, fig.width=24}
 create_slope2 <- function(slope, i) {
+  # Code to add diagonal gridlines taken from Ben Torvaney: https://www.statsandsnakeoil.com/2020/10/07/diagonal-gridlines/
   # Calculate the position of the labels, such that
   # they run along the top horizontally, beyond a
   # maximum y value
