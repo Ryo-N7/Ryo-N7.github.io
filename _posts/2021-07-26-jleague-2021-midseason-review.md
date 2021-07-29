@@ -28,7 +28,7 @@ League Table
 ------------
 
 <details>
-  <summary>Click to show code!</summary>
+  <summary>**Click to show code!**</summary>
   <pre>
 
 ``` r
@@ -931,7 +931,7 @@ U-23 Players
 Using data from Transfermarkt, you can also get a quick look at some of the most promising young J.League players, purely from the “if they’re good enough, age doesn’t matter” perspective. The criteria I chose was “less than or equal to 23 years old and has played 60% or more of total league minutes”.
 
 <details>
-  <summary>Click to show code!</summary>
+  <summary>**Click to show code!**</summary>
   <pre>
 
 ``` r
@@ -2150,6 +2150,46 @@ data we can begin to understand whether a player is taking and/or
 scoring from high quality chances (close to the goal and at a good
 angle) or shots from outside the box or at bad angles and compare them
 with their shot volume output.
+
+<details>
+  <summary>**Click to show code!**</summary>
+  <pre>
+
+```{r fig.height=20, fig.width=24}
+xg_player_qual_quant_plot <- ggplot(xG_flab_df,
+       aes(x = npShotsPer90, y = npxGPerShot,
+           label = player_name_EN)) + 
+  geom_point() +
+  ggplot2::geom_point(size = 10) +
+  ggrepel::geom_text_repel(
+    size = 12, #nudge_y = 0.075, 
+    force = 4,
+    min.segment.length = 0, segment.size = 1, fontface = "bold",
+    segment.color = "#000000", seed = 8, box.padding = unit(10, "mm"),
+    family = "Roboto Condensed") +
+  labs(
+    title = "Quantity of Shots Taken (Shots per 90) vs. Quality of Shots Taken (xG per Shot)",
+    subtitle = "J.League 2021 | Matchday 22 (July 10-11)",
+    x = "Non-Penalty Shots per 90",
+    y = "Non-Penalty xG per Shot",
+    caption = "Graphic: Ryo Nakagawara | Twitter: @R_by_Ryo | Source: Football-Lab.jp"
+  ) +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(
+    text = ggplot2::element_text(size = 30, family = "Roboto Slab"),
+    plot.title = ggtext::element_markdown(size = 40),
+    plot.subtitle = element_text(size = 35),
+    plot.caption = element_text(size = 30),
+    axis.title = element_text(size = 35),
+    axis.text = element_text(size =30),
+    panel.grid.major = ggplot2::element_line(size = 2),
+    panel.grid.minor = element_line(size = 2))
+
+xg_player_qual_quant_plot
+```
+
+</pre>
+</details>
 
 <img src="../assets/2021-07-26-jleague-2021-midseason-review_files/player_xG/J-League_2021_mid_xG_players_qual_quant_plot.png" style="display: block; margin: auto;" width = "750" />
 
