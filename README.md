@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O4O342A2A)
 <!-- badges: end -->
 
 This is the Github repository for my website,
@@ -12,14 +13,6 @@ This is the Github repository for my website,
 
 Usually about soccer, R conference/meetup roundups (RStudio, UseR\!,
 TokyoR, etc.), and other data science-y things - all done in R.
-
-<center>
-
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-
-<script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script>
-
-<center/>
 
 # Expected Blog (xBlog) Stats
 
