@@ -386,3 +386,7 @@ Part 2 will be coming soon! (7/5/18: Part 2 [here!](https://ryo-n7.github.io/201
 7/15/18: Made significant improvements to Gazinsky's goal - check it out (this is the static version of the one that I eventually animated).
 
 ![](https://i.imgur.com/7tRZnm7.png)
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

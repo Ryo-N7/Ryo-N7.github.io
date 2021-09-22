@@ -202,3 +202,7 @@ next meetup will be in [January](https://tokyor.connpass.com/)
 
 For the time being meetups will continue to be conducted online. Talks
 in English are also welcome so come join us!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

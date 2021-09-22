@@ -139,3 +139,6 @@ Next version will allow full customization of the bullet\_chart variables courte
 
 Hopefully this recollection of random tips, tricks, and my thoughts of my package building experience can be helpful to would-be novice package developers in the future. This was a great experience for me and I hope to create more `R` packages in the future!
 
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

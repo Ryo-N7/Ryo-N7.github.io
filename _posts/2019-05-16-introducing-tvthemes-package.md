@@ -599,3 +599,7 @@ can find the Github repo for the package
 
 * [tvthemes 1.0.0 blog post](https://ryo-n7.github.io/2019-09-06-tvthemes-CRAN-announcement/)
 * [tvthemes 1.1.0 blog post](https://ryo-n7.github.io/2019-11-04-tvthemes-1.1.0-announcement/)
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

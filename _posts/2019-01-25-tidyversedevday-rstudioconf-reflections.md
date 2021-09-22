@@ -298,3 +298,7 @@ Github repo [here](https://github.com/kbroman/RStudioConf2019Slides)!
 For next year I already grabbed a SuperFan ticket so I hope to see some
 old faces and new faces next year in San Francisco. It’s going to be
 nice to go back to the Bay!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

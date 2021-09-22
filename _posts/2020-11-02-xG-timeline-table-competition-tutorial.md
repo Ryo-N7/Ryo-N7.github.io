@@ -1876,3 +1876,7 @@ If you made it all the way through, thanks for reading and happy coding!
 
 -   [soccer\_gt\_timeline](https://github.com/Ryo-N7/soccer_gt_timelines):
     Github repo of this tutorial and other examples.
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

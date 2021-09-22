@@ -719,3 +719,7 @@ Panning and zooming across different states in the animation is another new conc
 Finally, in previous versions you used the `gganimate()` function to save the animation on your computer but now that is done with `anim_save()`. The README on GitHub has a very clear explanation on this so take a look under the "Where is my animation?" section [here](https://github.com/thomasp85/gganimate#where-is-my-animation).
 
 There's still much to learn from the new API and I'm sure there will still be more changes/fixes to come before the first CRAN release but this was a great step in the right direction. I will eagerly await the next release!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

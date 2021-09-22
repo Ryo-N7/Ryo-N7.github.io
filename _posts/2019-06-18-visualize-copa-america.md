@@ -2198,3 +2198,7 @@ After the first round of games, a few points of discussion:
 Thanks for reading and…
 
 ¡Buena suerte a todos equipos!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

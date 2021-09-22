@@ -424,3 +424,7 @@ My next steps in this analysis would be to try to recreate a Köppen climate cla
 A screenshot of my leaflet sample:
 
 ![leaflet](https://i.imgur.com/6bgewvq.png)
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

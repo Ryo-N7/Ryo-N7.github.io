@@ -24,6 +24,10 @@ In July 2018, I gave a presentation at the TokyoR User Group on "Visualizing the
 
 Back in October 2019, I gave a presentation at the TokyoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
 
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>
+
 **Contact**: ryonakagawara[at]gmail[dot]com
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!

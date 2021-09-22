@@ -393,3 +393,7 @@ GPI_rank %>%
 このブログ記事ではデータ収集から可視化までのワークフロー全てを記載しました。あんまり深く探りませんでしたが分析プロジェクトの第一歩、Exploratory Data Analysis (探索データ解析)、としてはいい例だと思っています。このデータでまだいろんな可視化もできますので是非挑戦してみてください(例えば`ggmap`とかで最初に表示したGPIデータの世界地図を再現してみるとか)。この記事がTidyverseやggplotを習っている方々に参考になれば幸いです。
 
 英語も読める方はぜひ他のブログ記事も読んでください。次回は、昨年投稿した[Thrice Part 1](https://ryo-n7.github.io/2017-09-30-thrice-part-1/)のブログ記事を翻訳しようと思います。
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

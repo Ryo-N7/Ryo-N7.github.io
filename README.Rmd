@@ -116,6 +116,11 @@ This is the Github repository for my website, [R_by_Ryo](https://ryo-n7.github.i
 
 Usually about soccer, R conference/meetup roundups (RStudio, UseR!, TokyoR, etc.), and other data science-y things - all done in R.
 
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>
+
+
 # Expected Blog (xBlog) Stats
 
 `r emo::ji("star")` There have been `r nrow(posts_df)` posts on the blog since `r min(posts_df$publish_date)`. 

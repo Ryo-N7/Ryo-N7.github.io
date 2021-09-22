@@ -373,3 +373,7 @@ writing up one of these and I hope to contribute more and improve in the
 years to come!
 
 If you’re ever in Japan, come join us for some R&R … and R!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

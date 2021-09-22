@@ -445,5 +445,5 @@ We can see that the **joy plots** make the data a lot more understandable (for t
 And that concludes **Part 1**! Next we will be getting into the real meat of sentiment analysis using the `tidytext` package!
 
 <center>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
 <center/>

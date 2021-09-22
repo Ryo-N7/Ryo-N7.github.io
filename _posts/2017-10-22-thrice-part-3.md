@@ -591,3 +591,8 @@ Preview for Part 4
 Here's a little preview of what examining negation words in bi-grams looks like. In the plot below we created a new variable called `contribution` where we multiplied the **AFINN** score of `word2` (the word coming after a *negation* word `word1`) with their frequency to see the full effect of each negation bi-gram on the overall sentiment.
 
 <img src="../assets/2017-10-22-thrice-part-3_files/negation bi-gram sample-1.png" style="display: block; margin: auto;" />
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>
+

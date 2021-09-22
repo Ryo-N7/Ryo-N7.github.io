@@ -230,3 +230,7 @@ The most difficult part of this whole process of making a graph for each group w
 These were very fun to make and I plan to make some more for next season's *Champions League* groups as well as for the *Asian Cup* in January of 2019 and maybe even for the *Asian Games* next month! So creating a package may be something I turn my full attention to once this World Cup is over! On a positive note, I'm very thankful that there were no blowouts on the final matchday as fitting in the goal scorer labels would've been an absolute nightmare!
 
 See you in Part 3!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

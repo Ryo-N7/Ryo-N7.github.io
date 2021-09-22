@@ -703,3 +703,7 @@ Today we did divided up the lyrics into singular words and analyzed it at variou
 (Link: [Part 3](https://ryo-n7.github.io/2017-10-22-thrice-part-3/))
 
 (10/30/2017 EDIT: forgot the `wt =` argument in `top_n()` when nesting the dataframe, each nested `data` column should have the proper number of rows now!)
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

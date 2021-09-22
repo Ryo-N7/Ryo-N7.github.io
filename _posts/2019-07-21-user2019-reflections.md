@@ -574,3 +574,7 @@ Models](https://user2019.r-project.org/static/pres/lt257977.pdf) at the
 conference).
 
 There were still a ton of great talks I missed so I'm excited to watch the rest on Youtube. I think I will be at RStudio::Conference next year in San Francisco so hopefully I'll see some of you there!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

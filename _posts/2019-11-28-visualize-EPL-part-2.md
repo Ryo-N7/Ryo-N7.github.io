@@ -260,3 +260,7 @@ look at more carefully and for that I’ll probably need to include data
 from other sources as well. That will be a challenge to tackle in a
 future part. In the more immediately future, the next part will look at
 how stats look for teams across every 15-minute intervals of games.
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

@@ -338,3 +338,7 @@ Further Reading:
 -   Jorgenson, D. W., & Nishimizu, M. (1978). US and Japanese economic growth, 1952-1974: an international comparison. The Economic Journal, 88(352), 707-726.
 
 -   Ozawa, T. (1974). Japan's technological challenge to the West, 1950-1974: Motivation and accomplishment. MIT Press Books, 1.
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

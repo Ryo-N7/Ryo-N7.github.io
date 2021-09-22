@@ -674,3 +674,7 @@ lot. As the years have gone by I’ve talked to a lot of people on
 these people in real life at these kind of events. The next conference
 is in [Orlando, Florida](https://rstd.io/conf) from **January 18 to 21**
 and I’ve already got my tickets, so I hope to see more of you all there!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>

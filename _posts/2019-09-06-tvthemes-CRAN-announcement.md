@@ -371,3 +371,7 @@ or find any bugs then please let me know on
 [GitHub](https://github.com/Ryo-N7/tvthemes/) or on
 [Twitter](https://twitter.com/R_by_Ryo/). I hope you enjoy the new CRAN
 version of {tvthemes}!
+
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>
