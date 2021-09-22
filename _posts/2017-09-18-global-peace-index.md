@@ -406,4 +406,6 @@ With initiatives like the GPI and the works of other peace-oriented think tanks,
 
 I hope this was a good example for people wanting to learn how to use the Tidy data munging packages and ggplot with real world data. There's plenty of other ways to visualize this data so try it out (maybe try recreating the map at the beginning of the blog post with `ggmap` or something else)!
 
+<center>
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>
