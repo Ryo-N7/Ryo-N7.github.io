@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating a data pipeline with Github Actions & the {googledrive} package for the Canada Premier League soccer data initiative!"
+title: "Creating a data pipeline with Github Actions & the {googledrive} package for the Canadian Premier League soccer data initiative!"
 fb-img: https://imgur.com/a/kmqxbPu
 share-img: https://imgur.com/a/kmqxbPu
 tags: [canada-premier-league, soccer, football, github-actions, googledrive]
@@ -17,7 +17,7 @@ like sports where throughout the course of a season, new data is being
 updated to a database or some kind of folder.
 
 **In this blog post I will go over how to create a data pipeline for
-Canada Premier League data stored on a Google Drive folder (courtesy of
+Canadian Premier League data stored on a Google Drive folder (courtesy of
 Centre Circle & StatsPerform) using R and Github Actions.**
 
 The simple example I’ll go over will guide you on how to set up a Google
@@ -36,7 +36,7 @@ Canadian Premier League data
 ============================
 
 The Canadian Premier League was started to improve the quality of soccer
-in Canada and alongside its inaugural launch in the 2019 season, a data
+in Canadian and alongside its inaugural launch in the 2019 season, a data
 initiative was started by **CentreCircle** in a partnership with
 **StatsPerform** to provide detailed data on all CPL teams and players.
 
@@ -89,7 +89,7 @@ with a lot of googling things separately.
 Google Drive
 ------------
 
-1.  Make sure you’re already signed into your google account and go to
+1.  Make sure you’re already signed into your Google account and go to
     [“Google Cloud
     Platform/Console”](https://console.cloud.google.com/). On the
     left-side menu bar go to the “IAM & Admin” section.
@@ -154,8 +154,8 @@ file/folder from the email message. You have to make sure to
 ‘share’/‘ask to share’ the folder/file from Google Drive directly.
 
 **NOTE**: Please only do this part if you are **serious** about using
-the Canada Premier League data and that you signed up
-[here](https://canpl.ca/centre-circle-data/) on the Canada PL website
+the Canadian Premier League data and that you signed up
+[here](https://canpl.ca/centre-circle-data/) on the Canadian PL website
 and have read all the terms, conditions, and “best practices” sheet
 provided in the Google Drive folder containing the data. Otherwise you
 can create your own separate folder on Google Drive, put some random
@@ -204,18 +204,18 @@ To set up GHA in your own Github repository:
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/git-repo.PNG" style="display: block; margin: auto;" width = "650" />
 
-1.  Open the repo up in RStudio and type in:
+2.  Open the repo up in RStudio and type in:
     `usethis::use_github_actions()`. This will do all the set up for you
     to get GHA running in your repository.
 
-2.  Your GHA workflows are stored in the `.github/workflows` folder as
+3.  Your GHA workflows are stored in the `.github/workflows` folder as
     YAML files. If you used the function above it’ll create one for
     `R-CMD-check` for you. You don’t need that for what we’re doing
     since this repository isn’t an R package. Either delete it or modify
     it for what we want to do. We’ll be working on the YAML files in the
     next section.
 
-3.  Note that for both private and public repositories you have a number
+4.  Note that for both private and public repositories you have a number
     of **free credits to use per month** but anything more is going to
     cost you. See
     [here](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
@@ -397,7 +397,7 @@ while the simple plot of xG data was saved and committed in the
 Conclusion
 ==========
 
-Hopefully this was a helpful guide for grabbing Canada Premier League
+Hopefully this was a helpful guide for grabbing Canadian Premier League
 soccer data automatically with Github Actions. There is a lot to learn
 as there are many different moving parts to make this work. I tried to
 put links to a lot of the documentation and blog posts that helped me
