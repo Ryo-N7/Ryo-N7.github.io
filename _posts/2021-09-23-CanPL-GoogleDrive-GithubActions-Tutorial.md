@@ -396,7 +396,7 @@ Once a workflow is successful, you should be able to see that another
 `git commit` was made in your github repository that saved new data
 downloaded from the CanPL Google Drive folder into your `data/` folder,
 while the simple plot of xG data was saved and committed in the
-`basic_plots` folder.
+`basic_plots` folder. When you're creating work from this data set please remember to add in social media links to the Canadian Premier League as well as the logos for Centre Circle Data and StatsPerform (below example plot is without the logos).
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/basic_plot_2021-09-23.PNG" style="display: block; margin: auto;" width = "650" />
 
