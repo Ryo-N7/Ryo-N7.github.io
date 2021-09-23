@@ -3,7 +3,7 @@ layout: post
 title: "Creating a data pipeline with Github Actions & the {googledrive} package for the Canadian Premier League soccer data initiative!"
 fb-img: https://i.imgur.com/2B2ZG2Q.jpg
 share-img: https://i.imgur.com/2B2ZG2Q.jpg
-tags: [canada-premier-league, soccer, football, github-actions, googledrive]
+tags: [canada-premier-league, soccer, football, github-actions, googledrive, r-bloggers]
 ---
 
 Introduction
