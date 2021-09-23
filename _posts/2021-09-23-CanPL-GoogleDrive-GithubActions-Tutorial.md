@@ -86,10 +86,10 @@ documentation](https://googledrive.tidyverse.org/articles/index.html)
 -   [Non-interactive authentication docs from the {gargle} R
 package](https://gargle.r-lib.org/articles/non-interactive-auth.html)
 
+[Here](https://github.com/Ryo-N7/CanPL_Analysis) is the link to my own repository which has all the files I'll be talking about later.
+
 Google Drive
 ------------
-
-1.  
 
 Make sure you’re already signed into your Google account and go to
 [“Google Cloud
@@ -98,14 +98,10 @@ left-side menu bar go to the “IAM & Admin” section.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step1.PNG" style="display: block; margin: auto;" width = "550" />
 
-2.  
-
 Scroll down to find the **Create a project** button in the menu bar.
 Give it a good name that states the purpose of your project.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step2.PNG" style="display: block; margin: auto;" width = "550" />
-
-3.  
 
 Create service account. Fill in service account details.
 
@@ -115,13 +111,9 @@ Create service account. Fill in service account details.
 </p>
 
 
-4.  
-
 Select Role “Owner” or other as is relevant for your project.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step4b.PNG" style="display: block; margin: auto;" width = "850" />
-
-5.  
 
 Once you’re done, click on your newly created service account from
 the project page. The email you see listed for your service account
@@ -130,19 +122,13 @@ somewhere.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step5.PNG" style="display: block; margin: auto;" width = "550" />
 
-6.  
-
 Go to “Keys” tab and click on “ADD KEY” and then “Create new key”.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step6.PNG" style="display: block; margin: auto;" width = "550" />
 
-7.  
-
 Make sure the key type is “JSON” and create it.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step7.PNG" style="display: block; margin: auto;" width = "550" />
-
-8.  
 
 Store the file in a secure space. Make sure you store it somewhere
 so that it’s **NOT** being uploaded into a public repository on
@@ -152,15 +138,11 @@ credential an environment variable in R with
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step8.PNG" style="display: block; margin: auto;" width = "550" />
 
-9. 
-
 Go to your Google Drive API page and enable the API. URL link is:
 `https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project={YOUR-PROJECT-ID}`
 (fill in {YOUR-PROJECT-ID} with your project ID).
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step9.PNG" style="display: block; margin: auto;" width = "550" />
-
-10.  
 
 Ask the owner of folder/file to share it with the service account by
 right-clicking on the folder/file in Google Drive and click the
@@ -262,7 +244,7 @@ include the `{}` brackets as well.
 
 Now we need to create a workflow YAML file within the
 `.github/workflows/` directory. This is the file which gives GHA
-instructions on what to do.
+instructions on what to do. Here is the [link](https://github.com/Ryo-N7/CanPL_Analysis/blob/main/.github/workflows/Get-GoogleDrive-Data-And-Plot.yaml) to the one I created.
 
 First, you want to figure out how often you want this GHA to run. It
 really depends on what you want to do with GHA. For the purposes of the
@@ -366,6 +348,8 @@ but it was just quicker doing it with ggplot2).
 
 ### `Get-GoogleDrive-Data.R`
 
+[Link](https://github.com/Ryo-N7/CanPL_Analysis/blob/main/scripts/Get-GoogleDrive-Data.R)
+
 1.  Load R packages.
 
 2.  Authenticate Google Drive by fetching the environment variable you
@@ -386,6 +370,8 @@ individual `.csv` file in the folder.
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-yaml.PNG" style="display: block; margin: auto;" width = "650" />
 
 ### `Plot-ggplot.R`
+
+[Link](https://github.com/Ryo-N7/CanPL_Analysis/blob/main/scripts/Plot-ggplot.R)
 
 1.  Load R packages.
 
