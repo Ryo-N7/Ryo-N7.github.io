@@ -446,9 +446,6 @@ cat("\nAll done!\n")
 
 5.  Save it in the `basic_plots/` folder.
 
-(It’s very possible that as the data is updated throughout the season,
-Pacific FC won’t be the league leaders but whatever, you get the point.)
-
 ``` r
 ## Load packages ----
 library(ggplot2)
@@ -509,6 +506,9 @@ League as well as the logos for Centre Circle Data and StatsPerform
 (below example plot is without the logos).
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/basic_plot_2021-09-23.PNG" style="display: block; margin: auto;" width = "650" />
+
+(It’s very possible that as the data is updated throughout the season,
+Pacific FC won’t be the league leaders but whatever, you get the point.)
 
 Conclusion
 ==========
