@@ -97,40 +97,40 @@ Google Drive
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step1.PNG" style="display: block; margin: auto;" width = "550" />
 
--   1.  Scroll down to find the **Create a project** button in the menu
+-   2.  Scroll down to find the **Create a project** button in the menu
         bar. Give it a good name that states the purpose of your
         project.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step2.PNG" style="display: block; margin: auto;" width = "550" />
 
--   1.  Create service account. Fill in service account details.
+-   3.  Create service account. Fill in service account details.
 
 <p float="left" align="center">
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step3.PNG" width="49%" />
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step4a.PNG" width="49%" />
 </p>
 
--   1.  Select Role “Owner” or other as is relevant for your project.
+-   4.  Select Role “Owner” or other as is relevant for your project.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step4b.PNG" style="display: block; margin: auto;" width = "850" />
 
--   1.  Once you’re done, click on your newly created service account
+-   5.  Once you’re done, click on your newly created service account
         from the project page. The email you see listed for your service
         account is something you’ll need later so keep a copy of that
         address somewhere.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step5.PNG" style="display: block; margin: auto;" width = "550" />
 
--   1.  Go to “Keys” tab and click on “ADD KEY” and then “Create new
+-   6.  Go to “Keys” tab and click on “ADD KEY” and then “Create new
         key”.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step6.PNG" style="display: block; margin: auto;" width = "550" />
 
--   1.  Make sure the key type is “JSON” and create it.
+-   7.  Make sure the key type is “JSON” and create it.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step7.PNG" style="display: block; margin: auto;" width = "550" />
 
--   1.  Store the file in a secure space. Make sure you store it
+-   8.  Store the file in a secure space. Make sure you store it
         somewhere so that it’s **NOT** being uploaded into a public
         repository on Github. You can do that by .gitignore-ing the file
         or making the credential an environment variable in R with
@@ -138,14 +138,14 @@ Google Drive
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step8.PNG" style="display: block; margin: auto;" width = "550" />
 
--   1.  Go to your Google Drive API page and enable the API. URL link
+-   9.  Go to your Google Drive API page and enable the API. URL link
         is:
         `https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project={YOUR-PROJECT-ID}`
         (fill in {YOUR-PROJECT-ID} with your project ID).
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/google-auth/step9.PNG" style="display: block; margin: auto;" width = "550" />
 
--   1.  Ask the owner of folder/file to share it with the service
+-   10.  Ask the owner of folder/file to share it with the service
         account by right-clicking on the folder/file in Google Drive and
         click the ‘Share’ button (Steven Scott is the owner of CanPL
         data). Use the email address you see in the **“client\_email”**
@@ -209,18 +209,18 @@ To set up GHA in your own Github repository:
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/git-repo.PNG" style="display: block; margin: auto;" width = "650" />
 
--   1.  Open the repo up in RStudio and type in:
+-   2.  Open the repo up in RStudio and type in:
         `usethis::use_github_actions()`. This will do all the set up for
         you to get GHA running in your repository.
 
--   1.  Your GHA workflows are stored in the `.github/workflows` folder
+-   3.  Your GHA workflows are stored in the `.github/workflows` folder
         as YAML files. If you used the function above it’ll create one
         for `R-CMD-check` for you. You don’t need that for what we’re
         doing since this repository isn’t an R package. Either delete it
         or modify it for what we want to do. We’ll be working on the
         YAML files in the next section.
 
--   1.  Note that for both private and public repositories you have a
+-   4.  Note that for both private and public repositories you have a
         number of **free credits to use per month** but anything more is
         going to cost you. See
         [here](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
@@ -229,12 +229,12 @@ To set up GHA in your own Github repository:
 To let Github Actions workflow use your Google credentials, you need to
 store it in a place where GHA can retrieve it when its running.
 
--   1.  Go into “Settings” in your Github repository, then “Secrets”,
+-   5.  Go into “Settings” in your Github repository, then “Secrets”,
         and then “New repository secret”.
 
 <img src="../assets/2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial_files/gh-secrets-settings.PNG" style="display: block; margin: auto;" width = "650" />
 
--   1.  Call it `GOOGLE_AUTHENTICATION_CREDENTIALS` or whatever you want
+-   6.  Call it `GOOGLE_AUTHENTICATION_CREDENTIALS` or whatever you want
         (just make sure its **consistent** between what you call it here
         and in the workflow YAML file or R script). Then copy-paste the
         **contents** of the Google credential key `.JSON` file (the one
