@@ -6,8 +6,8 @@ share-img: https://i.imgur.com/YSzu7wM.png
 tags: [japan, jleague, soccer, football, ggplot2, tidyverse, r-bloggers]
 ---
 
-Intro
-=====
+Introduction
+============
 
 The 29th season of the J.League was won, yet again, by **Kawasaki
 Frontale** who have now won 4 times out of the past 5 seasons. They
@@ -1661,7 +1661,7 @@ to evade the opponent’s press in the build-up phase, one of the
 midfielders is tasked to drop into back line (in the half-spaces rather
 than splitting the Center Backs usually) .
 
-<img src="../assets/2021-12-20-jleague-2021-endseason-review_files/diagrams/ST/GO-ST-mismatch-2.png" style="display: block; margin: auto;" width = "750" />
+<img src="../assets/2021-12-20-jleague-2021-endseason-review_files/diagrams/GO/GO-ST-mismatch-2.png" style="display: block; margin: auto;" width = "750" />
 
 Most of the time Tosu use short, quick passes and cut apart opposition
 blocks in between the lines. They can also launch it long to the likes
@@ -3729,6 +3729,69 @@ except that we use xG and xGA rather than goals and goals against. This
 lets us see very quickly which teams generally outperformed their
 opponents in terms of quality of chances created to quality of chances
 conceded based on a xG model.
+
+<details>
+    <summary><b>Click to show R code!</b></summary>
+    <pre>
+
+``` r
+xg_clean_all <- read.csv(
+  file = "https://raw.githubusercontent.com/Ryo-N7/soccer_ggplots/master/data/jleague_2021_END/xGDiff_all_matches_per_team.csv")
+
+create_xGD_plot <- function(data, team) {
+  the_team <- rlang::enquo(team)
+  
+  xgd_filtered_df <- data %>%
+    dplyr::filter(team_name == !!the_team) %>%
+    dplyr::select(team_name, opponent, md_act, contains("goal"), contains("xg"), -xG_graphic_link)
+  
+  xgdmed <- round(unique(xgd_filtered_df$xgd_med), 2)
+  xgdvar <- round(unique(xgd_filtered_df$xgd_var), 2)
+  xgdsd <- round(unique(xgd_filtered_df$xgd_sd), 2)
+  teamname <- unique(xgd_filtered_df$team_name)
+  
+  xmax <- round(max(xgd_filtered_df$xG))
+  ymax <- round(max(xgd_filtered_df$xGA))
+  
+  # fill_pal <- c('#67001f', '#b2182b', '#d6604d', '#f4a582', '#fddbc7', '#f7f7f7', '#d1e5f0', '#92c5de', '#4393c3', '#2166ac', '#053061')
+  
+  xgdiff_plot <- ggplot2::ggplot(xgd_filtered_df,
+                                 ggplot2::aes(x = xG, y = xGA)) +
+    ggplot2::geom_abline(slope = 1, intercept = 0, size = 1.5) +
+    ggplot2::geom_point(aes(fill = xGdiff), size = 15, shape = 21, color = "black", stroke = 1.5) +
+    ggplot2::scale_x_continuous(limits = c(0, xmax)) +
+    ggplot2::scale_y_continuous(limits = c(0, ymax)) +
+    # scale_fill_gradient2(name = "xGD") +
+    ggplot2::scale_fill_gradient2(low = '#67001f', mid = '#f7f7f7', high = '#053061',
+                                  midpoint = 0, name = "xGD") +
+    ggplot2::labs(
+      #title = glue::glue("{teamname}: xGD Var {xgdvar}, Std {xgdsd}"),
+      title = glue::glue("**{teamname}**: Expected Goal Difference (xGD) per Match"),
+      subtitle = glue::glue("J.League 2021 Season (Matchday 1 - 38)\nMedian: {xgdmed} | Variance: {xgdvar} | Standard Deviation: {xgdsd}"),
+      x = "xG (Expected Goals)",
+      y = "XGA (Expected Goals Against)",
+      caption = "Data: Sporteria | Created by: Ryo Nakagawara (Twitter: @R_by_Ryo)"
+    ) +
+    ggplot2::theme_minimal() +
+    ggplot2::theme(text = ggplot2::element_text(family = "Roboto Condensed"),
+                   plot.title = ggtext::element_markdown(family = "Roboto Slab", size = 35),
+                   plot.subtitle = element_text(family = "Roboto Slab",
+                                                size = 33),
+                   plot.caption = element_markdown(hjust = 0, size = 25),
+                   legend.title = element_text(size = 35),
+                   legend.text = element_text(size = 30),
+                   legend.key.size = unit(40, "points"),
+                   axis.title = element_text(size = 30),
+                   axis.text = element_text(size = 30))
+  
+  return(xgdiff_plot)
+}
+
+create_xGD_plot(xg_clean_all, "Kawasaki Frontale")
+```
+
+</pre>
+</details>
 
 \|<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/xGDiff/KawasakiFrontale_2021_end_xgdiff_logo.png">Kawasaki
 Frontale</a> \|
