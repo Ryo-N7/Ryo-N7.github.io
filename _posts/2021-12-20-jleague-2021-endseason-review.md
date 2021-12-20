@@ -3,7 +3,7 @@ layout: post
 title: "J.League Soccer 2021 Season Review!"
 fb-img: https://i.imgur.com/YSzu7wM.png
 share-img: https://i.imgur.com/YSzu7wM.png
-tags: [japan, jleague, soccer, football, ggplot2, tidyverse]
+tags: [japan, jleague, soccer, football, ggplot2, tidyverse, r-bloggers]
 ---
 
 Intro
