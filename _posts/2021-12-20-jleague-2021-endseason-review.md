@@ -3339,45 +3339,45 @@ concede many goals in the last 10\~20 minutes.
 
 Here are the image links for each team:
 
-\|<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_KawasakiFrontale.png">Kawasaki
+\|<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_KawasakiFrontale.png">Kawasaki
 Frontale</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_GambaOsaka.png">Gamba
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_GambaOsaka.png">Gamba
 Osaka</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_NagoyaGrampus.png">Nagoya
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_NagoyaGrampus.png">Nagoya
 Grampus</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_CerezoOsaka.png">Cerezo
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_CerezoOsaka.png">Cerezo
 Osaka</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_KashimaAntlers.png">Kashima
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_KashimaAntlers.png">Kashima
 Antlers</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_FCTokyo.png">FC
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_FCTokyo.png">FC
 Tokyo</a> \| \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_KashiwaReysol.png">Kashiwa
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_KashiwaReysol.png">Kashiwa
 Reysol</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_SanfrecceHiroshima.png">Sanfrecce
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_SanfrecceHiroshima.png">Sanfrecce
 Hiroshima</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_YokohamaMarinos.png">Yokohama
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_YokohamaMarinos.png">Yokohama
 F. Marinos</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_UrawaReds.png">Urawa
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_UrawaReds.png">Urawa
 Reds</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_OitaTrinita.png">Oita
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_OitaTrinita.png">Oita
 Trinita</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_ConsadoleSapporo.png">Consadole
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_ConsadoleSapporo.png">Consadole
 Sapporo</a> \| \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_SaganTosu.png">Sagan
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_SaganTosu.png">Sagan
 Tosu</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_VisselKobe.png">Vissel
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_VisselKobe.png">Vissel
 Kobe</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_YokohamaFC.png">Yokohama
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_YokohamaFC.png">Yokohama
 FC</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_ShimizuSPulse.png">Shimizu
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_ShimizuSPulse.png">Shimizu
 S-Pulse</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_VegaltaSendai.png">Vegalta
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_VegaltaSendai.png">Vegalta
 Sendai</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_AvispaFukuoka.png">Avispa
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_AvispaFukuoka.png">Avispa
 Fukuoka</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_ShonanBellmare.png">Shonan
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_ShonanBellmare.png">Shonan
 Bellmare</a> \|
-<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_TokushimaVortis.png">Tokushima
+<a href="../assets/2021-12-20-jleague-2021-endseason-review_files/interval/interval_goaltimes_end_TokushimaVortis.png">Tokushima
 Vortis</a>
 
 ### Avispa Fukuoka
