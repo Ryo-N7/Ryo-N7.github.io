@@ -3908,6 +3908,11 @@ in September. So I’ll conclude this blog post with some pictures from
 the Yokohama FC vs. Vissel Kobe game and the Emperor’s Cup Final between
 Urawa Reds and Oita Trinita. Try to spot Iniesta in the first picture!
 
+<center>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
+<center/>
+
+
 <img src="../assets/2021-12-20-jleague-2021-endseason-review_files/photos/YFC-VK-1.jpeg" style="display: block; margin: auto;" width = "750" />
 
 <img src="../assets/2021-12-20-jleague-2021-endseason-review_files/photos/YFC-VK-2.jpeg" style="display: block; margin: auto;" width = "750" />
@@ -3939,7 +3944,3 @@ Some English-Language J.League Content!
     Japanese soccer news.
 
 -   …and more!
-
-<center>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me A Coffee!', '#29abe0', 'O4O342A2A');kofiwidget2.draw();</script> 
-<center/>
