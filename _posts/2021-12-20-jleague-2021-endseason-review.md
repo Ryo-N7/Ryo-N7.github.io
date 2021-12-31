@@ -3270,6 +3270,11 @@ Bellmare</a> \|
 <a href="../assets/2021-12-20-jleague-2021-endseason-review_files/squad_age_profile/SquadAge_TokushimaVortis_2021_end_EN.png">Tokushima
 Vortis</a>
 
+
+* Profiles for [J2 teams (Twitter thread)](https://twitter.com/R_by_Ryo/status/1476037038415945728)
+
+* Profiles for [J3 teams (Twitter thread)](https://twitter.com/R_by_Ryo/status/1475405378334912514)
+
 ### Avispa Fukuoka
 
 I mentioned them in the [mid-season
