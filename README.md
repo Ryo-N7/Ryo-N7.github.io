@@ -20,7 +20,7 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 39 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 14 day(s) ago: [J.League Soccer 2021
+🆕 The latest post was published 15 day(s) ago: [J.League Soccer 2021
 Season
 Review\!](https://ryo-n7.github.io//2021-12-20-jleague-2021-endseason-review/).
 
@@ -82,4 +82,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-01-03*
+*Last Updated 2022-01-04*
