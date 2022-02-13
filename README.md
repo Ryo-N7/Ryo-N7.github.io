@@ -20,7 +20,7 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 39 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 29 day(s) ago: [Solving the ‘preserving
+🆕 The latest post was published 30 day(s) ago: [Solving the ‘preserving
 the sum after rounding’ problem for a soccer waffle
 viz](https://ryo-n7.github.io//2022-01-14-preserve-sum-rounding-soccer-viz/).
 
@@ -83,4 +83,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-02-12*
+*Last Updated 2022-02-13*
