@@ -16,13 +16,13 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 # Expected Blog (xBlog) Stats
 
-⭐ There have been 40 posts on the blog since 2017-09-18.
+⭐ There have been 41 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 39 days, or about 0.8 posts per month.
+📅 That’s about a post every 40 days, or about 0.7 posts per month.
 
-🆕 The latest post was published 25 day(s) ago: [J.League Soccer 2021
-Season
-Review\!](https://ryo-n7.github.io//2021-12-20-jleague-2021-endseason-review/).
+🆕 The latest post was published 62 day(s) ago: [Solving the ‘preserving
+the sum after rounding’ problem for a soccer waffle
+viz](https://ryo-n7.github.io//2022-01-14-preserve-sum-rounding-soccer-viz/).
 
 📈 This 2D plot shows posts over time:
 
@@ -39,6 +39,7 @@ seems I mostly blog about " ggplot2":
 
 | Number | Date       | Title                                                                                                                                                                                                               |
 | -----: | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|     41 | 2022-01-14 | [Solving the ‘preserving the sum after rounding’ problem for a soccer waffle viz](https://ryo-n7.github.io//2022-01-14-preserve-sum-rounding-soccer-viz/)                                                           |
 |     40 | 2021-12-20 | [J.League Soccer 2021 Season Review\!](https://ryo-n7.github.io//2021-12-20-jleague-2021-endseason-review/)                                                                                                         |
 |     39 | 2021-09-23 | [Creating a data pipeline with Github Actions & the {googledrive} package for the Canadian Premier League soccer data initiative\!](https://ryo-n7.github.io//2021-09-23-CanPL-GoogleDrive-GithubActions-Tutorial/) |
 |     38 | 2021-07-26 | [J.League Soccer 2021 Mid-Season Review\!](https://ryo-n7.github.io//2021-07-26-jleague-2021-midseason-review/)                                                                                                     |
@@ -82,4 +83,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-01-14*
+*Last Updated 2022-03-17*
