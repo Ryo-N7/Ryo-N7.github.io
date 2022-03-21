@@ -20,7 +20,7 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 39 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 3 day(s) ago: [{tvthemes 1.3.0} is on
+🆕 The latest post was published 4 day(s) ago: [{tvthemes 1.3.0} is on
 CRAN: ‘Steven Universe’-themed color palettes for
 ggplot2\!](https://ryo-n7.github.io//2022-03-17-tvthemes-1.3.0-announcement/).
 
@@ -84,4 +84,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-03-20*
+*Last Updated 2022-03-21*
