@@ -18,9 +18,9 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 ⭐ There have been 43 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 39 days, or about 0.8 posts per month.
+📅 That’s about a post every 40 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 51 day(s) ago: [Developer diary for
+🆕 The latest post was published 52 day(s) ago: [Developer diary for
 {ggshakeR} 0.1.2 (a package for soccer analytics viz): Implementing
 Github Actions CI tools (codecov, lintr, etc.) into the
 workflow\!](https://ryo-n7.github.io//2022-03-23-ggshakeR-0.1.2-announcement/).
@@ -86,4 +86,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-05-13*
+*Last Updated 2022-05-14*
