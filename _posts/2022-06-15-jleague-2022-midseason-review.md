@@ -15,7 +15,7 @@ tags: [japan, jleague, soccer, football, ggplot2, tidyverse]
     -   [Kawasaki Frontale](#kawasaki-frontale)
     -   [Kashiwa Reysol](#kashiwa-reysol)
     -   [Kashima Antlers](#kashima-antlers)
-    -   [Yokohama F. Marinos](#yokohama-f.-marinos)
+    -   [Yokohama F. Marinos](#yokohama-f-marinos)
     -   [Nagoya Grampus](#nagoya-grampus)
     -   [Shonan Bellmare](#shonan-bellmare)
     -   [FC Tokyo](#fc-tokyo)
@@ -1734,7 +1734,7 @@ ACL next season.
 ![Antlers squad age
 profile](../assets/2022-06-15-jleague-2022-midseason-review_files/squad_age_profile/SquadAge_KashimaAntlers_2022_mid_EN.png)
 
-## Yokohama F. Marinos
+## Yokohama F Marinos
 
 **Kevin Muscat’s** Marinos side is another team that have defied my
 expectations. I was honestly **very skeptical** over Marinos after he
