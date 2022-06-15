@@ -3978,6 +3978,10 @@ are some pictures:
 
 <img src="../assets/2022-06-15-jleague-2022-midseason-review_files/IMG-5040.JPG" style="display: block; margin: auto;" width = "750" />
 
+<img src="../assets/2022-06-15-jleague-2022-midseason-review_files/IMG-5031.JPG" style="display: block; margin: auto;" width = "750" />
+
+<img src="../assets/2022-06-15-jleague-2022-midseason-review_files/IMG-5038.JPG" style="display: block; margin: auto;" width = "750" />
+
 This weekend I will be going to Saitama to watch **Urawa Reds** take on
 **Nagoya Grampus**, hopefully as things start opening up more I’ll be
 able to visit more and more stadiums (with full crowd atmospheres) in
