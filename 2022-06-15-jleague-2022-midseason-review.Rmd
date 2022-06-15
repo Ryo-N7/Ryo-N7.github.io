@@ -15,7 +15,7 @@ library(knitr)
 library(kableExtra)
 ```
 
-# Intro
+# Introduction
 
 A new year, a new season of the J.League! This is yet another condensed season due to the 2022 World Cup in Qatar happening in late November ~ December, just about overlapping with the time the J.League usually finishes so fans and players alike get yet another busy schedule. We are now in the 30th season of the J.League and although COVID related measures are still largely in place, things are slowly getting back to normal with bigger crowds and hopefully soon, fans will start being allowed to cheer again if the trials in the next few months are successful. This season has seen __Jubilo Iwata__ and __Kyoto Sanga__ join J1, their first time back to the premier competition level in 3 years and 12 years respectively. As has become tradition in the last few years, this is the mid-season review of the J.League where I look at how teams are doing using both **data** and **watching the games** (or the eye-test or whatever other term you want to use).
 
@@ -58,6 +58,7 @@ Before I start just a few notes:
 * I can't watch **every** match for **every team** but I do try to watch around __80%__ of all J1 games in a given season. Of those games I do watch I'm almost always taking detailed notes on them to review later, re-watching them, etc.
 * All of the shots and xG related stuff you see in the viz are **non-penalty** stats. Exceptions are stuff like the time interval and scoring situations plots.
 * My views come from watching __only J1 league matches__ as most cup games clash with my work schedule and I can't be bothered to subscribe to yet another streaming service. The things I talk about here are primarily based on the **J1 league** with occasional references to cup competitions.
+* All the data gathered and visualizations were done with __R__!
 * Again, I am doing this all on my __own free time__. This latest one is probably my biggest yet but it's honestly becoming a huge time sink (as much as I do enjoy doing this), so I may need to cut down on content for future releases. This has been a labor of love but there are limits and I need to start making some more compromises on top of the ones I've been making already.
 
 Let's get started!

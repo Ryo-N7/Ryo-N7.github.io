@@ -118,6 +118,7 @@ Before I start just a few notes:
     subscribe to yet another streaming service. The things I talk about
     here are primarily based on the **J1 league** with occasional
     references to cup competitions.
+-   All the data gathered and visualizations were done with **R**!
 -   Again, I am doing this all on my **own free time**. This latest one
     is probably my biggest yet but it’s honestly becoming a huge time
     sink (as much as I do enjoy doing this), so I may need to cut down
