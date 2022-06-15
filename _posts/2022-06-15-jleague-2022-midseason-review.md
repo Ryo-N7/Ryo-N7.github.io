@@ -2481,7 +2481,7 @@ creates few but good quality chances of their own… that they just can’t
 finish.
 
 ![UR
-xGD](../assets/2022-06-15-jleague-2022-midseason-review_files/xGDiff/AvispaFukuoka_2022_mid_xgdiff_logo.png)
+xGD](../assets/2022-06-15-jleague-2022-midseason-review_files/xGDiff/UrawaReds_2022_mid_xgdiff_logo.png)
 
 **How do Urawa Reds play?**
 
