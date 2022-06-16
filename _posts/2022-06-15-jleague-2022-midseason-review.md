@@ -3,7 +3,7 @@ layout: post
 title: "J.League Soccer 2022 Mid-Season Review!"
 fb-img: https://imgur.com/WJ8mCoH.png
 share-img: https://imgur.com/WJ8mCoH.png
-tags: [japan, jleague, soccer, football, ggplot2, tidyverse]
+tags: [japan, jleague, soccer, football, ggplot2, tidyverse, r-bloggers]
 ---
 
 -   [Introduction](#introduction)
