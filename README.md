@@ -16,14 +16,13 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 # Expected Blog (xBlog) Stats
 
-⭐ There have been 43 posts on the blog since 2017-09-18.
+⭐ There have been 44 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 40 days, or about 0.7 posts per month.
+📅 That’s about a post every 39 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 84 day(s) ago: [Developer diary for
-{ggshakeR} 0.1.2 (a package for soccer analytics viz): Implementing
-Github Actions CI tools (codecov, lintr, etc.) into the
-workflow\!](https://ryo-n7.github.io//2022-03-23-ggshakeR-0.1.2-announcement/).
+🆕 The latest post was published 1 day(s) ago: [J.League Soccer 2022
+Mid-Season
+Review\!](https://ryo-n7.github.io//2022-06-15-jleague-2022-midseason-review/).
 
 📈 This 2D plot shows posts over time:
 
@@ -40,6 +39,7 @@ seems I mostly blog about " ggplot2":
 
 | Number | Date       | Title                                                                                                                                                                                                                           |
 | -----: | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|     44 | 2022-06-15 | [J.League Soccer 2022 Mid-Season Review\!](https://ryo-n7.github.io//2022-06-15-jleague-2022-midseason-review/)                                                                                                                 |
 |     43 | 2022-03-23 | [Developer diary for {ggshakeR} 0.1.2 (a package for soccer analytics viz): Implementing Github Actions CI tools (codecov, lintr, etc.) into the workflow\!](https://ryo-n7.github.io//2022-03-23-ggshakeR-0.1.2-announcement/) |
 |     42 | 2022-03-17 | [{tvthemes 1.3.0} is on CRAN: ‘Steven Universe’-themed color palettes for ggplot2\!](https://ryo-n7.github.io//2022-03-17-tvthemes-1.3.0-announcement/)                                                                         |
 |     41 | 2022-01-14 | [Solving the ‘preserving the sum after rounding’ problem for a soccer waffle viz](https://ryo-n7.github.io//2022-01-14-preserve-sum-rounding-soccer-viz/)                                                                       |
@@ -86,4 +86,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-06-15*
+*Last Updated 2022-06-16*
