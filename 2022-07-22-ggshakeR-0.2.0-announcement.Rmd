@@ -1,0 +1,148 @@
+---
+title: "Developer diary for {ggshakeR} 0.2.0 (a package for soccer analytics
+viz): Working smoothly as a team on GitHub for R package development!"
+always_allow_html: yes
+output: 
+  md_document:
+    variant: markdown_github
+    toc: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+
+[{ggshakeR} 0.2.0](https://github.com/abhiamishra/ggshakeR), a package for soccer analytics visualizations for
+R is released! This version brings a huge amount of new functionality as well as changes to existing functions. 
+
+```{r}
+devtools::install_github("abhiamishra/ggshakeR")
+```
+
+This blog post however, is more of a `developer diary` that seeks to talk more about what goes on 'under the hood' and also to teach my fellow authors [Abhishek](https://github.com/abhiamishra) and [Harsh](https://github.com/harshkrishna17) more about __working collaboratively as a team on Git/Github for R package development__. Ideally, I would've liked to have written this for them **before** we started working on `v0.2.0` but a lot of what I wrote here are various lessons and tips I have been giving them throughout the development window for this latest release. This blog post is more of a __collection__ of the various best practices (from my own POV, of course) for R package maintenance/building and using Git/Github for them as well as any other would-be R package creators out there, especially in the soccer analytics space. 
+
+But first, I'll briefly go over some of the __new__ features.
+
+Let's get started!
+
+# New features in `v0.2.0`
+
+You can check out the changes in more detail in [NEWS.md](https://abhiamishra.github.io/ggshakeR/news/index.html) but the major highlights are:
+
+* Addition of new functions (and improvement of some existing ones): 
+  * `plot_convexhull()` 
+![](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/Convexhull.png)
+  * `plot_voronoi()` 
+  * `plot_passnet()`  
+![](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/SB_Passnet.png)
+  * `calculate_epv()` 
+* Standardization of argument and function names: This was **the** big issue that I worked on for this release, you can see my thought process in the [Guide to v0.2.0 changes vignette](https://abhiamishra.github.io/ggshakeR/articles/Guide_to_Version_0-2-0.html)
+* Increasing test coverage: I had set a ball-park target of around 80% coverage but what was more important to me was that the general functionality of **every** function was covered and thanks to the efforts of [Abhishek](https://github.com/abhiamishra) and [Harsh](https://github.com/harshkrishna17), we were largely able to achieve that.
+
+All of the vignettes have been updated, which you can check out in the [package website](https://abhiamishra.github.io/ggshakeR/). The existing vignettes have been updated for the new functions in this release and there is also the [Guide to Version 0.2.0](https://abhiamishra.github.io/ggshakeR/articles/Guide_to_Version_0-2-0.html) that covers all of the syntax standardization changes that I made for `v0.2.0`.
+
+# Workflow
+
+This is mainly about the workflow related to creating new features or fixing bugs. Following the release of version `0.1.2` (see previous developer diary [here](https://ryo-n7.github.io/2022-03-23-ggshakeR-0.1.2-announcement/)), things were set in motion for the next big release through discussions between the package authors. With the various Github Actions CI tools (codecov, lintr, package checks) that I was able to implement, I wanted to take things a bit further in working more as a functional team on Github. So I started outlining the various things I do at my regular job and how they could apply to this open source project team.
+
+## Github Issue
+
+* Title: Start with a **verb** describing the main action that the issue is supposed to fix, then a short description.
+  * `Create...`, `Fix...`, `Simplify...`, etc.
+* Description: Use the first comment box once you've created the issue to describe in a bit more detail. Specify the function(s) you want to work on (you might have already mentioned it in the title), possible steps you want to take, some brainstorming thoughts. For bug issues sometimes you may not have too much to say here... yet.
+
+* Assignments: On the **right side-bar** of every issue are various buttons that you can use to tag and organize your issue.
+  * Assign a person via `Assignees`
+  * Label your issue as `bug`, `enhancement`, etc. (you can customize these to fit your project)
+  * Project/Milestone: If this is part of a larger release 'Project' or 'Milestone' you can add the issue to those from here.
+  
+## Branch 
+
+* Branch:
+  * Create a new branch based on the issue: I like to name it in a similar vein to the issue. Start with an action verb then a short description (can be difficult at times especially as I prefer to keep it to less than 5 whole words...) but this time I also append the __Github issue number__ at the end.
+  * Example: `create-passnetwork-function-#56`. 
+  
+The important thing is that __one__ issue should be addressing __one__ 'topic', or at least as much as possible. Keeping an issue focusing on one feature or bug also helps when we start having multiple branches for separate individual issues and in general it keeps information about an issue in one particular place rather than spread out over multiple places. Of course, when it comes to stuff like bugs then certain things can definitely cross-pollinate so you need to be mindful of referring/mentioning across these multiple issues. 
+
+There are many times that you may find a new problem while you're working on an issue. In my point of view, if that new problem does **not** directly affect the current problem you're working on in that issue/branch, I simply open a new issue (and later branch) rather than shoving changes unrelated to the current working issue/branch.
+
+While working on the branch, every commit message should give some idea of what was done and where. At the end of the commit message reference the issue connected to the branch you're working on, ex. `references #56` or `#56` (this is why I like having the issue number in the branch name because it helps me remember what the issue number is). In the issue itself on Github, I like to take notes and brainstorm stuff so if I return after a holiday/weekend/whatever I can remember what I was doing (talking myself through the problem helps me quite a bit).
+
+So a Github issue will have a stream of various commits you made (via references in the commit messages) as well as your own messages to yourself or team members. While I personally like making lots of small commits to keep track of things I've heard some people like to make a separate commit for **each** separate file they're making changes in, but I find that excessive. I did that quite a few times in `issue #27` but it was more to make a point to my fellow authors about making sure to `reference the issue you're working on in each commit` so that it shows up in the respective Github issue. When it comes to actually merging everything to master, I use the `Squish and merge` option to clean them all up and organize them into a single message anyways so concerns about a bunch of tiny commits flooding the git log on the master branch are mitigated.
+
+## Creating a new function
+
+When creating functions I like to be very explicit when referencing dependencies by using `@importFrom` rather than `@import`. This is very helpful as it lets me know at a quick glance what exact functions are being used within my own functions. Which means I can keep track of things better when I add or remove dependencies to my package. When first creating the function, I like to explicitly specify functions via `::` notation because this lets me automatically generate the `@importFrom` roxygen lines (and all the other roxygen documentation!) via the [{sinew}](https://github.com/yonicd/sinew) package and its `RStudio Add-on`.
+
+![sinew example gif hull_fun](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/sinew_example_hull_fun.gif)
+
+On the other hand, you do **not** need to explicitly specify auxiliary functions from within {ggshakeR} nor do we need to do it for the various {testthat} functions within the test scripts. When I start a developing session, I always call `devtools::load_all()` to load all the dependencies in my package (as listed in the `DESCRIPTION` file) instead of typing multiple `library()` calls every single time.
+
+Some related links: 
+
+- [On Dependencies](https://kbroman.org/pkg_primer/pages/depends.html) - Karl Broman
+- [Dealing with 'no visible global function definition' notes](https://stackoverflow.com/questions/31132552/no-visible-global-function-definition-for-median) - StackOverflow
+
+## Pull Requests
+
+Once all the changes are made and you're ready to create a Pull-Request, the `NEWS.md` document should be updated. Similarly to all the other writing done, I like to format it as VERB/ACTION + describe and then add a link to the specific issue.
+
+![0.2.0 news.md](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/NEWSmd-ggshakeR.PNG)
+
+Before every commit + push I like to mash: 
+
+* `Ctrl + Shift + D` == `devtools::document()` 
+* `Ctrl + Shift + B` == `Install and Restart` 
+
+and for the final commit + push before a PR I may also run:
+
+* `Ctrl + Shift + T` == `devtools::test()`
+* `Ctrl + Shift + E` == `devtools::check()`
+
+Although we have __Github Actions__ running these tests and checks automatically, right before a PR I always like to check on my local environment anyway. I talked about the various GHA workflows I implemented for {ggshakeR} in more detail in the [last developer diary](https://ryo-n7.github.io/2022-03-23-ggshakeR-0.1.2-announcement/) but the main ones are as follows:
+
+* Running `R CMD Check`
+* Running {lintr} code style checks
+* Building the {pkgdown} documentation website automatically
+
+These GHA workflows are all stored in `.github/workflows` directory if you want to have a closer look at what they do. For the purposes of reminding the package authors of what needs to be done when finalizing a branch for the Pull-Request, I created a checklist template that shows up when a PR is created on Github. It's a simple markdown file that you can create and edit to fit your team's needs. The documentation says to put it in its own folder inside `.github` but if you only have one PR template, then you only need to put it inside the `.github` directory.
+
+![PR template](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/pullrequest-template.PNG)
+
+I've also created two separate issue templates, one for __bug reports__ and another for __feature requests__. This is more geared toward our end-users than the authors and is based pretty much on what the {tidyverse} set of packages have implemented. I made these using YAML and storing them as `.yml` files inside `.github/ISSUE_TEMPLATE` directory in the repository. You can see what they look like in action by creating an issue on Github. This is useful to let users know how best they can help us, help them by clearly stating what we expect to see in an issue. (Note: Since I don't have owner access to the {ggshakeR} repository I used the YAML templates instead of using the UI from the `Settings` tab)
+
+![issue menu](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/issue-templates.PNG)
+
+![bug report](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/bug-report-issue.PNG)
+
+Github issue template help:
+
+* [Creating a pull request template for your repository](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+* [Configuring issue templates for your repository](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+
+YAML help: 
+
+* [Learn 'X' in 'Y' Minutes: YAML](https://learnxinyminutes.com/docs/yaml/)
+* [YAML Validator](https://codebeautify.org/yaml-validator)
+
+Now you only need to wait for the various Github Actions runs to finish and start checking off the items on the PR list and/or pushing more tweaks to the branch if there were any problems. Once the checklist is crossed off, you can `Squish and merge`, write down the overall commit message for the entire branch (summarize and/or edit based on the commit messages made throughout the branch), then finally __delete the branch__ after you merge it (these are all things covered in the checklist I mentioned earlier). 
+
+![](../assets/2022-07-22-ggshakeR-0.2.0-announcement_files/big-PR-0.2.0.PNG)
+
+A small list of helpful resources for my fellow {ggshakeR} authors // any other package creators reading this blog post:
+
+- [Happy Git & Github for the useR](https://happygitwithr.com/) - Jenny Bryan
+- [Pull Request Helpers from the {usethis} package](https://usethis.r-lib.org/articles/pr-functions.html)
+- [R Package (2nd Edition) online book](https://r-pkgs.org/index.html)
+- [GitHub keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+- [Resolving a merge conflict on git/Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) - GitHub Docs
+
+# Closing Comments
+
+Version 0.2.0 was around 4 whole months in the making and we're delighted for it to finally be released. Big thanks to package creator [Abhishek](https://github.com/abhiamishra) and my fellow author [Harsh](https://github.com/harshkrishna17) for all the hard work they put in the past year. 
+
+It's been pretty difficult at times due to the fact that the authors each reside in a different country/timezone and are each at varying stages in their lives (schooling/work/etc.). As mentioned earlier, I wanted to present the information in this blog post **before** we started development on `0.2.0` via an online chat but it never worked out. So, throughout the past 4 months we went back-and-forth quite a bit on **how** to work as a team using all of the project management tools on Github as well as on various R package development best practices which could have been avoided or the process made a bit smoother. But now, with this blog post I've hopefully consolidated a lot of the various little things I've been trying to get across to my fellow package authors and maybe others might find this helpful as well. 
+
+While I'm still fairly early in my career, I do manage my organization's suite of various R packages, scripts, and etc. as my main day job. Even if some of the things I wrote above aren't what some people may consider `best practice` (but that is so subjective and can vary so much by company/industry/etc.) I thought I would contribute in my own way to the general knowledge out here on the interwebs. I do not see a whole lot of these "how to collaborate as a team using R & Git" type posts, especially when it comes to soccer analytics so I thought it was worth it that _someone_ gets the ball rolling on this topic. In the first place, my involvement with {ggshakeR} was mainly a part of a general attempt to introduce or write about the details of software development when it comes to soccer analytics. It'll be nice to see if this encourages other people in the soccer analytics space to talk more about this sort of thing.
+
+There is still more to come as we aim for a CRAN release later this year. On top of new features I do want to delve further into the package internals and take a deeper look at our testing suite. I've been talking about wanting to try out {vdiffr} for a while now but more importantly I want to examine our tests more holistically based on what's in the 'Designing your test suite' section of the newest edition of the [R Packages](https://r-pkgs.org/testing-design.html) book (not yet released). Otherwise for me, I want to dig into more of the package internals and see what could be made more efficient. For now, head to the [{ggshakeR} website](https://abhiamishra.github.io/ggshakeR/) to learn more and start creating some great soccer visualizations!
