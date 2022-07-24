@@ -16,13 +16,14 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 # Expected Blog (xBlog) Stats
 
-⭐ There have been 44 posts on the blog since 2017-09-18.
+⭐ There have been 45 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 40 days, or about 0.7 posts per month.
+📅 That’s about a post every 39 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 37 day(s) ago: [J.League Soccer 2022
-Mid-Season
-Review\!](https://ryo-n7.github.io//2022-06-15-jleague-2022-midseason-review/).
+🆕 The latest post was published 2 day(s) ago: [Developer diary for
+{ggshakeR} 0.2.0 (a package for soccer analytics viz): Working smoothly
+as a team on GitHub for R package
+development\!](https://ryo-n7.github.io//2022-07-22-ggshakeR-0.2.0-announcement/).
 
 📈 This 2D plot shows posts over time:
 
@@ -39,6 +40,7 @@ seems I mostly blog about " ggplot2":
 
 | Number | Date       | Title                                                                                                                                                                                                                           |
 | -----: | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|     45 | 2022-07-22 | [Developer diary for {ggshakeR} 0.2.0 (a package for soccer analytics viz): Working smoothly as a team on GitHub for R package development\!](https://ryo-n7.github.io//2022-07-22-ggshakeR-0.2.0-announcement/)                |
 |     44 | 2022-06-15 | [J.League Soccer 2022 Mid-Season Review\!](https://ryo-n7.github.io//2022-06-15-jleague-2022-midseason-review/)                                                                                                                 |
 |     43 | 2022-03-23 | [Developer diary for {ggshakeR} 0.1.2 (a package for soccer analytics viz): Implementing Github Actions CI tools (codecov, lintr, etc.) into the workflow\!](https://ryo-n7.github.io//2022-03-23-ggshakeR-0.1.2-announcement/) |
 |     42 | 2022-03-17 | [{tvthemes 1.3.0} is on CRAN: ‘Steven Universe’-themed color palettes for ggplot2\!](https://ryo-n7.github.io//2022-03-17-tvthemes-1.3.0-announcement/)                                                                         |
@@ -86,4 +88,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-07-22*
+*Last Updated 2022-07-24*
