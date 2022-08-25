@@ -20,14 +20,14 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 40 days, or about 0.7 posts per month.
 
-🆕 The latest post was published 33 day(s) ago: [Developer diary for
+🆕 The latest post was published 34 day(s) ago: [Developer diary for
 {ggshakeR} 0.2.0 (a package for soccer analytics viz): Working smoothly
 as a team on GitHub for R package
 development\!](https://ryo-n7.github.io//2022-07-22-ggshakeR-0.2.0-announcement/).
 
 📈 This 2D plot shows posts over time:
 
-<img src="README_files/figure-gfm/plot-out-1.png" title="A 2D chart where each point represents a post on an axis of time spanning from 2018 to the present. There are some gaps, but posts have been relatively consistent over time." alt="A 2D chart where each point represents a post on an axis of time spanning from 2018 to the present. There are some gaps, but posts have been relatively consistent over time."  />
+<img src="README_files/figure-gfm/plot-out-1.png" alt="A 2D chart where each point represents a post on an axis of time spanning from 2018 to the present. There are some gaps, but posts have been relatively consistent over time."  />
 
 Below is a word cloud of all the different tags on my blog posts, it
 seems I mostly blog about " ggplot2":
@@ -88,4 +88,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-08-24*
+*Last Updated 2022-08-25*
