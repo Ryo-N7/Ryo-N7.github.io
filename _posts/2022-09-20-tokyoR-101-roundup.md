@@ -28,7 +28,7 @@ My previous TokyoR roundups:
     (7/27/2019)](https://ryo-n7.github.io/2019-08-02-tokyoR-80-roundup/)
 -   [Tokyo.R #81
     (9/28/2019)](https://ryo-n7.github.io/2019-10-30-tokyoR-81-roundup/)
--   [Tokyo.R #87 (7/
+-   [Tokyo.R #87 (8/1
     /2020)](https://ryo-n7.github.io/2020-08-03-tokyoR-87-roundup/)
 
 As you can see it was my first [TokyoR](https://tokyor.connpass.com/) in
