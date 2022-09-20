@@ -253,11 +253,7 @@ parts of the face differently by the shape, size, placement, and
 orientation.
 
 R users can create this type of visualization via the {aplpack} package,
-specifically the `faces()` function.
-
--   <https://flowingdata.com/2010/08/31/how-to-visualize-data-with-cartoonish-faces/>
-
-and provided an example using the Palmer penguins data set that he used
+specifically the `faces()` function. `@bob3bob3` provided an example using the Palmer penguins data set that he used
 in his previous presentation.
 
 ![](../assets/2022-09-20-tokyoR-101-roundup_files/sgraph2.PNG)
