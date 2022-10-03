@@ -18,9 +18,9 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 ⭐ There have been 46 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 40 days, or about 0.8 posts per month.
+📅 That’s about a post every 40 days, or about 0.7 posts per month.
 
-🆕 The latest post was published 12 day(s) ago: [101st TokyoR Meetup
+🆕 The latest post was published 13 day(s) ago: [101st TokyoR Meetup
 Roundup: Palmer penguins, fractal analysis, and
 more\!](https://ryo-n7.github.io//2022-09-20-tokyoR-101-roundup/).
 
@@ -88,4 +88,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-10-02*
+*Last Updated 2022-10-03*
