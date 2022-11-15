@@ -1420,7 +1420,7 @@ the box to make up for the lack of numbers. None of **Noriyoshi Sakai**,
 goals up front while surprisingly summer arrival **Kensuke Nagai** was
 in fine form notching `4 goals` and `3 assists` in the 2nd half of the
 season. As many might know star striker **Jakub Swierczok** was
-suspended since last year for failing a doping test and it looks likely
+suspended last year for failing a doping test and it looks likely
 that he won’t be able to play football for another few years…
 
 ![vs
