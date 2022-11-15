@@ -188,6 +188,9 @@ jleague_kable_table <- jleague_table_2022_end_cleaned %>%
 
 jleague_kable_table
 ```
+</pre>
+</details>
+
 
 <table class="table table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>J.League 2022 - League Table (After Matchday 16)</caption>
@@ -473,8 +476,6 @@ jleague_kable_table
 </tr>
 </tfoot>
 </table>
-</pre>
-</details>
 
 # Team Reviews
 
