@@ -17,14 +17,26 @@ You can learn a bit more about my hobby/work in R and in soccer analytics from i
 
 Other interests/hobbies include Soccer/Football, Star Wars, and of course - Data Science!
 
-* Maintainer & co-author of the [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr) package.
-* Maintainer & author of the [tvthemes](https://github.com/Ryo-N7/tvthemes) package.
+## Soccer Analytics ⚽🤓
 
-In July 2018, I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)! 
+- [soccer_ggplots](https://github.com/Ryo-N7/soccer_ggplots) repository: Collection of my soccer analytics blog posts & R code for data visualizations.
+- One of the authors of [ggshakeR](https://github.com/abhiamishra/ggshakeR): Analytics & Visualization R Package for Soccer Data.
 
-Back in October 2019, I gave a presentation at the TokyoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
+## Author of R packages 💻🛠
 
-In `2022`, I co-hosted a webinar about ["Managing Large Codebases in R!"](https://www.activityinfo.org/support/webinars/2022-10-06-managing-large-codebases-in-R.html)
+- [tvthemes](https://github.com/Ryo-N7/tvthemes): ggplot2 themes & palettes based on your favorite TV shows.
+- [bulletchartr](https://github.com/ACDIVOCATech/bulletchartr): Create Bullet Charts For Visualizing KPIs.
+- [centralperk](https://github.com/Ryo-N7/centralperk): R Client For The "Friends" Quotes API.
+
+## Talks & Presentations
+
+- In July 2018, I gave a presentation at the TokyoR User Group on "Visualizing the World Cup with R!" - Check it out [here](https://www.youtube.com/watch?v=tNncHFd5dVo)!
+
+- Back in October 2019, I gave a presentation at the TokyoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
+
+- In `2022`, I co-hosted a webinar about ["Managing Large Codebases in R!"](https://www.activityinfo.org/support/webinars/2022-10-06-managing-large-codebases-in-R.html)
+
+## Contact me! 📫💬
 
 **Contact**: ryonakagawara[at]gmail[dot]com
 
