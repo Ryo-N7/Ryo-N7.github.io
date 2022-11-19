@@ -5,7 +5,7 @@ title: About Me
 
 Born in Japan, grew up in America and Israel, having also lived in Germany, just returned from London, and currently residing in **Tokyo**. I'm quite proud to say that I am a citizen of the world!
 
-__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an _international development NGO_, as a __Data Scientist__. For the past 4 years I have been doing work as both a reporting analyst and a software developer in R and SQL to improve ACDI/VOCA's data pipeline and create R packages, reproducible reports, dashboards, Shiny apps to communicate how our projects worldwide are progressing. I also manage our entire R code base that includes various ETL scripts, R packages, and software applications for data collection/management. I am also very involved in the R community (in Japan through [Tokyo.R](https://tokyor.connpass.com/) & internationally) through my volunteer work as an editor on the [RWeekly](https://rweekly.org/) newsletter (since April 2019). In 2020, I also did some work as a soccer analytics consultant for [11tegen11](https://11tegen11.com/).
+__Currently__ working for [ACDI/VOCA](https://www.acdivoca.org/), an _international development NGO_, as a __Data Scientist__. For the past 5 years I have been doing work as both a reporting analyst and a software developer in R and SQL to improve ACDI/VOCA's data pipeline and create R packages, reproducible reports, dashboards, Shiny apps to communicate how our projects worldwide are progressing. I also manage our entire R code base that includes various ETL scripts, R packages, and software applications for data collection/management. I am also very involved in the R community (in Japan through [Tokyo.R](https://tokyor.connpass.com/) & internationally) through my volunteer work as an editor on the [RWeekly](https://rweekly.org/) newsletter (since April 2019). In 2020, I also did some work as a soccer analytics consultant for [11tegen11](https://11tegen11.com/).
 
 Interested in doing data analysis/visualization with R and SQL for NGOs, charities, non-profits (#DataForGood). 
 
@@ -24,11 +24,13 @@ In July 2018, I gave a presentation at the TokyoR User Group on "Visualizing the
 
 Back in October 2019, I gave a presentation at the TokyoR User Group on a new version of the "bulletchartr" package - Check the slides out [here](http://rpubs.com/Ryo-N7/bulletchartr-tokyor82)!
 
+In `2022`, I co-hosted a webinar about ["Managing Large Codebases in R!"](https://www.activityinfo.org/support/webinars/2022-10-06-managing-large-codebases-in-R.html)
+
 **Contact**: ryonakagawara[at]gmail[dot]com
 
 **Connect** with me on [LinkedIn](https://www.linkedin.com/in/ryonakagawara)!
 
-**Follow Me** on [Twitter](https://twitter.com/R_by_Ryo)!
+**Follow Me** on [Twitter](https://twitter.com/R_by_Ryo) and/or <a rel="me" href="https://mstdn.social/@R_by_Ryo">Mastodon</a>!
 
 **Current Location**: Tokyo, Japan
 
