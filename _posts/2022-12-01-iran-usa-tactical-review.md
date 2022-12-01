@@ -230,6 +230,136 @@ header from a free kick on the near post in injury time.
 The United States of America advance to the Round of 16 right behind
 England, while Iran were eliminated having finished in 3rd place.
 
+
+<details>
+<summary>
+<b>Click to show R code!</b>
+</summary>
+<pre>
+
+```r
+groupb_df <- data.frame(
+  Rank = c(1, 2, 3, 4),
+  Team = c("England", "USA", "Iran", "Wales"),
+  Win = c(2, 1, 1, 0),
+  Draw = c(1, 2, 0, 1),
+  Loss = c(0, 0, 2, 2),
+  GF = c(9, 2, 4, 1),
+  GA = c(2, 1, 7, 6),
+  GD = c(7, 1, -3, -5),
+  Pts = c(7, 5, 3, 1),
+  xG = c(5.2, 2.5, 3.6, 2.7),
+  xGA = c(2.3, 3.1, 4.1, 4.6)
+) %>% 
+  mutate(xGDiff = xG-xGA)
+
+groupb_table <- groupb_df %>% 
+  knitr::kable(format = "html", 
+               caption = "FIFA World Cup 2022: Group B") %>% 
+  kable_styling(full_width = FALSE,
+                bootstrap_options = c("condensed", "responsive")) %>% 
+  add_header_above(c(" ", "Result" = 5, "Goals" = 3,
+                     "Expected Goals" = 3)) %>% 
+  column_spec(1:2, bold = TRUE) %>% 
+  row_spec(1:2, bold = TRUE, color = "white", background = "green") %>% 
+  add_footnote(label = "Data: FBref.com & Opta | All xG values include penalties",
+               notation = "none")
+
+groupb_table
+```
+
+<table class="table table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>FIFA World Cup 2022: Group B</caption>
+ <thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1"></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="5"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Result</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Goals</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Expected Goals</div></th>
+</tr>
+  <tr>
+   <th style="text-align:right;"> Rank </th>
+   <th style="text-align:left;"> Team </th>
+   <th style="text-align:right;"> Win </th>
+   <th style="text-align:right;"> Draw </th>
+   <th style="text-align:right;"> Loss </th>
+   <th style="text-align:right;"> GF </th>
+   <th style="text-align:right;"> GA </th>
+   <th style="text-align:right;"> GD </th>
+   <th style="text-align:right;"> Pts </th>
+   <th style="text-align:right;"> xG </th>
+   <th style="text-align:right;"> xGA </th>
+   <th style="text-align:right;"> xGDiff </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;font-weight: bold;font-weight: bold;color: white !important;background-color: green !important;"> 1 </td>
+   <td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: green !important;"> England </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 2 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 1 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 0 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 9 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 2 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 7 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 7 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 5.2 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 2.3 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 2.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;font-weight: bold;font-weight: bold;color: white !important;background-color: green !important;"> 2 </td>
+   <td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: green !important;"> USA </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 1 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 2 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 0 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 2 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 1 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 1 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 5 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 2.5 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> 3.1 </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: green !important;"> -0.6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;font-weight: bold;"> 3 </td>
+   <td style="text-align:left;font-weight: bold;"> Iran </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> -3 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 3.6 </td>
+   <td style="text-align:right;"> 4.1 </td>
+   <td style="text-align:right;"> -0.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;font-weight: bold;"> 4 </td>
+   <td style="text-align:left;font-weight: bold;"> Wales </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> -5 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2.7 </td>
+   <td style="text-align:right;"> 4.6 </td>
+   <td style="text-align:right;"> -1.9 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr>
+<td style = 'padding: 0; border:0;' colspan='100%'><sup></sup> Data: FBref.com &amp; Opta | All xG values include penalties</td>
+</tr>
+</tfoot>
+</table>
+</pre>
+</details>
+
+
 The USA will face the Group A winners, Netherlands, next and I am a bit
 worried about them. My concerns are from how tired the US’s midfield
 looks after the amount of work they’ve put in throughout the group
