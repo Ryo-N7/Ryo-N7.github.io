@@ -268,6 +268,9 @@ groupb_table <- groupb_df %>%
 groupb_table
 ```
 
+</pre>
+</details>
+
 <table class="table table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>FIFA World Cup 2022: Group B</caption>
  <thead>
@@ -356,8 +359,6 @@ groupb_table
 </tr>
 </tfoot>
 </table>
-</pre>
-</details>
 
 
 The USA will face the Group A winners, Netherlands, next and I am a bit
