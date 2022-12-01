@@ -156,14 +156,18 @@ pass](../assets/2022-12-01-iran-usa-tactical-review_files/iran-usa-37th-goal.png
 
 # 2nd Half
 
-Substitutions: **Iran**: - `Saman Ghoddos` came on for `Sardar Azmoun`:
-A bit surprising to haul off your ace striker in a must-win game but
-`Azmoun`’s defensive work left a lot to be desired and he also hasn’t
-been 100% fit since before the tournament so I guess that’s why…
+Half-Time Substitutions: 
+
+**Iran**: 
 
 -   `Ali Karimi` came on for the injured `Milad Mohammadi` in 1st Half
     injury time, `Hajsafi` shifted backwards to the Left Back spot while
     `Karimi` replaced him in midfield.
+
+-   `Saman Ghoddos` came on for `Sardar Azmoun`:
+    A bit surprising to haul off your ace striker in a must-win game but
+    `Azmoun`’s defensive work left a lot to be desired and he also hasn’t
+    been 100% fit since before the tournament so I guess that’s why…
 
 **USA**:
 
@@ -200,7 +204,7 @@ Even when Iran were able to get their Full Backs up high and wide on the
 ball, they had no 1v1 dribbling ability to get past USA defenders and
 get a clean cross off so it was largely ineffective. Indeed, for all of
 Iran’s attempts throughout the game, they only got their first Corner
-Kick in 43rd minute… of the 2nd half!
+Kick in the 43rd minute… of the 2nd half!
 
 Especially without `Alireza Jahanbakhsh` (who was suspended due to
 accumulating yellow cards), there really were a lack of attacking
@@ -208,7 +212,7 @@ options for Team Melli in this game that could turn the tide. The usual
 attacking subs that people may be familiar with like ex-Wolfsburg
 `Ashkan Dejagah` were way too old now to even make the squad this time
 around. Surely, one of the 4 goalkeeper spots could’ve been given to an
-extra attacker or perhaps one of the many defense men `Carlos Queiroz`
+extra attacker or perhaps one of the many defenders `Carlos Queiroz`
 brought along?
 
 Around the 80th minute, US manager `Gregg Berhalter` made his changes,
@@ -247,7 +251,7 @@ this team does have talent and they are also young. Whatever happens
 this will be extremely good experience for this generation of players
 heading into the World Cup on home soil in 2026.
 
-Iran big changes will be needed, as most of their important players are
+Big changes will be needed for Iran, as most of their important players are
 close to 30 if not older (`Beiranvand`, `Hosseini`, `Hajsafi`,
 `Mohammadi`, `Pourlaliganji`, `Rezaeian`, `Jahanbakhsh`, `Ghoddos`,
 `Nourollahi`, `Taremi`, `Ansarifard`). Some will no doubt still be in
@@ -255,7 +259,7 @@ the squad for 2026 even if they won’t be starters but it’s clear that a
 generational overhaul will be needed. Speaking of overhaul, will they
 keep going with `Carlos Queiroz` who only returned a few months before
 the World Cup? The Asia Cup is already coming next year (or most likely
-moved to early 2024 because its in Qatar…), so decisions are going to be
+moved to early 2024 because it's in Qatar…), so decisions are going to be
 needed somewhat quickly. This is especially pertinent when you consider
 that their World Cup preparations were rather poor with `Queiroz`
 himself only re-joining the team in September!
