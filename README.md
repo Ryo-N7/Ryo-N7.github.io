@@ -16,13 +16,12 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 # Expected Blog (xBlog) Stats
 
-⭐ There have been 47 posts on the blog since 2017-09-18.
+⭐ There have been 48 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 40 days, or about 0.7 posts per month.
+📅 That’s about a post every 40 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 15 day(s) ago: [J.League Soccer 2022
-Season
-Review\!](https://ryo-n7.github.io//2022-11-15-jleague-2022-endseason-review/).
+🆕 The latest post was published 1 day(s) ago: [Iran vs. USA Tactical
+Review\!](https://ryo-n7.github.io//2022-12-01-iran-usa-tactical-review/).
 
 📈 This 2D plot shows posts over time:
 
@@ -39,6 +38,7 @@ seems I mostly blog about " ggplot2":
 
 | Number | Date       | Title                                                                                                                                                                                                                           |
 | -----: | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|     48 | 2022-12-01 | [Iran vs. USA Tactical Review\!](https://ryo-n7.github.io//2022-12-01-iran-usa-tactical-review/)                                                                                                                                |
 |     47 | 2022-11-15 | [J.League Soccer 2022 Season Review\!](https://ryo-n7.github.io//2022-11-15-jleague-2022-endseason-review/)                                                                                                                     |
 |     46 | 2022-09-20 | [101st TokyoR Meetup Roundup: Palmer penguins, fractal analysis, and more\!](https://ryo-n7.github.io//2022-09-20-tokyoR-101-roundup/)                                                                                          |
 |     45 | 2022-07-22 | [Developer diary for {ggshakeR} 0.2.0 (a package for soccer analytics viz): Working smoothly as a team on GitHub for R package development\!](https://ryo-n7.github.io//2022-07-22-ggshakeR-0.2.0-announcement/)                |
@@ -89,4 +89,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-11-30*
+*Last Updated 2022-12-02*
