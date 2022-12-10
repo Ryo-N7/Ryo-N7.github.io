@@ -20,7 +20,7 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 40 days, or about 0.8 posts per month.
 
-🆕 The latest post was published 8 day(s) ago: [Iran vs. USA Tactical
+🆕 The latest post was published 9 day(s) ago: [Iran vs. USA Tactical
 Review\!](https://ryo-n7.github.io//2022-12-01-iran-usa-tactical-review/).
 
 📈 This 2D plot shows posts over time:
@@ -89,4 +89,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2022-12-09*
+*Last Updated 2022-12-10*
