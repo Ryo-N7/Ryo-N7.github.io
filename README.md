@@ -18,9 +18,9 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 ⭐ There have been 48 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 41 days, or about 0.7 posts per month.
+📅 That’s about a post every 42 days, or about 0.7 posts per month.
 
-🆕 The latest post was published 91 day(s) ago: [Iran vs. USA Tactical
+🆕 The latest post was published 92 day(s) ago: [Iran vs. USA Tactical
 Review\!](https://ryo-n7.github.io//2022-12-01-iran-usa-tactical-review/).
 
 📈 This 2D plot shows posts over time:
@@ -89,4 +89,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2023-03-02*
+*Last Updated 2023-03-03*
