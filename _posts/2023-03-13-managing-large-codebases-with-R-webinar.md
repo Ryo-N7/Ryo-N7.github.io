@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Managing Large R Codebases webinar (summary and slides)"
-fb-img: https://i.imgur.com/foTKoML.png
-share-img: https://i.imgur.com/foTKoML.png
+fb-img: https://i.imgur.com/0mhayJ2.png
+share-img: https://i.imgur.com/0mhayJ2.png
 tags: [r-packages, github-actions, tidyverse, r-bloggers]
 ---
 
