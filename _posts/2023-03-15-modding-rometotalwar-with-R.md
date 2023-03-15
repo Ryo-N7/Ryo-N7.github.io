@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Modding Rome Total War (Avatar, The Last Airbender mod) using R!"
-fb-img: https://i.imgur.com/foTKoML.png
-share-img: https://i.imgur.com/foTKoML.png
+fb-img: https://i.imgur.com/CAJ3K2P.jpg
+share-img: https://i.imgur.com/CAJ3K2P.jpg
 tags: [avatar, total-war, web-scraping, rvest, tidyverse, r-bloggers]
 ---
 
