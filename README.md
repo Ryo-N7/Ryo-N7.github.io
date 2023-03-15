@@ -20,7 +20,7 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 41 days, or about 0.7 posts per month.
 
-🆕 The latest post was published 1 day(s) ago: [Managing Large R
+🆕 The latest post was published 2 day(s) ago: [Managing Large R
 Codebases webinar (summary and
 slides)](https://ryo-n7.github.io//2023-03-13-managing-large-codebases-with-R-webinar/).
 
@@ -91,4 +91,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2023-03-14*
+*Last Updated 2023-03-15*
