@@ -70,6 +70,10 @@ interests first…
     right around the late 20s/early 30s-ish age that are pretty active
     on social media and people wanted some comfort-shows to watch in the
     early-pandemic-uncertain-times.
+    
+-   I'm the creator of the [{tvthemes} R package](https://github.com/Ryo-N7/tvthemes) that gives you a collection of {ggplot2} themes and color palettes from TV shows, including Avatar: The Last Airbender!
+
+![](../assets/2019-05-16-introducing-tvthemes-package_files/unnamed-chunk-12-1.png)
 
 ## **What is the Avatar: The Last Airbender mod for Rome: Total War?**
 
