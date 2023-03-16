@@ -16,13 +16,13 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 # Expected Blog (xBlog) Stats
 
-⭐ There have been 49 posts on the blog since 2017-09-18.
+⭐ There have been 50 posts on the blog since 2017-09-18.
 
-📅 That’s about a post every 41 days, or about 0.7 posts per month.
+📅 That’s about a post every 40 days, or about 0.7 posts per month.
 
-🆕 The latest post was published 2 day(s) ago: [Managing Large R
-Codebases webinar (summary and
-slides)](https://ryo-n7.github.io//2023-03-13-managing-large-codebases-with-R-webinar/).
+🆕 The latest post was published 1 day(s) ago: [Modding Rome Total War
+(Avatar, The Last Airbender mod) using
+R\!](https://ryo-n7.github.io//2023-03-15-modding-rometotalwar-with-R/).
 
 📈 This 2D plot shows posts over time:
 
@@ -39,6 +39,7 @@ seems I mostly blog about " ggplot2":
 
 | Number | Date       | Title                                                                                                                                                                                                                           |
 | -----: | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|     50 | 2023-03-15 | [Modding Rome Total War (Avatar, The Last Airbender mod) using R\!](https://ryo-n7.github.io//2023-03-15-modding-rometotalwar-with-R/)                                                                                          |
 |     49 | 2023-03-13 | [Managing Large R Codebases webinar (summary and slides)](https://ryo-n7.github.io//2023-03-13-managing-large-codebases-with-R-webinar/)                                                                                        |
 |     48 | 2022-12-01 | [Iran vs. USA Tactical Review\!](https://ryo-n7.github.io//2022-12-01-iran-usa-tactical-review/)                                                                                                                                |
 |     47 | 2022-11-15 | [J.League Soccer 2022 Season Review\!](https://ryo-n7.github.io//2022-11-15-jleague-2022-endseason-review/)                                                                                                                     |
@@ -91,4 +92,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2023-03-15*
+*Last Updated 2023-03-16*
