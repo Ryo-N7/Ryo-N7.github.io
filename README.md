@@ -20,7 +20,7 @@ TokyoR, etc.), and other data science-y things - all done in R.
 
 📅 That’s about a post every 40 days, or about 0.7 posts per month.
 
-🆕 The latest post was published 4 day(s) ago: [Modding Rome Total War
+🆕 The latest post was published 5 day(s) ago: [Modding Rome Total War
 (Avatar, The Last Airbender mod) using
 R\!](https://ryo-n7.github.io//2023-03-15-modding-rometotalwar-with-R/).
 
@@ -92,4 +92,4 @@ seems I mostly blog about " ggplot2":
 
 </details>
 
-*Last Updated 2023-03-19*
+*Last Updated 2023-03-20*
