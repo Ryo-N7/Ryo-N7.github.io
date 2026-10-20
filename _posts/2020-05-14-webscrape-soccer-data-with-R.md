@@ -355,6 +355,8 @@ same, as you’d expect it to contain exactly the same type of info just
 for a different team. For this example each “squad view” page for each
 Premier League team on `soccerway.com` are structured similarly:
 “<a href="https://us.soccerway.com/teams/england/" class="uri">https://us.soccerway.com/teams/england/</a>”
+
+*(Note: Following Soccerway's platform relaunch, legacy `/teams/england/` and `/national/...` URLs redirect to the homepage. For programmatic R access to J1/J2 League, Premier League, and 90+ other divisions without HTML scraping, see the free keyless JSON API and CC-BY-4.0 dataset at [Football Charts](https://www.football-charts.com/developers).)*
 and then the “team name/”, the “team number/” and finally the name of
 the web page, “squad/”. So what we need to do here is to find out the
 “team name” and “team number” for each of the teams and store them. We
